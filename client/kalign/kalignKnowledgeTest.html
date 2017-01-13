@@ -1,0 +1,130 @@
+<template name="KnowledgeTest">
+  <div class="container">
+    <div class="directions">
+      <h2>Directions:</h2>
+      <p>Please indicate your level of knowledge/experience with the following topics:</p>
+    </div>
+    <div>
+        <form class="surveyForm">
+            {{#each knowledgeTestItems}}
+                {{> KnowledgeQuestion}}
+            {{/each}}
+            <div class="row formQuestion">
+              <div class="question">(Optional) Are you an expert or very knowledgeable about some other domain that isn't listed above? If so, tell us!</div><br/>
+              <textArea id="otherKnowledge" class="survey-textbox"></textarea>
+            </div>
+        </form>
+    </div>
+    <button id="submit" class="submitForm btn-xlarge2 btn-default btn-primary">
+     Submit 
+    </button>
+  </div>
+</template>
+
+<template name="KnowledgeQuestion">
+    <div class="row formQuestion">
+      <div class="question">{{question}}</div><br/>
+      <!-- <div style="max-width:700px;"> -->
+        {{#each questionAnchors}}
+            {{> QuestionAnchor}}
+        {{/each}}
+      <!-- </select> -->
+       <!-- </div> -->
+    </div>
+</template>
+
+<template name="QuestionAnchor">
+    <input type="radio" class="radioButton" name="{{name}}" value="{{val}}">&nbsp;&nbsp;{{anchor}}<br/>
+</template>
+
+<!-- THIS IS HORRIBLE - SHOULD ITERATE OVER QUESTIONS -->
+      <!-- <div class="row formQuestion">
+        <div class="question">Live entertainment (e.g., concerts, plays, sporting events)</div><br/>
+        <select id="liveEntertain">
+          <option value="4">4 - I attend live entertainment events more than 4 times a year, and I have industry experience in a field of live entertainment.</option>
+          <option value="3">3 - I attend live entertainment events more than 4 times a year, do not have industry experience in the field of live entertainment, but I have experience creating or participating in productions for fun (e.g., school stage production, coffeehouse open mic).</option>
+          <option value="2">2 - I attend live entertainment events 1-4 times per year.</option>
+          <option value="1">1 - I attend live entertainment events less than 1 time per year.</option>
+        </select>
+      </div>
+      <div class="row formQuestion">
+        <div class="question">Education/instruction</div><br/>
+        <select id="education">
+          <option value="4">4 - I have industry experience in the field of education or instruction (i.e., personal tutoring in high school does not count, but commercial tutoring does).</option>
+          <option value="3">3 - I am currently enrolled in an educational system as a student, and I am actively involved in student organizations and extracurricular activities.</option>
+          <option value="2">2 - I am currently enrolled in an educational system as a student, and I am inactive in student organizations and extracurricular activities.</option>
+          <option value="1">1 - I am not currently enrolled in an educational system.</option>
+        </select>
+      </div>
+      <div class="row formQuestion">
+        <div class="question">Personal wellness</div><br/>
+        <select id="personalWellness">
+          <option value="4">4 - I have industry experience in the field of personal wellness (e.g., doctor, sports instructor, therapist).</option>
+          <option value="3">3 - I exercise regularly (at least 1 to 2 times a week), eat a balanced diet, and am involved in experimenting with my exercise/diet and/or blogging about my exercise/diet.1</option>
+          <option value="2">2 - I exercise regularly (at least 1 to 2 times a week), and/or I eat a balanced diet less consistently than each meal but at least 3 meals a week.</option>
+          <option value="1">1 - I don’t exercise regularly, and/or I consistently eat junk food as meals.</option>
+        </select>
+      </div>
+      <div class="row formQuestion">
+        <div class="question">Marketing/advertising</div><br/>
+        <select id="marketing">
+          <option value="4">4 - I have industry experience in the field of marketing or advertising (e.g., digital marketer, marketing specialist, sales).</option>
+          <option value="3">3 - I am actively engaged in learning about marketing or advertising through formal education and reading industry blog posts.</option>
+          <option value="2">2 - I am not actively engaged in learning about marketing or advertising through formal education and reading industry blog posts, but I will read it when it comes my way.</option>
+          <option value="1">1 - I am in no way actively or passively engaged in learning about marketing or advertising.</option>
+        </select>
+      </div>
+      <div class="row formQuestion">
+        <div class="question">Visual arts</div><br/>
+        <select id="visualArts">
+          <option value="4">4 - I have industry experience in the field of visual arts (e.g., graphic design, UI/UX design, museum exhibit curator, actor, animator, photography).</option>
+          <option value="3">3 - I am actively engaged in learning about visual arts through formal education and reading magazines and reviews.</option>
+          <option value="2">2 - I am not actively engaged in learning about visual arts through formal education, but I will spend time in the arts (e.g., drawing, designing, photography, videography) at least once every four months.</option>
+          <option value="1">1 - I am in no way actively or passively engaged in learning about visual arts and do not spend time in the arts.</option>
+        </select>
+      </div>
+      <div class="row formQuestion">
+        <div class="question">Interior design</div><br/>
+        <select id="interiorDesign">
+          <option value="4">4 - I have industry experience in the field of interior design (e.g., architecture, furniture design).</option>
+          <option value="3">3 - I am actively engaged in learning about interior design through formal education and reading industry articles.</option>
+          <option value="2">2 - I am not actively engaged in learning about interior design through formal education and reading industry articles, but I will spend time reading about or practicing interior design at least once every four months.</option>
+          <option value="1">1 - I am in no way actively or passively engaged in learning about interior design and do not spend time on interior design.</option>
+        </select>
+      </div>
+      <div class="row formQuestion">
+        <div class="question">Public/workplace safety</div><br/>
+        <select id="safety">
+          <option value="4">4 - I have industry experience in the field of public/workplace safety (e.g., compliance investigator, safety technician)</option>
+          <option value="3">3 - I am actively engaged in learning about public/workplace safety through formal education and reading industry articles.</option>
+          <option value="2">2 - I am not actively engaged in learning about public/workplace safety through formal education and reading industry articles, but I will spend time reading about or practicing public/workplace safety at least once every four months.</option>
+          <option value="1">1 - I am in no way actively or passively engaged in learning about public/workplace safety and do not spend time on public/workplace safety.</option>
+        </select>
+      </div>
+      <div class="row formQuestion">
+        <div class="question">Productivity</div><br/>
+        <select id="productivity">
+          <option value="4">4 - I have industry experience in the field of productivity (e.g., organizational consultant, blogger).</option>
+          <option value="3">3 - I am actively engaged in learning about productivity through reading productivity articles at least once every 4 months, and I experiment with new productivity practices at least once every 4 months.</option>
+          <option value="2">2 - I am engaged in learning about productivity through reading productivity articles from once every 12 months to once every 4 months, and I experiment with new productivity practices from once every 12 months to once every 4 months.</option>
+          <option value="1">1 - I am in no way engaged in bettering productivity methods, and I experiment with new productivity practices less than once every 12 months.</option>
+        </select>
+      </div>
+      <div class="row formQuestion">
+        <div class="question">Games</div><br/>
+        <select id="games">
+          <option value="4">4 - I have industry experience in the field of games (e.g., game designer, professional player).</option>
+          <option value="3">3 - I play games regularly (at least 3 times every month) and/or I am actively engaged in games­ through play or design (e.g., game competitions, conferences, discuss/suggest game design features on forums, live-stream game playing).</option>
+          <option value="2">2 - I play games from 1 time every 6 months to 2 times every month.</option>
+          <option value="1">1 - I spend time playing games less than 1 time every 6 months.</option>
+        </select>
+      </div>
+      <div class="row formQuestion">
+        <div class="question">Restaurants</div><br/>
+        <select id="restaurants">
+          <option value="4">4 - I have industry experience in the field of restaurants (e.g., waiter, restaurant owner).</option>
+          <option value="3">3 - I do not have industry experience in the field of restaurants, and I participate in writing restaurant reviews, restaurant blog posts, and restaurant photography at least 1 time every 4 months.</option>
+          <option value="2">2 - I do not have industry experience in the field of restaurants, and I do not participate in writing restaurant reviews, restaurant blog posts, and restaurant photography, but I go to restaurants with family or friends at least 1 time every 4 months.</option>
+          <option value="1">1 - I am in no way engaged in restaurants, and I go to restaurants with family or friends less than 1 time every 4 months.</option>
+        </select>
+      </div> -->

@@ -1,0 +1,495 @@
+.synthesisBox {
+  /*overflow:hidden;*/
+}
+
+/**********************
+Console elements
+***********************/
+
+#console{
+  margin-left: 20px;
+  z-index: 500;
+  background-color: white;
+  /*border-right: 3px solid #000000;*/
+ /* min-height: 8000px;*/
+}
+
+#mock{
+  z-index: 999;
+  border-bottom: 2px solid #000000;
+  position: fixed;
+  height: 405px;
+  width: 237px;
+  background-color: white;
+}
+
+/**********************
+Map and minimap elements
+***********************/
+
+.map {
+    overflow: hidden;
+    z-index: 990;
+    /*position: fixed;*/
+    background-color: white;
+    border: 2px solid #000000;
+    border-radius: 3px;
+    margin-top: 10px; 
+    left: 30px;
+    min-width: 200px;
+    min-height: 200px;
+    max-width:237px;
+}
+
+.miniIdeas {
+    border:1px solid #444;
+    list-style-type: none;
+    position: absolute;
+    margin: 2px;
+    width: 10px;
+    height: 5px; 
+    /*min-height: 5px;*/
+    background-color:#FFFC06 ;
+}
+
+.miniCluster {
+    border:1px solid #444;
+    list-style-type: none;
+    position: absolute;
+    margin: 2px;
+    width: 10px;
+    height: 10px; 
+    min-height: 5px;
+    background-color:#def;
+}
+
+/**********************
+Zoom control elements
+***********************/
+
+.zoomControl {
+    z-index: 999;
+    /*position: fixed;*/
+    display: inline;
+    /*padding-left: 40px;*/
+    /*top: 30%;*/
+    /*margin-top: 10px;*/
+    max-width: 237px;
+    margin-top:-5px;
+    margin-bottom:-5px;
+}
+
+.zoom-control-buttons {
+  font-size: 20px;
+}
+
+#zBar{
+   display: inline-block;
+   width: 128px;
+   height: 15px;
+}
+#zIn {
+   display: inline-block;
+}
+ #zOut{
+  margin-left: 20px;
+   display: inline-block;
+}
+
+/**********************
+Cluster control elements
+***********************/
+
+.clusterControls{
+  /*margin-top: 5%;*/
+  max-width: 237px;
+  /*padding-left:25px;*/
+} 
+
+.createPattern {
+  padding:0px;
+}
+
+#addCluster {
+  font-family: sans-serif;
+  font-size: 20px;
+  margin:auto;
+  border-radius: 8px;
+  padding: 4px;
+}
+
+.instructionsContainer {
+  float:right;
+  /*margin-right:5px;*/
+  padding-left:0px;
+}
+
+#instructions {
+  /*position:fixed;*/
+  /*padding-left: 10px;*/
+  /*top: -20px;*/
+  font-size:24px;
+  font-weight: bold;
+  color:#9C9C9C;
+  cursor: pointer; 
+}
+
+.numIdeas {
+    /*position: fixed;*/
+    /*top:380px;*/
+    /*margin-top: 10px;*/
+    /*width: 200px;*/
+    max-width: 237px;
+    height: 40px;
+    font-size: 18px;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+#finished {
+  font-size: 16px;
+  font-family: sans-serif;
+  float:right;
+  margin-top:5px;
+  border-radius: 8px;
+  padding:2px;
+  /*left:75px;*/
+  /*top: 355px;*/
+  /*position:fixed;*/
+}
+
+/**********************
+Display ideas elements
+***********************/
+
+.ideaArea{
+  z-index: 995;
+  margin-top: 415px;
+  /*position: absolute;*/
+  min-height: 2120px;
+  padding-left: 3px;
+  max-width: 237px;
+}
+
+.ideasList {
+    position: relative;
+    border:1px solid #444;
+    width: 400px;
+    height: relative;
+}
+
+.ideaListElement {
+    position: relative;
+    border-radius: 3px;
+    list-style-type: none;
+    border-radius: 5px;
+    width: 225px;
+    min-height: 75px;
+    margin-top: 10px;
+    /*overflow: hidden;*/
+    background-color: #FFFC9B;
+    cursor: -webkit-grab;
+    padding: 5px;
+}
+
+.ideaListElement:active {
+  cursor: -webkit-grabbing;
+  cursor: -moz-grabbing;
+}
+
+::-webkit-scrollbar { 
+    /*display: none; */
+}
+
+/**********************
+Zoomspace elements
+***********************/
+
+.panZoomFrame{
+    z-index: 0;
+    position: fixed;
+    border:1px solid #444;
+    top: -2075px;
+    left: -1780px;
+    min-height: 5000px;
+    min-width: 5000px;
+}
+
+.zoomSpaceElement {
+  position: absolute;
+  list-style-type: none;
+  border-radius: 5px;
+  width: 225px;
+  min-height: 85px;
+  margin-top: 5px;
+  background-color: #FFFC9B;
+  padding: 10px;
+  box-shadow: 5px 5px 5px #888888;
+  cursor: -webkit-grab;
+  /*overflow: hidden;*/
+}
+
+.zoomSpaceElement:active {
+  cursor: -webkit-grabbing;
+  cursor: -moz-grabbing;
+  /*overflow: hidden;*/
+}
+
+/**********************
+Cluster elements
+***********************/
+
+.cluster-hover {
+  /*background-color: #3ABCEE;*/
+  background-color: #0080FF;
+  -moz-box-shadow:     0 0 150px #0CFFFF;
+  -webkit-box-shadow:  0 0 150px #96E7F6;
+  box-shadow:         0 0 150px #66D7FF;  
+}
+
+.cluster {
+    position: absolute;
+    /*border: 2px solid #343737;*/
+    width: 200px;
+    /*height: 180px;*/
+    /*background-color: #def;*/
+    border-radius: 5px;   
+    cursor: -webkit-grab;
+}
+
+.cluster:active {
+  cursor: -webkit-grabbing;
+  cursor: -moz-grabbing;
+}
+
+.cluster-container {
+    /*position: absolute;*/
+    border: 2px solid #343737;
+    width: 200px;
+    height: 180px;
+    background-color: #def;
+    border-radius: 5px;
+   
+}
+
+.clusterLabel {
+  height: 135px;
+  padding: 10px;
+  overflow: auto;
+}
+
+.clusterName {
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.nameCluster {
+    background-color: #F6EBE4;
+    border-style: none;
+    font-style: bold;
+    font-size: 17px;
+    font-family: sans-serif;
+    height: 120px;
+    width: 178px;
+    max-height: 135px;
+    max-width: 192px;
+} 
+
+.clustNumIdeas{
+   /*position: center;*/
+   margin-top: 10px;
+   /*left:40px;*/
+   /*display: inline;*/
+}
+
+.ideaCollapser {
+  cursor: pointer;
+}
+
+.del-cluster {
+  float:right;
+  cursor: pointer;
+}
+
+#downArrow {
+  /*margin-top: 30px;*/
+  margin-left: 3px;
+  float: left;
+}
+
+#delX{
+   color: #FF3604;
+   float:right;
+   /*margin-top: 30px;*/
+   margin-right: 3px;
+}
+
+.cluster-ideas {
+  margin-top:3px;
+  margin-left:-16px;
+}
+
+.clusterListElement {
+    position: relative;
+    list-style-type: none;
+    border:1px solid #444;  
+    border-radius: 5px;
+    width: 200px;
+    height: relative;
+    margin-top: 3px;
+    background-color:#6DE80D;
+    padding: 5px;
+}
+
+/**********************
+Animation styles
+***********************/
+
+@-webkit-keyframes glowone {
+  from { background-color: #0080FF;
+         -moz-box-shadow:     0 0 150px #0CFFFF;
+         -webkit-box-shadow:  0 0 150px #96E7F6;
+          box-shadow:         0 0 150px #66D7FF;  
+    }
+    to {  background-color: #def;}
+}
+
+/*@-webkit-keyframes example {
+    from {background-color: #B54DF2;}
+    to {background-color: #def;}
+}*/
+
+@-webkit-keyframes glowtwo {
+  from { background-color: #0080FF;
+         -moz-box-shadow:     0 0 150px #0CFFFF;
+         -webkit-box-shadow:  0 0 150px #96E7F6;
+          box-shadow:         0 0 150px #66D7FF;  
+    }
+    to {  background-color: #def;}
+}
+
+@-webkit-keyframes zoomGlow {
+  from { background-color: #EEEEE8;
+         -moz-box-shadow:     0 0 40px #EEEEE8;
+         -webkit-box-shadow:  0 0 40px #EEEEE8;
+          box-shadow:         0 0 40px #EEEEE8;
+    }
+    to {  background-color: #FFF182;}
+}
+
+/*@-webkit-keyframes example {
+    from {background-color: #B54DF2;}
+    to {background-color: #def;}
+}*/
+
+/**********************
+Pretty sure these below
+are not being used;
+TODO: clean up;
+***********************/
+
+/*.caliberBox{
+  position: absolute;
+  border:1px solid #444;
+  top: 2475px;
+  left: 2475px;
+  width: 50px;
+  height: 50px; 
+  background-color: #000000;
+}*/
+
+/*not used*/
+#ideaSpace {
+  top: 70%;
+  height:3000px;
+}
+
+.END {
+  position: relative;
+  margin-top: 3%;
+}
+
+.box {
+  position: relative;
+  top:  3000px;
+  left: 3250px;
+  border:1px solid #444;
+  width: 50px;
+  max-height: 50px;
+}
+
+#trashSpace {
+  display: inline-block;
+  position: absolute;
+}
+
+.ScalingViewPane {
+  position: absolute;
+  z-index: 999;
+  border:1px solid #444;
+  width: 48px;
+  height: 32px;
+}
+
+.IdeaCapsule {
+    width: 300px;
+    height: 800px; 
+    background-color: #BF3FC7;
+}
+
+ .tagBox {
+    background-color: white;
+    color: black;
+    font-style: bold;
+    font-size: 18px;
+    height: 100px;
+    width: 192px;
+    max-height: 100px;
+    max-width: 192px;
+    /*padding-left: 10px;*/
+    /*margin:auto;*/
+    /*border:2px solid #444;*/
+}
+
+#leftSide {
+    border:1px solid #444;
+    /*margin: 50px;*/
+}
+
+.caliberBox2{
+  position: absolute;
+  border:1px solid #444;
+  top:10px;
+  left:18px;
+  width: 10px;
+  height: 10px; 
+  background-color: #000000;
+}
+
+.zoomBox {
+    position: relative;
+    border: 1px solid #000000;
+    width: 15%; 
+    height: 80px;
+}
+
+.col-md-8{
+    /*min-height: 3000px;*/
+    /*min-height: 3000px;*/
+}
+
+.dropdown-toggle {
+    
+}
+
+/*.clusterButton {
+    text-align: center;
+    border:1px solid #444;
+    border-radius: 12px;
+    left: 70px;
+    height: 35px;
+    width:  110px;
+    color:  #F2F2E8;
+    font-size: 16px;
+    background-color: #217EFF;
+}*/

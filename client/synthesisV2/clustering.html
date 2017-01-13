@@ -1,0 +1,171 @@
+<template name="MturkClustering">
+  <div class="mturk-cluster-header row">
+    <div class="col-sm-12">
+      <h1 id="mturk-clusterprompt">
+        {{prompt}}
+      </h1>
+    </div>
+  </div>
+  <div class="mturk-cluster-modal row">
+    {{> MturkClusterModal }}
+  </div>
+  <div class="mturk-cluster-interface row">
+    <div id="left-clustering" class="col-sm-3">
+        {{> MturkClusteringIdeaList }}
+	  </div>
+    <div id="middle-clustering" class="col-sm-2">
+      {{> MturkClusterList }}
+	  </div>
+	  <div id="right-clustering" class="col-sm-7">
+      <div  id="clusterarea">
+        {{> MturkClusterarea}}
+      </div>
+    </div>
+  </div>
+</template>
+
+<template name="MturkClusterModal">
+  <div id="cluster-name-modal" class="modal fade">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+          <h4 class="modal-title">Enter a description for this theme</h4>
+        </div>
+        <div class="modal-body">
+          <input type="text" class="name-cluster form-control input-sm sort-disabled" placeholder="Describe this theme"/>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+          <button type="button" class="finish btn btn-primary">Finish</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+</template>
+
+<template name="MturkClusterList">
+  <div class="cluster-list">
+    <h3>Theme List</h3>
+    <!-- <ul class="newcluster ui-sortable" id="node-drag-target"> -->
+      <!-- </ul> -->
+    <div class="newcluster" id="new-cluster"> 
+      Drag idea here to create a new cluster
+    </div>
+    <ul id="clusterlist" class="deck clusterdeck">
+      {{#each clusters}}
+        <li id="ci-{{_id}}" class="cluster-item">
+          {{name}}
+        </li>
+      {{/each}}
+    </ul>
+  </div>
+</template>
+
+<template name="MturkClusterIdeaItem">
+<li id=idea-{{_id}} class="idea-item"> <!--{{#if isNotInCluster}} unsorted-idea {{else}} sorted-idea {{/if}}-->
+    <div class="row">
+      <div class="col-xs-9 filterbox-idea-content">
+          {{content}} 
+        </div>
+        <div class="col-xs-3 vote-box">
+          <!-- <span class='vote-box'>  -->
+        {{#if vote }}
+           <span class="up-vote vote fa fa-thumbs-up"></span> 
+          {{ numVotes }} 
+        {{else}} 
+          <span class="up-vote vote fa fa-thumbs-o-up"></span> 
+          {{ numVotes }} 
+        {{/if}} 
+        <!-- </span> -->
+      </div>
+    </div>
+  <!-- {{ content }} 
+    <span class='vote-box'> 
+      <span class="up-vote vote glyphicon glyphicon-thumbs-up"></span>
+      {{ voteNum }}
+    </span> -->
+</li>
+</template>
+
+<template name="MturkClusteringIdeaList">
+	
+  {{ > HcompFilterBoxHeader }}
+
+  <!--Idea List-->
+  <div id="idealistwrapper">
+    <!-- <h3 id="idealistHeader">Idea List</h3> -->
+    
+    <div class="idea-box-header">
+      <span>
+        {{ numIdeas }} Ideas
+      </span>
+    </div>
+
+    <ul id="idealist" class="ideadeck cluster-idea-list">
+      {{#each ideas}}
+        <!-- {{> MturkClusterIdeaItem}} -->
+        {{> MturkClusteringIdeaListIdeaItem}}
+      {{/each}}
+    </ul>
+  </div>
+</template>
+
+<template name="MturkClusteringIdeaListIdeaItem">
+<li id=idea-{{_id}} class="idea-item"><!-- {{#if isNotInCluster}} unsorted-idea {{else}} sorted-idea {{/if}}"-->
+    <div class="row">
+      <div class="col-xs-9 filterbox-idea-content">
+          {{content}} 
+        </div>
+        <div class="col-xs-3 vote-box">
+          <!-- <span class='vote-box'>  -->
+          {{#if vote }} 
+            <span class="up-vote vote fa fa-thumbs-up"></span> 
+            {{ numVotes }} 
+          {{else}} 
+            <span class="up-vote vote fa fa-thumbs-o-up"></span> 
+            {{ numVotes }} 
+          {{/if}}  
+        <!-- </span> -->
+      </div>
+    </div>
+  <!-- {{ content }} 
+    <span class='vote-box'> 
+      <span class="up-vote vote glyphicon glyphicon-thumbs-up"></span>
+      {{ voteNum }}
+    </span> -->
+</li>
+</template>
+
+<template name="MturkClusterarea">
+  <img src="/trash_can-512.png" class="cluster-trash-can"/>
+	 {{#each clusters}}
+	   	{{> MturkCluster}}
+	 {{/each}}
+  </template>
+
+<template name="MturkCluster">
+  <div class="cluster" id="cluster-{{_id}}"
+    style="top:{{position.top}}px; 
+    left:{{position.left}}px">
+    <!-- <div class="cluster" id=cluster-{{_id}}> -->
+    <div class="form-group form-group-inline clusterlabel">
+      <!-- <i class="fa fa-lg {{#if isCollapsed}}fa-chevron-circle-right{{else}}fa-chevron-circle-down{{/if}} collapser"></i> -->
+      <label class="sort-disabled">
+        <!-- <span class="collapser {{named}}"><a href="">{{this.name}} ({{numclusterideas}})</a></span> -->
+        <span class="{{named}}">{{this.name}}</span>
+      </label>
+    </div>
+    <div class="cluster-data row collapser">
+      <a href=""><span class="badge">{{numclusterideas}}</span> &nbsp;ideas</a>
+    </div>
+    <ul class="clusterul cluster-idea-list {{#if isCollapsed}} hidden {{else}} show {{/if}}" id="cluster-list-{{_id}}">
+      <input type="text" class="namecluster form-control input-sm sort-disabled" 
+        placeholder="Name this cluster"/>
+      {{#each clusterideas}}
+        {{> MturkClusterIdeaItem}}
+      {{/each}}
+    </ul>
+</div>
+</template>
+

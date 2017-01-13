@@ -1,0 +1,98 @@
+
+<template name="themeIdeasItem">
+<li id=idea-{{_id}} class="themeIdea-item {{#if isNotInCluster}} unsorted-idea {{else}} sorted-idea {{/if}}">
+  <div class="filterbox-idea-content">
+    {{content}}
+  </div>
+  <div class="vote-box">
+    <!-- <span class='vote-box'>  -->
+    {{#if hasVotes }}
+      <span class="up-vote vote fa fa-thumbs-up"></span>
+      {{ voteNum }}
+    {{else}}
+      <span class="up-vote vote fa fa-thumbs-o-up"></span>
+    {{ voteNum }}
+  {{/if}}
+      <!-- </span> -->
+  </div>
+</li>
+</template>
+
+<template name="themeIdeasList">
+  <div id="hcomp-themeIdeas-container" class = "col-xs-4">
+    <div id="grid" data-columns> 
+      <div class="panel panel-primary"> 
+        <div class="panel-heading">
+            <h3><strong>{{themeName this}}</strong></h3>
+            <p>Total ideas: {{numThemeIdeas this}} </p>
+          <div class = "topIdeas">
+          Best Ideas
+           {{#each topThemeIdeas this}}
+             {{> themeIdeasItem}}
+          {{/each}}
+          </div>
+        </div>
+        <div id="{{clusterID this}}" class="panel-collapse collapse">
+          <div class="panel-body"> 
+            <ul class="dropdownIdeaslist">
+            {{#if hasMoreThanThreeIdeas this}}
+              {{#each themeIdeas this}}
+                {{> themeIdeasItem}}
+              {{/each}}
+            {{else}}
+              <p>No Other Ideas</p>
+            {{/if}}
+            </ul>
+          </div> 
+        </div>
+        <div class = "show-more-ideas">
+          <a class = "show-more-ideas" data-toggle="collapse" data-parent="#accordion" href= "#{{clusterID this}}"><br>Show more/less </a>
+        </div>
+      </div> 
+    </div>
+  </div>
+</template>
+
+<template name="allIdeasItem">
+<li id=idea-{{_id}} class="allIdea-item {{#if isNotInCluster}} unsorted-idea {{else}} sorted-idea {{/if}}">
+  {{ content }} 
+</li>
+</template>
+
+<template name="allIdeasList">
+  <div id="hcomp-allideas-container">
+    <p> Total ideas: {{numAllIdeas}} </p>
+    {{ > HcompFilterBoxHeader }}
+<!--     <ul class ="hcompIdeaslist">
+      {{#each ideas}}
+        {{> allIdeasItem}}
+      {{/each}}
+    </ul> -->
+  </div>
+</template>
+
+<template name = "HcompResultsPage">
+	<div id = "hcompresultspage">
+    <div class = "col-xs-9 hcomp-align-top">
+  		<div class = "title-container">
+        <h1> Brainstorm Results for "{{promptQuestion}}"</h1>
+        <!-- <h1>{{promptQuestion}}</h1> -->
+      </div>
+      <div id = "themeIdeas-column-container">
+        {{#each Clusters}}
+          <div class = "themeIdea-column">
+            {{> themeIdeasList}}
+          </div>
+        {{/each}}
+      </div>
+    </div>
+    <div id ="idea-column-container" class = "col-xs-3 hcomp-align-top">
+      <div class = "idea-column" id ="allIdeasColumn">
+        <!-- <h3> All Ideas </h3> -->
+        <h1> {{numIdeasOverall}} Total Ideas :(</h1>
+          <!-- {{> allIdeasList }} -->
+          {{> HcompFilterbox}}
+      </div>
+    </div>
+	</div>
+</template>

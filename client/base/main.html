@@ -1,0 +1,66 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+  <link rel="stylesheet" src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+  <title>Protolab IdeaGens</title>
+</head>
+
+<body>
+<script src="salvattore.js"></script>
+<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+</body>
+
+<template name="loading">
+  <div class="full-page">
+	  <h1>Loading</h1>
+  </div>
+</template>
+
+
+<!--Template with notification menu tab/handle-->
+<template name="IdeaGen">
+  <!-- Navbar -->
+  <div id="lpheader">
+        <h1><img src="/images/ideagenslogopic.png" width="125px"></h1>
+        <nav id="nav">
+          <ul>
+            <div class="col-lg-9" id="nav-right" style="width: 100%; margin-top: -5%;">
+              <div class="login" id="login-info">
+                {{#if loggedIn }}
+                  <span class="userName">
+                    <strong>Welcome,</strong> 
+                    {{#if hasAlias }}
+                      {{alias}}
+                    {{ else }}
+                      {{currentUserName}}
+                    {{/if}}
+                  </span>
+                  {{/if}}
+                </div>
+            </div>
+          </ul>
+        </nav>
+    </div>
+
+
+  <div class="container-fluid" id="ideastorm">
+    {{> yield}}
+  </div> <!-- /container -->
+</template>
+
+<template name="TockTimer">
+  <div class="timer">
+    <span id="countdown_clock">00:05:00</span><span> remaining</span>
+  </div>
+</template>
+
+<template name="ExitStudy">
+  <button id="exitStudy" class="exitStudy nav-btn">
+    Exit Early
+  </button>
+</template>

@@ -1,0 +1,527 @@
+[
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "attachments": [], 
+    "edited": false, 
+    "ideaNodeID": "koKPA45E8aKeTGTqW", 
+    "comments": [], 
+    "priority": 3, 
+    "assignments": [
+      {
+        "name": "A10Z7NLSO1VS9P", 
+        "route": "HcompConsentPage", 
+        "mturk": "XI43rf5HwE1QZfSu", 
+        "_id": "BGGb8fkBq24SXyRRy", 
+        "type": "Brainstorm user", 
+        "groupID": "WB7CMNw8ezXphnui5"
+      }
+    ], 
+    "authorID": "BGGb8fkBq24SXyRRy", 
+    "num": 50, 
+    "time": 1430940444414.0, 
+    "_id": "zrGcmKLmhLvqXw3ym", 
+    "type": "open", 
+    "groupID": "WB7CMNw8ezXphnui5", 
+    "desc": "This is an inspiration!"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "attachments": [], 
+    "edited": false, 
+    "ideaNodeID": "FK8gZ4iaAk3m4g6SC", 
+    "comments": [], 
+    "priority": 3, 
+    "assignments": [
+      {
+        "name": "A3QNEE70E6ZZD3", 
+        "route": "HcompConsentPage", 
+        "mturk": "QrNatrhDYFwttRvC", 
+        "_id": "rtKupbjs6TtAKijAM", 
+        "type": "Brainstorm user", 
+        "groupID": "WB7CMNw8ezXphnui5"
+      }
+    ], 
+    "authorID": "rtKupbjs6TtAKijAM", 
+    "num": 50, 
+    "time": 1430940467311.0, 
+    "_id": "3d8awcvok4xTvbBZP", 
+    "type": "open", 
+    "groupID": "WB7CMNw8ezXphnui5", 
+    "desc": "This is an inspiration!"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "attachments": [], 
+    "edited": false, 
+    "ideaNodeID": "oKEv9qssdbhW9PBAD", 
+    "comments": [], 
+    "priority": 3, 
+    "assignments": [
+      {
+        "name": "A3DXL2YZRL2HWD", 
+        "route": "HcompConsentPage", 
+        "mturk": "KGbnd6lUwPmxCNtP", 
+        "_id": "R8xYb9QmihKTaNNdh", 
+        "type": "Brainstorm user", 
+        "groupID": "WB7CMNw8ezXphnui5"
+      }
+    ], 
+    "authorID": "R8xYb9QmihKTaNNdh", 
+    "num": 50, 
+    "time": 1430940564366.0, 
+    "_id": "nmAEKWbaotnCT5KDy", 
+    "type": "open", 
+    "groupID": "WB7CMNw8ezXphnui5", 
+    "desc": "This is an inspiration!"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "attachments": [], 
+    "edited": false, 
+    "ideaNodeID": "pnLLXhBixdsdBdrg7", 
+    "comments": [], 
+    "priority": 3, 
+    "assignments": [
+      {
+        "name": "A1RTEBQDAOHDQ1", 
+        "route": "MturkIdeationTreatment", 
+        "mturk": "ioHmz4gQn2q9mqWy", 
+        "_id": "HSrvkfRoDDgxXF9SJ", 
+        "type": "Brainstorm user", 
+        "groupID": "WB7CMNw8ezXphnui5"
+      }
+    ], 
+    "authorID": "HSrvkfRoDDgxXF9SJ", 
+    "num": 50, 
+    "time": 1430940844448.0, 
+    "_id": "vWABfDmpqNFgMgybe", 
+    "type": "open", 
+    "groupID": "WB7CMNw8ezXphnui5", 
+    "desc": "This is an inspiration!"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "attachments": [], 
+    "edited": false, 
+    "ideaNodeID": "vrEzTZpEk4RfqYM9F", 
+    "comments": [], 
+    "priority": 3, 
+    "assignments": [
+      {
+        "name": "A26C4CO2PBSD61", 
+        "route": "HcompConsentPage", 
+        "mturk": "h0ZY0LP4797VPZu8", 
+        "_id": "7TpnLoEhA37XBsgkX", 
+        "type": "Brainstorm user", 
+        "groupID": "WB7CMNw8ezXphnui5"
+      }
+    ], 
+    "authorID": "7TpnLoEhA37XBsgkX", 
+    "num": 50, 
+    "time": 1430941437138.0, 
+    "_id": "AXw374RssgbTaCzmq", 
+    "type": "open", 
+    "groupID": "WB7CMNw8ezXphnui5", 
+    "desc": "This is an inspiration!"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "attachments": [], 
+    "edited": false, 
+    "ideaNodeID": "GS9zDhqKanDWEBCt5", 
+    "comments": [], 
+    "priority": 3, 
+    "assignments": [
+      {
+        "name": "ASXACVODSYD7G", 
+        "route": "HcompConsentPage", 
+        "mturk": "Ner7pXBD0ddWgWm1", 
+        "_id": "SburQbodyKZGGJWE4", 
+        "type": "Brainstorm user", 
+        "groupID": "WB7CMNw8ezXphnui5"
+      }
+    ], 
+    "authorID": "SburQbodyKZGGJWE4", 
+    "num": 50, 
+    "time": 1430941636664.0, 
+    "_id": "22rHqJxuzyzEjopJL", 
+    "type": "open", 
+    "groupID": "WB7CMNw8ezXphnui5", 
+    "desc": "This is an inspiration!"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "attachments": [], 
+    "edited": false, 
+    "ideaNodeID": "xTbmHJoSRvEtjrNSo", 
+    "comments": [], 
+    "priority": 3, 
+    "assignments": [
+      {
+        "name": "A3FAH5S2RGZ5AK", 
+        "route": "HcompConsentPage", 
+        "mturk": "7ax9I2tlHTVbpwFG", 
+        "_id": "4pnzuqoTGTSZ2GJXC", 
+        "type": "Brainstorm user", 
+        "groupID": "WB7CMNw8ezXphnui5"
+      }
+    ], 
+    "authorID": "4pnzuqoTGTSZ2GJXC", 
+    "num": 50, 
+    "time": 1430941686417.0, 
+    "_id": "L4YbQXRouhYrSkfuC", 
+    "type": "open", 
+    "groupID": "WB7CMNw8ezXphnui5", 
+    "desc": "This is an inspiration!"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "attachments": [], 
+    "edited": false, 
+    "ideaNodeID": "r6GwZDMYhkMoLFwxR", 
+    "comments": [], 
+    "priority": 3, 
+    "assignments": [
+      {
+        "name": "A2RJHJP19XJZ0E", 
+        "route": "HcompConsentPage", 
+        "mturk": "sWzems61ORK55PoT", 
+        "_id": "wsqF5oR2C87iauyrS", 
+        "type": "Brainstorm user", 
+        "groupID": "WB7CMNw8ezXphnui5"
+      }
+    ], 
+    "authorID": "wsqF5oR2C87iauyrS", 
+    "num": 50, 
+    "time": 1430939632766.0, 
+    "_id": "xf7Y3L8qN8nkEbnMX", 
+    "type": "open", 
+    "groupID": "WB7CMNw8ezXphnui5", 
+    "desc": "This is an inspiration!"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "attachments": [], 
+    "edited": false, 
+    "ideaNodeID": "AALNBZXoz84Zf4xcA", 
+    "comments": [], 
+    "priority": 3, 
+    "assignments": [
+      {
+        "name": "AQY4X23DGYXAP", 
+        "route": "HcompConsentPage", 
+        "mturk": "W6u8BcReqKq5vjgf", 
+        "_id": "5ckX3mHBpTMR3JkXq", 
+        "type": "Brainstorm user", 
+        "groupID": "WB7CMNw8ezXphnui5"
+      }
+    ], 
+    "authorID": "5ckX3mHBpTMR3JkXq", 
+    "num": 50, 
+    "time": 1430939708704.0, 
+    "_id": "QM9NnXj8BPfPigiR9", 
+    "type": "open", 
+    "groupID": "WB7CMNw8ezXphnui5", 
+    "desc": "This is an inspiration!"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "attachments": [], 
+    "edited": false, 
+    "ideaNodeID": "FNQe8hF8DJfNKZyMD", 
+    "comments": [], 
+    "priority": 3, 
+    "assignments": [
+      {
+        "name": "A27BUT19WQ6P1O", 
+        "route": "HcompConsentPage", 
+        "mturk": "sWJVHk9W9BNZwWNp", 
+        "_id": "qhv5eHnGgA48qkaCn", 
+        "type": "Brainstorm user", 
+        "groupID": "WB7CMNw8ezXphnui5"
+      }
+    ], 
+    "authorID": "qhv5eHnGgA48qkaCn", 
+    "num": 50, 
+    "time": 1430939751390.0, 
+    "_id": "zQzZSo8HKRfd4EdFy", 
+    "type": "open", 
+    "groupID": "WB7CMNw8ezXphnui5", 
+    "desc": "This is an inspiration!"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "attachments": [], 
+    "edited": false, 
+    "ideaNodeID": "bitALqJQ2HJSY5z7u", 
+    "comments": [], 
+    "priority": 3, 
+    "assignments": [
+      {
+        "name": "AM97GWDYEFN97", 
+        "route": "HcompConsentPage", 
+        "mturk": "tlVJ1DZeUI50apSq", 
+        "_id": "ukuE6oRgtuZw2aGGZ", 
+        "type": "Brainstorm user", 
+        "groupID": "WB7CMNw8ezXphnui5"
+      }
+    ], 
+    "authorID": "ukuE6oRgtuZw2aGGZ", 
+    "num": 50, 
+    "time": 1430939781699.0, 
+    "_id": "iiFrP8RAaKJqfmL5Z", 
+    "type": "open", 
+    "groupID": "WB7CMNw8ezXphnui5", 
+    "desc": "This is an inspiration!"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "attachments": [], 
+    "edited": false, 
+    "ideaNodeID": "8JsGgjnqNieFALzjL", 
+    "comments": [], 
+    "priority": 3, 
+    "assignments": [
+      {
+        "name": "A39K9RKR1YHQOR", 
+        "route": "HcompConsentPage", 
+        "mturk": "bi5Nj3bzfaWN2jWx", 
+        "_id": "8tppTuQA5xRMgpgqc", 
+        "type": "Brainstorm user", 
+        "groupID": "WB7CMNw8ezXphnui5"
+      }
+    ], 
+    "authorID": "8tppTuQA5xRMgpgqc", 
+    "num": 50, 
+    "time": 1430939782547.0, 
+    "_id": "gcsZaEexeK7JGiMWS", 
+    "type": "open", 
+    "groupID": "WB7CMNw8ezXphnui5", 
+    "desc": "This is an inspiration!"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "attachments": [], 
+    "edited": false, 
+    "ideaNodeID": "TxowbfjeQyi5BA4mZ", 
+    "comments": [], 
+    "priority": 3, 
+    "assignments": [
+      {
+        "name": "A2A4EX36X0JB4R", 
+        "route": "HcompConsentPage", 
+        "mturk": "4F9H2IvbiWctBBiK", 
+        "_id": "BKQK7ipdyiQHACHB7", 
+        "type": "Brainstorm user", 
+        "groupID": "WB7CMNw8ezXphnui5"
+      }
+    ], 
+    "authorID": "BKQK7ipdyiQHACHB7", 
+    "num": 50, 
+    "time": 1430939877805.0, 
+    "_id": "o3sLYPNgEmTWRZhvf", 
+    "type": "open", 
+    "groupID": "WB7CMNw8ezXphnui5", 
+    "desc": "This is an inspiration!"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "attachments": [], 
+    "edited": false, 
+    "ideaNodeID": "PjwKLKNKaq5jokweW", 
+    "comments": [], 
+    "priority": 3, 
+    "assignments": [
+      {
+        "name": "A1B4WL7N3ACF2T", 
+        "route": "HcompConsentPage", 
+        "mturk": "Le0xWEbOvd6kXZPj", 
+        "_id": "iBSthRRttwcw8tBvK", 
+        "type": "Brainstorm user", 
+        "groupID": "WB7CMNw8ezXphnui5"
+      }
+    ], 
+    "authorID": "iBSthRRttwcw8tBvK", 
+    "num": 50, 
+    "time": 1430939885324.0, 
+    "_id": "Q7i64XiQ27cqFTTk4", 
+    "type": "open", 
+    "groupID": "WB7CMNw8ezXphnui5", 
+    "desc": "This is an inspiration!"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "attachments": [], 
+    "edited": false, 
+    "ideaNodeID": "67n958wpcYyHjCQc4", 
+    "comments": [], 
+    "priority": 3, 
+    "assignments": [
+      {
+        "name": "A1D01TUSE0H5TW", 
+        "route": "HcompConsentPage", 
+        "mturk": "fXCtjISOnKV1JO6e", 
+        "_id": "C6afYRL2EKDjbov6M", 
+        "type": "Brainstorm user", 
+        "groupID": "WB7CMNw8ezXphnui5"
+      }
+    ], 
+    "authorID": "C6afYRL2EKDjbov6M", 
+    "num": 50, 
+    "time": 1430940036897.0, 
+    "_id": "vT4K7FNNoZbNzEAQ6", 
+    "type": "open", 
+    "groupID": "WB7CMNw8ezXphnui5", 
+    "desc": "This is an inspiration!"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "attachments": [], 
+    "edited": false, 
+    "ideaNodeID": "K6xrWJvphymQviMmE", 
+    "comments": [], 
+    "priority": 3, 
+    "assignments": [
+      {
+        "name": "A1QHJGHKDIG3T5", 
+        "route": "HcompConsentPage", 
+        "mturk": "igjEQOshigZ8UPY4", 
+        "_id": "6AnbyrehbPfWCc7Pt", 
+        "type": "Brainstorm user", 
+        "groupID": "WB7CMNw8ezXphnui5"
+      }
+    ], 
+    "authorID": "6AnbyrehbPfWCc7Pt", 
+    "num": 50, 
+    "time": 1430940062415.0, 
+    "_id": "khx83xTTnYE3ydL7E", 
+    "type": "open", 
+    "groupID": "WB7CMNw8ezXphnui5", 
+    "desc": "This is an inspiration!"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "attachments": [], 
+    "edited": false, 
+    "ideaNodeID": "My3JLi5phKCBHStZx", 
+    "comments": [], 
+    "priority": 3, 
+    "assignments": [
+      {
+        "name": "A1EY5YPJS97IE4", 
+        "route": "HcompConsentPage", 
+        "mturk": "fmLQzO8auqQdpV3q", 
+        "_id": "7EYZGHKjCvJErQc5z", 
+        "type": "Brainstorm user", 
+        "groupID": "WB7CMNw8ezXphnui5"
+      }
+    ], 
+    "authorID": "7EYZGHKjCvJErQc5z", 
+    "num": 50, 
+    "time": 1430940122482.0, 
+    "_id": "CtHkPH8tiZkwdEfvs", 
+    "type": "open", 
+    "groupID": "WB7CMNw8ezXphnui5", 
+    "desc": "This is an inspiration!"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "attachments": [], 
+    "edited": false, 
+    "ideaNodeID": "h652Wv2mJPpMXu7hr", 
+    "comments": [], 
+    "priority": 3, 
+    "assignments": [
+      {
+        "name": "A26KS0O1QWD9A6", 
+        "route": "HcompConsentPage", 
+        "mturk": "5N7jXGC20eomsU55", 
+        "_id": "yv9kpgvuySXmig2AK", 
+        "type": "Brainstorm user", 
+        "groupID": "WB7CMNw8ezXphnui5"
+      }
+    ], 
+    "authorID": "yv9kpgvuySXmig2AK", 
+    "num": 50, 
+    "time": 1430940270781.0, 
+    "_id": "ueQsJtqMWZRQX3SxN", 
+    "type": "open", 
+    "groupID": "WB7CMNw8ezXphnui5", 
+    "desc": "This is an inspiration!"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "attachments": [], 
+    "edited": false, 
+    "ideaNodeID": "KLRhpds2D537nxzPc", 
+    "comments": [], 
+    "priority": 3, 
+    "assignments": [
+      {
+        "name": "A1KJMZABBJG6HV", 
+        "route": "HcompConsentPage", 
+        "mturk": "uqKB6c0k9r1IGNFD", 
+        "_id": "qtv4TmkrWpXrbupQm", 
+        "type": "Brainstorm user", 
+        "groupID": "WB7CMNw8ezXphnui5"
+      }
+    ], 
+    "authorID": "qtv4TmkrWpXrbupQm", 
+    "num": 50, 
+    "time": 1430940285163.0, 
+    "_id": "5hCF8Y769XGLRTCJ5", 
+    "type": "open", 
+    "groupID": "WB7CMNw8ezXphnui5", 
+    "desc": "This is an inspiration!"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "attachments": [], 
+    "edited": false, 
+    "ideaNodeID": "HmkzWZNN8R2H3isBF", 
+    "comments": [], 
+    "priority": 3, 
+    "assignments": [
+      {
+        "name": "AVE8IPM6VXRLL", 
+        "route": "HcompConsentPage", 
+        "mturk": "3dM1OGhsHjgntu3I", 
+        "_id": "NH4r4HpzDdg7YGysH", 
+        "type": "Brainstorm user", 
+        "groupID": "WB7CMNw8ezXphnui5"
+      }
+    ], 
+    "authorID": "NH4r4HpzDdg7YGysH", 
+    "num": 50, 
+    "time": 1430940336209.0, 
+    "_id": "jWXdMoBuMx9hkA8Yc", 
+    "type": "open", 
+    "groupID": "WB7CMNw8ezXphnui5", 
+    "desc": "This is an inspiration!"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "attachments": [], 
+    "edited": false, 
+    "ideaNodeID": "zDpTCZQJwD5ySZbtH", 
+    "comments": [], 
+    "priority": 3, 
+    "assignments": [
+      {
+        "name": "A2JEJCOMJOOM2E", 
+        "route": "HcompConsentPage", 
+        "mturk": "gdun1zn43Q5IrRhx", 
+        "_id": "Pf8ZkNbFiCbmzL6Fw", 
+        "type": "Brainstorm user", 
+        "groupID": "WB7CMNw8ezXphnui5"
+      }
+    ], 
+    "authorID": "Pf8ZkNbFiCbmzL6Fw", 
+    "num": 50, 
+    "time": 1430940517532.0, 
+    "_id": "avm2fkarGJStTJv2K", 
+    "type": "open", 
+    "groupID": "WB7CMNw8ezXphnui5", 
+    "desc": "This is an inspiration!"
+  }
+]

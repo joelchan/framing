@@ -1,0 +1,2025 @@
+[
+  {
+    "_id": "hShCwxEPdKtTxFZeW", 
+    "participant": {
+      "userName": "A3EJ44J2ZNRMDA", 
+      "isReady": true, 
+      "fluencyStarted": true, 
+      "exitedEarly": false, 
+      "conditionID": "BRuw9aEPxYyCGioQG", 
+      "userID": "nFji6uk7W3RfyaewE", 
+      "experimentID": "imZ8gtTEgLMjPusST", 
+      "hasStarted": true, 
+      "surveyStarted": true, 
+      "tutorialStarted": true, 
+      "hasFinished": false, 
+      "_id": "Ck7hPTScH3Dz2MRW5", 
+      "groupID": "WB7CMNw8ezXphnui5", 
+      "fluencyFinished": true
+    }, 
+    "responses": [
+      {
+        "answer": "male", 
+        "question": "Gender"
+      }, 
+      {
+        "answer": "45", 
+        "question": "Age"
+      }, 
+      {
+        "answer": "true", 
+        "question": "Is English your first language"
+      }, 
+      {
+        "answer": "false", 
+        "question": "Do you speak a 2nd language"
+      }, 
+      {
+        "answer": "US", 
+        "question": "What country do you call home"
+      }, 
+      {
+        "answer": "3", 
+        "question": "How Frequently do you brainstorm"
+      }, 
+      {
+        "answer": "no", 
+        "question": "Is there anything about the activity that you found particularly challenging"
+      }, 
+      {
+        "answer": "its was easy to use", 
+        "question": "Is there anything about the brainstorming interface that you liked"
+      }, 
+      {
+        "answer": "no", 
+        "question": "Is there anything about the brainstorming interface that you didn't like"
+      }
+    ]
+  }, 
+  {
+    "_id": "vPr2bx4qAKemq6ify", 
+    "participant": {
+      "userName": "AQY4X23DGYXAP", 
+      "isReady": true, 
+      "fluencyStarted": true, 
+      "exitedEarly": false, 
+      "conditionID": "ARv4P3TsBqiFMeKJh", 
+      "userID": "5ckX3mHBpTMR3JkXq", 
+      "experimentID": "imZ8gtTEgLMjPusST", 
+      "hasStarted": true, 
+      "surveyStarted": true, 
+      "tutorialStarted": true, 
+      "hasFinished": false, 
+      "_id": "xWF66oZbpHQW2vAKm", 
+      "groupID": "WB7CMNw8ezXphnui5", 
+      "fluencyFinished": true
+    }, 
+    "responses": [
+      {
+        "answer": "female", 
+        "question": "Gender"
+      }, 
+      {
+        "answer": "46", 
+        "question": "Age"
+      }, 
+      {
+        "answer": "true", 
+        "question": "Is English your first language"
+      }, 
+      {
+        "answer": "true", 
+        "question": "Do you speak a 2nd language"
+      }, 
+      {
+        "answer": "German", 
+        "question": "What is your 2nd language"
+      }, 
+      {
+        "answer": "US", 
+        "question": "What country do you call home"
+      }, 
+      {
+        "answer": "2", 
+        "question": "How Frequently do you brainstorm"
+      }, 
+      {
+        "answer": "true", 
+        "question": "Did you find any of the suggested inspirations helpful"
+      }, 
+      {
+        "answer": "Just a trigger to think of something different", 
+        "question": "Briefly explain why inspiration (not) helpful"
+      }, 
+      {
+        "answer": "No", 
+        "question": "Is there anything about the activity that you found particularly challenging"
+      }, 
+      {
+        "answer": "It was easy to use and visually helpful", 
+        "question": "Is there anything about the brainstorming interface that you liked"
+      }, 
+      {
+        "answer": "No", 
+        "question": "Is there anything about the brainstorming interface that you didn't like"
+      }
+    ]
+  }, 
+  {
+    "_id": "qHWBKpbnAdGYziQg6", 
+    "participant": {
+      "userName": "A3DOBEBPXPC676", 
+      "isReady": true, 
+      "fluencyStarted": true, 
+      "exitedEarly": false, 
+      "conditionID": "BRuw9aEPxYyCGioQG", 
+      "userID": "k5WJ6npHaBfqp8Y63", 
+      "experimentID": "imZ8gtTEgLMjPusST", 
+      "hasStarted": true, 
+      "surveyStarted": true, 
+      "tutorialStarted": true, 
+      "hasFinished": false, 
+      "_id": "pzhp8stfvSTDhjgzm", 
+      "groupID": "WB7CMNw8ezXphnui5", 
+      "fluencyFinished": true
+    }, 
+    "responses": [
+      {
+        "answer": "female", 
+        "question": "Gender"
+      }, 
+      {
+        "answer": "30", 
+        "question": "Age"
+      }, 
+      {
+        "answer": "true", 
+        "question": "Is English your first language"
+      }, 
+      {
+        "answer": "false", 
+        "question": "Do you speak a 2nd language"
+      }, 
+      {
+        "answer": "United States", 
+        "question": "What country do you call home"
+      }, 
+      {
+        "answer": "3", 
+        "question": "How Frequently do you brainstorm"
+      }, 
+      {
+        "answer": "Trying to come up with unique ideas after the first burst of creativity is always a challenge.", 
+        "question": "Is there anything about the activity that you found particularly challenging"
+      }, 
+      {
+        "answer": "I like that you simply had to press enter to clear the text box and start fresh with a new idea.", 
+        "question": "Is there anything about the brainstorming interface that you liked"
+      }, 
+      {
+        "answer": "Not at all. It wasn't intrusive or distracting and served it's purpose well.", 
+        "question": "Is there anything about the brainstorming interface that you didn't like"
+      }
+    ]
+  }, 
+  {
+    "_id": "ECjdeKmBidkRRTXri", 
+    "participant": {
+      "userName": "AV3CA0IYNRCCJ", 
+      "isReady": true, 
+      "fluencyStarted": true, 
+      "exitedEarly": false, 
+      "conditionID": "BRuw9aEPxYyCGioQG", 
+      "userID": "REufcXnyBqqbudnju", 
+      "experimentID": "imZ8gtTEgLMjPusST", 
+      "hasStarted": true, 
+      "surveyStarted": true, 
+      "tutorialStarted": true, 
+      "hasFinished": false, 
+      "_id": "fk2uNdKvjrygtZJax", 
+      "groupID": "WB7CMNw8ezXphnui5", 
+      "fluencyFinished": true
+    }, 
+    "responses": [
+      {
+        "answer": "female", 
+        "question": "Gender"
+      }, 
+      {
+        "answer": "58", 
+        "question": "Age"
+      }, 
+      {
+        "answer": "true", 
+        "question": "Is English your first language"
+      }, 
+      {
+        "answer": "false", 
+        "question": "Do you speak a 2nd language"
+      }, 
+      {
+        "answer": "United States", 
+        "question": "What country do you call home"
+      }, 
+      {
+        "answer": "3", 
+        "question": "How Frequently do you brainstorm"
+      }, 
+      {
+        "answer": "Yes, coming up with ideas that are totally different.", 
+        "question": "Is there anything about the activity that you found particularly challenging"
+      }, 
+      {
+        "answer": "The interface is very simple and easy to use.", 
+        "question": "Is there anything about the brainstorming interface that you liked"
+      }, 
+      {
+        "answer": "No.", 
+        "question": "Is there anything about the brainstorming interface that you didn't like"
+      }
+    ]
+  }, 
+  {
+    "_id": "e6YdjuZjkeCJpWKJX", 
+    "participant": {
+      "userName": "A2WX9BYW5TI8OA", 
+      "isReady": true, 
+      "fluencyStarted": true, 
+      "exitedEarly": false, 
+      "conditionID": "BRuw9aEPxYyCGioQG", 
+      "userID": "NhQzQgrPj9anumMGX", 
+      "experimentID": "imZ8gtTEgLMjPusST", 
+      "hasStarted": true, 
+      "surveyStarted": true, 
+      "tutorialStarted": true, 
+      "hasFinished": false, 
+      "_id": "FWioPNt4zPjDFWEvs", 
+      "groupID": "WB7CMNw8ezXphnui5", 
+      "fluencyFinished": true
+    }, 
+    "responses": [
+      {
+        "answer": "female", 
+        "question": "Gender"
+      }, 
+      {
+        "answer": "49", 
+        "question": "Age"
+      }, 
+      {
+        "answer": "true", 
+        "question": "Is English your first language"
+      }, 
+      {
+        "answer": "false", 
+        "question": "Do you speak a 2nd language"
+      }, 
+      {
+        "answer": "United States of America", 
+        "question": "What country do you call home"
+      }, 
+      {
+        "answer": "3", 
+        "question": "How Frequently do you brainstorm"
+      }, 
+      {
+        "answer": "no", 
+        "question": "Is there anything about the activity that you found particularly challenging"
+      }, 
+      {
+        "answer": "It was easy to navigate and use.", 
+        "question": "Is there anything about the brainstorming interface that you liked"
+      }, 
+      {
+        "answer": "no", 
+        "question": "Is there anything about the brainstorming interface that you didn't like"
+      }
+    ]
+  }, 
+  {
+    "_id": "djqkith8ZB4YiNavv", 
+    "participant": {
+      "userName": "A1JE3G5ZXGCGTD", 
+      "isReady": true, 
+      "fluencyStarted": true, 
+      "exitedEarly": false, 
+      "conditionID": "BRuw9aEPxYyCGioQG", 
+      "userID": "oe5pbsF8ecyb64z5i", 
+      "experimentID": "imZ8gtTEgLMjPusST", 
+      "hasStarted": true, 
+      "surveyStarted": true, 
+      "tutorialStarted": true, 
+      "hasFinished": false, 
+      "_id": "6XDGxW346aFkXSeJy", 
+      "groupID": "WB7CMNw8ezXphnui5", 
+      "fluencyFinished": true
+    }, 
+    "responses": [
+      {
+        "answer": "female", 
+        "question": "Gender"
+      }, 
+      {
+        "answer": "56", 
+        "question": "Age"
+      }, 
+      {
+        "answer": "true", 
+        "question": "Is English your first language"
+      }, 
+      {
+        "answer": "false", 
+        "question": "Do you speak a 2nd language"
+      }, 
+      {
+        "answer": "USA", 
+        "question": "What country do you call home"
+      }, 
+      {
+        "answer": "3", 
+        "question": "How Frequently do you brainstorm"
+      }, 
+      {
+        "answer": "waiting out to see if it would even activate", 
+        "question": "Is there anything about the activity that you found particularly challenging"
+      }, 
+      {
+        "answer": "was fun ", 
+        "question": "Is there anything about the brainstorming interface that you liked"
+      }, 
+      {
+        "answer": "way too much time for the pay unless there is a good bonus", 
+        "question": "Is there anything about the brainstorming interface that you didn't like"
+      }
+    ]
+  }, 
+  {
+    "_id": "3XuuP9yipDMNKBD8r", 
+    "participant": {
+      "userName": "A2S4YDJ9UGAXFQ", 
+      "isReady": true, 
+      "fluencyStarted": true, 
+      "exitedEarly": false, 
+      "conditionID": "BRuw9aEPxYyCGioQG", 
+      "userID": "JEDBcEhCgfWiDNy5f", 
+      "experimentID": "imZ8gtTEgLMjPusST", 
+      "hasStarted": true, 
+      "surveyStarted": true, 
+      "tutorialStarted": true, 
+      "hasFinished": false, 
+      "_id": "C8tyFdGPvqpAEJZJB", 
+      "groupID": "WB7CMNw8ezXphnui5", 
+      "fluencyFinished": true
+    }, 
+    "responses": [
+      {
+        "answer": "male", 
+        "question": "Gender"
+      }, 
+      {
+        "answer": "24", 
+        "question": "Age"
+      }, 
+      {
+        "answer": "true", 
+        "question": "Is English your first language"
+      }, 
+      {
+        "answer": "false", 
+        "question": "Do you speak a 2nd language"
+      }, 
+      {
+        "answer": "United States", 
+        "question": "What country do you call home"
+      }, 
+      {
+        "answer": "2", 
+        "question": "How Frequently do you brainstorm"
+      }, 
+      {
+        "answer": "Somewhat, I had trouble thinking of ideas a few times. ", 
+        "question": "Is there anything about the activity that you found particularly challenging"
+      }, 
+      {
+        "answer": "It was very simple and easy to understand. ", 
+        "question": "Is there anything about the brainstorming interface that you liked"
+      }, 
+      {
+        "answer": "No it worked very well. ", 
+        "question": "Is there anything about the brainstorming interface that you didn't like"
+      }
+    ]
+  }, 
+  {
+    "_id": "RZGvzbtpuh93Pc5gw", 
+    "participant": {
+      "userName": "A39K9RKR1YHQOR", 
+      "isReady": true, 
+      "fluencyStarted": true, 
+      "exitedEarly": false, 
+      "conditionID": "ARv4P3TsBqiFMeKJh", 
+      "userID": "8tppTuQA5xRMgpgqc", 
+      "experimentID": "imZ8gtTEgLMjPusST", 
+      "hasStarted": true, 
+      "surveyStarted": true, 
+      "tutorialStarted": true, 
+      "hasFinished": false, 
+      "_id": "efe6gwQTxJpgPtFTJ", 
+      "groupID": "WB7CMNw8ezXphnui5", 
+      "fluencyFinished": true
+    }, 
+    "responses": [
+      {
+        "answer": "male", 
+        "question": "Gender"
+      }, 
+      {
+        "answer": "28", 
+        "question": "Age"
+      }, 
+      {
+        "answer": "true", 
+        "question": "Is English your first language"
+      }, 
+      {
+        "question": "Do you speak a 2nd language"
+      }, 
+      {
+        "answer": "USA", 
+        "question": "What country do you call home"
+      }, 
+      {
+        "answer": "2", 
+        "question": "How Frequently do you brainstorm"
+      }, 
+      {
+        "answer": "false", 
+        "question": "Did you find any of the suggested inspirations helpful"
+      }, 
+      {
+        "answer": "They weren't too specific in helping me generate ideas. ", 
+        "question": "Briefly explain why inspiration (not) helpful"
+      }, 
+      {
+        "answer": "Nothing was particularly challenging.", 
+        "question": "Is there anything about the activity that you found particularly challenging"
+      }, 
+      {
+        "answer": "I liked the interface in general, it was very easy to use. ", 
+        "question": "Is there anything about the brainstorming interface that you liked"
+      }, 
+      {
+        "answer": "Nothing was too a detriment concerning the brainstorming interface. ", 
+        "question": "Is there anything about the brainstorming interface that you didn't like"
+      }
+    ]
+  }, 
+  {
+    "_id": "ovetZPaDQ9GFWR4bx", 
+    "participant": {
+      "userName": "A37Q5V7LD4212Y", 
+      "isReady": true, 
+      "fluencyStarted": true, 
+      "exitedEarly": false, 
+      "conditionID": "BRuw9aEPxYyCGioQG", 
+      "userID": "jHxLzpEgCtEqoHHa5", 
+      "experimentID": "imZ8gtTEgLMjPusST", 
+      "hasStarted": true, 
+      "surveyStarted": true, 
+      "tutorialStarted": true, 
+      "hasFinished": false, 
+      "_id": "iJJjTEPdinu2CmWPq", 
+      "groupID": "WB7CMNw8ezXphnui5", 
+      "fluencyFinished": true
+    }, 
+    "responses": [
+      {
+        "answer": "male", 
+        "question": "Gender"
+      }, 
+      {
+        "answer": "28", 
+        "question": "Age"
+      }, 
+      {
+        "answer": "true", 
+        "question": "Is English your first language"
+      }, 
+      {
+        "answer": "true", 
+        "question": "Do you speak a 2nd language"
+      }, 
+      {
+        "answer": "", 
+        "question": "What is your 2nd language"
+      }, 
+      {
+        "answer": "United States", 
+        "question": "What country do you call home"
+      }, 
+      {
+        "answer": "3", 
+        "question": "How Frequently do you brainstorm"
+      }, 
+      {
+        "answer": "I've been in that situation a few times, I'm actually surprise how challenging it was to find ways of remembering a name.", 
+        "question": "Is there anything about the activity that you found particularly challenging"
+      }, 
+      {
+        "answer": "It was fine.", 
+        "question": "Is there anything about the brainstorming interface that you liked"
+      }, 
+      {
+        "answer": "No", 
+        "question": "Is there anything about the brainstorming interface that you didn't like"
+      }
+    ]
+  }, 
+  {
+    "_id": "5NjmPAgvWyhsM7LmD", 
+    "participant": {
+      "userName": "AM97GWDYEFN97", 
+      "isReady": true, 
+      "fluencyStarted": true, 
+      "exitedEarly": false, 
+      "conditionID": "ARv4P3TsBqiFMeKJh", 
+      "userID": "ukuE6oRgtuZw2aGGZ", 
+      "experimentID": "imZ8gtTEgLMjPusST", 
+      "hasStarted": true, 
+      "surveyStarted": true, 
+      "tutorialStarted": true, 
+      "hasFinished": false, 
+      "_id": "jPkoxEhHQYMWLuWjq", 
+      "groupID": "WB7CMNw8ezXphnui5", 
+      "fluencyFinished": true
+    }, 
+    "responses": [
+      {
+        "answer": "female", 
+        "question": "Gender"
+      }, 
+      {
+        "answer": "18", 
+        "question": "Age"
+      }, 
+      {
+        "answer": "true", 
+        "question": "Is English your first language"
+      }, 
+      {
+        "answer": "false", 
+        "question": "Do you speak a 2nd language"
+      }, 
+      {
+        "answer": "US", 
+        "question": "What country do you call home"
+      }, 
+      {
+        "answer": "5", 
+        "question": "How Frequently do you brainstorm"
+      }, 
+      {
+        "answer": "true", 
+        "question": "Did you find any of the suggested inspirations helpful"
+      }, 
+      {
+        "answer": "They were very helpful I would have only had a couple without them", 
+        "question": "Briefly explain why inspiration (not) helpful"
+      }, 
+      {
+        "answer": "no", 
+        "question": "Is there anything about the activity that you found particularly challenging"
+      }, 
+      {
+        "answer": "yes I thought it was enjoyable.", 
+        "question": "Is there anything about the brainstorming interface that you liked"
+      }, 
+      {
+        "answer": "no", 
+        "question": "Is there anything about the brainstorming interface that you didn't like"
+      }
+    ]
+  }, 
+  {
+    "_id": "gtX5MzL5sBhoxsgsv", 
+    "participant": {
+      "userName": "A1ONILGBGJ8Y5K", 
+      "isReady": true, 
+      "fluencyStarted": true, 
+      "exitedEarly": false, 
+      "conditionID": "BRuw9aEPxYyCGioQG", 
+      "userID": "b5iiW5xBdW3k7SbAY", 
+      "experimentID": "imZ8gtTEgLMjPusST", 
+      "hasStarted": true, 
+      "surveyStarted": true, 
+      "tutorialStarted": true, 
+      "hasFinished": false, 
+      "_id": "xqr5euohdtebsNL4X", 
+      "groupID": "WB7CMNw8ezXphnui5", 
+      "fluencyFinished": true
+    }, 
+    "responses": [
+      {
+        "answer": "male", 
+        "question": "Gender"
+      }, 
+      {
+        "answer": "51", 
+        "question": "Age"
+      }, 
+      {
+        "answer": "true", 
+        "question": "Is English your first language"
+      }, 
+      {
+        "answer": "false", 
+        "question": "Do you speak a 2nd language"
+      }, 
+      {
+        "answer": "US", 
+        "question": "What country do you call home"
+      }, 
+      {
+        "answer": "2", 
+        "question": "How Frequently do you brainstorm"
+      }, 
+      {
+        "answer": "Not really, no", 
+        "question": "Is there anything about the activity that you found particularly challenging"
+      }, 
+      {
+        "answer": "It worked well", 
+        "question": "Is there anything about the brainstorming interface that you liked"
+      }, 
+      {
+        "answer": "I would've liked to be able to edit previous entries for spelling", 
+        "question": "Is there anything about the brainstorming interface that you didn't like"
+      }
+    ]
+  }, 
+  {
+    "_id": "qqcsKNNjCiByZarRj", 
+    "participant": {
+      "userName": "A2A4EX36X0JB4R", 
+      "isReady": true, 
+      "fluencyStarted": true, 
+      "exitedEarly": false, 
+      "conditionID": "ARv4P3TsBqiFMeKJh", 
+      "userID": "BKQK7ipdyiQHACHB7", 
+      "experimentID": "imZ8gtTEgLMjPusST", 
+      "hasStarted": true, 
+      "surveyStarted": true, 
+      "tutorialStarted": true, 
+      "hasFinished": false, 
+      "_id": "4N4L3FPKdwQ6shdvP", 
+      "groupID": "WB7CMNw8ezXphnui5", 
+      "fluencyFinished": true
+    }, 
+    "responses": [
+      {
+        "answer": "female", 
+        "question": "Gender"
+      }, 
+      {
+        "answer": "44", 
+        "question": "Age"
+      }, 
+      {
+        "answer": "true", 
+        "question": "Is English your first language"
+      }, 
+      {
+        "answer": "false", 
+        "question": "Do you speak a 2nd language"
+      }, 
+      {
+        "answer": "USA", 
+        "question": "What country do you call home"
+      }, 
+      {
+        "answer": "2", 
+        "question": "How Frequently do you brainstorm"
+      }, 
+      {
+        "answer": "true", 
+        "question": "Did you find any of the suggested inspirations helpful"
+      }, 
+      {
+        "answer": "Some helped, others were on subjects I had already thought of", 
+        "question": "Briefly explain why inspiration (not) helpful"
+      }, 
+      {
+        "answer": "coming up with more ideas", 
+        "question": "Is there anything about the activity that you found particularly challenging"
+      }, 
+      {
+        "answer": "It was set up well ", 
+        "question": "Is there anything about the brainstorming interface that you liked"
+      }, 
+      {
+        "answer": "No", 
+        "question": "Is there anything about the brainstorming interface that you didn't like"
+      }
+    ]
+  }, 
+  {
+    "_id": "tjDQQEKABdbbXJSwJ", 
+    "participant": {
+      "userName": "A1VMHE2T0NH4GS", 
+      "isReady": true, 
+      "fluencyStarted": true, 
+      "exitedEarly": false, 
+      "conditionID": "BRuw9aEPxYyCGioQG", 
+      "userID": "dEqxgb3Gina7NrSMQ", 
+      "experimentID": "imZ8gtTEgLMjPusST", 
+      "hasStarted": true, 
+      "surveyStarted": true, 
+      "tutorialStarted": true, 
+      "hasFinished": false, 
+      "_id": "Kg8Zbq5RBx54GuXpS", 
+      "groupID": "WB7CMNw8ezXphnui5", 
+      "fluencyFinished": true
+    }, 
+    "responses": [
+      {
+        "answer": "male", 
+        "question": "Gender"
+      }, 
+      {
+        "answer": "39", 
+        "question": "Age"
+      }, 
+      {
+        "answer": "true", 
+        "question": "Is English your first language"
+      }, 
+      {
+        "answer": "false", 
+        "question": "Do you speak a 2nd language"
+      }, 
+      {
+        "answer": "US", 
+        "question": "What country do you call home"
+      }, 
+      {
+        "answer": "2", 
+        "question": "How Frequently do you brainstorm"
+      }, 
+      {
+        "answer": "Coming up with ideas", 
+        "question": "Is there anything about the activity that you found particularly challenging"
+      }, 
+      {
+        "answer": "It was easy to use", 
+        "question": "Is there anything about the brainstorming interface that you liked"
+      }, 
+      {
+        "answer": "No", 
+        "question": "Is there anything about the brainstorming interface that you didn't like"
+      }
+    ]
+  }, 
+  {
+    "_id": "zsWmWDTengkb4EnX7", 
+    "participant": {
+      "userName": "A3RD30VDG7UNV8", 
+      "isReady": true, 
+      "fluencyStarted": true, 
+      "exitedEarly": false, 
+      "conditionID": "BRuw9aEPxYyCGioQG", 
+      "userID": "a9KhNsQaYZjBbv2W4", 
+      "experimentID": "imZ8gtTEgLMjPusST", 
+      "hasStarted": true, 
+      "surveyStarted": true, 
+      "tutorialStarted": true, 
+      "hasFinished": false, 
+      "_id": "8HWEhKEM9kx7gZohZ", 
+      "groupID": "WB7CMNw8ezXphnui5", 
+      "fluencyFinished": true
+    }, 
+    "responses": [
+      {
+        "answer": "male", 
+        "question": "Gender"
+      }, 
+      {
+        "answer": "24", 
+        "question": "Age"
+      }, 
+      {
+        "answer": "true", 
+        "question": "Is English your first language"
+      }, 
+      {
+        "answer": "false", 
+        "question": "Do you speak a 2nd language"
+      }, 
+      {
+        "answer": "United States", 
+        "question": "What country do you call home"
+      }, 
+      {
+        "answer": "4", 
+        "question": "How Frequently do you brainstorm"
+      }, 
+      {
+        "answer": "The time limit.", 
+        "question": "Is there anything about the activity that you found particularly challenging"
+      }, 
+      {
+        "answer": "I like how each idea was organized in its own little tab. I didn't check to see if I could edit one after I submitted it though, since I was in quite a rush.", 
+        "question": "Is there anything about the brainstorming interface that you liked"
+      }, 
+      {
+        "answer": "The pop up interrupting my last idea. I was going to say have them go into a crowded restaurant to make reservations while you park the car. The hostess will then call their name when it's time for you to be seated.\n\nAlso, it would be convenient to be able to just press ENTER (or some shortcut), instead of clicking a button in between each idea. ", 
+        "question": "Is there anything about the brainstorming interface that you didn't like"
+      }
+    ]
+  }, 
+  {
+    "_id": "aSBNJfpzEWJ8cLQim", 
+    "participant": {
+      "userName": "A1JY30TQP78AMO", 
+      "isReady": true, 
+      "fluencyStarted": true, 
+      "exitedEarly": false, 
+      "conditionID": "BRuw9aEPxYyCGioQG", 
+      "userID": "3vczReqpuvbzyy9nY", 
+      "experimentID": "imZ8gtTEgLMjPusST", 
+      "hasStarted": true, 
+      "surveyStarted": true, 
+      "tutorialStarted": true, 
+      "hasFinished": false, 
+      "_id": "pJF9tJpRxcrTe62qm", 
+      "groupID": "WB7CMNw8ezXphnui5", 
+      "fluencyFinished": true
+    }, 
+    "responses": [
+      {
+        "answer": "female", 
+        "question": "Gender"
+      }, 
+      {
+        "answer": "27", 
+        "question": "Age"
+      }, 
+      {
+        "answer": "true", 
+        "question": "Is English your first language"
+      }, 
+      {
+        "answer": "true", 
+        "question": "Do you speak a 2nd language"
+      }, 
+      {
+        "answer": "Spanish", 
+        "question": "What is your 2nd language"
+      }, 
+      {
+        "answer": "America", 
+        "question": "What country do you call home"
+      }, 
+      {
+        "answer": "2", 
+        "question": "How Frequently do you brainstorm"
+      }, 
+      {
+        "answer": "It was a long time to brainstorm ideas. I felt like I ran out of ideas quickly", 
+        "question": "Is there anything about the activity that you found particularly challenging"
+      }, 
+      {
+        "answer": "I really liked submitting an idea and then starting new in the box. I liked that I could scroll down to see my ideas so I didn't repeat them", 
+        "question": "Is there anything about the brainstorming interface that you liked"
+      }, 
+      {
+        "answer": "No I loved it!", 
+        "question": "Is there anything about the brainstorming interface that you didn't like"
+      }
+    ]
+  }, 
+  {
+    "_id": "ZdqSjqQAZooaR2fqx", 
+    "participant": {
+      "userName": "A1EY5YPJS97IE4", 
+      "isReady": true, 
+      "fluencyStarted": true, 
+      "exitedEarly": false, 
+      "conditionID": "ARv4P3TsBqiFMeKJh", 
+      "userID": "7EYZGHKjCvJErQc5z", 
+      "experimentID": "imZ8gtTEgLMjPusST", 
+      "hasStarted": true, 
+      "surveyStarted": true, 
+      "tutorialStarted": true, 
+      "hasFinished": false, 
+      "_id": "meC8o7ii8KaHvi7eF", 
+      "groupID": "WB7CMNw8ezXphnui5", 
+      "fluencyFinished": true
+    }, 
+    "responses": [
+      {
+        "answer": "male", 
+        "question": "Gender"
+      }, 
+      {
+        "answer": "26", 
+        "question": "Age"
+      }, 
+      {
+        "answer": "true", 
+        "question": "Is English your first language"
+      }, 
+      {
+        "answer": "true", 
+        "question": "Do you speak a 2nd language"
+      }, 
+      {
+        "answer": "Spanish", 
+        "question": "What is your 2nd language"
+      }, 
+      {
+        "answer": "USA", 
+        "question": "What country do you call home"
+      }, 
+      {
+        "answer": "4", 
+        "question": "How Frequently do you brainstorm"
+      }, 
+      {
+        "answer": "false", 
+        "question": "Did you find any of the suggested inspirations helpful"
+      }, 
+      {
+        "answer": "I did not use them.", 
+        "question": "Briefly explain why inspiration (not) helpful"
+      }, 
+      {
+        "answer": "No", 
+        "question": "Is there anything about the activity that you found particularly challenging"
+      }, 
+      {
+        "answer": "It is very clean and welcoming.", 
+        "question": "Is there anything about the brainstorming interface that you liked"
+      }, 
+      {
+        "answer": "No", 
+        "question": "Is there anything about the brainstorming interface that you didn't like"
+      }
+    ]
+  }, 
+  {
+    "_id": "2PmhzcPH7kXPNCWZH", 
+    "participant": {
+      "userName": "A1D01TUSE0H5TW", 
+      "isReady": true, 
+      "fluencyStarted": true, 
+      "exitedEarly": false, 
+      "conditionID": "ARv4P3TsBqiFMeKJh", 
+      "userID": "C6afYRL2EKDjbov6M", 
+      "experimentID": "imZ8gtTEgLMjPusST", 
+      "hasStarted": true, 
+      "surveyStarted": true, 
+      "tutorialStarted": true, 
+      "hasFinished": false, 
+      "_id": "rQwYpKL2mJN628rMn", 
+      "groupID": "WB7CMNw8ezXphnui5", 
+      "fluencyFinished": true
+    }, 
+    "responses": [
+      {
+        "answer": "female", 
+        "question": "Gender"
+      }, 
+      {
+        "answer": "36", 
+        "question": "Age"
+      }, 
+      {
+        "answer": "true", 
+        "question": "Is English your first language"
+      }, 
+      {
+        "answer": "false", 
+        "question": "Do you speak a 2nd language"
+      }, 
+      {
+        "answer": "US", 
+        "question": "What country do you call home"
+      }, 
+      {
+        "answer": "1", 
+        "question": "How Frequently do you brainstorm"
+      }, 
+      {
+        "answer": "false", 
+        "question": "Did you find any of the suggested inspirations helpful"
+      }, 
+      {
+        "answer": "I kept seeing the inspiration and then all I could think of is what was already suggested.", 
+        "question": "Briefly explain why inspiration (not) helpful"
+      }, 
+      {
+        "answer": "no", 
+        "question": "Is there anything about the activity that you found particularly challenging"
+      }, 
+      {
+        "answer": "I did like the inspiration help if it actually helped me, im sure it is helpful for others", 
+        "question": "Is there anything about the brainstorming interface that you liked"
+      }, 
+      {
+        "answer": "no it was great", 
+        "question": "Is there anything about the brainstorming interface that you didn't like"
+      }
+    ]
+  }, 
+  {
+    "_id": "AGCraBtfq6N6zZ36G", 
+    "participant": {
+      "userName": "A2BVUVKIS50IR8", 
+      "isReady": true, 
+      "fluencyStarted": true, 
+      "exitedEarly": false, 
+      "conditionID": "BRuw9aEPxYyCGioQG", 
+      "userID": "ysYoRmnxgm5uwsfj4", 
+      "experimentID": "imZ8gtTEgLMjPusST", 
+      "hasStarted": true, 
+      "surveyStarted": true, 
+      "tutorialStarted": true, 
+      "hasFinished": false, 
+      "_id": "EpZSvKpEZrWJN3Akd", 
+      "groupID": "WB7CMNw8ezXphnui5", 
+      "fluencyFinished": true
+    }, 
+    "responses": [
+      {
+        "answer": "female", 
+        "question": "Gender"
+      }, 
+      {
+        "answer": "40", 
+        "question": "Age"
+      }, 
+      {
+        "answer": "true", 
+        "question": "Is English your first language"
+      }, 
+      {
+        "answer": "false", 
+        "question": "Do you speak a 2nd language"
+      }, 
+      {
+        "answer": "United States of America", 
+        "question": "What country do you call home"
+      }, 
+      {
+        "answer": "3", 
+        "question": "How Frequently do you brainstorm"
+      }, 
+      {
+        "answer": "I was trying very hard to be creative, and hoping that you, the researcher, don't think I was not taking the task seriously when some of my ideas seemed a little \"out there.\"", 
+        "question": "Is there anything about the activity that you found particularly challenging"
+      }, 
+      {
+        "answer": "I thought it was very simple. Just type the idea and hit the blue button, couldn't be simpler. I also liked the large print.", 
+        "question": "Is there anything about the brainstorming interface that you liked"
+      }, 
+      {
+        "answer": "There was nothing I didn't like.", 
+        "question": "Is there anything about the brainstorming interface that you didn't like"
+      }
+    ]
+  }, 
+  {
+    "_id": "AYeF3ooL7Lpb2Jnwx", 
+    "participant": {
+      "userName": "A1QFL2GS6L26HG", 
+      "isReady": true, 
+      "fluencyStarted": true, 
+      "exitedEarly": false, 
+      "conditionID": "BRuw9aEPxYyCGioQG", 
+      "userID": "w3RBocLDxGYrA3YNw", 
+      "experimentID": "imZ8gtTEgLMjPusST", 
+      "hasStarted": true, 
+      "surveyStarted": true, 
+      "tutorialStarted": true, 
+      "hasFinished": false, 
+      "_id": "trnBCtxGL3aonkw4a", 
+      "groupID": "WB7CMNw8ezXphnui5", 
+      "fluencyFinished": true
+    }, 
+    "responses": [
+      {
+        "answer": "male", 
+        "question": "Gender"
+      }, 
+      {
+        "answer": "26", 
+        "question": "Age"
+      }, 
+      {
+        "answer": "true", 
+        "question": "Is English your first language"
+      }, 
+      {
+        "answer": "true", 
+        "question": "Do you speak a 2nd language"
+      }, 
+      {
+        "answer": "Spanish", 
+        "question": "What is your 2nd language"
+      }, 
+      {
+        "answer": "United States of America", 
+        "question": "What country do you call home"
+      }, 
+      {
+        "answer": "3", 
+        "question": "How Frequently do you brainstorm"
+      }, 
+      {
+        "answer": "It was difficult to think of more than a few, at first.", 
+        "question": "Is there anything about the activity that you found particularly challenging"
+      }, 
+      {
+        "answer": "I like the fact that I can see my previous responses.", 
+        "question": "Is there anything about the brainstorming interface that you liked"
+      }, 
+      {
+        "answer": "", 
+        "question": "Is there anything about the brainstorming interface that you didn't like"
+      }
+    ]
+  }, 
+  {
+    "_id": "ZjJS6fvFqjnX9eoBg", 
+    "participant": {
+      "userName": "A26KS0O1QWD9A6", 
+      "isReady": true, 
+      "fluencyStarted": true, 
+      "exitedEarly": false, 
+      "conditionID": "ARv4P3TsBqiFMeKJh", 
+      "userID": "yv9kpgvuySXmig2AK", 
+      "experimentID": "imZ8gtTEgLMjPusST", 
+      "hasStarted": true, 
+      "surveyStarted": true, 
+      "tutorialStarted": true, 
+      "hasFinished": false, 
+      "_id": "BGvkz868ujCe3b9eP", 
+      "groupID": "WB7CMNw8ezXphnui5", 
+      "fluencyFinished": true
+    }, 
+    "responses": [
+      {
+        "answer": "female", 
+        "question": "Gender"
+      }, 
+      {
+        "answer": "41", 
+        "question": "Age"
+      }, 
+      {
+        "answer": "true", 
+        "question": "Is English your first language"
+      }, 
+      {
+        "answer": "false", 
+        "question": "Do you speak a 2nd language"
+      }, 
+      {
+        "answer": "USA", 
+        "question": "What country do you call home"
+      }, 
+      {
+        "answer": "5", 
+        "question": "How Frequently do you brainstorm"
+      }, 
+      {
+        "answer": "true", 
+        "question": "Did you find any of the suggested inspirations helpful"
+      }, 
+      {
+        "answer": "The inspirations gave my ideas that I wasn't thinking of.", 
+        "question": "Briefly explain why inspiration (not) helpful"
+      }, 
+      {
+        "answer": "No", 
+        "question": "Is there anything about the activity that you found particularly challenging"
+      }, 
+      {
+        "answer": "Yes, I enjoyed the activity. It stimulated my brain.", 
+        "question": "Is there anything about the brainstorming interface that you liked"
+      }, 
+      {
+        "answer": "no", 
+        "question": "Is there anything about the brainstorming interface that you didn't like"
+      }
+    ]
+  }, 
+  {
+    "_id": "78Y8gtEz7vWXKaxEu", 
+    "participant": {
+      "userName": "A1YWJ3SMYC3W23", 
+      "isReady": true, 
+      "fluencyStarted": true, 
+      "exitedEarly": false, 
+      "conditionID": "BRuw9aEPxYyCGioQG", 
+      "userID": "rDJ7QNR8DiSPs6jnh", 
+      "experimentID": "imZ8gtTEgLMjPusST", 
+      "hasStarted": true, 
+      "surveyStarted": true, 
+      "tutorialStarted": true, 
+      "hasFinished": false, 
+      "_id": "5SmSe9HNBm8wc2u3w", 
+      "groupID": "WB7CMNw8ezXphnui5", 
+      "fluencyFinished": true
+    }, 
+    "responses": [
+      {
+        "answer": "female", 
+        "question": "Gender"
+      }, 
+      {
+        "answer": "37", 
+        "question": "Age"
+      }, 
+      {
+        "answer": "true", 
+        "question": "Is English your first language"
+      }, 
+      {
+        "answer": "false", 
+        "question": "Do you speak a 2nd language"
+      }, 
+      {
+        "answer": "US", 
+        "question": "What country do you call home"
+      }, 
+      {
+        "answer": "2", 
+        "question": "How Frequently do you brainstorm"
+      }, 
+      {
+        "answer": "No.", 
+        "question": "Is there anything about the activity that you found particularly challenging"
+      }, 
+      {
+        "answer": "I didn't feel pressured to write my ideas, (as in being given a definitive amount of ideas I was supposed to come up with.) ", 
+        "question": "Is there anything about the brainstorming interface that you liked"
+      }, 
+      {
+        "answer": "No. ", 
+        "question": "Is there anything about the brainstorming interface that you didn't like"
+      }
+    ]
+  }, 
+  {
+    "_id": "G8nyKQrjuzxopoqcQ", 
+    "participant": {
+      "userName": "AVE8IPM6VXRLL", 
+      "isReady": true, 
+      "fluencyStarted": true, 
+      "exitedEarly": false, 
+      "conditionID": "ARv4P3TsBqiFMeKJh", 
+      "userID": "NH4r4HpzDdg7YGysH", 
+      "experimentID": "imZ8gtTEgLMjPusST", 
+      "hasStarted": true, 
+      "surveyStarted": true, 
+      "tutorialStarted": true, 
+      "hasFinished": false, 
+      "_id": "a4ifRAq6X83FChtji", 
+      "groupID": "WB7CMNw8ezXphnui5", 
+      "fluencyFinished": true
+    }, 
+    "responses": [
+      {
+        "answer": "female", 
+        "question": "Gender"
+      }, 
+      {
+        "answer": "23", 
+        "question": "Age"
+      }, 
+      {
+        "answer": "true", 
+        "question": "Is English your first language"
+      }, 
+      {
+        "answer": "true", 
+        "question": "Do you speak a 2nd language"
+      }, 
+      {
+        "answer": "french", 
+        "question": "What is your 2nd language"
+      }, 
+      {
+        "answer": "United States", 
+        "question": "What country do you call home"
+      }, 
+      {
+        "answer": "3", 
+        "question": "How Frequently do you brainstorm"
+      }, 
+      {
+        "answer": "true", 
+        "question": "Did you find any of the suggested inspirations helpful"
+      }, 
+      {
+        "answer": "It was hit or miss - some of them were things I had already thought of, but others reminded me of different perspectives I hadn't gotten to yet.", 
+        "question": "Briefly explain why inspiration (not) helpful"
+      }, 
+      {
+        "answer": "", 
+        "question": "Is there anything about the activity that you found particularly challenging"
+      }, 
+      {
+        "answer": "Yeah, the entire thing was very smooth and well-oiled. The interface was user friendly and quick.", 
+        "question": "Is there anything about the brainstorming interface that you liked"
+      }, 
+      {
+        "answer": "The inspirations need to be written better.", 
+        "question": "Is there anything about the brainstorming interface that you didn't like"
+      }
+    ]
+  }, 
+  {
+    "_id": "eR54QqwijREPEmj3P", 
+    "participant": {
+      "userName": "A3D2LK5LVZWK7I", 
+      "isReady": true, 
+      "fluencyStarted": true, 
+      "exitedEarly": false, 
+      "conditionID": "BRuw9aEPxYyCGioQG", 
+      "userID": "oBq78FNZ4CSrcThWk", 
+      "experimentID": "imZ8gtTEgLMjPusST", 
+      "hasStarted": true, 
+      "surveyStarted": true, 
+      "tutorialStarted": true, 
+      "hasFinished": false, 
+      "_id": "N4vhEvqJQHL8H4veF", 
+      "groupID": "WB7CMNw8ezXphnui5", 
+      "fluencyFinished": true
+    }, 
+    "responses": [
+      {
+        "answer": "female", 
+        "question": "Gender"
+      }, 
+      {
+        "answer": "25", 
+        "question": "Age"
+      }, 
+      {
+        "answer": "true", 
+        "question": "Is English your first language"
+      }, 
+      {
+        "answer": "true", 
+        "question": "Do you speak a 2nd language"
+      }, 
+      {
+        "answer": "Russian", 
+        "question": "What is your 2nd language"
+      }, 
+      {
+        "answer": "USA", 
+        "question": "What country do you call home"
+      }, 
+      {
+        "answer": "5", 
+        "question": "How Frequently do you brainstorm"
+      }, 
+      {
+        "answer": "Coming up with unusual ideas", 
+        "question": "Is there anything about the activity that you found particularly challenging"
+      }, 
+      {
+        "answer": "I thought it was very easy to understand and use", 
+        "question": "Is there anything about the brainstorming interface that you liked"
+      }, 
+      {
+        "answer": "The amount of time allotted is a bit too much", 
+        "question": "Is there anything about the brainstorming interface that you didn't like"
+      }
+    ]
+  }, 
+  {
+    "_id": "ttpFEyFfQ7gvWDbLJ", 
+    "participant": {
+      "userName": "A35GKI38HB1I46", 
+      "isReady": true, 
+      "fluencyStarted": true, 
+      "exitedEarly": false, 
+      "conditionID": "BRuw9aEPxYyCGioQG", 
+      "userID": "SNhCgCbnzau42nvTx", 
+      "experimentID": "imZ8gtTEgLMjPusST", 
+      "hasStarted": true, 
+      "surveyStarted": true, 
+      "tutorialStarted": true, 
+      "hasFinished": false, 
+      "_id": "DmGjfbQqLxdnpyYMr", 
+      "groupID": "WB7CMNw8ezXphnui5", 
+      "fluencyFinished": true
+    }, 
+    "responses": [
+      {
+        "question": "Gender"
+      }, 
+      {
+        "answer": "31", 
+        "question": "Age"
+      }, 
+      {
+        "answer": "true", 
+        "question": "Is English your first language"
+      }, 
+      {
+        "answer": "false", 
+        "question": "Do you speak a 2nd language"
+      }, 
+      {
+        "answer": "USA", 
+        "question": "What country do you call home"
+      }, 
+      {
+        "answer": "5", 
+        "question": "How Frequently do you brainstorm"
+      }, 
+      {
+        "answer": "the question in general was challenging", 
+        "question": "Is there anything about the activity that you found particularly challenging"
+      }, 
+      {
+        "answer": "it was a fun task", 
+        "question": "Is there anything about the brainstorming interface that you liked"
+      }, 
+      {
+        "answer": "no ", 
+        "question": "Is there anything about the brainstorming interface that you didn't like"
+      }
+    ]
+  }, 
+  {
+    "_id": "3f5MBqJpcrGgMMP7y", 
+    "participant": {
+      "userName": "A20R49PAE0EDEU", 
+      "isReady": true, 
+      "fluencyStarted": true, 
+      "exitedEarly": false, 
+      "conditionID": "BRuw9aEPxYyCGioQG", 
+      "userID": "ZQSrFHoA4YK3SBQMb", 
+      "experimentID": "imZ8gtTEgLMjPusST", 
+      "hasStarted": true, 
+      "surveyStarted": true, 
+      "tutorialStarted": true, 
+      "hasFinished": false, 
+      "_id": "NSmeGwgygWfKuBKiT", 
+      "groupID": "WB7CMNw8ezXphnui5", 
+      "fluencyFinished": true
+    }, 
+    "responses": [
+      {
+        "answer": "female", 
+        "question": "Gender"
+      }, 
+      {
+        "answer": "49", 
+        "question": "Age"
+      }, 
+      {
+        "answer": "true", 
+        "question": "Is English your first language"
+      }, 
+      {
+        "answer": "false", 
+        "question": "Do you speak a 2nd language"
+      }, 
+      {
+        "answer": "US", 
+        "question": "What country do you call home"
+      }, 
+      {
+        "answer": "3", 
+        "question": "How Frequently do you brainstorm"
+      }, 
+      {
+        "answer": "", 
+        "question": "Is there anything about the activity that you found particularly challenging"
+      }, 
+      {
+        "answer": "", 
+        "question": "Is there anything about the brainstorming interface that you liked"
+      }, 
+      {
+        "answer": "", 
+        "question": "Is there anything about the brainstorming interface that you didn't like"
+      }
+    ]
+  }, 
+  {
+    "_id": "vSMZmkeP6P25aQriF", 
+    "participant": {
+      "userName": "A10Z7NLSO1VS9P", 
+      "isReady": true, 
+      "fluencyStarted": true, 
+      "exitedEarly": false, 
+      "conditionID": "ARv4P3TsBqiFMeKJh", 
+      "userID": "BGGb8fkBq24SXyRRy", 
+      "experimentID": "imZ8gtTEgLMjPusST", 
+      "hasStarted": true, 
+      "surveyStarted": true, 
+      "tutorialStarted": true, 
+      "hasFinished": false, 
+      "_id": "KLEzcWXW2NyuryJct", 
+      "groupID": "WB7CMNw8ezXphnui5", 
+      "fluencyFinished": true
+    }, 
+    "responses": [
+      {
+        "answer": "female", 
+        "question": "Gender"
+      }, 
+      {
+        "answer": "42", 
+        "question": "Age"
+      }, 
+      {
+        "answer": "true", 
+        "question": "Is English your first language"
+      }, 
+      {
+        "answer": "false", 
+        "question": "Do you speak a 2nd language"
+      }, 
+      {
+        "answer": "USA", 
+        "question": "What country do you call home"
+      }, 
+      {
+        "answer": "5", 
+        "question": "How Frequently do you brainstorm"
+      }, 
+      {
+        "answer": "true", 
+        "question": "Did you find any of the suggested inspirations helpful"
+      }, 
+      {
+        "answer": "It gave me a few more ideas", 
+        "question": "Briefly explain why inspiration (not) helpful"
+      }, 
+      {
+        "answer": "no", 
+        "question": "Is there anything about the activity that you found particularly challenging"
+      }, 
+      {
+        "answer": "It was challenging", 
+        "question": "Is there anything about the brainstorming interface that you liked"
+      }, 
+      {
+        "answer": "no", 
+        "question": "Is there anything about the brainstorming interface that you didn't like"
+      }
+    ]
+  }, 
+  {
+    "_id": "fCsZn2QeYJPEkpJEy", 
+    "participant": {
+      "userName": "A3PIWOAEB8IRP8", 
+      "isReady": true, 
+      "fluencyStarted": true, 
+      "exitedEarly": false, 
+      "conditionID": "BRuw9aEPxYyCGioQG", 
+      "userID": "59PvupTxQnXqnb4Dd", 
+      "experimentID": "imZ8gtTEgLMjPusST", 
+      "hasStarted": true, 
+      "surveyStarted": true, 
+      "tutorialStarted": true, 
+      "hasFinished": false, 
+      "_id": "x6mfv5jJaHKRzW47E", 
+      "groupID": "WB7CMNw8ezXphnui5", 
+      "fluencyFinished": true
+    }, 
+    "responses": [
+      {
+        "answer": "female", 
+        "question": "Gender"
+      }, 
+      {
+        "answer": "56", 
+        "question": "Age"
+      }, 
+      {
+        "answer": "true", 
+        "question": "Is English your first language"
+      }, 
+      {
+        "answer": "false", 
+        "question": "Do you speak a 2nd language"
+      }, 
+      {
+        "answer": "USA", 
+        "question": "What country do you call home"
+      }, 
+      {
+        "answer": "5", 
+        "question": "How Frequently do you brainstorm"
+      }, 
+      {
+        "answer": "", 
+        "question": "Is there anything about the activity that you found particularly challenging"
+      }, 
+      {
+        "answer": "", 
+        "question": "Is there anything about the brainstorming interface that you liked"
+      }, 
+      {
+        "answer": "", 
+        "question": "Is there anything about the brainstorming interface that you didn't like"
+      }
+    ]
+  }, 
+  {
+    "_id": "arYuYD9WEhoi7JzSB", 
+    "participant": {
+      "userName": "A2A1D52ZPSW6L9", 
+      "isReady": true, 
+      "fluencyStarted": true, 
+      "exitedEarly": false, 
+      "conditionID": "BRuw9aEPxYyCGioQG", 
+      "userID": "vkNDgFWo7HJDkYuJ3", 
+      "experimentID": "imZ8gtTEgLMjPusST", 
+      "hasStarted": true, 
+      "surveyStarted": true, 
+      "tutorialStarted": true, 
+      "hasFinished": false, 
+      "_id": "s2qBosfANtHkJaoSc", 
+      "groupID": "WB7CMNw8ezXphnui5", 
+      "fluencyFinished": true
+    }, 
+    "responses": [
+      {
+        "answer": "male", 
+        "question": "Gender"
+      }, 
+      {
+        "answer": "28", 
+        "question": "Age"
+      }, 
+      {
+        "answer": "true", 
+        "question": "Is English your first language"
+      }, 
+      {
+        "answer": "false", 
+        "question": "Do you speak a 2nd language"
+      }, 
+      {
+        "answer": "US", 
+        "question": "What country do you call home"
+      }, 
+      {
+        "answer": "5", 
+        "question": "How Frequently do you brainstorm"
+      }, 
+      {
+        "answer": "No.", 
+        "question": "Is there anything about the activity that you found particularly challenging"
+      }, 
+      {
+        "answer": "Made me think.", 
+        "question": "Is there anything about the brainstorming interface that you liked"
+      }, 
+      {
+        "answer": "Took lots of time.", 
+        "question": "Is there anything about the brainstorming interface that you didn't like"
+      }
+    ]
+  }, 
+  {
+    "_id": "j2ibq9tTxgLekJokD", 
+    "participant": {
+      "userName": "A1KJMZABBJG6HV", 
+      "isReady": true, 
+      "fluencyStarted": true, 
+      "exitedEarly": false, 
+      "conditionID": "ARv4P3TsBqiFMeKJh", 
+      "userID": "qtv4TmkrWpXrbupQm", 
+      "experimentID": "imZ8gtTEgLMjPusST", 
+      "hasStarted": true, 
+      "surveyStarted": true, 
+      "tutorialStarted": true, 
+      "hasFinished": false, 
+      "_id": "R86J5GXYxqpSwF3qs", 
+      "groupID": "WB7CMNw8ezXphnui5", 
+      "fluencyFinished": true
+    }, 
+    "responses": [
+      {
+        "answer": "female", 
+        "question": "Gender"
+      }, 
+      {
+        "answer": "21", 
+        "question": "Age"
+      }, 
+      {
+        "answer": "true", 
+        "question": "Is English your first language"
+      }, 
+      {
+        "answer": "false", 
+        "question": "Do you speak a 2nd language"
+      }, 
+      {
+        "answer": "United States", 
+        "question": "What country do you call home"
+      }, 
+      {
+        "answer": "3", 
+        "question": "How Frequently do you brainstorm"
+      }, 
+      {
+        "answer": "true", 
+        "question": "Did you find any of the suggested inspirations helpful"
+      }, 
+      {
+        "answer": "Yes, because I really started thinking about new ways to concur the problem, like simply stating that you are bad with names can cause the other person to joking tell them theirs. This way you don't directly go through the embarrassment of not remembering their name.", 
+        "question": "Briefly explain why inspiration (not) helpful"
+      }, 
+      {
+        "answer": "Once you start getting rid of the easy answers, then you really have to start being more creative. Usually I'll stop at the first few solutions for a problem, but delving into more ideas was very helpful.", 
+        "question": "Is there anything about the activity that you found particularly challenging"
+      }, 
+      {
+        "answer": "The \"inspire me\" button was very helpful.", 
+        "question": "Is there anything about the brainstorming interface that you liked"
+      }, 
+      {
+        "answer": "It starts to look a bit crowded at times, and it would not take into account the ideas that I had already used when I wanted \"inspiration\".", 
+        "question": "Is there anything about the brainstorming interface that you didn't like"
+      }
+    ]
+  }, 
+  {
+    "_id": "cNtqWCteR2mg6ma58", 
+    "participant": {
+      "userName": "A3QNEE70E6ZZD3", 
+      "isReady": true, 
+      "fluencyStarted": true, 
+      "exitedEarly": false, 
+      "conditionID": "ARv4P3TsBqiFMeKJh", 
+      "userID": "rtKupbjs6TtAKijAM", 
+      "experimentID": "imZ8gtTEgLMjPusST", 
+      "hasStarted": true, 
+      "surveyStarted": true, 
+      "tutorialStarted": true, 
+      "hasFinished": false, 
+      "_id": "HnkdhdX4SJ93mzN7X", 
+      "groupID": "WB7CMNw8ezXphnui5", 
+      "fluencyFinished": true
+    }, 
+    "responses": [
+      {
+        "answer": "female", 
+        "question": "Gender"
+      }, 
+      {
+        "answer": "48", 
+        "question": "Age"
+      }, 
+      {
+        "answer": "true", 
+        "question": "Is English your first language"
+      }, 
+      {
+        "answer": "true", 
+        "question": "Do you speak a 2nd language"
+      }, 
+      {
+        "answer": "", 
+        "question": "What is your 2nd language"
+      }, 
+      {
+        "answer": "America", 
+        "question": "What country do you call home"
+      }, 
+      {
+        "answer": "3", 
+        "question": "How Frequently do you brainstorm"
+      }, 
+      {
+        "answer": "true", 
+        "question": "Did you find any of the suggested inspirations helpful"
+      }, 
+      {
+        "answer": "It was helpful in coming up with new ideas.", 
+        "question": "Briefly explain why inspiration (not) helpful"
+      }, 
+      {
+        "answer": "No", 
+        "question": "Is there anything about the activity that you found particularly challenging"
+      }, 
+      {
+        "answer": "Try to come up with ideas.", 
+        "question": "Is there anything about the brainstorming interface that you liked"
+      }, 
+      {
+        "answer": "None", 
+        "question": "Is there anything about the brainstorming interface that you didn't like"
+      }
+    ]
+  }, 
+  {
+    "_id": "sHbnNoabqqwcJJtCA", 
+    "participant": {
+      "userName": "A3DXL2YZRL2HWD", 
+      "isReady": true, 
+      "fluencyStarted": true, 
+      "exitedEarly": false, 
+      "conditionID": "ARv4P3TsBqiFMeKJh", 
+      "userID": "R8xYb9QmihKTaNNdh", 
+      "experimentID": "imZ8gtTEgLMjPusST", 
+      "hasStarted": true, 
+      "surveyStarted": true, 
+      "tutorialStarted": true, 
+      "hasFinished": false, 
+      "_id": "TEWQLzfqJqk9fxrAT", 
+      "groupID": "WB7CMNw8ezXphnui5", 
+      "fluencyFinished": true
+    }, 
+    "responses": [
+      {
+        "answer": "female", 
+        "question": "Gender"
+      }, 
+      {
+        "answer": "28", 
+        "question": "Age"
+      }, 
+      {
+        "answer": "true", 
+        "question": "Is English your first language"
+      }, 
+      {
+        "answer": "false", 
+        "question": "Do you speak a 2nd language"
+      }, 
+      {
+        "answer": "USA", 
+        "question": "What country do you call home"
+      }, 
+      {
+        "answer": "3", 
+        "question": "How Frequently do you brainstorm"
+      }, 
+      {
+        "answer": "false", 
+        "question": "Did you find any of the suggested inspirations helpful"
+      }, 
+      {
+        "answer": "Most of them were variations of things I had already thought of", 
+        "question": "Briefly explain why inspiration (not) helpful"
+      }, 
+      {
+        "answer": "It was difficult to come up with new ideas after the first few.  I felt like I had to get really out of the box at the end.", 
+        "question": "Is there anything about the activity that you found particularly challenging"
+      }, 
+      {
+        "answer": "It was simple and easy to use.", 
+        "question": "Is there anything about the brainstorming interface that you liked"
+      }, 
+      {
+        "answer": "I wasn't a fan of the color scheme.", 
+        "question": "Is there anything about the brainstorming interface that you didn't like"
+      }
+    ]
+  }, 
+  {
+    "_id": "aqreG5vJnjcHhq8sD", 
+    "participant": {
+      "userName": "A2JEJCOMJOOM2E", 
+      "isReady": true, 
+      "fluencyStarted": true, 
+      "exitedEarly": false, 
+      "conditionID": "ARv4P3TsBqiFMeKJh", 
+      "userID": "Pf8ZkNbFiCbmzL6Fw", 
+      "experimentID": "imZ8gtTEgLMjPusST", 
+      "hasStarted": true, 
+      "surveyStarted": true, 
+      "tutorialStarted": true, 
+      "hasFinished": false, 
+      "_id": "heE8Fvqq4WxxQXK7c", 
+      "groupID": "WB7CMNw8ezXphnui5", 
+      "fluencyFinished": true
+    }, 
+    "responses": [
+      {
+        "answer": "male", 
+        "question": "Gender"
+      }, 
+      {
+        "answer": "30", 
+        "question": "Age"
+      }, 
+      {
+        "answer": "true", 
+        "question": "Is English your first language"
+      }, 
+      {
+        "answer": "false", 
+        "question": "Do you speak a 2nd language"
+      }, 
+      {
+        "answer": "United States", 
+        "question": "What country do you call home"
+      }, 
+      {
+        "answer": "3", 
+        "question": "How Frequently do you brainstorm"
+      }, 
+      {
+        "answer": "false", 
+        "question": "Did you find any of the suggested inspirations helpful"
+      }, 
+      {
+        "answer": "I am not good with remembering names and inspirations didn't really spark many new ideas for me.", 
+        "question": "Briefly explain why inspiration (not) helpful"
+      }, 
+      {
+        "answer": "Coming up with ideas because generally I struggle with remembering names.", 
+        "question": "Is there anything about the activity that you found particularly challenging"
+      }, 
+      {
+        "answer": "The inspirations. The specific suggestions didn't help me but the fact that the interface attempts to help you is very useful and likeable.", 
+        "question": "Is there anything about the brainstorming interface that you liked"
+      }, 
+      {
+        "answer": "No. I thought the interface was straight forward, easy to understand and very user friendly.", 
+        "question": "Is there anything about the brainstorming interface that you didn't like"
+      }
+    ]
+  }, 
+  {
+    "_id": "oN28WfH97H8yqruGc", 
+    "participant": {
+      "userName": "A26C4CO2PBSD61", 
+      "isReady": true, 
+      "fluencyStarted": true, 
+      "exitedEarly": false, 
+      "conditionID": "ARv4P3TsBqiFMeKJh", 
+      "userID": "7TpnLoEhA37XBsgkX", 
+      "experimentID": "imZ8gtTEgLMjPusST", 
+      "hasStarted": true, 
+      "surveyStarted": true, 
+      "tutorialStarted": true, 
+      "hasFinished": false, 
+      "_id": "komCf8h5CwAwpniCZ", 
+      "groupID": "WB7CMNw8ezXphnui5", 
+      "fluencyFinished": true
+    }, 
+    "responses": [
+      {
+        "answer": "male", 
+        "question": "Gender"
+      }, 
+      {
+        "answer": "25", 
+        "question": "Age"
+      }, 
+      {
+        "answer": "true", 
+        "question": "Is English your first language"
+      }, 
+      {
+        "answer": "false", 
+        "question": "Do you speak a 2nd language"
+      }, 
+      {
+        "answer": "USA", 
+        "question": "What country do you call home"
+      }, 
+      {
+        "answer": "3", 
+        "question": "How Frequently do you brainstorm"
+      }, 
+      {
+        "answer": "true", 
+        "question": "Did you find any of the suggested inspirations helpful"
+      }, 
+      {
+        "answer": "I thought of a few more ideas afterwards.", 
+        "question": "Briefly explain why inspiration (not) helpful"
+      }, 
+      {
+        "answer": "No", 
+        "question": "Is there anything about the activity that you found particularly challenging"
+      }, 
+      {
+        "answer": "It was very easy to use.", 
+        "question": "Is there anything about the brainstorming interface that you liked"
+      }, 
+      {
+        "answer": "No.", 
+        "question": "Is there anything about the brainstorming interface that you didn't like"
+      }
+    ]
+  }
+]

@@ -1,0 +1,778 @@
+[
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "BKQK7ipdyiQHACHB7", 
+    "assignmentTime": 1430940289491.0, 
+    "taskID": "DbEoXqyjwBDHuoMaj", 
+    "_id": "aHnD3ta5wX7K8hxPC", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "5ckX3mHBpTMR3JkXq", 
+    "assignmentTime": 1430940362258.0, 
+    "taskID": "7y346TFL9bQKi2Nkf", 
+    "_id": "YrGzBfcCo52hzxjt5", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "NH4r4HpzDdg7YGysH", 
+    "assignmentTime": 1430940399576.0, 
+    "taskID": "7y346TFL9bQKi2Nkf", 
+    "_id": "qwMQDuF63PcJDE4Nf", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "ukuE6oRgtuZw2aGGZ", 
+    "assignmentTime": 1430940438722.0, 
+    "taskID": "nPcLsn3SAy4ZpE9bo", 
+    "_id": "B3XpTaedjAxxFcQAd", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "qtv4TmkrWpXrbupQm", 
+    "assignmentTime": 1430940448075.0, 
+    "taskID": "nPcLsn3SAy4ZpE9bo", 
+    "_id": "7fFT5noMKfhKXD2Xt", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "yv9kpgvuySXmig2AK", 
+    "assignmentTime": 1430940448901.0, 
+    "taskID": "nPcLsn3SAy4ZpE9bo", 
+    "_id": "N4sLCsYAL3dscxSHy", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "NH4r4HpzDdg7YGysH", 
+    "assignmentTime": 1430940478511.0, 
+    "taskID": "nPcLsn3SAy4ZpE9bo", 
+    "_id": "icKoksFzE4c78R7LP", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "yv9kpgvuySXmig2AK", 
+    "assignmentTime": 1430940497892.0, 
+    "taskID": "7y346TFL9bQKi2Nkf", 
+    "_id": "MfMsXJyrjEtx68FnY", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "yv9kpgvuySXmig2AK", 
+    "assignmentTime": 1430940506182.0, 
+    "taskID": "ZXRB46pkX8sdox8QQ", 
+    "_id": "tCmKxgg2mFwFTsrn6", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "yv9kpgvuySXmig2AK", 
+    "assignmentTime": 1430940508539.0, 
+    "taskID": "fMQS5tD6WSfjxBkhz", 
+    "_id": "xJfHZJXQHK7zSoCSy", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "yv9kpgvuySXmig2AK", 
+    "assignmentTime": 1430940511036.0, 
+    "taskID": "qcdQ43BuR2FK85JC7", 
+    "_id": "nK7Y8HY4MWAsSSDAx", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "NH4r4HpzDdg7YGysH", 
+    "assignmentTime": 1430940513268.0, 
+    "taskID": "ZXRB46pkX8sdox8QQ", 
+    "_id": "BFgQfSSuaLAayBwkw", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "qtv4TmkrWpXrbupQm", 
+    "assignmentTime": 1430940518485.0, 
+    "taskID": "7y346TFL9bQKi2Nkf", 
+    "_id": "pTBTb3hzjGnydrMwu", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "yv9kpgvuySXmig2AK", 
+    "assignmentTime": 1430940521086.0, 
+    "taskID": "DbEoXqyjwBDHuoMaj", 
+    "_id": "k6ypQzDqQRWzc9dtY", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "NH4r4HpzDdg7YGysH", 
+    "assignmentTime": 1430940530750.0, 
+    "taskID": "fMQS5tD6WSfjxBkhz", 
+    "_id": "ALGSfSEtLrXZJKDns", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "NH4r4HpzDdg7YGysH", 
+    "assignmentTime": 1430940533842.0, 
+    "taskID": "qcdQ43BuR2FK85JC7", 
+    "_id": "WK4PGHWavDPgenPdh", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "C6afYRL2EKDjbov6M", 
+    "assignmentTime": 1430940534625.0, 
+    "taskID": "nPcLsn3SAy4ZpE9bo", 
+    "_id": "TCXieb4JyZSB24uLL", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "NH4r4HpzDdg7YGysH", 
+    "assignmentTime": 1430940537268.0, 
+    "taskID": "DbEoXqyjwBDHuoMaj", 
+    "_id": "yrLMtNM4JwiM5CTWZ", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "yv9kpgvuySXmig2AK", 
+    "assignmentTime": 1430940539664.0, 
+    "taskID": "XRBYNFS9RshX2Y4Lr", 
+    "_id": "M8J2BxsgG5kWHBQrZ", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "yv9kpgvuySXmig2AK", 
+    "assignmentTime": 1430940543317.0, 
+    "taskID": "ActpFCdFSEKTaAfT5", 
+    "_id": "iiZfntijf5DpPZXC7", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "yv9kpgvuySXmig2AK", 
+    "assignmentTime": 1430940547477.0, 
+    "taskID": "cwTm6drpfufB8Mq2a", 
+    "_id": "ejZZKXEwNxFr23pn5", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "C6afYRL2EKDjbov6M", 
+    "assignmentTime": 1430940557900.0, 
+    "taskID": "7y346TFL9bQKi2Nkf", 
+    "_id": "5Yr759sJfwq9Ro945", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "yv9kpgvuySXmig2AK", 
+    "assignmentTime": 1430940558663.0, 
+    "taskID": "CKu47FjwYKsw8GqeD", 
+    "_id": "BRMXdtnjjJGY6uhJu", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "yv9kpgvuySXmig2AK", 
+    "assignmentTime": 1430940563976.0, 
+    "taskID": "opQAJzExFNF8PoRi5", 
+    "_id": "hL6ei8CAeR7w8sT73", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "NH4r4HpzDdg7YGysH", 
+    "assignmentTime": 1430940576053.0, 
+    "taskID": "XRBYNFS9RshX2Y4Lr", 
+    "_id": "cjbbyxKFaCspGy7Yq", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "C6afYRL2EKDjbov6M", 
+    "assignmentTime": 1430940577136.0, 
+    "taskID": "ZXRB46pkX8sdox8QQ", 
+    "_id": "wx6DDrXexESNAXZAq", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "qtv4TmkrWpXrbupQm", 
+    "assignmentTime": 1430940597354.0, 
+    "taskID": "ZXRB46pkX8sdox8QQ", 
+    "_id": "GQo5ES68oW2hQPxFq", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "Pf8ZkNbFiCbmzL6Fw", 
+    "assignmentTime": 1430940693552.0, 
+    "taskID": "nPcLsn3SAy4ZpE9bo", 
+    "_id": "YZdeb5ba3sWNq8aGA", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "rtKupbjs6TtAKijAM", 
+    "assignmentTime": 1430940608857.0, 
+    "taskID": "nPcLsn3SAy4ZpE9bo", 
+    "_id": "fpk5qWtujpHzZRjr6", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "Pf8ZkNbFiCbmzL6Fw", 
+    "assignmentTime": 1430940705864.0, 
+    "taskID": "7y346TFL9bQKi2Nkf", 
+    "_id": "X3PJXkevnCD5xSFWw", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "C6afYRL2EKDjbov6M", 
+    "assignmentTime": 1430940639347.0, 
+    "taskID": "fMQS5tD6WSfjxBkhz", 
+    "_id": "ACDZzXXnyPLxkpZoC", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "R8xYb9QmihKTaNNdh", 
+    "assignmentTime": 1430940693839.0, 
+    "taskID": "nPcLsn3SAy4ZpE9bo", 
+    "_id": "NQ2aDXJ7XcAKAxdnc", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "R8xYb9QmihKTaNNdh", 
+    "assignmentTime": 1430940700058.0, 
+    "taskID": "sAwA2jd28K87uo8YN", 
+    "_id": "Q6DFjBsfCuCcjkY69", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "NH4r4HpzDdg7YGysH", 
+    "assignmentTime": 1430940704385.0, 
+    "taskID": "sAwA2jd28K87uo8YN", 
+    "_id": "ePHmLeoFDdNWStWXq", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "NH4r4HpzDdg7YGysH", 
+    "assignmentTime": 1430940706954.0, 
+    "taskID": "ActpFCdFSEKTaAfT5", 
+    "_id": "wGz5izWvz9zxRQH3x", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "R8xYb9QmihKTaNNdh", 
+    "assignmentTime": 1430940704943.0, 
+    "taskID": "7y346TFL9bQKi2Nkf", 
+    "_id": "Fsq4KKnofHPai4Bxa", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "yv9kpgvuySXmig2AK", 
+    "assignmentTime": 1430940707468.0, 
+    "taskID": "sAwA2jd28K87uo8YN", 
+    "_id": "H7cyF4Tm6u9o5Zqx9", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "NH4r4HpzDdg7YGysH", 
+    "assignmentTime": 1430940709618.0, 
+    "taskID": "cwTm6drpfufB8Mq2a", 
+    "_id": "uue4pcTZ99oF5PzSc", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "NH4r4HpzDdg7YGysH", 
+    "assignmentTime": 1430940712053.0, 
+    "taskID": "CKu47FjwYKsw8GqeD", 
+    "_id": "XQRz2dJvyRjcAaMcX", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "NH4r4HpzDdg7YGysH", 
+    "assignmentTime": 1430940714950.0, 
+    "taskID": "opQAJzExFNF8PoRi5", 
+    "_id": "QJwiRvN9ix4STM7sk", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "qtv4TmkrWpXrbupQm", 
+    "assignmentTime": 1430940718224.0, 
+    "taskID": "sAwA2jd28K87uo8YN", 
+    "_id": "GH26N5YEG2FkwCD77", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "C6afYRL2EKDjbov6M", 
+    "assignmentTime": 1430940722183.0, 
+    "taskID": "sAwA2jd28K87uo8YN", 
+    "_id": "cKmLbd6AyyBZ5hANG", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "rtKupbjs6TtAKijAM", 
+    "assignmentTime": 1430940723521.0, 
+    "taskID": "sAwA2jd28K87uo8YN", 
+    "_id": "QWYbXDNvPSWLwYdRc", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "rtKupbjs6TtAKijAM", 
+    "assignmentTime": 1430940724027.0, 
+    "taskID": "7y346TFL9bQKi2Nkf", 
+    "_id": "W2GphASRcQvQWzS8p", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "C6afYRL2EKDjbov6M", 
+    "assignmentTime": 1430940734326.0, 
+    "taskID": "qcdQ43BuR2FK85JC7", 
+    "_id": "2FPYM5rBTpqhoa5nq", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "C6afYRL2EKDjbov6M", 
+    "assignmentTime": 1430940738285.0, 
+    "taskID": "DbEoXqyjwBDHuoMaj", 
+    "_id": "jbR9ut9rv84W7LJqd", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "C6afYRL2EKDjbov6M", 
+    "assignmentTime": 1430940742556.0, 
+    "taskID": "XRBYNFS9RshX2Y4Lr", 
+    "_id": "b7eTyPbZLCD5uWjuP", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "C6afYRL2EKDjbov6M", 
+    "assignmentTime": 1430940758179.0, 
+    "taskID": "ActpFCdFSEKTaAfT5", 
+    "_id": "HdpW8G2qieCDJ6Kof", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "C6afYRL2EKDjbov6M", 
+    "assignmentTime": 1430940762265.0, 
+    "taskID": "cwTm6drpfufB8Mq2a", 
+    "_id": "PLEAy8vM63MCur86K", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "C6afYRL2EKDjbov6M", 
+    "assignmentTime": 1430940766234.0, 
+    "taskID": "CKu47FjwYKsw8GqeD", 
+    "_id": "m42YkXSgvmjnyFuTd", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "C6afYRL2EKDjbov6M", 
+    "assignmentTime": 1430940773696.0, 
+    "taskID": "opQAJzExFNF8PoRi5", 
+    "_id": "53hTeu89X77YD6jfq", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "Pf8ZkNbFiCbmzL6Fw", 
+    "assignmentTime": 1430940888067.0, 
+    "taskID": "sAwA2jd28K87uo8YN", 
+    "_id": "eE5nXKzKstKL9TXcS", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "qtv4TmkrWpXrbupQm", 
+    "assignmentTime": 1430940810740.0, 
+    "taskID": "fMQS5tD6WSfjxBkhz", 
+    "_id": "PQWpDwW5aSbreWqXv", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "Pf8ZkNbFiCbmzL6Fw", 
+    "assignmentTime": 1430940903564.0, 
+    "taskID": "ZXRB46pkX8sdox8QQ", 
+    "_id": "StPP6rBv3K6DhjMmr", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "Pf8ZkNbFiCbmzL6Fw", 
+    "assignmentTime": 1430940913565.0, 
+    "taskID": "fMQS5tD6WSfjxBkhz", 
+    "_id": "czLJHvGzvQhC2jzQC", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "Pf8ZkNbFiCbmzL6Fw", 
+    "assignmentTime": 1430940922285.0, 
+    "taskID": "qcdQ43BuR2FK85JC7", 
+    "_id": "xr3sMioZCFSQe8M9B", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "Pf8ZkNbFiCbmzL6Fw", 
+    "assignmentTime": 1430940934994.0, 
+    "taskID": "DbEoXqyjwBDHuoMaj", 
+    "_id": "AQS47jQEgEkj9G7mH", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "Pf8ZkNbFiCbmzL6Fw", 
+    "assignmentTime": 1430941010500.0, 
+    "taskID": "XRBYNFS9RshX2Y4Lr", 
+    "_id": "7QFKrerLxHDSrQCAw", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "rtKupbjs6TtAKijAM", 
+    "assignmentTime": 1430940947784.0, 
+    "taskID": "ZXRB46pkX8sdox8QQ", 
+    "_id": "FL7r7KE2kezPqDyqc", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "Pf8ZkNbFiCbmzL6Fw", 
+    "assignmentTime": 1430941036051.0, 
+    "taskID": "ActpFCdFSEKTaAfT5", 
+    "_id": "hpEXdiMkYX82A8cHm", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "qtv4TmkrWpXrbupQm", 
+    "assignmentTime": 1430940979215.0, 
+    "taskID": "gZWF76kAFmzkWjvcN", 
+    "_id": "uJ6my2Jt6rerP4PiZ", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "R8xYb9QmihKTaNNdh", 
+    "assignmentTime": 1430940980587.0, 
+    "taskID": "gZWF76kAFmzkWjvcN", 
+    "_id": "xvBFzrYsv2sreKFHY", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "NH4r4HpzDdg7YGysH", 
+    "assignmentTime": 1430940983646.0, 
+    "taskID": "gZWF76kAFmzkWjvcN", 
+    "_id": "zFsjaW3RGcebYdWRP", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "Pf8ZkNbFiCbmzL6Fw", 
+    "assignmentTime": 1430941075557.0, 
+    "taskID": "gZWF76kAFmzkWjvcN", 
+    "_id": "wktNSj24DkgDxHm5S", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "Pf8ZkNbFiCbmzL6Fw", 
+    "assignmentTime": 1430941083553.0, 
+    "taskID": "cwTm6drpfufB8Mq2a", 
+    "_id": "DMkBwbgWKjjAHDLdp", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "BGGb8fkBq24SXyRRy", 
+    "assignmentTime": 1430941073060.0, 
+    "taskID": "gZWF76kAFmzkWjvcN", 
+    "_id": "ZPs244kfFzZH8Spyp", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "Pf8ZkNbFiCbmzL6Fw", 
+    "assignmentTime": 1430941163279.0, 
+    "taskID": "CKu47FjwYKsw8GqeD", 
+    "_id": "qaYfZ7tpJRmwZjY54", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "R8xYb9QmihKTaNNdh", 
+    "assignmentTime": 1430941119690.0, 
+    "taskID": "ZXRB46pkX8sdox8QQ", 
+    "_id": "roMXvhzRd2YASdmeC", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "R8xYb9QmihKTaNNdh", 
+    "assignmentTime": 1430941123499.0, 
+    "taskID": "fMQS5tD6WSfjxBkhz", 
+    "_id": "g4ry6g7CZkM3Ru3p2", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "R8xYb9QmihKTaNNdh", 
+    "assignmentTime": 1430941170515.0, 
+    "taskID": "qcdQ43BuR2FK85JC7", 
+    "_id": "o5HMjMc7i2iwPNvNk", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "R8xYb9QmihKTaNNdh", 
+    "assignmentTime": 1430941174620.0, 
+    "taskID": "DbEoXqyjwBDHuoMaj", 
+    "_id": "k5ED2LyE8ZZzY5NmY", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "R8xYb9QmihKTaNNdh", 
+    "assignmentTime": 1430941183243.0, 
+    "taskID": "XRBYNFS9RshX2Y4Lr", 
+    "_id": "kQsiNvrsapNbkwBW9", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "7TpnLoEhA37XBsgkX", 
+    "assignmentTime": 1430941607596.0, 
+    "taskID": "gZWF76kAFmzkWjvcN", 
+    "_id": "Y34JgSgAgHiqDPBDW", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "wsqF5oR2C87iauyrS", 
+    "assignmentTime": 1430939768794.0, 
+    "taskID": "ActpFCdFSEKTaAfT5", 
+    "_id": "J7Nc78S5PRYegGFEM", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "5ckX3mHBpTMR3JkXq", 
+    "assignmentTime": 1430939835945.0, 
+    "taskID": "DbEoXqyjwBDHuoMaj", 
+    "_id": "aqcmPGPZNs7qvqFoo", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "8tppTuQA5xRMgpgqc", 
+    "assignmentTime": 1430939841514.0, 
+    "taskID": "DbEoXqyjwBDHuoMaj", 
+    "_id": "cwCx98wf2neAqGczh", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "5ckX3mHBpTMR3JkXq", 
+    "assignmentTime": 1430939860284.0, 
+    "taskID": "qcdQ43BuR2FK85JC7", 
+    "_id": "AMbCJBeLdoYuzjDsx", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "ukuE6oRgtuZw2aGGZ", 
+    "assignmentTime": 1430939893467.0, 
+    "taskID": "fMQS5tD6WSfjxBkhz", 
+    "_id": "CP7niasKKYkEDd53q", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "ukuE6oRgtuZw2aGGZ", 
+    "assignmentTime": 1430939921742.0, 
+    "taskID": "qcdQ43BuR2FK85JC7", 
+    "_id": "QEgGi7DzM4LjZBTQb", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "5ckX3mHBpTMR3JkXq", 
+    "assignmentTime": 1430939934449.0, 
+    "taskID": "fMQS5tD6WSfjxBkhz", 
+    "_id": "docLRYkYEH9unJ6oM", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "5ckX3mHBpTMR3JkXq", 
+    "assignmentTime": 1430939949585.0, 
+    "taskID": "XRBYNFS9RshX2Y4Lr", 
+    "_id": "FcG7kbb3LakLXjDwF", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "ukuE6oRgtuZw2aGGZ", 
+    "assignmentTime": 1430939951115.0, 
+    "taskID": "DbEoXqyjwBDHuoMaj", 
+    "_id": "ZvzEyLGHksKh2Cds2", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "5ckX3mHBpTMR3JkXq", 
+    "assignmentTime": 1430939990033.0, 
+    "taskID": "ActpFCdFSEKTaAfT5", 
+    "_id": "C5AyjASRB7AhBLS3h", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "ukuE6oRgtuZw2aGGZ", 
+    "assignmentTime": 1430940000344.0, 
+    "taskID": "XRBYNFS9RshX2Y4Lr", 
+    "_id": "fcMSxbXmZqPXDD4KA", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "ukuE6oRgtuZw2aGGZ", 
+    "assignmentTime": 1430940016246.0, 
+    "taskID": "ActpFCdFSEKTaAfT5", 
+    "_id": "nwP69fQtq6jP4cxzr", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "5ckX3mHBpTMR3JkXq", 
+    "assignmentTime": 1430940024517.0, 
+    "taskID": "cwTm6drpfufB8Mq2a", 
+    "_id": "Jq83vKpcfQJhkEC4F", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "ukuE6oRgtuZw2aGGZ", 
+    "assignmentTime": 1430940050275.0, 
+    "taskID": "cwTm6drpfufB8Mq2a", 
+    "_id": "depJho7mDDZm7LJqg", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "ukuE6oRgtuZw2aGGZ", 
+    "assignmentTime": 1430940090956.0, 
+    "taskID": "CKu47FjwYKsw8GqeD", 
+    "_id": "th7hwAgK6iZ27WwBZ", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "6AnbyrehbPfWCc7Pt", 
+    "assignmentTime": 1430940092680.0, 
+    "taskID": "fMQS5tD6WSfjxBkhz", 
+    "_id": "YkNSbbZ3tiqrh9C2z", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "5ckX3mHBpTMR3JkXq", 
+    "assignmentTime": 1430940099015.0, 
+    "taskID": "CKu47FjwYKsw8GqeD", 
+    "_id": "bx6KuA4d9PXgLLBPs", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "ukuE6oRgtuZw2aGGZ", 
+    "assignmentTime": 1430940106239.0, 
+    "taskID": "opQAJzExFNF8PoRi5", 
+    "_id": "wRErEiRBzd9z9pEFi", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "BKQK7ipdyiQHACHB7", 
+    "assignmentTime": 1430940142398.0, 
+    "taskID": "fMQS5tD6WSfjxBkhz", 
+    "_id": "YNLYAWzNQb8A9LaD9", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "5ckX3mHBpTMR3JkXq", 
+    "assignmentTime": 1430940149394.0, 
+    "taskID": "ZXRB46pkX8sdox8QQ", 
+    "_id": "b8hqiAiH3wZg8uBHR", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "BKQK7ipdyiQHACHB7", 
+    "assignmentTime": 1430940185941.0, 
+    "taskID": "ZXRB46pkX8sdox8QQ", 
+    "_id": "F5vr9oZEcQh9MXxM5", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "ukuE6oRgtuZw2aGGZ", 
+    "assignmentTime": 1430940183021.0, 
+    "taskID": "ZXRB46pkX8sdox8QQ", 
+    "_id": "wvaRQpiuGEESrNLsz", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "BKQK7ipdyiQHACHB7", 
+    "assignmentTime": 1430940225572.0, 
+    "taskID": "qcdQ43BuR2FK85JC7", 
+    "_id": "2fcsozG7PTSNwjjuo", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "userID": "5ckX3mHBpTMR3JkXq", 
+    "assignmentTime": 1430940219923.0, 
+    "taskID": "opQAJzExFNF8PoRi5", 
+    "_id": "dLeYqXrXtkXxurZBY", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }
+]

@@ -1,0 +1,497 @@
+<!---##############################################-->
+<!---###############OVERALL TEMPLATE###############-->
+<!---##############################################-->
+
+<template name="CrowdPromptPage">
+  <div class="prompts-page">
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs hcomp-prompts-page" role="tablist">
+      <li role="presentation" class="active">
+        <a href="#promptList" aria-controls="promptList" role="tab" data-toggle="tab">
+          Prompts
+        </a>
+      </li>
+      <li role="presentation">
+        <a href="#expList" aria-controls="expList" role="tab" data-toggle="tab">
+          Experiments
+        </a>
+      </li>
+      <li role="presentation">
+        <a href="#dataProcList" aria-controls="dataProcList" role="tab" data-toggle="tab">
+          Data Processing
+        </a>
+      </li>
+    </ul>
+  
+    <!-- Tab panes -->
+    <div class="tab-content">
+      {{> PromptsTab }}
+      {{> ExperimentsTab }}
+      {{> DataProcessingTab }}
+    </div> <!-- End tab content container -->
+  </div>
+
+</template>
+
+<template name="PromptsTab">
+    <!-- Prompts tab -->
+    <div role="tabpanel" class="tab-pane active" id="promptList">
+      <div class="row hcomp-prompts-page">
+        <center>  
+          <button id="new-bs" class="new-bs btn btn-xlarge2 btn-default btn-primary" data-toggle="modal" data-target="#newPromptModal">
+            New Brainstorm
+          </button> 
+        </center>
+      </div> <!-- End Row -->
+
+      
+      <div class="row hcomp-prompt-list"> 
+        {{#each prompts}}
+          {{> CrowdBrainstorm }}
+        {{/each}}
+      </div>
+    </div> <!-- End prompts tab -->
+  {{> NewPromptModal }}
+</template>
+
+
+<template name="ExperimentsTab">
+    <!-- Experiments tab -->
+    <div role="tabpanel" class="tab-pane" id="expList">
+      <div class="row hcomp-prompts-page">
+        <center>
+          <button id="new-exp" class="new-exp btn btn-xlarge2 btn-default btn-primary" data-toggle="modal" data-target="#newExpModal">
+            New Experiment
+          </button> 
+        </center>
+      </div>
+      <!-- End Row -->
+      <div class="row hcomp-prompt-list"> 
+        {{#each experiments}}
+          {{> CrowdExperiment }}
+        {{/each}}
+      </div>
+      <!-- End Row -->
+    </div> <!-- End experiments tab -->
+    {{> NewExperimentModal }}
+</template>
+
+<template name="DataProcessingTab">
+  <div role="tabpanel" class="tab-pane" id="dataProcList"> 
+    <div class="row hcomp-prompt-list"> 
+      {{#each dataSets}}
+        {{> DataSummary }}
+      {{/each}}
+    </div>
+  </div> <!-- End experiments tab -->
+</template>
+
+<!---##############################################-->
+<!---DATA PROCESSING TAB SUB-TEMPLATES--> 
+<!---##############################################-->
+<template name='DataSummary'>
+  <div id="graph-{{_id}}" class="menu-box prompt-panel">
+    <div class="row">
+      <div class="col-sm-6 prompt-data">
+        <div class="center-block">
+          <strong>Title:  </strong>
+          {{ title }}<br/>
+          <strong>Prompt: </strong> {{ question }}<br/>
+          <strong>DataForest Clustering URL: </strong> 
+          <a href="{{urlFor route='DataForest' data=getData}}">
+            {{urlFor route='DataForest' data=getData}}
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<!---##############################################-->
+<!---PROMPTS TAB SUB-TEMPLATES-->
+<!---##############################################-->
+<template name="NewPromptModal">
+      <!-- Modal -->
+      <div class="modal fade" id="newPromptModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content"> 
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h4 class="modal-title" id="newPromptLabel">Create New Brainstorming Prompt</h4>
+            </div>
+            <div class="modal-body">
+              <h5>Brainstorming prompt:</h5>
+              <input type="text" id="prompt-text" class="modal-box" placeholder="New Question">
+              <h5>Brainstorming title:</h5>
+              <input type="text" id="prompt-title" class="modal-box" placeholder="Shortened Brainstorm title">
+              <h4>Brainstorm Length(minutes):</h4>
+              <input type="number" id="prompt-length" class="modal-number-input" placeholder="minutes">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+              <button id="createPrompt" type="button" class="createPrompt btn btn-primary" data-toggle="modal" data-dismiss="modal">Save</button>
+            </div> <!-- End modal footer -->
+          </div> <!-- End modal content -->
+        </div> <!-- End modal dialog -->
+      </div> <!-- End modal -->
+</template>
+
+<template name="CrowdBrainstorm">
+  <div id="prompt-{{_id}}" class="menu-box prompt-panel">
+    <div class="row">
+      <div class="col-sm-6 prompt-data">
+        <div class="center-block">
+          <strong>Title:  </strong>
+          {{ title }}<br/>
+          <strong>Prompt: </strong> {{ question }}<br/>
+          {{#if hasTime}}
+            <strong>Session Length: {{ length }} minutes</strong><br/>
+          {{/if}}
+          <strong>Number of Workers: </strong> {{ numWorkers }}<br/>
+          <!--<strong>URL: </strong> {{urlFor route='HcompDashboard' data=_id}} <h3>id: {{_id}}</h3> -->
+          {{#with promptID}}
+            <strong>Crowd Ideator URL: </strong> 
+            <a href="{{urlFor route="CrowdLoginPage"}}">
+              {{urlFor "CrowdLoginPage"}}
+            </a><br/>
+            <strong>Crowd Inspire Ideator URL: </strong> 
+            <a href="{{urlFor route="CrowdIdeateInspireLogin"}}">
+              {{urlFor "CrowdIdeateInspireLogin"}}
+            </a><br/>
+            <strong>Crowd Clustering URL: </strong> 
+            <a href="{{urlFor route="MturkSynthLoginPage"}}">
+              {{urlFor "MturkSynthLoginPage"}}
+            </a>
+          {{/with}}
+        </div>
+      </div>
+      <a href="{{formUrl}}{{pathFor route="HcompDashboard" data=getData}}">
+        <div class="col-sm-2 dash-button clickable">
+          <h3 class="btn-label center-vertical">View Brainstorm Progress</h3>
+        </div>
+      </a>
+      <a href="{{formUrl}}{{pathFor route="Visualization" data=getData}}">
+        <div class="col-sm-2 review-button clickable">
+            <h3 class="btn-label center-vertical">Review Ideas</h3>
+        </div>
+      </a>
+      {{#if isNotPrepped }}
+        <div class="col-sm-2 prep-forest clickable">
+          <h3 class="btn-label center-vertical">Prep Data Forest</h3>
+        </div>
+      {{/if}}
+      <!-- <a href="">
+        <div class="col-sm-2 create-exp-button clickable">
+            <h3 class="center-vertical">Create Experiment</h3>
+        </div>
+      </a> -->
+    </div>
+  </div>
+</template>
+
+<!---##############################################-->
+<!---EXPERIMENTS TAB SUB-TEMPLATES-->
+<!---##############################################-->
+<template name="NewExperimentModal">
+  <!-- Large modal -->
+  <div class="modal fade" id="newExpModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title" id="newExpLabel">Create New Experiment</h4>
+        </div>
+        <div class="modal-body">
+          <div id="exp-head">
+            <h5>Experiment name:</h5>
+            <input type="text" id="exp-title" class="modal-box" placeholder="Experiment name" value="{{description}}">
+            {{#unless isInit}}
+              <div id="init-exp" class="btn btn-primary center">
+                Initialize Experiment
+              </div>
+            {{/unless}}
+          </div>
+          <!-- 
+          <h5>Choose brainstorming prompt:</h5>
+          <div class="exp-prompt-list">
+            {{#each prompts}}
+              {{> ExperimentPromptItem }}
+            {{/each}}
+          </div>
+          -->
+          {{#if isInit}}
+            <div id="num-parts section">
+              <h5 class="input-label">
+                Target number of participants per condition
+              </h5>
+              <input type="number" id="num-parts" class="modal-number-input"  value="{{partNum}}">
+            </div>
+            <div>
+              <h5>Define experiment conditions</h5>
+              <ol id="exp-ivs">
+                {{#each IVs}}
+                  {{> ExperimentIndependentVariable }}
+                {{/each}}
+              </ol>
+              <div id="add-IV" class="btn btn-primary">
+                Add Independent Variable
+              </div>
+            </div>
+            <div id="gen-conditions" class="btn btn-primary">
+              Generate Conditions from Variables
+            </div>
+            {{#each conditions}}
+              {{> ExperimentConditionSetup }}
+            {{/each}}
+            <div id="gen-custom-condition" class="btn btn-primary">
+              Generate Custom Condition
+            </div>
+          {{/if}}
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="cancel-create-exp btn btn-default" data-dismiss="modal">Cancel</button>
+          <button id="createExp" type="button" class="createExp btn btn-primary" data-toggle="modal" data-dismiss="modal">Save</button>
+        </div> <!-- End modal footer -->
+      </div>
+    </div>
+  </div>
+</template>
+
+<template name="ExperimentIndependentVariable">
+  <li class="exp-iv">
+    <div class="iv-name element">
+      <span class="iv-label">
+        IV name: 
+      </span>
+      <input type="text"  class="iv-name sm-textbox" placeholder="IV name" value="{{name}}">
+    </div>
+    <div class="iv-values element">
+      IV levels: <input type="text" class="iv-levels md-textbox" placeholder="separate with commas with no spaces, e.g., 'Control,Treatment'">
+    </div>
+  </li>
+</template>
+
+<template name="ExperimentConditionSetup">
+  <div class="exp-cond-setup section">
+    <div class="element"><strong>Name:</strong>
+      <input type="text"  class="name " placeholder="Condition name" value="{{description}}">
+    </div>
+    <div class="element"><strong># of Participants:</strong>
+      <input type="number" class="modal-number-input"  value="{{partNum}}">
+    </div>
+    <div class="workflow sub-section">
+      {{#if hasWorkflow }}
+        <i class="fa fa-chevron-right"></i>
+        <h5>Workflow:</h5>
+        {{#with workflow}}
+          <h5>Description:</h5>
+          <input type="text"  class="name " placeholder="Workflow Description" value="{{description}}">
+          <div class="collapse-section" style="display: none;">
+            <h5>Routes:</h5>
+            {{#each routes}}
+              {{> WorkflowRoute }}
+            {{/each}}
+            <button class="add-route btn btn-primary">
+              Add Route
+            </button>
+          </div>
+        {{/with}}
+      {{else}}
+        <h5><strong>Create Workflow:</strong></h5>
+        <select class="select-workflow">
+          <option value="new" selected>
+            New Blank Workflow
+          </option>
+          {{#each workflows}}
+            {{> WorkflowSelectItem }}
+          {{/each}}
+        </select>
+        <button class="create-workflow btn btn-primary">set</button>
+        <button class="copy-workflow btn btn-primary">copy</button>
+      {{/if}}
+    </div>
+  </div>
+</template>
+
+<template name="WorkflowRoute">
+  <div class="workflow-route section">
+    <div class="mini-section">
+    <h5>Route Name:</h5>
+    <input type="text"  class="name lg-textbox" placeholder="Condition name" value="{{name}}">
+    </div>
+    <div class="mini-section">
+    <h5>Metadata:</h5>
+    {{#each fields}}
+      {{> WorkflowRouteMetadataField }}
+    {{/each}}
+    <button class="add-metadata btn btn-primary">
+      Add
+    </button>
+    </div>
+  </div>
+</template>
+
+<template name="WorkflowRouteMetadataField">
+  <div class="metadata-field">
+    <h5>Key:</h5>
+    <input type="text"  class="key sm-textbox" placeholder="Metadata Key" value="{{key}}">
+    <h5>Value:</h5>
+    <input type="text"  class="value sm-textbox" placeholder="Metadata Value" value="{{value}}">
+  </div>
+</template>
+
+<template name="WorkflowSelectItem">
+  <option value="{{_id}}">
+    {{description}} -- {{routesToString routes}}
+  </option>
+</template>
+
+<template name="ExperimentPromptItem">
+  <div id="prompt-{{this._id}}" class="radio exp-prompt-item col-xs-8">
+    <label><input type="radio" name="promptRadios" id="promptRadios-{{this._id}}" value="{{this._id}}">
+      {{ this.title }} ({{ timeLimit }})
+    </label>
+  </div>
+</template>
+
+<template name="CrowdExperiment">
+  <div id="exp-{{_id}}" class="menu-box prompt-panel">
+    <div class="row">
+      <div class="col-sm-10 prompt-data">
+        <div class="center-block">
+          <strong>Description:  </strong>
+          {{ desc }}<br/>
+          <strong>Target Number of Participants per Condition: </strong> 
+            {{ partNumr }}<br/>
+          <strong>Exclude Participants:</strong> {{ numExcluded }}<a class="show-hide" data-toggle="collapse" data-parent="#exp-{{_id}}-exclude-container" href="#exp-{{_id}}-exclude-content"> (Show/Hide)</a><br/>
+              <!-- <div class="row"> -->
+                <div id="exp-{{_id}}-exclude-container">
+                  <div id="exp-{{_id}}-exclude-content" class="collapse exclude-user">
+                    <ol>
+                      {{#each excludeUsers}}
+                        {{ > CrowdExperimentExcludeUser }}
+                      {{/each}}
+                    </ol>
+                    <!-- <textArea id="exclude-for-exp{{_id}}" class="form-control" rows="10" placeholder="Write your ideas here, each on a new line."></textarea> -->
+                  </div>
+                </div>
+          <strong>Participant login URL: </strong> 
+            <a href="{{url}}">
+              {{url}}
+            </a><br/>
+          <!-- <strong>Conditions: </strong><br/> -->
+          {{#each conditions}}
+            {{> CrowdExperimentCondition }}
+          {{/each}}
+        </div>
+      </div>
+      <!--
+      <a href="{{urlFor route="ExpDashboard" data=getData}}">
+        <div class="col-sm-2 dash-button clickable">
+          <h3 class="btn-label center-vertical">Facilitate Brainstorm</h3>
+        </div>
+      </a>
+      -->
+      <div class="edit-exp col-sm-4 dash-button clickable">
+        <h3 class="btn-label center-vertical">Edit Experiment</h3>
+      </div>
+    </div>
+  </div>
+</template>
+
+<template name="CrowdExperimentCondition">
+  <div id="cond-{{_id}}" class="menu-box prompt-panel">
+    <div class="row">
+      <div class="col-sm-6 exp-cond-data">
+        <div class="center-block">
+          <strong>{{ desc }}:</strong><br/> 
+          {{ numAssigned }} assigned participants, {{numBegan}} started experiment, {{ numCompleted }} completed.<br/>
+          <a class="show-hide" data-toggle="collapse" data-parent="#cond-{{_id}}-partDetails-container" href="#cond-{{_id}}-partDetails-content"> (Show/Hide details)</a><br/>
+          <div id="cond-{{_id}}-partDetails-container">
+            <div id="cond-{{_id}}-partDetails-content" class="collapse">
+              <table class="table table-condensed">
+                <thead>
+                  <tr>
+                    <th>UserName</th>
+                    <th>Started Tutorial</th>
+                    <th>Started Fluency</th>
+                    <th>Finished Fluency</th>
+                    <th>Finished Tutorial</th>
+                    <th>Started Ideation</th>
+                    <th>Started Survey</th>
+                    <th>Finished Study</th>
+                    <th>Exited Early</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {{#each assignedParticipants}}
+                    {{> CondParticipant}}
+                  {{/each}}
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <!-- <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="{{readyProgress}}" aria-valuemin="0" aria-valuemax="100" style="width:{{readyProgress}}%;">
+              {{readyProgress}}% ready
+            </div>
+          </div>
+          <div class="btn btn-default btn-primary begin-bs">
+            Begin experiment
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<template name="CrowdExperimentExcludeUser">
+  <!-- <li> {{ this }} (<a href="" class="rm-excl-user">remove</a>)</li> -->
+  <li> {{ this }} </li>
+</template>
+
+<template name="CondParticipant">
+  <tr id="part-{{_id}}" class="{{ status }}">
+    <td>{{ partUserName }}</td>
+    <td>{{ tutorialStart }}</td>
+    <td>{{ fluencyStart }}</td>
+    <td>{{ fluencyEnd }}</td>
+    <td>{{ tutorialEnd }}</td>
+    <td>{{ ideationStart }}</td>
+    <td>{{ surveyStart }}</td>
+    <td>{{ finishedStudy }}</td>
+    <td>{{ exitEarly }}</td>
+    <!-- <td>{{#if tutorialStart}} 
+      <span class="glyphicon glyphicon-ok"></span>
+      {{/if}}
+    </td>
+    <td>{{#if fluencyStart}} 
+      <span class="glyphicon glyphicon-ok"></span>
+      {{/if}}
+    </td>
+    <td>{{#if fluencyEnd}} 
+      <span class="glyphicon glyphicon-ok"></span>
+      {{/if}}
+    </td>
+    <td>{{#if tutorialEnd}} 
+      <span class="glyphicon glyphicon-ok"></span>
+      {{/if}}
+    </td>
+    <td>{{#if ideationStart}} 
+      <span class="glyphicon glyphicon-ok"></span>
+      {{/if}}
+    </td>
+    <td>{{#if surveyStart}} 
+      <span class="glyphicon glyphicon-ok"></span>
+      {{/if}}
+    </td>
+    <td>{{#if finishedStudy}} 
+      <span class="glyphicon glyphicon-ok"></span>
+      {{/if}}
+    </td>
+    <td>{{#if exitEarly}} 
+      <span class="glyphicon glyphicon-remove"></span>
+      {{/if}}
+    </td> -->
+  </tr>
+</template>

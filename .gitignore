@@ -1,0 +1,31 @@
+lib-cov
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+
+.DS_Store
+pids
+logs
+results
+
+npm-debug.log
+node_modules
+
+.DS_Store
+
+# Vim Files #
+#############
+.*.swp
+.*.swo
+
+# release directory #
+#####################
+release
+
+# Windows text files #
+####################
+*.*~

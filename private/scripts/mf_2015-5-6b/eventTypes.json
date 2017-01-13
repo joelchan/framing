@@ -1,0 +1,352 @@
+[
+  {
+    "fields": [
+      "role"
+    ], 
+    "_id": "DgJx7cZ7YwFuzHmeg", 
+    "desc": "User finished role HcompFacilitator"
+  }, 
+  {
+    "fields": [
+      "role"
+    ], 
+    "_id": "5H7MaJ5hH7MnT3Bbe", 
+    "desc": "User began role Ideator"
+  }, 
+  {
+    "fields": [
+      "role"
+    ], 
+    "_id": "Y4YJg4b6zdnvwkpT8", 
+    "desc": "User finished role Ideator"
+  }, 
+  {
+    "fields": [
+      "role"
+    ], 
+    "_id": "eYXho9zCXd5j4WZ7R", 
+    "desc": "User began role Synthesizer"
+  }, 
+  {
+    "fields": [
+      "role"
+    ], 
+    "_id": "GDWB3kRRuZHYxJjva", 
+    "desc": "User finished role Synthesizer"
+  }, 
+  {
+    "fields": [
+      "role"
+    ], 
+    "_id": "7Ho7ucjp9tbSQTN44", 
+    "desc": "User began role Facilitator"
+  }, 
+  {
+    "fields": [
+      "role"
+    ], 
+    "_id": "dyFoxLiSeDPvPiEk3", 
+    "desc": "User finished role Facilitator"
+  }, 
+  {
+    "fields": [
+      "role"
+    ], 
+    "_id": "oCGimjhBjrymQG8Bv", 
+    "desc": "User began role Unassigned"
+  }, 
+  {
+    "fields": [
+      "role"
+    ], 
+    "_id": "vqwzD2MRDYrWzC2D5", 
+    "desc": "User finished role Unassigned"
+  }, 
+  {
+    "fields": [
+      "role"
+    ], 
+    "_id": "7tpJSCCya5YsdjDQa", 
+    "desc": "User began role Admin"
+  }, 
+  {
+    "fields": [
+      "role"
+    ], 
+    "_id": "N8TZTcEgjRzdKSQ92", 
+    "desc": "User finished role Admin"
+  }, 
+  {
+    "_id": "vZm6nDWcqa7ZgQPJe", 
+    "desc": "User entered ideation"
+  }, 
+  {
+    "_id": "Q5t9uEXnKZSEL9arY", 
+    "desc": "User began ideation"
+  }, 
+  {
+    "_id": "ZgYQRxgu2WjJQTGom", 
+    "desc": "User exited study early"
+  }, 
+  {
+    "fields": [
+      "ideaID", 
+      "promptID", 
+      "taskID", 
+      "tutorial"
+    ], 
+    "_id": "Bx84dBAK9bGPxJZNS", 
+    "desc": "User submitted idea"
+  }, 
+  {
+    "fields": [
+      "promptID"
+    ], 
+    "_id": "ePbvZ2hBYpWfDF8Ke", 
+    "desc": "User requested an inspiration"
+  }, 
+  {
+    "fields": [
+      "promptID", 
+      "taskID"
+    ], 
+    "_id": "u4HBzqkvWWbzhM6Fo", 
+    "desc": "User received an inspiration"
+  }, 
+  {
+    "fields": [
+      "promptID"
+    ], 
+    "_id": "nu4FDjtyiHNFsiNYa", 
+    "desc": "User did not recieve an inspiration"
+  }, 
+  {
+    "fields": [
+      "responseID"
+    ], 
+    "_id": "nBx8uSMrcNsgi2Cnt", 
+    "desc": "User submitted survey"
+  }, 
+  {
+    "fields": [
+      "notificationID", 
+      "promptID"
+    ], 
+    "_id": "869RmA6u9pjtNqqeo", 
+    "desc": "User handled a notification"
+  }, 
+  {
+    "fields": [
+      "notificationID", 
+      "promptID"
+    ], 
+    "_id": "mttJ4tQFduLy9uW4R", 
+    "desc": "User expanded a notification"
+  }, 
+  {
+    "fields": [
+      "notificationID", 
+      "promptID"
+    ], 
+    "_id": "k2wL8khHP9uov9iNR", 
+    "desc": "User collapsed a notification"
+  }, 
+  {
+    "fields": [
+      "sender", 
+      "recipientIDs", 
+      "type", 
+      "examples", 
+      "promptID"
+    ], 
+    "_id": "cjhpB5GCgFfZSRDva", 
+    "desc": "Dashboard user sent examples"
+  }, 
+  {
+    "fields": [
+      "sender", 
+      "recipientIDs", 
+      "type", 
+      "prompt", 
+      "promptID"
+    ], 
+    "_id": "x6m6Tcj5Qm8MDSpvo", 
+    "desc": "Dashboard user changed prompt"
+  }, 
+  {
+    "fields": [
+      "sender", 
+      "recipientIDs", 
+      "type", 
+      "theme", 
+      "promptID"
+    ], 
+    "_id": "JCks2FgQu8Brcewnh", 
+    "desc": "Dashboard user sent theme"
+  }, 
+  {
+    "fields": [
+      "sender", 
+      "recipientIDs", 
+      "type", 
+      "promptID"
+    ], 
+    "_id": "Lui9WAdHngF5H44Zn", 
+    "desc": "Ideator requested help"
+  }, 
+  {
+    "fields": [
+      "clusterID", 
+      "newState"
+    ], 
+    "_id": "GNMwPAozJ4tw8DPQh", 
+    "desc": "User toggled cluster collapse"
+  }, 
+  {
+    "fields": [
+      "ideaID", 
+      "newState"
+    ], 
+    "_id": "9kt8hw5XwbpsPSgNf", 
+    "desc": "User toggled idea game changer"
+  }, 
+  {
+    "fields": [
+      "clusterID", 
+      "newName"
+    ], 
+    "_id": "d4bP22ozipDe6caf7", 
+    "desc": "User modified cluster name"
+  }, 
+  {
+    "fields": [
+      "clusterID", 
+      "position"
+    ], 
+    "_id": "FyJcyqk38Nova9mjC", 
+    "desc": "User moved cluster"
+  }, 
+  {
+    "fields": [
+      "clusterID", 
+      "name"
+    ], 
+    "_id": "aw5hbD6SaYZBxRgZN", 
+    "desc": "Empty Cluster is being deleted"
+  }, 
+  {
+    "fields": [
+      "ideaID", 
+      "sourceID", 
+      "targetID"
+    ], 
+    "_id": "DtHNKyxWz2cYr2To6", 
+    "desc": "User removed Idea from cluster"
+  }, 
+  {
+    "fields": [
+      "ideaID", 
+      "sourceID", 
+      "targetID"
+    ], 
+    "_id": "SMQdyyD5QwZw7FB7J", 
+    "desc": "User created new cluster"
+  }, 
+  {
+    "fields": [
+      "ideaID", 
+      "sourceID", 
+      "targetID"
+    ], 
+    "_id": "p5BQveh5c9bhHDpPB", 
+    "desc": "User inserted idea to cluster"
+  }, 
+  {
+    "fields": [
+      "ideaID", 
+      "sourceID"
+    ], 
+    "_id": "76Cq7qzarZRFJiqAw", 
+    "desc": "User unclustered idea"
+  }, 
+  {
+    "fields": [
+      "isHidden"
+    ], 
+    "_id": "3WoQ4jn5HAQXEJPBb", 
+    "desc": "User clicked show/hide instructions"
+  }, 
+  {
+    "_id": "ogae49hJ4bFhvjkHq", 
+    "desc": "User logged into experiment"
+  }, 
+  {
+    "_id": "2tTuvaGbwBHu94Brr", 
+    "desc": "User was denied participation in experiment"
+  }, 
+  {
+    "_id": "EJxqGSxM9wNrFyEHL", 
+    "desc": "User consented to experiment"
+  }, 
+  {
+    "_id": "ZKNYaRr6Z7rryKWTa", 
+    "desc": "User began survey"
+  }, 
+  {
+    "_id": "rEzxgpsrkSZFK2aPv", 
+    "desc": "User completed survey"
+  }, 
+  {
+    "_id": "t2gp7idaamfzpvZiS", 
+    "desc": "User started a tutorial"
+  }, 
+  {
+    "_id": "pshHmvczKiqZvyQMu", 
+    "desc": "User finished a tutorial"
+  }, 
+  {
+    "_id": "bWqMSEdaCcFic6Nxm", 
+    "desc": "User started fluency measure task"
+  }, 
+  {
+    "_id": "6fuTnKvPvx4KvbSaL", 
+    "desc": "User finished fluency measure task"
+  }, 
+  {
+    "fields": [
+      "taskStepNum", 
+      "taskStepMax"
+    ], 
+    "_id": "uLcQ9DTv4hvXcQBRG", 
+    "desc": "User finished a tutorial step"
+  }, 
+  {
+    "fields": [
+      "currentTaskStepNum", 
+      "taskStepMax"
+    ], 
+    "_id": "mBXPo52Kep2ZcHyhQ", 
+    "desc": "User rewound a tutorial step"
+  }, 
+  {
+    "fields": [
+      "role"
+    ], 
+    "_id": "Zdr3P8NRJbEc3vHtf", 
+    "desc": "User began role HcompIdeator"
+  }, 
+  {
+    "fields": [
+      "role"
+    ], 
+    "_id": "bPZcMAkzLvDsmBdrx", 
+    "desc": "User finished role HcompIdeator"
+  }, 
+  {
+    "fields": [
+      "role"
+    ], 
+    "_id": "DW3AGDbLPYWFRLyaT", 
+    "desc": "User began role HcompFacilitator"
+  }
+]

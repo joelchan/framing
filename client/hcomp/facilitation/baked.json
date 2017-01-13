@@ -1,0 +1,433 @@
+ {"nodes":
+ 	[
+ 		{"name":1,"size":1,"text":"sleep schedule"},
+ 		{"name":2,"size":2.6333333333333333,"text":"health-centered app"},
+ 		{"name":3,"size":4.266666666666667,"text":"something to track strength over time"},
+ 		{"name":4,"size":5.083333333333333,"text":"workout routines for EMTs"},
+ 		{"name":5,"size":5.083333333333333,"text":"game to test finger dexterity"},
+ 		{"name":6,"size":4.266666666666667,"text":"well-being monitor"},
+ 		{"name":7,"size":5.9,"text":"an app to share funny stories about the things they see"},
+ 		{"name":8,"size":5.9,"text":"critical incident support guide"},
+ 		{"name":9,"size":5.083333333333333,"text":"EMT task checklist"},
+ 		{"name":10,"size":5.9,"text":"group journalling app"},
+ 		{"name":11,"size":3.45,"text":"messenger app for work "},
+ 		{"name":12,"size":4.266666666666667,"text":"health resource app"},
+ 		{"name":13,"size":5.9,"text":"Quick access to first aid instructions"},
+ 		{"name":14,"size":5.083333333333333,"text":"app to tell family/friends when they'll get off work"},
+ 		{"name":15,"size":5.9,"text":"game where person drives around a map as quickly as possible"},
+ 		{"name":16,"size":5.9,"text":"app to log best practices for specific situations for other EMTs"},
+ 		{"name":17,"size":5.083333333333333,"text":"app that tracks career skillbuilding"},
+ 		{"name":18,"size":50,"text":"EMT social network"},
+ 		{"name":19,"size":5.9,"text":"upload health information using mobile data"},
+ 		{"name":20,"size":2.6333333333333333,"text":"Family activity planner"},
+ 		{"name":21,"size":5.9,"text":"using cameras to recognize injuries"},
+ 		{"name":22,"size":4.266666666666667,"text":"app for building strength at the gym (can be a game)"},
+ 		{"name":23,"size":2.6333333333333333,"text":"use fingerprint technology to identify individual"},
+ 		{"name":24,"size":4.266666666666667,"text":"app to track driving record"},
+ 		{"name":25,"size":2.6333333333333333,"text":"Job skill assessment"},
+ 		{"name":26,"size":5.9,"text":"using vibrations/sound to identify proximity to patient"},
+ 		{"name":27,"size":5.083333333333333,"text":"Cheerleader/coach app for emotional support at end of day"},
+ 		{"name":28,"size":4.266666666666667,"text":"app for quick tutorials about career-advancing skills (e.g., how to use excel)"},
+ 		{"name":29,"size":2.6333333333333333,"text":"Communication systems game"},
+ 		{"name":30,"size":17.333333333333332,"text":"Medical codes/procedures game"},
+ 		{"name":31,"size":41.833333333333336,"text":"\"Work mode\" for the phone"},
+ 		{"name":32,"size":5.9,"text":"upload patient data using voice recording to cross reference what they said at time of accident versus post accident"},
+ 		{"name":33,"size":6.716666666666667,"text":"use app to visualize health status of patient - connected to devices that measure it such as heart rate monitor,blood pressure etc"},
+ 		{"name":34,"size":4.266666666666667,"text":"Aggregate communications log"},
+ 		{"name":35,"size":9.166666666666666,"text":"Patient info/status"},
+ 		{"name":36,"size":1.8166666666666667,"text":"Password protected files"},
+ 		{"name":37,"size":2.6333333333333333,"text":"walkie talkie app"},
+ 		{"name":38,"size":6.716666666666667,"text":"Frequent injuries based on area"},
+ 		{"name":39,"size":5.9,"text":"App that records things done well - offers a reward system for successes - based on roland's need to reassurance while on the job that he is meeting expectations"},
+ 		{"name":40,"size":5.9,"text":"Newsfeed of all EMTs"},
+ 		{"name":41,"size":5.083333333333333,"text":"gamification of good performance - inspires them to do certain procedure properly"},
+ 		{"name":42,"size":6.716666666666667,"text":"Shift/driver/assignment"},
+ 		{"name":43,"size":5.9,"text":"post-critical incident assessment"},
+ 		{"name":44,"size":5.083333333333333,"text":"Unrelated stress relief game (angry birds) that passively builds skills"},
+ 		{"name":45,"size":2.6333333333333333,"text":"\"Rookie\" app - Learn the basics"},
+ 		{"name":46,"size":6.716666666666667,"text":"app that shows the most dangerous areas of the city based on EMT-generated logs (e.g., intersection of X and Y is known to be bad)"},
+ 		{"name":47,"size":5.083333333333333,"text":"Dictated status logging for events and comms"},
+ 		{"name":48,"size":5.083333333333333,"text":"app that sends notifications to EMT's family in the case that somehting happens to the EMT"},
+ 		{"name":49,"size":5.9,"text":"driving game where person learns how to get around traffic/streets better"},
+ 		{"name":50,"size":5.083333333333333,"text":"app that chronicles positive on the job stories"},
+ 		{"name":51,"size":6.716666666666667,"text":"app that sends bits of inspiration (quotes, pictures, etc) for EMTs when they're burnt out/tired"},
+ 		{"name":52,"size":5.083333333333333,"text":"Send pics to other parties (hospital or cops)"},
+		{"name":53,"text": "Health and Wellbeing", "type": "category",  "fixed":true},
+		{"name":54,"text": "Skillbuilding", "type": "category", "fixed":true},
+		{"name":55,"text": "Emotional support", "type": "category", "fixed":true},
+		{"name":56,"text": "Workflow Improvement", "type": "category", "fixed":true},
+		{"name":57,"text": "Family/friends support", "type": "category",  "fixed":true},
+		{"name":58,"text": "Gamification", "type": "category", "fixed":true},
+		{"name":59,"text": "Logging and Performance", "type": "category", "fixed":true},
+		{"name":60,"text": "Communication", "type": "category",  "fixed":true},
+		{"name":61,"text": "Data/Job tasks", "type": "category",  "fixed":true},
+		{"name":62,"text": "hospital, dispatch, cops", "type": "category", "fixed":true},
+		{"name":63,"text": "Community/ Support", "type": "category", "fixed":true},
+		{"name":64,"text": "Apps for after work hours", "type": "category", "fixed":true} 	
+
+ 	],
+
+"edges":
+	[
+		{"source":1,"target":15,"strength":3},
+		{"source":1,"target":32,"strength":2},
+		{"source":1,"target":49,"strength":3},
+		{"source":3,"target":39,"strength":16},
+		{"source":3,"target":47,"strength":9},
+		{"source":3,"target":50,"strength":7},
+		{"source":4,"target":14,"strength":6},
+		{"source":4,"target":21,"strength":7},
+		{"source":4,"target":28,"strength":8},
+		{"source":4,"target":29,"strength":8},
+		{"source":6,"target":11,"strength":3},
+		{"source":6,"target":26,"strength":2},
+		{"source":6,"target":45,"strength":1},
+		{"source":8,"target":17,"strength":17},
+		{"source":8,"target":47,"strength":12},
+		{"source":9,"target":15,"strength":2},
+		{"source":9,"target":32,"strength":2},
+		{"source":9,"target":49,"strength":2},
+		{"source":10,"target":13,"strength":21},
+		{"source":10,"target":27,"strength":2},
+		{"source":10,"target":30,"strength":20},
+		{"source":10,"target":32,"strength":8},
+		{"source":10,"target":47,"strength":2},
+		{"source":11,"target":10,"strength":3},
+		{"source":11,"target":23,"strength":3},
+		{"source":11,"target":44,"strength":3},
+		{"source":13,"target":1,"strength":3},
+		{"source":13,"target":16,"strength":2},
+		{"source":13,"target":32,"strength":1},
+		{"source":13,"target":49,"strength":2},
+		{"source":14,"target":43,"strength":4},
+		{"source":14,"target":48,"strength":20},
+		{"source":15,"target":11,"strength":2},
+		{"source":15,"target":27,"strength":2},
+		{"source":15,"target":44,"strength":2},
+		{"source":16,"target":6,"strength":2},
+		{"source":16,"target":21,"strength":2},
+		{"source":16,"target":38,"strength":1},
+		{"source":17,"target":8,"strength":17},
+		{"source":17,"target":47,"strength":12},
+		{"source":18,"target":11,"strength":17},
+		{"source":18,"target":31,"strength":18},
+		{"source":18,"target":32,"strength":7},
+		{"source":19,"target":47,"strength":15},
+		{"source":20,"target":37,"strength":19},
+		{"source":21,"target":10,"strength":2},
+		{"source":21,"target":23,"strength":2},
+		{"source":21,"target":36,"strength":2},
+		{"source":21,"target":48,"strength":7},
+		{"source":23,"target":6,"strength":2},
+		{"source":23,"target":16,"strength":2},
+		{"source":23,"target":38,"strength":1},
+		{"source":23,"target":50,"strength":2},
+		{"source":24,"target":38,"strength":9},
+		{"source":24,"target":42,"strength":25},
+		{"source":24,"target":49,"strength":16},
+		{"source":25,"target":22,"strength":17},
+		{"source":25,"target":31,"strength":7},
+		{"source":25,"target":32,"strength":7},
+		{"source":25,"target":34,"strength":17},
+		{"source":26,"target":11,"strength":2},
+		{"source":26,"target":27,"strength":2},
+		{"source":26,"target":47,"strength":1},
+		{"source":27,"target":10,"strength":2},
+		{"source":27,"target":21,"strength":2},
+		{"source":27,"target":43,"strength":10},
+		{"source":28,"target":4,"strength":8},
+		{"source":28,"target":14,"strength":7},
+		{"source":28,"target":21,"strength":8},
+		{"source":28,"target":29,"strength":10},
+		{"source":28,"target":43,"strength":5},
+		{"source":28,"target":48,"strength":8},
+		{"source":29,"target":4,"strength":8},
+		{"source":29,"target":14,"strength":7},
+		{"source":29,"target":21,"strength":8},
+		{"source":29,"target":28,"strength":10},
+		{"source":29,"target":43,"strength":5},
+		{"source":29,"target":48,"strength":8},
+		{"source":30,"target":10,"strength":20},
+		{"source":30,"target":13,"strength":17},
+		{"source":31,"target":2,"strength":13},
+		{"source":31,"target":18,"strength":18},
+		{"source":31,"target":25,"strength":7},
+		{"source":32,"target":10,"strength":8},
+		{"source":32,"target":11,"strength":12},
+		{"source":32,"target":23,"strength":1},
+		{"source":32,"target":25,"strength":7},
+		{"source":32,"target":38,"strength":4},
+		{"source":32,"target":49,"strength":1},
+		{"source":36,"target":1,"strength":4},
+		{"source":36,"target":15,"strength":2},
+		{"source":36,"target":32,"strength":2},
+		{"source":36,"target":50,"strength":2},
+		{"source":37,"target":20,"strength":19},
+		{"source":37,"target":38,"strength":7},
+		{"source":37,"target":45,"strength":9},
+		{"source":38,"target":13,"strength":1},
+		{"source":38,"target":26,"strength":1},
+		{"source":38,"target":44,"strength":7},
+		{"source":38,"target":45,"strength":5},
+		{"source":39,"target":47,"strength":11},
+		{"source":39,"target":50,"strength":9},
+		{"source":40,"target":10,"strength":9},
+		{"source":43,"target":4,"strength":5},
+		{"source":43,"target":48,"strength":4},
+		{"source":44,"target":13,"strength":2},
+		{"source":44,"target":27,"strength":2},
+		{"source":44,"target":32,"strength":6},
+		{"source":44,"target":49,"strength":2},
+		{"source":45,"target":11,"strength":2},
+		{"source":45,"target":26,"strength":1},
+		{"source":45,"target":44,"strength":1},
+		{"source":47,"target":3,"strength":9},
+		{"source":47,"target":13,"strength":2},
+		{"source":47,"target":15,"strength":8},
+		{"source":47,"target":26,"strength":1},
+		{"source":47,"target":44,"strength":2},
+		{"source":48,"target":21,"strength":7},
+		{"source":48,"target":23,"strength":19},
+		{"source":48,"target":28,"strength":8},
+		{"source":48,"target":29,"strength":8},
+		{"source":49,"target":11,"strength":3},
+		{"source":49,"target":24,"strength":16},
+		{"source":49,"target":44,"strength":2},
+		{"source":50,"target":6,"strength":1},
+		{"source":50,"target":16,"strength":1},
+		{"source":50,"target":36,"strength":2},
+		{"source":50,"target":49,"strength":1},
+		{
+        "source": 1,
+        "target": 53
+    },
+    {
+        "source": 2,
+        "target": 53
+    },
+    {
+        "source": 3,
+        "target": 53
+    },
+    {
+        "source": 4,
+        "target": 53
+    },
+    {
+        "source": 5,
+        "target": 54
+    },
+    {
+        "source": 6,
+        "target": 53
+    },
+    {
+        "source": 7,
+        "target": 55
+    },
+    {
+        "source": 8,
+        "target": 53
+    },
+    {
+        "source": 9,
+        "target": 56
+    },
+    {
+        "source": 10,
+        "target": 55
+    },
+    {
+        "source": 11,
+        "target": 56
+    },
+    {
+        "source": 12,
+        "target": 55
+    },
+    {
+        "source": 13,
+        "target": 56
+    },
+    {
+        "source": 14,
+        "target": 57
+    },
+    {
+        "source": 15,
+        "target": 58
+    },
+    {
+        "source": 16,
+        "target": 54
+    },
+    {
+        "source": 17,
+        "target": 54
+    },
+    {
+        "source": 18,
+        "target": 55
+    },
+    {
+        "source": 19,
+        "target": 56
+    },
+    {
+        "source": 20,
+        "target": 57
+    },
+    {
+        "source": 21,
+        "target": 56
+    },
+    {
+        "source": 22,
+        "target": 53
+    },
+    {
+        "source": 23,
+        "target": 56
+    },
+    {
+        "source": 24,
+        "target": 59
+    },
+    {
+        "source": 25,
+        "target": 54
+    },
+    {
+        "source": 26,
+        "target": 56
+    },
+    {
+        "source": 27,
+        "target": 55
+    },
+    {
+        "source": 28,
+        "target": 54
+    },
+    {
+        "source": 29,
+        "target": 60
+    },
+    {
+        "source": 29,
+        "target": 58
+    },
+    {
+        "source": 30,
+        "target": 58
+    },
+    {
+        "source": 31,
+        "target": 56
+    },
+    {
+        "source": 32,
+        "target": 56
+    },
+    {
+        "source": 33,
+        "target": 56
+    },
+    {
+        "source": 34,
+        "target": 60
+    },
+    {
+        "source": 34,
+        "target": 59
+    },
+    {
+        "source": 35,
+        "target": 59
+    },
+    {
+        "source": 36,
+        "target": 61
+    },
+    {
+        "source": 37,
+        "target": 60
+    },
+    {
+        "source": 37,
+        "target": 62
+    },
+    {
+        "source": 38,
+        "target": 56
+    },
+    {
+        "source": 39,
+        "target": 59
+    },
+    {
+        "source": 40,
+        "target": 63
+    },
+    {
+        "source": 41,
+        "target": 59
+    },
+    {
+        "source": 41,
+        "target": 58
+    },
+    {
+        "source": 42,
+        "target": 59
+    },
+    {
+        "source": 43,
+        "target": 60
+    },
+    {
+        "source": 43,
+        "target": 62
+    },
+    {
+        "source": 44,
+        "target": 54
+    },
+    {
+        "source": 45,
+        "target": 58
+    },
+    {
+        "source": 46,
+        "target": 61
+    },
+    {
+        "source": 47,
+        "target": 60
+    },
+    {
+        "source": 47,
+        "target": 59
+    },
+    {
+        "source": 48,
+        "target": 57
+    },
+    {
+        "source": 49,
+        "target": 58
+    },
+    {
+        "source": 50,
+        "target": 55
+    },
+    {
+        "source": 51,
+        "target": 55
+    },
+    {
+        "source": 52,
+        "target": 60
+    }
+	]
+}

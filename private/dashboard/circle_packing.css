@@ -1,0 +1,51 @@
+/* this is the stylesheet for the circle packing viz */
+
+/* this defines the style rules for circles - mainly the leaves */
+circle {
+  fill: #E8D6CA;
+  stroke: #757474;
+  pointer-events: all;
+}
+
+/* if a circle is a parent, it has different style rules */
+circle.parent {
+  fill: #517A56;
+  fill-opacity: .15;
+  stroke: #325437;
+}
+
+/* when a parent is hovered over, the color of the outline changes */
+circle.parent:hover {
+  stroke: #FA7805;
+  stroke-width: .5px;
+}
+
+/* when a child is hovered over the stroke changes color */
+circle.child:hover {
+  stroke: #148718;
+  stroke-width: .5px;
+}
+
+/* this defines the style rules of the div that is used to  make a hovering label */
+#tooltip {
+  position: absolute;
+  width: 300px;
+  height: auto;
+  padding: 3px;
+  background-color: white;
+  pointer-events: none;
+}
+
+/* when the tooltip has the hidden class, it is hidden from view */
+#tooltip.hidden {
+  display: none;
+}
+
+/* this defines the style rules of the writing inside the tooltip */
+#tooltip p {
+  margin: 0;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+}

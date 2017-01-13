@@ -1,0 +1,166 @@
+.forest #idealist{
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	background-color: #f5f5f5;
+	margin-left: 0px;
+  padding-left: 0;
+  padding: 0 5px;
+  overflow: scroll;
+}
+
+.forest #unclustered-ideas{
+  margin: 15px 0;
+}
+
+.forest #other-node-status {
+  overflow: scroll;
+}
+
+.forest .forest-tree{
+  font-size: small;
+  /* Set height to zero and divs will auto size*/
+  margin: 0;
+  padding: 0;
+}
+.forest .forest-tree h3 {
+  margin: 0;
+}
+
+.forest .forest-tree .fa {
+  padding: 3px;
+}
+
+.forest #root-tree {
+  overflow: scroll;
+}
+
+.forest .form-group {
+  margin-bottom: 10px;
+}
+
+.forest #confirmModal, #nameModal {
+  top: 25%;
+  left: 25%;
+  width: 600px;
+}
+
+.forest #node-drag-target, .stack, .donestack{
+	/* margin-left: 0px; */
+}
+
+.forest .donestack > .idea-item, .cluster-item{
+	/*display: none;*/
+}
+
+.forest .forest-idea-item {
+	background-color: #f5f5f5;
+	border: solid 1px #ddd;
+	border-radius: 5px;
+	list-style: none;
+	list-style-type: none;
+  margin: 5px 0px;
+}
+
+.forest .forest-idea-node {
+  background-color: #;
+	border: solid 3px #ddd;
+	border-radius: 5px;
+	list-style: none;
+	list-style-type: none;
+  margin: 5px 0px;
+  padding: 5px 10px;
+}
+
+.forest .selected-node {
+  color: #fff;
+  background-color: #F39814;
+}
+
+.forest .forest-node-label {
+	border: none;
+	list-style: none;
+	list-style-type: none;
+  margin: 0px 0px;
+}
+
+
+.forest .forest-idea-placeholder {
+	border: dashed 1px #ddd;
+	border-radius: 5px;
+	list-style: none;
+	list-style-type: none;
+  margin: 5px 0px;
+  padding: 15px 5px;
+}
+
+.forest ul {
+	list-style: none;
+	list-style-type: none;
+  /* padding: 0; */
+  /* margin: 0; */
+}
+
+.forest li.ui-sortable-helper{
+	cursor: move;
+}
+
+.forest li.sort-disabled{
+	border: none;
+	background-color: #f5f5f5;
+	height:0px;
+	padding:1px;
+}
+
+.forest .newstack{
+	border: dashed 1px #ddd;
+	border-radius: 5px;
+	padding: 5px;
+}
+
+.forest .clusternodename{
+}
+
+.forest #tree-viz .btn {
+  margin: 5px;
+}
+
+.forest #rename-tree {
+  display: inline-block;
+  width: 100%;
+  margin: 5px 0 5px 0;
+}
+
+label, .fa{
+	/*padding-left: 5px;*/
+	padding-top: 5px;
+  padding: 7px;
+}
+
+.donestack{
+	background-color: #f5f5f5;
+}
+
+#tree{
+	height: 675px;
+	overflow: auto;
+}
+
+.forest #nodestatus, #generalize, #buildcluster{
+  /* padding: 5px; */
+}
+
+#nomatch{
+	margin-top: 50px;
+}
+
+#generalize > button{
+	margin-top: 10px;
+}
+
+.forest .subsection1 {
+  /* background: #f5f5f5;  */
+  margin: 15px 0;
+}
+
+.forest .center-icon {
+}

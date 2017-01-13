@@ -1,0 +1,35 @@
+<template name="MturkLoginPage">
+  <div class="container">
+    <div class="login-box">
+      {{#if isExp}}
+        <input type="text" id="name" class="text-input" placeholder="Enter your Mturk ID" required>
+      {{else}}
+        <input type="text" id="name" class="text-input" placeholder="Enter your Name" required>
+      {{/if}}
+    </div>
+    <div class = "login-box hidden">
+    <input type="text" id="nickname" class="text-input" placeholder="Enter an optional nickname">
+    </div>
+  </div>
+
+  <center>  
+    <button id="nextPage" class="nextPage btn-xlarge2 btn-default btn-primary">
+      Continue 
+    </button> 
+  </center>
+</template>
+
+<template name="HcompLoginPage">
+  <div class="container">
+    <div class="login-box">
+      <input type="text" id="name" class="text-input" placeholder="Enter your username"/>
+    </div>
+  </div>
+
+  <center>  
+    <button id="nextPage" class="nextPage btn-xlarge2 btn-default btn-primary">
+      Continue 
+    </button> 
+  </center>
+</template>
+

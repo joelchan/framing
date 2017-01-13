@@ -1,0 +1,20 @@
+<template name="IdeaReplay">
+  <div class="idea-replay">
+    <div class="row">
+      <div class="col-sm-4 col-md-offset-4">
+        <div id="replay-btn" class="btn btn-lg btn-primary">Play</div>
+      </div>
+    </div>
+    <div class="row">
+      {{#each ideas}}
+        {{> ReplayIdeaBox }}
+      {{/each}}
+    </div>
+  </div> 
+</template>
+
+<template name="ReplayIdeaBox">
+  <div class="idea-box btn btn-lg btn-default">
+    <span>{{ content }}</span>
+  </div>
+</template>

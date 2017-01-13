@@ -1,0 +1,185 @@
+<template name="SubrouteSandbox">
+    <div class="synthesisBox">
+        <div class="row">
+            <div class="col-md-2" id="console">
+                <div class="row" id="mock">
+                    {{> MiniMap}}
+                </div>
+                <div class="row" id="ideaspace">
+                    {{> IdeaSpace}}
+                </div>
+            </div>
+            <div class="col-md-10">
+                {{> ZoomSpace}}
+            </div>
+        </div>
+    </div>
+</template>
+<template name="MiniMap">
+    <div class="row map">
+        {{ > MiniMapViewPane}} 
+        {{#each getIdeas}} 
+            {{ > MiniMapElement}} 
+        {{/each}} 
+        {{#each getClusters}} 
+            {{ > MiniClusterElement}} 
+        {{/each}}
+    </div>
+    <div class="row zoomControl">
+        <div id="zOut">
+            <span class="glyphicon glyphicon-zoom-out zoom-control-buttons"></span>
+        </div>
+        <div id="zBar">
+            <input type="range" class="zoom-range" step="0.1" min="0.5" max="1">
+        </div>
+        <div id="zIn"><span class="glyphicon glyphicon-zoom-in zoom-control-buttons"></span></div>
+    </div>
+    <div class="row clusterControls">
+        <div class="col-md-3 col-xs-3 filler">
+        </div>
+        <div class="col-md-7 col-xs-7 createPattern">
+            {{> InstantiateCluster}}
+        </div>
+        <div class="col-md-2 col-xs-2 instructionsContainer">
+            <a><span class="glyphicon glyphicon-question-sign" id="instructions"></span></a>
+        </div>
+    </div>
+        <!-- <div class="createPattern"> {{ > InstantiateCluster}} </div> -->
+    <div class="row numIdeas">
+        <!-- <div class="col-md-12 col-xs-12"> -->
+            <span style="font-size:24px; font-weight:bold">{{numIdeasTotal}}</span> ideas to process
+            <br/>
+            <span style="font-size:24px; font-weight:bold">{{getRemainingIdeas}}</span> to go &nbsp;&nbsp; {{#if couldBeDone}} {{ > Finished }} {{else}} <button id="finished" disabled="disabled" class="btn btn-success">I'm finished!</button> {{/if}}
+        <!-- </div> -->
+    </div>
+</template>
+<template name="IdeaSpace">
+    <div class="ideaArea">
+        {{#each displayIdeas}} 
+            {{ > IdeaListElement}} 
+        {{/each}}
+    </div>
+</template>
+<template name="IdeaListElement">
+    <div class="ideaListElement" id="{{_id}}">
+        {{content}}
+    </div>
+</template>
+<template name="ZoomSpace">
+    <div class="panZoomFrame">
+        {{#each getZoomSpaceIdeas}} 
+            {{ > ZoomSpaceElement}} 
+        {{/each}}
+        <div class="caliberBox"> </div>
+        {{#each getClusters}} 
+            {{> Cluster}} 
+        {{/each}}
+    </div>
+</template>
+<template name="ZoomSpaceElement">
+    <div class="zoomSpaceElement" id="{{_id}}">
+        <div class="zoomElementContent">
+            {{content}}
+        </div>
+    </div>
+</template>
+<template name="InstantiateCluster">
+    <!-- <div class="clusterButton"> -->
+        <button id="addCluster" class="btn btn-primary">New Pattern</button>
+    <!-- </div> -->
+</template>
+<template name="Finished">
+    <!-- <div class="finishedButton"> -->
+    <button id="finished" class="btn btn-success">I'm finished!</button>
+    <!-- </div> -->
+</template>
+<template name="MiniMapViewPane">
+    <div class="ScalingViewPane">
+        <!-- <div class = "caliberBox2"> </div> -->
+        <!-- <span class="glyphicon glyphicon-eye-open" id="leftEye" style="font-size:20px;"></span> <span class="glyphicon glyphicon-eye-open" id="rightEye" style="font-size:20px;"></span>  -->
+    </div>
+</template>
+<template name="MiniClusterElement">
+    <div class="miniCluster" id="miniCluster{{_id}}"></div>
+</template>
+<template name="MiniMapElement">
+    <div class="miniIdeas" id="miniIdeas{{_id}}"></div>
+</template>
+
+<template name="Cluster">
+    <div class="cluster container" id="{{_id}}">
+        <div class="row cluster-container" id="cluster-container-{{_id}}">
+            <div class="row clusterLabel">
+                <div class="col-xs-12 col-md-12">          
+                    <span class = "clusterName" id = "{{_id}}" > {{getClusterName}}</span>
+                    <textarea class = "nameCluster" id = "{{_id}}" type = "input" style = "display:none;"></textarea>
+                </div>
+            </div>
+            <div class="row clusterControls">
+                <div class="col-xs-3 col-md-3 ideaCollapser">
+                    {{#if getClusterIdeasCount}}
+                    <!-- <a data-toggle="collapse" data-parent="#cluster-idea-group-{{_id}}" href="#cluster-idea-list-{{_id}}"> -->
+                    <a data-toggle="collapse" data-parent="#cluster-idea-group-{{_id}}">
+                        {{#if isCollapsed}}
+                            <span class="glyphicon glyphicon-collapse-down" id="downArrow" style="font-size:36px;"></span>
+                        {{else}}
+                            <span class="glyphicon glyphicon-collapse-up" id="downArrow" style="font-size:36px;"></span>
+                        {{/if}}
+                    </a>
+                    {{else}}
+                    <span class="glyphicon glyphicon-collapse-down" id="downArrow" style="font-size:36px;"></span> {{/if}}
+                </div>
+                <div class="col-xs-6 col-md-6">
+                    <span class="badge clustNumIdeas"> {{getClusterIdeasCount}}</span> ideas
+                </div>
+                <div class="col-xs-2 col-md-2 del-cluster">
+                    {{> DeleteCluster}}
+                </div>
+            </div>
+            <!-- <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                <span class="glyphicon glyphicon-chevron-down" id = "downArrow" style="font-size:36px;"></span>
+            </a> -->
+            <!-- &nbsp; &nbsp;  <span class="badge clustNumIdeas"> {{getClusterIdeasCount}}</span> ideas -->
+            <!-- <div class="clustNumIdeas"> {{getClusterIdeasCount}} </div> -->
+            <!-- {{ > DeleteCluster }} -->
+            <!-- <div class="dropdown-menu" id ="{{_id}}"> 
+                {{#each getClusterIdeas}} 
+                    {{> ClusterIdeaElement}} 
+                {{/each}} 
+            </div> -->
+        </div>
+        <div class="cluster-ideas row">
+            <div id="cluster-idea-group-{{_id}}">
+                {{#if isCollapsed}}
+                <div id="cluster-idea-list-{{_id}}" class="collapse">
+                    {{#each getClusterIdeas}} {{> ClusterIdeaElement}} {{/each}}
+                </div>
+                {{else}}
+                <div id="cluster-idea-list-{{_id}}" class="collapse in">
+                    {{#each getClusterIdeas}} {{> ClusterIdeaElement}} {{/each}}
+                </div>
+                {{/if}}
+            </div>
+        </div>
+    </div>
+</template>
+<template name="ClusterIdeaElement">
+    <div class="clusterListElement" id="{{_id}}">
+        {{content}}
+    </div>
+</template>
+<template name="DeleteCluster">
+    <span class="glyphicon glyphicon-remove" id="delX" style="font-size:36px;"> </span>
+</template>
+<!-- Load Minimap objects with ID's from the idea _.ids -->
+<!-- <ul id="cluster" class="cluster ul">
+            {{#each getClusters}}
+                
+            {{/each}}
+        </ul> -->
+<!-- <template name="ClusterSpace">
+    {{> InstantiateCluster}} 
+    {{#each getClusters}} 
+        {{ > Cluster}} 
+    {{/each}}
+</template> -->

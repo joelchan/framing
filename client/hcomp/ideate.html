@@ -1,0 +1,217 @@
+<template name="ExperimentBeginModal">
+  <!--Change Prompt Modal-->
+  <div class="modal fade" id="exp-begin-modal" tabindex="-1" 
+    role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <h3 class="modal-title" id="myModalLabel">
+          The brainstorm has begun! Click "Begin" when you are ready to start.
+        </h3>
+        <div type="button" class="btn btn-success popup-continue" 
+          data-dismiss="modal">
+          Begin!
+        </div>
+      </div> <!-- close modal-content -->
+    </div> <!-- close modal-dialog -->
+  </div> <!-- close changeModal -->
+</template>
+
+<template name="MturkIdeationPage">
+  <div class="row hcomp-ideation-pane">
+    <div class="col-md-3 main-prompt">
+      {{> MturkMainPrompt}}
+    </div>
+    <div class="col-md-9 task-lists">
+      {{> MturkTaskLists}}
+    </div>
+  </div>
+  {{> ExperimentBeginModal }}
+  {{> HcompNoNewTaskModal }}
+</template>
+
+<template name="MturkMainPrompt">
+  <div class = "ideator-directions">
+    <label class="directions-header"> Instructions&nbsp; </label><a class="show-hide" data-toggle="collapse" data-parent="#directions-container" href="#directions-content">(Show/Hide)</a>
+    <!-- <div class="row"> -->
+      <div id="directions-container">
+        <div id="directions-content" class="collapse">
+          <ol>
+            <li>{{> InstructionsGeneral}}</li>
+            <li>{{> InstructionsNoRefresh}}</li>
+            <li>{{> InstructionsTreatInsp}}</li>
+            <li>{{> InstructionsTreatInspIdeas}}</li>
+            <li>{{> InstructionsExitEarly}}</li>
+          </ol>
+          <!-- <p> 1) Begin entering ideas for the main prompt here.<br>
+              2) If you run out of ideas or want some fresh inspiration, hit the "Inspire Me!" button for a new stream of thought. You will receive an "inspiration card" where you can generate ideas for a more focused version of the main prompt.<br>
+              3) Continue to ideate until the time is up.
+          </p> -->
+        </div>
+      </div>
+    <!-- </div> -->
+  </div>
+  <div class = "general-idea-entry">
+    {{> MturkIdeaEntryBox }}
+    {{> MturkIdeaList }}
+  </div>
+</template>
+
+<template name="MturkIdeaEntryBox">
+  <div class="idea-input-box">
+    <textArea class="idea-input" rows="6" placeholder="Describe your awesome idea here!"></textArea>
+    <div class="btn btn-primary btn-large submit-idea">
+      Submit Idea
+    </div>
+  </div>
+</template>
+
+<template name="MturkIdeaList">
+  <div class="idea-list-box">
+    <div class="idea-count">
+      <span class="idea-count-label">
+        <!-- <h4>You have</h4> -->
+        <h3>{{ ideaCount }} </h3>
+        <h4>total ideas! </h4>
+      </span>
+    </div>
+    <div class="idea-list">
+      {{#each ideas }}
+        {{> MturkIdeabox}}
+      {{/each}}
+    </div>
+  </div>
+</template>
+
+<template name="MturkIdeabox">
+  <div class="idea-box">
+    <span>{{ content }}</span>
+    <!--
+    <span class='vote-box'> 
+      <span class="up-vote vote glyphicon glyphicon-thumbs-up"></span>
+      {{ voteNum }}
+    </span>
+    -->
+  </div>
+</template>
+
+<template name="MturkTaskLists">
+  <div class='row task-list-header'>
+    <h1 class="ideation-prompt">{{ prompt }}</h1> <br/>
+    <div class="header">
+        {{#if tasksAvailable}}
+            <div class="btn btn-success btn-large get-task get-task-enabled col-xs-3">
+            <img src="/LightBulbOn-white2.png" class="get-task-icon"/>
+            Inspire Me!
+            </div>
+        {{ else }}
+            <div class="btn btn-success btn-large get-task get-task-disabled col-xs-3">
+            <img src="/LightBulbOn-white2.png" class="get-task-icon"/>
+            Inspire Me!
+            </div>
+        {{/if}}
+<!--        Inspire Me!-->
+        <!-- <div class="col-xs-4">
+          <img src="/LightBulbOn-white2.png" class="get-task-icon"/>
+        </div>
+        <div class="col-xs-4">
+        Inspire <br>Me!
+        </div> -->
+      <!-- <div class = "col-xs-9">
+        <h1>{{ prompt }}</h1> <br/>
+      </div> -->
+      <!--
+      <div class="btn btn-success btn-large begin-synthesis col-xs-2">
+        Begin Synthesis
+      </div>
+      -->
+    </div>
+  </div>
+  <div class='task-list-pane'>
+    {{#each getMyTasks}}
+      {{> MturkIdeateTask }}
+    {{/each}}
+  </div>
+</template>
+
+<template name="MturkIdeateTask">
+  <div class="ideate-task">
+    <h3 class="task-header">{{ desc }}</h3>
+    {{> MturkIdeaEntryBox }}
+    {{> TaskIdeaList }}
+  </div>
+</template>
+
+<template name="TaskIdeaList">
+  <div class="idea-list-box">
+    <div class="idea-count">
+      <span class="idea-count-label">
+        <h3>{{ ideaCount }} </h3>
+        <h4>Ideas for this Inspiration!</h4>
+        
+      </span>
+    </div>
+    {{#each ideas }}
+      {{> MturkIdeabox}}
+    {{/each}}
+  </div>
+</template>
+
+<template name="HcompNoNewTaskModal">
+  <!--Change Prompt Modal-->
+  <div class="modal fade" id="hcomp-new-task-modal" tabindex="-1" 
+    role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <h3 class="modal-title" id="myModalLabel">
+          No inspirations yet - try again soon! Remember, the "inspire me" button will turn green when there are inspirations available.
+        </h3>
+        <button type="button" class="btn btn-success popup-continue" 
+          data-dismiss="modal">
+          Continue
+        </button>
+      </div> <!-- close modal-content -->
+    </div> <!-- close modal-dialog -->
+  </div> <!-- close changeModal -->
+</template>
+
+<!-- #################################### -->
+<!-- ## Template for control condition ##-->
+<!-- #################################### -->
+
+<template name="MturkIdeationPageControl">
+  <div class="hcomp-ideation-pane-control container">
+      <div class = "row ideation-prompt-control-container">
+          <h3 class="ideation-prompt-control-exp">{{ prompt }}</h3>
+      </div>
+      <div class=" row main-prompt-exp">
+          {{> MturkMainPromptControl}}
+      </div>
+  </div>
+  {{> ExperimentBeginModal }}
+</template>
+
+<template name="MturkMainPromptControl">
+  <div class = "ideator-directions-control">
+    <label class="directions-header-control"> Instructions&nbsp; </label><a class="show-hide" data-toggle="collapse" data-parent="#directions-container" href="#directions-content">(Show/Hide)</a>
+    <!-- <div class="row"> -->
+      <div id="directions-container-control">
+        <div id="directions-content" class="collapse">
+          <ol>
+            <li>{{>InstructionsGeneral}}</li>
+            <li>{{>InstructionsNoRefresh}}</li>
+            <li>{{>InstructionsExitEarly}}</li>
+          </ol>
+          <!-- <p> 1) Begin entering ideas for the main prompt here.<br>
+              2) If you run out of ideas or want some fresh inspiration, hit the "Inspire Me!" button for a new stream of thought. You will receive an "inspiration card" where you can generate ideas for a more focused version of the main prompt.<br>
+              3) Continue to ideate until the time is up.
+          </p> -->
+        </div>
+      </div>
+    <!-- </div> -->
+  </div>
+  <div class = "general-idea-entry">
+    {{> MturkIdeaEntryBox }}
+    {{> MturkIdeaList }}
+  </div>
+</template>
+

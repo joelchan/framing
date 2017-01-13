@@ -1,0 +1,238 @@
+.hcomp-ideation-pane {
+  position: relative;
+  z-index: 10;
+  /*font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;*/
+    height: 1vh;
+}
+
+.hcomp-ideation-pane .task-list-header .header h1 {
+  color: black;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.hcomp-ideation-pane .main-prompt {
+  /*background: #449d44;*/
+  /*background: #82837E;*/
+  background: #f5f5f5;
+  /*background: rgba(176, 176, 176, 0.9); /*#B0B0B0 Light Grey*/
+  border-right: 1px solid #464646;
+    height: 100%;
+}
+
+.hcomp-ideation-pane .ideator-directions {
+  border-bottom: 1px solid #464646;
+  padding-bottom: 10px;
+}
+
+.hcomp-ideation-pane .directions-header {
+  font-size:20px;
+}
+
+/*.hcomp-ideation-pane .ideator-directions h3 {
+  font-size: 1.2em;
+  color: black;
+}*/
+
+.hcomp-ideation-pane .ideator-directions p {
+  font-size: 0.8em;
+  color: black;
+}
+
+.hcomp-ideation-pane .general-idea-entry {
+  margin-top: 10px;
+  width: 100%;
+  /*position: absolute;*/
+  /*top: 140px; Aligns with text entry for task lists*/
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.hcomp-ideation-pane .idea-input {
+  width: 85%;
+  margin: 5px 7% 0px 7%;
+  padding: 5px;
+  resize: none;
+}
+
+.hcomp-ideation-pane .submit-idea {
+  width: 85%;
+  margin: 0px 7% 15px 7%;
+  padding: 5px;
+  display: block;
+  font-weight: bold;
+  font-size:18px;
+}
+
+.hcomp-ideation-pane .ideation-prompt {
+  margin-top:0px;
+  font-size: 1.7em;
+}
+
+.hcomp-ideation-pane .get-task {
+  font-weight: bold;
+  font-size:20px; 
+  border-radius: 15px;
+  width:250px;
+  margin-bottom: 15px;
+}
+.hcomp-ideation-pane .get-task-enabled {
+    background-color: rgb(102,164,74);
+}
+.hcomp-ideation-pane .get-task-disabled {
+    background-color: rgb(120,120,120);
+    border: none;
+}
+.hcomp-ideation-pane .get-task-icon {
+  /*height:65px;*/
+  height:26px;
+  /*margin-right: 5px;*/
+  color:white;
+}
+
+.hcomp-ideation-pane .idea-list-box {
+  position: relative;
+  z-index: 15;
+}
+
+.hcomp-ideation-pane .general-idea-entry .idea-count {
+  margin-right: 50px;
+}
+
+.hcomp-ideation-pane .idea-count {
+  text-align: right;
+  margin-right: 25px;
+  color: #000;
+}
+.hcomp-ideation-pane .idea-count h3, h4{
+  display: inline-block;
+}
+
+.hcomp-ideation-pane .idea-count-label {
+  right: 100px;
+  font-color: #000;
+}
+
+.hcomp-ideation-pane .idea-box {
+  width: 85%;
+  margin: 10px 7%;
+  padding: 8px;
+  min-height: 1.1em;
+  background: white;
+  border: 1px solid #464646;
+  border-radius: 5px;
+  color: black;
+  text-align: left;
+  position: relative;
+}
+.hcomp-ideation-pane .idea-box p {
+  margin: 0;
+  color: #000;
+}
+
+.hcomp-ideation-pane .idea-box .vote-box {
+  position: absolute;
+  right: 15px;
+  height: 1.5em;
+}
+
+.hcomp-ideation-pane .idea-box .vote-box .vote {
+  margin-right: 5px;
+}
+
+.hcomp-ideation-pane .idea-box .vote-box .glyphicon:hover {
+  color: blue;
+}
+
+.hcomp-ideation-pane .task-list-header {
+  padding: 0 15px;
+}
+
+.hcomp-ideation-pane .task-lists {
+  background: #FFF;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 25%;
+  padding: 30px;
+}
+
+.hcomp-ideation-pane .task-list-pane {
+  white-space: nowrap;
+  overflow-x: scroll;
+  overflow-y: scroll;
+}
+
+.hcomp-ideation-pane .ideate-task {
+  position: relative;
+  display: inline-block;
+  width: 280px;
+  /*background: rgba(176, 176, 176, 0.9); /*#B0B0B0 Light Grey*/
+  background: white;
+  /*color: #000;*/
+  background: #f5f5f5;
+  border: solid 1px #ddd;
+  /*border: 1px solid #464646;*/
+  border-radius: 5px;
+  margin-right: 15px;
+  margin-top: 15px;
+  vertical-align: top;
+  white-space: normal;
+  text-align: center;
+}
+
+.hcomp-ideation-pane .task-header {
+  padding: 0;
+  margin: 15px 15px 15px 15px;
+  white-space: normal;
+  color: black;
+  font-weight: bold;
+  font-size:20px;
+}
+
+
+/* no new task modal */
+.hcomp-ideation-pane #new-task-modal .modal-footer {
+    height: 80px;
+    margin-top:0px;
+    padding: 10px;
+}
+
+#hcomp-new-task-modal {
+    /*float:right;*/
+  text-align: center;
+}
+#hcomp-new-task-modal .popup-continue {
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size:18px;
+}
+
+.hcomp-ideation-pane #new-task-modal #task-options {
+  text-align: left;
+  float:left;
+}
+
+#exp-begin-modal .modal-footer {
+    height: 80px;
+    margin-top: 0;
+    padding: 10px;
+}
+.modal-content {
+    position: relative;
+    top: 100px;
+}
+
+#exp-begin-modal {
+  top: 10%;
+  text-align: center;
+  font-size:20px;
+}
+
+#exp-begin-modal .popup-continue {
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size:32px;
+}

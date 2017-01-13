@@ -1,0 +1,88 @@
+<template name="KAlignSurvey">
+  <div class="container">
+    
+    {{> SurveyDirections }}
+
+    {{> SurveyDemographics }}
+
+    {{> KAlignQuestions }}
+
+    {{> SurveyInterfaceFeedback }}
+
+    {{> SurveySubmit }}
+    
+  </div>
+</template>
+
+<template name="KAlignQuestions">
+  <form class="surveyForm">
+    <div class="row formQuestion">
+      <div class="question">Why did you choose the focus area that you did?</div><br/>
+      <textArea id="choiceDescr" class="survey-textbox" rows="3"></textarea>
+    </div>
+    <div class="row formQuestion">
+      <div class="question">How much do you agree with the following statement: I chose the focus area that I did because I thought it would be the most promising application of the fabric display technology.</div><br/>
+      <select id="choicePromising">
+        <option value="7">7 - Strongly agree</option>
+        <option value="6">6 - Agree</option>
+        <option value="5">5 - Somewhat agree</option>
+        <option value="4">4 - Neither agree nor disagree</option>
+        <option value="3">3 - Somewhat disagree</option>
+        <option value="2">2 - Disagree</option>
+        <option value="1">1 - Strongly disagree</option>
+      </select>
+    </div>
+    <div class="row formQuestion">
+      <div class="question">How much do you agree with the following statement: I chose the focus area that I did because ideas readily came to my mind for that focus area.</div><br/>
+      <select id="choiceKnowledge">
+        <option value="7">7 - Strongly agree</option>
+        <option value="6">6 - Agree</option>
+        <option value="5">5 - Somewhat agree</option>
+        <option value="4">4 - Neither agree nor disagree</option>
+        <option value="3">3 - Somewhat disagree</option>
+        <option value="2">2 - Disagree</option>
+        <option value="1">1 - Strongly disagree</option>
+      </select>
+    </div>
+    <div class="row formQuestion">
+      <div class="question">How much do you agree with the following statement: I chose the focus area that I did because it seemed the most novel and interesting to me.</div><br/>
+      <select id="choiceNovel">
+        <option value="7">7 - Strongly agree</option>
+        <option value="6">6 - Agree</option>
+        <option value="5">5 - Somewhat agree</option>
+        <option value="4">4 - Neither agree nor disagree</option>
+        <option value="3">3 - Somewhat disagree</option>
+        <option value="2">2 - Disagree</option>
+        <option value="1">1 - Strongly disagree</option>
+      </select>
+    </div>
+    <div class="row formQuestion">
+      <div class="question">How much do you agree with the following statement: I had significant prior knowledge of the focus area for which I developed my final idea.</div><br/>
+      <select id="manipCheckPro">
+        <option value="7">7 - Strongly agree</option>
+        <option value="6">6 - Agree</option>
+        <option value="5">5 - Somewhat agree</option>
+        <option value="4">4 - Neither agree nor disagree</option>
+        <option value="3">3 - Somewhat disagree</option>
+        <option value="2">2 - Disagree</option>
+        <option value="1">1 - Strongly disagree</option>
+      </select>
+    </div>
+    <div class="row formQuestion">
+      <div class="question">How much do you agree with the following statement: I have little to no prior knowledge of the focus area for which I developed my final idea.</div><br/>
+      <select id="manipCheckNeg">
+        <option value="7">7 - Strongly agree</option>
+        <option value="6">6 - Agree</option>
+        <option value="5">5 - Somewhat agree</option>
+        <option value="4">4 - Neither agree nor disagree</option>
+        <option value="3">3 - Somewhat disagree</option>
+        <option value="2">2 - Disagree</option>
+        <option value="1">1 - Strongly disagree</option>
+      </select>
+    </div>
+    <div class="row formQuestion">
+      <div class="question">How did you feel generating ideas for the application area? Did you feel engaged/productive/creative? Why or why not?</div><br/>
+      <textArea id="pathEngage" class="survey-textbox" rows="3"></textarea>
+    </div>
+  </form>
+</template>

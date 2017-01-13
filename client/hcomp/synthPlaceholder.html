@@ -1,0 +1,14 @@
+<template name="SynthesisPlaceholder">
+    <div class="container">
+        <div class="row">
+        <h1>Placeholder page</h1>
+        <h3>This is the page for the condition {{condition}} in the experiment {{experiment}} working on subset {{subset}} with {{numItems}} items to synthesize</h3>
+            <h4>Ideas to process</h4>
+            <ul>
+                {{#each ideas}}
+                    {{> HcompFilterBoxIdeaItem}}
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+</template>

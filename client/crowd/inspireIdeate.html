@@ -1,0 +1,48 @@
+<template name="InspireIdeate">
+  <div id="inspire-ideate">
+    <div class="col-md-3 main-prompt">
+      {{> MturkMainPrompt}}
+    </div>
+    <div class="col-md-9">
+	    {{> InspirationList }}
+    </div>
+  </div>
+</template>
+
+<template name="InspirationList">
+	<div id="inspiration-list">
+    <div class="section-header brainstorming-prompt">
+      <h2>Brainstorming Topic</h2>
+      <div class="content">
+        <p>
+          {{prompt}}  
+        </p>
+      </div>
+    </div>
+    <div id="list-section" class="section">
+      <div class="section-header inspiration-header">
+        <h2>Inspirations <span class="glyphicon glyphicon-question-sign" id="inspiration-info"></span></h2> 
+      </div>
+      <div id="each-inspirations">
+        {{#each inspirations}}
+          {{> inspiration}}
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</template>
+
+<template name="inspiration">
+  <div id="inspiration-{{_id}}" class="idea-box inspiration-box {{#if hasVoted}}glow{{/if}}">
+    <div class="inspiration-name col-md-11 col-xs-11">
+      <span>{{ name }}</span>
+    </div>
+    <div class="inspiration-vote col-md-1 col-xs-1">
+      {{#if hasVoted }}
+        <span class="upvoted up-vote glyphicon glyphicon-star"></span>
+      {{else}}
+        <span class="not-upvoted up-vote glyphicon glyphicon-star-empty"></span>
+      {{/if}}
+    </div>
+  </div>
+</template>

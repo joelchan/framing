@@ -1,0 +1,174 @@
+/*****************************************************************************
+ * Idea entry box styles
+*****************************************************************************/
+#inspire-ideate .main-prompt {
+  /*background: #449d44;*/
+  /*background: #82837E;*/
+  background: #f5f5f5;
+  /*background: rgba(176, 176, 176, 0.9); /*#B0B0B0 Light Grey*/
+  border-right: 1px solid #464646;
+  height: 100%;
+  margin-left: -15px;
+}
+
+#inspire-ideate .ideator-directions {
+  border-bottom: 1px solid #464646;
+  padding-bottom: 10px;
+}
+
+#inspire-ideate .directions-header {
+  font-size:20px;
+}
+
+/*#inspire-ideate .ideator-directions h3 {
+  font-size: 1.2em;
+  color: black;
+}*/
+
+#inspire-ideate .ideator-directions p {
+  font-size: 0.8em;
+  color: black;
+}
+
+#inspire-ideate .general-idea-entry {
+  margin-top: 10px;
+  width: 100%;
+  /*position: absolute;*/
+  /*top: 140px; Aligns with text entry for task lists*/
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /*overflow: scroll;*/
+}
+
+#inspire-ideate .idea-input {
+  width: 85%;
+  margin: 5px 7% 0px 7%;
+  padding: 5px;
+  resize: none;
+}
+
+#inspire-ideate .submit-idea {
+  width: 85%;
+  margin: 0px 7% 15px 7%;
+  padding: 5px;
+  display: block;
+  font-weight: bold;
+  font-size:18px;
+}
+
+#inspire-ideate .idea-list-box {
+  position: relative;
+  z-index: 15;
+  overflow: auto;
+}
+
+#inspire-ideate .general-idea-entry .idea-count {
+  margin-right: 50px;
+}
+
+#inspire-ideate .idea-count {
+  text-align: center;
+  margin-right: 25px;
+  color: #000;
+}
+#inspire-ideate .idea-count h3, h4{
+  display: inline-block;
+}
+
+#inspire-ideate .idea-count-label {
+  right: 100px;
+  font-color: #000;
+}
+
+#inspire-ideate .idea-box {
+  vertical-align: top;
+  width: 90%;
+  margin: 5px 5%;
+  padding: 8px;
+  min-height: 1.1em;
+  background: white;
+  border: 1px solid #464646;
+  border-radius: 5px;
+  color: black;
+  text-align: left;
+  position: relative;
+}
+#inspire-ideate .idea-box p {
+  margin: 0;
+  color: #000;
+}
+
+#inspire-ideate .idea-box .vote-box {
+  position: absolute;
+  right: 15px;
+  height: 1.5em;
+}
+
+#inspire-ideate .idea-box .vote-box .vote {
+  margin-right: 5px;
+}
+
+#inspire-ideate .idea-box .vote-box .glyphicon:hover {
+  color: blue;
+}
+
+/*****************************************************************************
+ * Inspiration list box styles
+*****************************************************************************/
+#inspiration-list {
+  margin-left: -15px;
+  margin-right: -45px;
+}
+#inspiration-list .section-header {
+  background: #f5f5f5;
+  padding: 10px 15px;
+}
+
+#inspiration-list #list-section {
+  text-align: left;
+  /*overflow: scroll;*/
+}
+
+#inspiration-list #each-inspirations {
+  overflow: auto;
+}
+
+#inspiration-list .inspiration-box {
+  margin: 10px;
+  display: inline-block;
+  width: 30%;
+  /*min-width: 300px;*/
+}
+
+#inspiration-list #inspiration-info {
+  font-size: 14px;
+}
+
+/*****************************************************************************
+ * Inspiration item styles
+*****************************************************************************/
+#inspire-ideate .inspiration-name, #inspire-ideate .inspiration-vote {
+  padding:0px;
+}
+
+#inspire-ideate .upvoted {
+  font-size: 20px;
+  color: #F8BA26;
+  cursor: pointer;
+  float: right;
+}
+
+#inspire-ideate .not-upvoted {
+  font-size: 20px;
+  /*color: #C3C3C3;*/
+  opacity: 0.6;
+  cursor: pointer;
+  float: right;
+}
+
+.glow {
+  -webkit-box-shadow: 0px 0px 10px 3px #F8BA26;
+  -moz-box-shadow: 0px 0px 10px 3px #F8BA26;
+  box-shadow: 0px 0px 10px 3px #F8BA26;
+}

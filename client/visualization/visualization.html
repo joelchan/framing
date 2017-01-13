@@ -1,0 +1,37 @@
+
+<template name = "Visualization">
+	<div id = "visualization">
+    <div class = "col-xs-9 hcomp-align-top">
+  		<div class = "title-container">
+        <h1> Brainstorm Results for "{{promptQuestion}}"</h1>
+        <!-- <h1>{{promptQuestion}}</h1> -->
+      </div>
+
+	<div id = "ForceDiagram-container">
+		{{> ForceDiagram}}
+	</div>
+
+      <div id = "themeIdeas-column-container">
+        {{#each Clusters}}
+          <div class = "themeIdea-column">
+            {{> themeIdeasList}}
+          </div>
+        {{/each}}
+      </div>
+    </div>
+    <div id ="idea-column-container" class = "col-xs-3 hcomp-align-top">
+      <div class = "idea-column" id ="allIdeasColumn">
+        <!-- <h3> All Ideas </h3> -->
+        <h1> {{numIdeasOverall}} Total Ideas :) </h1>
+          <!-- {{> allIdeasList }} -->
+          {{> HcompFilterbox}}
+      </div>
+    </div>
+	</div>
+</template>
+
+
+<template name = "ForceDiagram">
+  <div id = "forceDiagram">
+  </div>
+</template>

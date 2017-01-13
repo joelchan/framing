@@ -1,0 +1,37 @@
+.exp-admin-page #new-exp {
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.exp-admin-page #newExpModal {
+  top: 15%;
+  left: 50%;
+  height: 1px;
+  width: 600px;
+}
+
+.exp-admin-page #exp-desc-text {
+  width: 100%;
+  overflow: scroll;
+  min-height: 100px;
+}
+
+.exp-admin-page #exp-num-groups {
+  width: 75px;
+  height: 40px;
+}
+
+.exp-admin-page #exp-prompt-text {
+  height: 100px;
+}
+
+.exp-admin-page .modal .exp-role {
+    width: 150px;
+  height: 40px;
+}
+
+.exp-admin-page .modal .exp-num-role {
+  width: 50px;
+  height: 40px;
+  margin-top: 10px;
+}

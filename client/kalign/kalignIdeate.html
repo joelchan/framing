@@ -1,0 +1,187 @@
+<template name="FocusIdeate">
+    {{> TaskBeginModal }}
+    {{> BrainstormTaskBeginModal }}
+    
+    <!-- {{> TestModal}} -->
+    <div id="focus-ideate">
+        <div class="">
+            <button type="button" class="btn btn-primary btn" data-toggle="modal" data-target="#task-begin-modal" data-backdrop="static" id="modalShower" style="display:none;"></button>
+            <button type="button" class="btn btn-primary btn" data-toggle="modal" data-target="#brainstorm-task-begin-modal" data-backdrop="static" id="modalShower2" style="display:none;"></button>
+        </div>
+        <div class="col-md-5 focus-prompt">
+            {{> FocusPrompt}}
+        </div>
+        <div class="col-md-7 focus-input">
+            {{> FocusInput}}
+        </div>
+    </div>
+</template>
+
+<template name="FocusPrompt">
+    <div class="row focus-prompt-container">
+        <div class="section-header brainstorming-prompt">
+          <h2>Brainstorming Topic</h2>
+        </div>
+        <div class="brainstorming-content">
+            {{#if notFluency}}
+                {{#if isFocus}}
+                    {{> KAlignPrompt}}
+                    <p>Now we would like you to now develop ONE idea in more detail that uses the fabric display to {{path}}. Your job is to come up with a single, elaborated idea that is as creative (i.e., novel AND useful) as possible.</p>
+                    <p>We would like you spent at least 5 minutes working on your idea. You will <strong>not</strong> be able to submit your idea before 5 minutes is up. After 5 minutes is up, you can choose to either submit your idea as is, or keep working on the idea until you feel it is complete, and then submit it. There is no penalty for taking extra time past the 5-minute mark.</p>
+                {{else}}
+                    {{> KAlignPrompt}}
+                    <p>In the next 3 minutes, please brainstorm as many product ideas as you can that use the fabric display to {{path}}. Remember, in brainstorming, quantity and wild ideas are encouraged. Feel free to get creative, but don't worry too much about quality. The goal is to get your creative juices flowing.</p>
+                {{/if}}
+            {{else}}
+                <p>In the next 1 minute, try to think of as many (alternative) uses as you can for a bowling pin (e.g., juggling props, paperweight). Feel free to get creative, but don't worry too much about quality. The goal is to get your creative juices flowing.</p>
+            {{/if}}
+        </div>
+    </div>
+</template>
+
+<template name="FocusInput">
+    <div class="general-idea-entry">
+      <!-- <form method="post"> -->
+        <!-- <textarea id="finalIdea" name="finalIdea"></textarea> -->
+      <!-- </form> -->
+      <!-- <button class="btn" id="finalIdeaGet">Get final idea</button> -->
+      {{#if isFocus}}
+        {{> KAlignIdeaEntryBox}}
+      {{else}}
+        {{> MturkIdeaEntryBox }}
+      {{/if}}
+      {{> MturkIdeaList }}
+    </div>
+</template>
+
+<template name="KAlignPrompt">
+    <p>This year, Pomelo Research Lab introduces a groundbreaking technology. Their "fabric display" consists of a penny-sized connector that can attach to fabrics of varying sizes. The connector allows you to display high resolution images and videos on any fabric’s surface.</p>
+    <img src="/images/fabric-display.png" style="width:50%;">
+    <br/>
+    <p>The "fabric display" is waterproof and washable, can sense touch, and can range in size from as a small handkerchief to as large as a big billboard. The researchers believe this technology will transform how people integrate technology into their lives. In particular, they are excited to explore how to <span class="focus-prompt-path">{{path}} with the fabric display technology</span>.</p>
+    {{#if isBrainstorm}}
+        <p>Here are some example ideas to get you started:</p>
+        <ul>
+            <li>{{pathEx1}}</li>
+            <li>{{pathEx2}}</li>
+        </ul>
+    {{/if}}
+</template>
+
+<template name="KAlignFocusChooser">
+    <p>This year, Pomelo Research Lab introduces a groundbreaking technology. Their "fabric display" consists of a penny-sized connector that can attach to fabrics of varying sizes. The connector allows you to display high resolution images and videos on any fabric’s surface.</p>
+    <img src="/images/fabric-display.png" style="width:25%;">
+    <br/>
+    <p>The "fabric display" is waterproof and washable, can sense touch, and can range in size from as a small handkerchief to as large as a big billboard. The researchers believe this technology will transform how people integrate technology into their lives.</p>
+    <p>The following are some possible application areas with high potential. To continue with the task, please select one of these application areas. You will be developing ideas for that application area for the rest of the task.</p>
+    <div class="focusSelectList">
+      {{#each focusAreas}}
+        {{> focusSelection}}
+      {{/each}}
+    </div> <!-- close focusSelectList -->
+</template>
+
+<template name="KAlignIdeaEntryBox">
+  <div class="idea-input-box">
+    <textArea class="idea-input" rows="6" placeholder="Please flesh out ONE focus idea here. Try to make your idea as elaborated and creative as possible."></textArea>
+    {{#if timesUp}}
+        <button class="btn btn-primary btn-large submit-idea">
+          Submit Idea
+        </button>
+    {{else}}
+        <button class="btn btn-primary btn-large submit-idea-fake disabled">
+          Submit Idea
+        </button>
+    {{/if}}
+  </div>
+</template>
+
+<template name="TaskBeginModal">
+  <div class="modal fade-protolab" id="task-begin-modal" tabindex="-1" 
+    role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+              <h4 class="modal-title" id="myModalLabel">Task Instructions</h4>
+        </div>
+        <div class="modal-body">
+            {{#if isBrainstorm}}
+                <!-- {{> KAlignPrompt}} -->
+                {{> KAlignFocusChooser}}
+            {{else}}
+                {{instructions}}  
+            {{/if}}
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-success popup-continue" data-dismiss="modal">Continue</button>
+        </div>
+      </div> <!-- close modal-content -->
+    </div> <!-- close modal-dialog -->
+  </div> <!-- close changeModal -->
+</template>
+
+<template name="BrainstormTaskBeginModal">
+  <div class="modal fade-protolab" id="brainstorm-task-begin-modal" tabindex="-1" 
+    role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+              <h4 class="modal-title" id="myModalLabel2">Task Instructions</h4>
+        </div>
+        <div class="modal-body">
+            <p>In the next 3 minutes, please brainstorm as many product ideas as you can that use the fabric display technology to {{path}}.</p>
+            <p>Remember, in brainstorming, quantity and wild ideas are encouraged. Feel free to get creative, but don't worry too much about quality. The goal is to get your creative juices flowing. When you are ready, click "Continue"!</p>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-success popup-continue" data-dismiss="modal">Continue</button>
+        </div>
+      </div> <!-- close modal-content -->
+    </div> <!-- close modal-dialog -->
+  </div> <!-- close changeModal -->
+</template>
+
+<!-- this is for later - round 2 of kalign experiment -->
+<template name="KAlignBuilderIdeaList">
+  <div class="idea-list-box">
+  <div class="idea-count">
+    <span class="idea-count-label">
+      <!-- <h4>You have</h4> -->
+      <!-- <h3>{{ ideaCount }} </h3> -->
+      <h4>Other ideas</h4>
+    </span>
+  </div>
+    {{#each ideas }}
+      {{> KAlignIdeabox}}
+    {{/each}}
+  </div>
+</template>
+
+<!-- this is for later - round 2 of kalign experiment -->
+<template name="KAlignIdeabox">
+  <div class="idea-box">
+    <span>{{ content }}</span>
+    
+    <span class='vote-box'> 
+      <span class="up-vote vote glyphicon glyphicon-thumbs-up"></span>
+      {{ voteNum }}
+    </span>
+    
+  </div>
+</template>
+
+<template name="focusSelection">
+  <div id={{this.id}} class="radio focusSelection">
+    <label>
+      <input type="radio" name="focusSelectRadios" id="userSelectRadios{{this.id}}" value="{{this.knowledgeBase}}">
+        &nbsp;<strong>{{this.path}}</strong> (<a class="show-hide" data-toggle="collapse" data-parent="#{{this.id}}-examples-container" href="#{{this.id}}-examples-content">Show/Hide examples</a>)
+        <div id="{{this.id}}-examples-container">
+          <div id="{{this.id}}-examples-content" class="collapse">
+            <ul style="margin-bottom:2px;">
+              <li><em>{{this.ex1}}</em></li>
+              <li><em>{{this.ex2}}</em></li>
+            </ul>
+          </div>
+        </div>
+    </label>
+  </div>
+</template>

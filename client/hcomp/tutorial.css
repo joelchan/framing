@@ -1,0 +1,362 @@
+
+/*CONTROL TUTORIAL STYLING*/
+.tutorial-page-control .progress-container {
+    display: block;
+    margin-bottom: 6.5em;
+}
+
+.tutorial-page-control {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 50;
+}
+
+.tutorial-backdrop {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    opacity: 0.5;
+    z-index: 50;
+}
+
+.hcomp-ideation-pane-control #tutorial-backdrop{
+    top: -5px;
+}
+.tutorial-page-control .control-tutorial {
+    z-index: 51;
+}
+.task-list-pane {
+    position: relative;
+}
+.tutorial-text {
+    padding-left: 15px;
+    z-index: 60;
+}
+
+.control-tutorial-background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+}
+.visible-tutorial-control {
+    display: inline;
+}
+.control-tutorial-description {    
+    width: 22%;
+    position: absolute;
+    top: 15%;
+    right: 0;
+    background: none;
+    margin: 0 15px;
+    z-index: 51;
+    padding: 12px;
+}
+.control-tutorial-description p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5em;
+    color: #F5A623;
+    /*font-weight:bold;*/
+    /*margin-bottom: 3em;*/
+}
+.control-tutorial-description .control-tutorial-gotit {
+    background-color: #7ED321;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3em;
+    position: absolute;
+    bottom: 1em;
+    right: 1em;
+    margin-top: 2em;
+}
+.control-tutorial-description .control-tutorial-goback {
+    background-color: #979797;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3em;
+    position: absolute;
+    bottom: 1em;
+    left: 1em;
+    margin-top: 2em;
+}
+
+#control-tutorial-ideaEntryTry-gotit {
+    background-color: #7ED321;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3em;
+    position: absolute;
+    bottom: 1em;
+    right: 1em;
+    margin-top: 2em;
+    /*border-radius: 5px;*/
+    /*padding: 5px;*/
+    height: 2em;
+
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    /*font-size: 14px;*/
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-appearance: button;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.15),0 1px 1px rgba(0,0,0,.075);
+    text-shadow: 0 1px 0 #fff;
+}
+#control-tutorial-ideaEntryTry-gotit:enabled {
+    background-color: #7ED321;
+}
+#control-tutorial-ideaEntryTry-gotit:disabled {
+    background-color: #979797;
+}
+.control-tutorial-description .turnGreen {
+    background-color: #7ED321;
+}
+
+.control-tutorial-highlight-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index:51;
+}
+.control-tutorial-highlight {
+/*    border: 10px solid red;*/
+    width: 100%;
+    height: 100%;
+    
+}
+
+/*TREATMENT TUTORIAL STYLING*/
+.hcomp-ideation-pand .idea-input-box {
+  position: relative;
+  background: #F5F5F5;
+}
+
+.tutorial-page-treatment .progress-container {
+    display: block;
+    margin-bottom: 7em;
+}
+
+.treatment-tutorial-background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+     /*z-index: 51; */
+}
+.visible-tutorial-treatment {
+    display: block;
+}
+.ideation-prompt-treatment {
+    position: relative;
+    background: #FFF;
+}
+.treatment-tutorial-description {    
+    width: 40%;
+    position: absolute;
+    right: 1em;
+    bottom: 0;
+    background: none;
+    z-index: 51;
+}
+.treatment-tutorial-description p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5em;
+    /*font-weight: bold;*/
+    color: #F5A623;
+    /*margin-bottom: 3em;*/
+}
+.treatment-tutorial-description .treatment-tutorial-gotit {
+    background-color: #7ED321;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3em;
+    position: absolute;
+    bottom: 1em;
+    right: 0;
+    margin-top: 2em;
+}
+.treatment-tutorial-description .treatment-tutorial-goback {
+    background-color: #979797;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3em;
+    position: absolute;
+    bottom: 1em;
+    left: 0;
+    margin-top: 2em;
+}
+
+#treatment-tutorial-ideaEntryTry-gotit {
+    background-color: #7ED321;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3em;
+    position: absolute;
+    bottom: 1em;
+    right: 0;
+    margin-top: 2em;
+    /*border-radius: 5px;*/
+    /*padding: 5px;*/
+    height: 2em;
+
+    border-color: #357ebd;
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    /*font-size: 14px;*/
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-appearance: button;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.15),0 1px 1px rgba(0,0,0,.075);
+    text-shadow: 0 1px 0 #fff;
+}
+#treatment-tutorial-ideaEntryTry-gotit:enabled {
+    background-color: #7ED321;
+}
+#treatment-tutorial-ideaEntryTry-gotit:disabled {
+    background-color: #979797;
+}
+.treatment-tutorial-description .turnGreen {
+    background-color: #7ED321;
+}
+#treatment-tutorial-inspireMeTry-gotit {
+    background-color: #7ED321;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3em;
+    position: absolute;
+    bottom: 1em;
+    right: 1em;
+    margin-top: 2em;
+    /*border-radius: 5px;*/
+    /*padding: 5px;*/
+    height: 2em;
+
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    /*font-size: 14px;*/
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-appearance: button;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.15),0 1px 1px rgba(0,0,0,.075);
+    text-shadow: 0 1px 0 #fff;
+}
+
+#treatment-tutorial-inspireMeTry-gotit:enabled {
+    background-color: #7ED321;
+}
+#treatment-tutorial-inspireMeTry-gotit:disabled {
+    background-color: #979797;
+}
+#treatment-tutorial-inspirationCardTry-gotit {
+    background-color: #7ED321;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3em;
+    position: absolute;
+    bottom: 1em;
+    right: 0;
+    margin-top: 2em;
+    /*border-radius: 5px;*/
+    /*padding: 5px;*/
+    height: 2em;
+
+    border-color: #357ebd;
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    /*font-size: 14px;*/
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-appearance: button;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.15),0 1px 1px rgba(0,0,0,.075);
+    text-shadow: 0 1px 0 #fff;
+}
+#treatment-tutorial-inspirationCardTry-gotit:enabled {
+    background-color: #7ED321;
+}
+#treatment-tutorial-inspirationCardTry-gotit:disabled {
+    background-color: #979797;
+}
+
+.treatment-tutorial-highlight-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index:51;
+}
+.treatment-tutorial-highlight {
+/*    border: 10px solid red;*/
+    width: 100%;
+    height: 100%;
+    
+}
+

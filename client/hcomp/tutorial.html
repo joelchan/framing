@@ -1,0 +1,654 @@
+<template name="TutorialProgressControl">
+  <div class="progress-container">
+    <div class="col-xs-3" style="margin-left:-1; margin-right:-1; padding: 0px">
+      Progress:
+    </div>
+    <div class="progress col-xs-9" style="padding:0px">
+      <div class="progress-bar-success" role="progressbar" aria-valuenow="{{tutorialProgress}}" aria-valuemin="0" aria-valuemax="100" style="width:{{tutorialProgress}}%;">
+        &nbsp; {{tutorialProgress}}%
+      </div>
+    </div>
+  </div>
+</template>
+
+<template name="TutorialProgressTreatment">
+  <div class="progress-container">
+    <div class="col-xs-2" style="margin-left:-1; margin-right:-1; padding: 0px">
+      Progress:
+    </div>
+    <div class="progress col-xs-10" style="padding:0px">
+      <div class="progress-bar-success" role="progressbar" aria-valuenow="{{tutorialProgress}}" aria-valuemin="0" aria-valuemax="100" style="width:{{tutorialProgress}}%;">
+        &nbsp; {{tutorialProgress}}%
+      </div>
+    </div>
+  </div>
+</template>
+
+<template name="TutorialControl">
+  <div class="tutorial-page-control">
+<!--    <h1>Tutorial page for the control condition</h1>-->
+      {{> MturkIdeationPageControlTutorial}}
+      {{> ControlTutorialFlow}}
+<!--
+    <button class='btn btn-xlarge2 btn-default btn-primary nextPage'>
+      Continue
+    </button>
+-->
+  </div>
+</template>
+
+<template name="MturkIdeationPageControlTutorial">
+  <div class="hcomp-ideation-pane-control">
+    <h1 class="ideation-prompt-control">The Brainstorming Problem</h1> <br/>
+    <div class="main-prompt">
+      {{> MturkMainPromptControlTutorial}}
+    </div>
+  </div>
+</template>
+
+<template name="MturkMainPromptControlTutorial">
+  <div class = "ideator-directions-control">
+    <label class="directions-header-control"> Instructions&nbsp; </label><a data-toggle="collapse" data-parent="#directions-container" href="#directions-content">(Show/Hide)</a>
+    <!-- <div class="row"> -->
+      <div id="directions-container-control">
+        <div id="directions-content" class="collapse">
+          <ol>
+            <li>{{>InstructionsGeneral}}</li>
+            <li>{{>InstructionsNoRefresh}}</li>
+            <li>{{>InstructionsExitEarly}}</li>
+          </ol>
+          <!-- <p> 1) Begin entering ideas for the main prompt here.<br>
+              2) If you run out of ideas or want some fresh inspiration, hit the "Inspire Me!" button for a new stream of thought. You will receive an "inspiration card" where you can generate ideas for a more focused version of the main prompt.<br>
+              3) Continue to ideate until the time is up.
+          </p> -->
+        </div>
+      </div>
+    <!-- </div> -->
+  </div>
+  <div class = "general-idea-entry">
+    {{> MturkIdeaEntryBoxTutorial }}
+    {{> MturkIdeaListTutorial }}
+  </div>
+</template>
+
+<template name="MturkIdeaEntryBoxTutorial">
+  <div class="idea-input-box">
+    <textArea class="idea-input" placeholder="Enter your ideas here"></textArea>
+    <div class="btn btn-primary btn-large submit-idea">
+      Submit Idea
+    </div>
+  </div>
+</template>
+
+<template name="MturkIdeaListTutorial">
+  <div class="idea-list-box">
+  <div class="idea-count">
+    <span class="idea-count-label">
+      <!-- <h4>You have</h4> -->
+      <h3>{{ ideaCount }} </h3>
+      <h4>total ideas! </h4>
+    </span>
+  </div>
+    {{#each ideas }}
+      {{> MturkIdeaboxTutorial}}
+    {{/each}}
+  </div>
+</template>
+
+<template name="MturkIdeaboxTutorial">
+  <div class="idea-box">
+    <span>{{ content }}</span>
+    <!--
+    <span class='vote-box'> 
+      <span class="up-vote vote glyphicon glyphicon-thumbs-up"></span>
+      {{ voteNum }}
+    </span>
+    -->
+  </div>
+</template>
+
+<template name="TutorialTreatment">
+  <div class="tutorial-page-treatment">
+<!--    <h1>Tutorial page for the treatment condition</h1>
+    <button class='btn btn-xlarge2 btn-default btn-primary nextPage'>
+      Continue
+    </button> -->
+      {{> MturkIdeationPageTreatmentTutorial}}
+      {{>TreatmentTutorialFlow}}
+  </div>
+</template>
+
+<template name="MturkIdeationPageTreatmentTutorial">
+  <div class="row hcomp-ideation-pane">
+    <div class="col-md-3 main-prompt">
+      {{> MturkMainPromptTreatmentTutorial}}
+    </div>
+    <div class="col-md-9 task-lists">
+      {{> MturkTaskListsTreatmentTutorial}}
+    </div>
+  </div>
+  {{> HcompNoNewTaskModalTreatmentTutorial }}
+</template>
+
+<template name="MturkMainPromptTreatmentTutorial">
+  <div class = "ideator-directions-treatment">
+    <label class="directions-header"> Instructions&nbsp; </label><a data-toggle="collapse" data-parent="#directions-container" href="#directions-content">(Show/Hide)</a>
+    <!-- <div class="row"> -->
+      <div id="directions-container-treatment">
+        <div id="directions-content" class="collapse">
+          <ol>
+            <li>{{> InstructionsGeneral}}</li>
+            <li>{{> InstructionsNoRefresh}}</li>
+            <li>{{> InstructionsTreatInsp}}</li>
+            <li>{{> InstructionsTreatInspIdeas}}</li>
+            <li>{{> InstructionsExitEarly}}</li>
+          </ol>
+          <!-- <p> 1) Begin entering ideas for the main prompt here.<br>
+              2) If you run out of ideas or want some fresh inspiration, hit the "Inspire Me!" button for a new stream of thought. You will receive an "inspiration card" where you can generate ideas for a more focused version of the main prompt.<br>
+              3) Continue to ideate until the time is up.
+          </p> -->
+        </div>
+      </div>
+    <!-- </div> -->
+  </div>
+  <div class = "general-idea-entry">
+    {{> MturkIdeaEntryBoxTutorial }}
+    {{> MturkIdeaListTutorial }}
+  </div>
+</template>
+
+<template name="MturkTaskListsTreatmentTutorial">
+  <div class='row task-list-header'>
+    <h1 class="ideation-prompt-treatment">The Brainstorming Problem</h1> <br/>
+    <div class="header">
+      <div class="btn btn-success btn-large get-task get-task-disabled col-xs-3">
+        <img src="/LightBulbOn-white2.png" class="get-task-icon"/>
+        Inspire Me!
+        <!-- <div class="col-xs-4">
+          <img src="/LightBulbOn-white2.png" class="get-task-icon"/>
+        </div>
+        <div class="col-xs-4">
+        Inspire <br>Me!
+        </div> -->
+      </div>
+      <!-- <div class = "col-xs-9">
+        <h1>{{ prompt }}</h1> <br/>
+      </div> -->
+      <!--
+      <div class="btn btn-success btn-large begin-synthesis col-xs-2">
+        Begin Synthesis
+      </div>
+      -->
+    </div>
+  </div>
+  <div class='task-list-pane'>
+    {{#each getMyTasks}}
+      {{> MturkIdeateTaskTreatmentTutorial }}
+    {{/each}}
+  </div>
+</template>
+
+<template name="MturkIdeateTaskTreatmentTutorial">
+  <div class="ideate-task">
+    <h3 class="task-header">{{ desc }}</h3>
+    {{> MturkIdeaEntryBoxTutorial }}
+    {{> TaskIdeaListTreatmentTutorial }}
+  </div>
+</template>
+
+<template name="TaskIdeaListTreatmentTutorial">
+  <div class="idea-list-box">
+    <div class="idea-count">
+      <span class="idea-count-label">
+        <h3>{{ ideaCount }} </h3>
+        <h4>Ideas for this Inspiration!</h4>
+        
+      </span>
+    </div>
+    {{#each ideas }}
+      {{> MturkIdeaboxTutorial}}
+    {{/each}}
+  </div>
+</template>
+
+<template name="HcompNoNewTaskModalTreatmentTutorial">
+  <!--Change Prompt Modal-->
+  <div class="modal fade" id="hcomp-new-task-modal" tabindex="-1" 
+    role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <h3 class="modal-title" id="myModalLabel">
+          No inspirations yet - try again soon! Remember, the "inspire me" button will turn green when there are inspirations available.
+        </h3>
+        <button type="button" class="btn btn-success popup-continue" 
+          data-dismiss="modal">
+          Continue
+        </button>
+      </div> <!-- close modal-content -->
+    </div> <!-- close modal-dialog -->
+  </div> <!-- close changeModal -->
+</template>
+
+ 
+<!--TEMPLATES FOR CONTROL OVERLAYS-->
+<template name = "ControlTutorialFlow">
+<!-- <div id="tutorial-backdrop"> -->
+<!-- </div>  -->
+    <div id = "control-tutorial-welcome" 
+      class = "control-tutorial control-tutorial-background visible-tutorial-control">
+        <div class = "tutorial-text control-tutorial-welcome-text control-tutorial-description">
+            <p>
+                <!-- Welcome! Before we start the HIT, we will take you through a short step-by-step tutorial to familiarize you with the interface. -->
+                {{> TutorialWelcome}}
+            </p>
+            <br/>
+            <br/>
+            <div class = "control-tutorial-button">
+                <button class='btn btn-default btn-primary control-tutorial-gotit control-tutorial-welcome-gotit'>
+          Got it!
+                </button>
+            </div>
+        </div>      
+    </div>
+    <div id = "control-tutorial-timer" class = "control-tutorial control-tutorial-background">
+        <div id = "control-tutorial-highlight-timer" class = "control-tutorial-highlight-container">
+            <div class = "control-tutorial-highlight">
+            </div>
+        </div>
+        <div class = "tutorial-text control-tutorial-timer-text control-tutorial-description">
+            <p>
+                {{> TutorialGeneralInfo}}
+            </p>
+            {{> TutorialProgressControl}}
+            <div class = "control-tutorial-button">
+                
+                <button class='btn btn-default btn-primary control-tutorial-goback control-tutorial-timer-goback'>
+          Go Back!
+                </button>
+                <button class='btn btn-default btn-primary control-tutorial-gotit control-tutorial-timer-gotit'>
+          Got it!
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id = "control-tutorial-exit" class =  "control-tutorial control-tutorial-background">
+        <div id = "control-tutorial-highlight-exit" class = "control-tutorial-highlight-container">
+            <div class = "control-tutorial-highlight">
+            </div>
+        </div>
+        <div class = "tutorial-text control-tutorial-exit-text control-tutorial-description">
+            <p>
+                {{> TutorialExitEarly}}
+            </p>
+            {{> TutorialProgressControl}}
+            <div class = "control-tutorial-button">
+                <button class='btn btn-default btn-primary control-tutorial-goback control-tutorial-exit-goback'>
+          Go Back!
+                </button>
+                <button class='btn btn-default btn-primary control-tutorial-gotit control-tutorial-exit-gotit'>
+          Got it!
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id = "control-tutorial-prompt" class = "control-tutorial control-tutorial-background">
+        <div id = "control-tutorial-highlight-prompt" class = "control-tutorial-highlight-container">
+            <div class = "control-tutorial-highlight">
+            </div>
+        </div>
+        <div class = "tutorial-text control-tutorial-prompt-text control-tutorial-description">
+            <p>
+                {{> TutorialProblem}}  
+            </p>
+            {{> TutorialProgressControl}}
+            <div class = "control-tutorial-button">
+                <button class='btn btn-default btn-primary control-tutorial-goback control-tutorial-prompt-goback'>
+          Go Back!
+                </button>
+                <button class='btn btn-default btn-primary control-tutorial-gotit control-tutorial-prompt-gotit'>
+          Got it!
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id = "control-tutorial-ideaEntry" class = "control-tutorial control-tutorial-background">
+        <div id = "control-tutorial-highlight-ideaEntry" class = "control-tutorial-highlight-container">
+            <div class = "control-tutorial-highlight">
+            </div>
+        </div>
+        <div class = "tutorial-text control-tutorial-ideaEntry-text control-tutorial-description">
+            <p>
+                {{> TutorialIdeaEntry}}
+            </p>
+            {{> TutorialProgressControl}}
+            <div class = "control-tutorial-button">
+                <button class='btn btn-default btn-primary control-tutorial-goback control-tutorial-ideaEntry-goback'>
+          Go Back!
+                </button>
+                <button class='btn btn-default btn-primary control-tutorial-gotit control-tutorial-ideaEntry-gotit'>
+          Got it!
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id = "control-tutorial-ideaEntryTry" class = "control-tutorial control-tutorial-background">
+        <div class = "control-tutorial-ideaEntryTry-text control-tutorial-description">
+            <p>
+                {{> TutorialIdeaTry}}
+            </p>
+            {{> TutorialProgressControl}}
+            <div class = "control-tutorial-button">
+                <button class='btn btn-default btn-primary control-tutorial-goback control-tutorial-ideaEntryTry-goback'>
+          Go Back!
+                </button>
+                <input type="button" id = "control-tutorial-ideaEntryTry-gotit" class ="control-tutorial-gotit btn btn-default btn-primary" value="Got it!">
+<!--
+                <button class='btn btn-default btn-primary control-tutorial-gotit control-tutorial-ideaEntryTry-gotit' disabled="true">
+          Got it!
+                </button>
+-->
+            </div>
+        </div>
+    </div>
+    <div id = "control-tutorial-directions" class = "control-tutorial control-tutorial-background">
+        <div id = "control-tutorial-highlight-directions" class = "control-tutorial-highlight-container">
+            <div class = "control-tutorial-highlight">
+            </div>
+        </div>
+        <div class = "control-tutorial-directions-text control-tutorial-description">
+            <p>
+                {{> TutorialInstructions}}
+            </p>
+            {{> TutorialProgressControl}}
+            <div class = "control-tutorial-button">
+                <button class='btn btn-default btn-primary control-tutorial-goback control-tutorial-directions-goback'>
+          Go Back!
+                </button>
+                <button class='btn btn-default btn-primary control-tutorial-gotit control-tutorial-directions-gotit'>
+          Got it!
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id = "control-tutorial-pleaseWait" class = "control-tutorial control-tutorial-background">
+        <div class = "control-tutorial-pleaseWait-text control-tutorial-description">
+            <p>
+                {{> TutorialWait}}
+            </p>
+            <br/>
+            <br/>
+            <div class = "control-tutorial-button">
+                <button class='btn btn-default btn-primary control-tutorial-goback control-tutorial-pleaseWait-goback'>
+          Go Back!
+                </button>
+                <button class='btn btn-default btn-primary control-tutorial-gotit control-tutorial-pleaseWait-gotit'>
+          Begin!
+                </button>
+            </div>
+        </div>
+    </div>
+</template>
+
+
+
+<!--TEMPLATES FOR TREATMENT TUTORIAL OVERLAYS-->
+<template name = "TreatmentTutorialFlow">
+    <div id = "treatment-tutorial-welcome" class = "treatment-tutorial-background visible-tutorial-treatment">
+        <div class = "tutorial-text treatment-tutorial-welcome-text treatment-tutorial-description">
+            <p>
+                {{> TutorialWelcome}}
+            </p>
+            <br/>
+            <br/>
+            <div class = "treatment-tutorial-button">
+                <button class='btn btn-default btn-primary treatment-tutorial-gotit treatment-tutorial-welcome-gotit'>
+          Got it!
+                </button>
+            </div>
+        </div>      
+    </div>
+    <div id = "treatment-tutorial-timer" class = "treatment-tutorial-background">
+        <div id = "treatment-tutorial-highlight-timer" class = "treatment-tutorial-highlight-container">
+            <div class = "treatment-tutorial-highlight">
+            </div>
+        </div>
+        <div class = "tutorial-text treatment-tutorial-timer-text treatment-tutorial-description">
+            <p>
+                {{> TutorialGeneralInfo}}
+            </p>
+            {{> TutorialProgressTreatment}}
+            <div class = "treatment-tutorial-button">
+                <button class='btn btn-default btn-primary treatment-tutorial-goback treatment-tutorial-timer-goback'>
+          Go Back!
+                </button>
+                <button class='btn btn-default btn-primary treatment-tutorial-gotit treatment-tutorial-timer-gotit'>
+          Got it!
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id = "treatment-tutorial-exit" class =  "treatment-tutorial-background">
+        <div id = "treatment-tutorial-highlight-exit" class = "treatment-tutorial-highlight-container">
+            <div class = "treatment-tutorial-highlight">
+            </div>
+        </div>
+        <div class = "tutorial-text treatment-tutorial-exit-text treatment-tutorial-description">
+            <p>
+                {{> TutorialExitEarly}} 
+            </p>
+            {{> TutorialProgressTreatment}}
+            <div class = "treatment-tutorial-button">
+                <button class='btn btn-default btn-primary treatment-tutorial-goback treatment-tutorial-exit-goback'>
+          Go Back!
+                </button>
+                <button class='btn btn-default btn-primary treatment-tutorial-gotit treatment-tutorial-exit-gotit'>
+          Got it!
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id = "treatment-tutorial-prompt" class = "treatment-tutorial-background">
+        <div id = "treatment-tutorial-highlight-prompt" class = "treatment-tutorial-highlight-container">
+            <div class = "treatment-tutorial-highlight">
+            </div>
+        </div>
+        <div class = "tutorial-text treatment-tutorial-prompt-text treatment-tutorial-description">
+            <p>
+                {{> TutorialProblem}}  
+            </p>
+            {{> TutorialProgressTreatment}}
+            <div class = "treatment-tutorial-button">
+                <button class='btn btn-default btn-primary treatment-tutorial-goback treatment-tutorial-prompt-goback'>
+          Go Back!
+                </button>
+                <button class='btn btn-default btn-primary treatment-tutorial-gotit treatment-tutorial-prompt-gotit'>
+          Got it!
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id = "treatment-tutorial-ideaEntry" class = "treatment-tutorial-background">
+        <div id = "treatment-tutorial-highlight-ideaEntry" class = "treatment-tutorial-highlight-container">
+            <div class = "treatment-tutorial-highlight">
+            </div>
+        </div>
+        <div class = "tutorial-text treatment-tutorial-ideaEntry-text treatment-tutorial-description">
+            <p>
+                {{>TutorialIdeaEntry}}  
+            </p>
+            {{> TutorialProgressTreatment}}
+            <div class = "treatment-tutorial-button">
+                <button class='btn btn-default btn-primary treatment-tutorial-goback treatment-tutorial-ideaEntry-goback'>
+          Go Back!
+                </button>
+                <button class='btn btn-default btn-primary treatment-tutorial-gotit treatment-tutorial-ideaEntry-gotit'>
+          Got it!
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id = "treatment-tutorial-ideaEntryTry" class = "treatment-tutorial-background">
+        <div id = "treatment-tutorial-highlight-ideaEntryTry" class = "treatment-tutorial-highlight-container">
+            <div class = "treatment-tutorial-highlight">
+            </div>
+        </div>
+        <div class = "tutorial-text treatment-tutorial-ideaEntryTry-text treatment-tutorial-description">
+            <p>
+                {{> TutorialIdeaTry}}   
+            </p>
+            {{> TutorialProgressTreatment}}
+            <div class = "treatment-tutorial-button">
+                <button class='btn btn-default btn-primary treatment-tutorial-goback treatment-tutorial-ideaEntryTry-goback'>
+          Go Back!
+                </button>
+                <input type="button" id = "treatment-tutorial-ideaEntryTry-gotit" class ="treatment-tutorial-gotit btn btn-default btn-primary" value="Got it!">
+<!--
+                <button class='btn btn-default btn-primary treatment-tutorial-gotit treatment-tutorial-ideaEntryTry-gotit' disabled="true">
+          Got it!
+                </button>
+-->
+            </div>
+        </div>
+    </div>
+    <div id = "treatment-tutorial-inspireMe" class = "treatment-tutorial-background">
+        <div id = "treatment-tutorial-highlight-inspireMe" class = "treatment-tutorial-highlight-container">
+            <div class = "treatment-tutorial-highlight">
+            </div>
+        </div>
+        <div class = "tutorial-text treatment-tutorial-inspireMe-text treatment-tutorial-description">
+            <p>
+                {{> TutorialTreatInsp}}
+            </p>
+            {{> TutorialProgressTreatment}}
+            <div class = "treatment-tutorial-button">
+                <button class='btn btn-default btn-primary treatment-tutorial-goback treatment-tutorial-inspireMe-goback'>
+          Go Back!
+                </button>
+                <button class='btn btn-default btn-primary treatment-tutorial-gotit treatment-tutorial-inspireMe-gotit'>
+          Got it!
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Deprecated -->
+    <div id = "treatment-tutorial-inspireMeTry" class = "treatment-tutorial-background">
+        <div class = "tutorial-text treatment-tutorial-inspireMeTry-text treatment-tutorial-description">
+            <p>
+                The inspire me button looks like this when there are inspirations available. Give it a try! Hit the button and see what happens.
+            </p>
+            <div class = "treatment-tutorial-button">
+                <button class='btn btn-default btn-primary treatment-tutorial-goback treatment-tutorial-inspireMeTry-goback'>
+          Go Back!
+                </button>
+                <input type="button" id = "treatment-tutorial-inspireMeTry-gotit" class ="treatment-tutorial-gotit btn btn-default btn-primary" disabled=true value="Got it!">
+<!--
+                <button class='btn btn-default btn-primary treatment-tutorial-gotit treatment-tutorial-ideaEntryTry-gotit' disabled="true">
+          Got it!
+                </button>
+-->
+            </div>
+        </div>
+    </div>
+
+    <!-- Deprecated -->
+    <div id = "treatment-tutorial-inspirationCard" class = "treatment-tutorial-background">
+        <div id = "treatment-tutorial-highlight-inspirationCard" class = "treatment-tutorial-highlight-container">
+            <div class = "treatment-tutorial-highlight">
+            </div>
+        </div>
+        <div class = "tutorial-text treatment-tutorial-inspirationCard-text treatment-tutorial-description">
+            <p>
+                This is an "inspiration card". It will contain a question or idea that is meant to stimulate your thinking. If the inspiration sparks any new ideas, we would like you to enter them directly into this box (ideas unrelated to any inspiration can go in the main idea entry box).
+            </p>
+            {{> TutorialProgressTreatment}}
+            <div class = "treatment-tutorial-button">
+                <button class='btn btn-default btn-primary treatment-tutorial-goback treatment-tutorial-inspirationCard-goback'>
+          Go Back!
+                </button>
+                <button class='btn btn-default btn-primary treatment-tutorial-gotit treatment-tutorial-inspirationCard-gotit'>
+          Got it!
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id = "treatment-tutorial-inspirationCardTry" class = "treatment-tutorial-background">
+        <div class = "tutorial-text treatment-tutorial-inspirationCardTry-text treatment-tutorial-description">
+            <p>
+                {{> TutorialTreatInspTry}}
+            </p>
+            {{> TutorialProgressTreatment}}
+            <div class = "treatment-tutorial-button">
+                <button class='btn btn-default btn-primary treatment-tutorial-goback treatment-tutorial-inspirationCardTry-goback'>
+          Go Back!
+                </button>
+                <input type="button" id = "treatment-tutorial-inspirationCardTry-gotit" class ="treatment-tutorial-gotit btn btn-default btn-primary" disabled=true value="Got it!">
+<!--
+                <button class='btn btn-default btn-primary treatment-tutorial-gotit treatment-tutorial-inspirationCardTry-gotit'>
+          Got it!
+                </button>
+-->
+            </div>
+        </div>
+    </div>
+    <div id = "treatment-tutorial-inspirationCardMany" class = "treatment-tutorial-background">
+        <div id = "treatment-tutorial-highlight-inspirationCardMany">
+            <div class = "treatment-tutorial-highlight">
+            </div>
+        </div>
+        <div class = "tutorial-text treatment-tutorial-inspirationCardMany-text treatment-tutorial-description">
+            <p>
+                {{> TutorialTreatInspMany}}
+            </p>
+            {{> TutorialProgressTreatment}}
+            <div class = "treatment-tutorial-button">
+                <button class='btn btn-default btn-primary treatment-tutorial-goback treatment-tutorial-inspirationCardMany-goback'>
+          Go Back!
+                </button>
+                <button class='btn btn-default btn-primary treatment-tutorial-gotit treatment-tutorial-inspirationCardMany-gotit'>
+          Got it!
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id = "treatment-tutorial-directions" class = "treatment-tutorial-background">
+        <div id = "treatment-tutorial-highlight-directions">
+            <div class = "treatment-tutorial-highlight">
+            </div>
+        </div>
+        <div class = "tutorial-text treatment-tutorial-directions-text treatment-tutorial-description">
+            <p>
+                {{> TutorialInstructions}}
+            </p>
+            {{> TutorialProgressTreatment}}
+            <div class = "treatment-tutorial-button">
+                <button class='btn btn-default btn-primary treatment-tutorial-goback treatment-tutorial-directions-goback'>
+          Go Back!
+                </button>
+                <button class='btn btn-default btn-primary treatment-tutorial-gotit treatment-tutorial-directions-gotit'>
+          Got it!
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id = "treatment-tutorial-pleaseWait" class = "treatment-tutorial-background">
+        <div class = "tutorial-text treatment-tutorial-pleaseWait-text treatment-tutorial-description">
+            <p>
+                {{> TutorialWait}} 
+            </p>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <div class = "treatment-tutorial-button">
+                <button class='btn btn-default btn-primary treatment-tutorial-goback treatment-tutorial-pleaseWait-goback'>
+          Go Back!
+                </button>
+                <button class='btn btn-default btn-primary treatment-tutorial-gotit treatment-tutorial-pleaseWait-gotit'>
+          Begin!
+                </button>
+            </div>
+        </div>
+    </div>
+</template>

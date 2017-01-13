@@ -1,0 +1,100 @@
+<template name="ExpAdminPage">
+  <div class="row exp-admin-page">
+    <center>  
+      <button id="new-exp" class="new-bs btn btn-xlarge2 
+        btn-default btn-primary" data-toggle="modal" data-target="#newExpModal">
+        New Experiment 
+      </button> 
+    </center>
+  </div> <!-- End Row -->
+
+  <!-- Modal -->
+    <div class="modal fade" id="newExpModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content"> 
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title" id="newExpLabel">Create New Brainstorming Experiment</h4>
+          </div><!-- End modal-header -->
+          <div class="modal-body">
+            <div class="modal-form-elm">
+              <h5>Brainstorming prompt:</h5>
+              <textarea type="text" id="exp-prompt-text" class="modal-box" placeholder="New Question"></textarea>
+            </div>
+            <div class="modal-form-elm">
+              <h5>Description of experiment:</h5>
+              <textarea id="exp-desc-text" class="modal-form-textbox" rows="2" cols="80" placeholder="Your description of experiment objectives"></textarea>
+            </div>
+            <div class="modal-form-elm">
+              <h5>Number of Groups:</h5>
+              <input id="exp-num-groups" type="number" min="1" step="1" value="1">
+            </div>
+            <div class="modal-form-elm">
+              <h5>Group Template:</h5>
+              Role: <select id="exp-role1" class="exp-role"> 
+                {{#each roles}}
+                  {{> EPRoleSelect }}
+                {{/each}}
+                </select>
+              Number in this Role(-1=unlimited): 
+              <input id="exp-num-role1" class="exp-num-role" type="number" min="-1" step="1" value="-1">
+            </div>
+          </div><!-- End Modal-body -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+            <button id="createExperiment" type="button" class="createExperiment btn btn-primary" data-toggle="modal" data-target="#newExpModal">Save</button>
+          </div> <!-- End modal footer -->
+        </div> <!-- End modal content -->
+      </div> <!-- End modal dialog -->
+    </div> <!-- End modal -->
+  
+    <div class="row"> 
+      <div name="experiment-list">
+        {{#each experiments}}
+          {{> EPExperiment }}
+        {{/each}}
+      </div>
+    </div>
+</template>
+
+<template name="EPRoleSelect">
+  <option value="{{ _id }}">
+    {{ title }}
+  </option>
+</template>
+
+<template name="EPExperiment">
+  <div id="exp-{{_id}}" class="menu-box clickable panel panel-info">
+    <div class="panel-heading">
+      <strong>Prompt: </strong> {{ prompt }}
+    </div>
+    <div class="panel-row">
+      <strong>Description: </strong>{{ description }}
+    </div>
+    <div class="panel-row">
+      <strong>Number of Groups: </strong>{{ groupNum }}
+    </div>
+    <div class="panel-row">
+      <strong>Group Member Roles: </strong>
+      {{> EPGroupMakeup }}
+    </div>
+    <div class="panel-row">
+      <strong>URL: </strong>
+      <a href="{{ formUrl }}">{{ formUrl }}</a>
+    </div>
+  </div>
+</template>
+
+<template name="EPGroupMakeup">
+  <div class="label label-primary">
+    {{#each groupTemplate.roles }}
+    <span class="role-label">
+      {{ this.title }}
+    </span>
+    <span class="role-num-label">
+      ({{ num }} people)
+    </span>
+    {{/each}}
+  </div>
+</template>
+

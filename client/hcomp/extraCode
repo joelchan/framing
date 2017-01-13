@@ -1,0 +1,1240 @@
+.synthesisBox {
+  /*overflow:hidden;*/
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+#leftSide {
+    border:1px solid #444;
+    /*margin: 50px;*/
+}
+
+.caliberBox2{
+  position: absolute;
+  border:1px solid #444;
+  top:10px;
+  left:18px;
+  width: 10px;
+  height: 10px; 
+  background-color: #000000;
+}
+
+
+/*.caliberBox{
+  position: absolute;
+  border:1px solid #444;
+  top: 2475px;
+  left: 2475px;
+  width: 50px;
+  height: 50px; 
+  background-color: #000000;
+}*/
+
+.clusterName {
+  font-size: 20px;
+}
+
+.nameCluster {
+    background-color: transparent;
+    border-style: none;
+    font-style: bold;
+    width: 100%;
+} 
+
+.panZoomFrame{
+    z-index: 0;
+    position: fixed;
+    border:1px solid #444;
+    top: -2075px;
+    left: -1780px;
+    min-height: 5000px;
+    min-width: 5000px;
+}
+
+#ideaSpace {
+  top: 70%;
+  height:3000px;
+}
+
+.zoomIn {
+    width: 240px;
+}
+
+.zoomOut {
+    width: 240px;
+}
+
+#small {
+    position: absolute;
+}
+
+.map {
+    overflow: hidden;
+    z-index: 990;
+    position: fixed;
+    background-color: white;
+    border: 2px solid #000000;
+    border-radius: 3px;
+    margin-top: 10px; 
+    left: 30px;
+    min-width: 200px;
+    min-height: 200px;
+}
+
+#leftEye{
+  position: absolute;
+  left: 30%; 
+  top:30%;
+}
+
+#rightEye{
+  position: absolute;
+  left: 50%; 
+  top:30%;
+}
+
+.createPattern{
+  margin-top: 5%;
+} 
+
+.END {
+  position: relative;
+  margin-top: 3%;
+}
+
+#console{
+  margin-left: 20px;
+  /*border-right: 3px solid #000000;*/
+ /* min-height: 8000px;*/
+}
+
+.zoomBox {
+    position: relative;
+    border: 1px solid #000000;
+    width: 15%; 
+    height: 80px;
+}
+
+.col-md-8{
+    min-height: 3000px;
+    min-height: 3000px;
+}
+
+.miniIdeas {
+    border:1px solid #444;
+    list-style-type: none;
+    position: absolute;
+    margin: 2px;
+    width: 10px;
+    height: 5px; 
+    /*min-height: 5px;*/
+    background-color:#FFFC06 ;
+}
+
+
+.miniCluster {
+    border:1px solid #444;
+    list-style-type: none;
+    position: absolute;
+    margin: 2px;
+    width: 10px;
+    height: 10px; 
+    min-height: 5px;
+    background-color:#def;
+}
+
+.dropdown-toggle {
+    
+}
+
+.zoom-control-buttons {
+  font-size: 20px;
+}
+
+.zoomControl {
+    z-index: 999;
+    position: fixed;
+    display: inline;
+    padding-left: 20px;
+    top: 30%;
+    padding-top: 5px;
+}
+
+#zBar{
+   
+   display: inline-block;
+}
+#zIn {
+   
+   display: inline-block;
+}
+ #zOut{
+   display: inline-block;
+}
+
+#delX{
+   color: #FF3604;
+   float:right;
+   margin-top: 30px;
+   margin-right: 3px;
+}
+
+.clustNumIdeas{
+   /*position: center;*/
+   margin-top: 10px;
+   /*left:40px;*/
+   /*display: inline;*/
+}
+
+/*.clusterButton {
+    text-align: center;
+    border:1px solid #444;
+    border-radius: 12px;
+    left: 70px;
+    height: 35px;
+    width:  110px;
+    color:  #F2F2E8;
+    font-size: 16px;
+    background-color: #217EFF;
+}*/
+
+#instructions {
+  /*position:fixed;*/
+  padding-left: 10px;
+  top: -20px;
+  font-size:24px;
+  font-weight: bold;
+  color:#9C9C9C;
+  cursor: pointer;
+}
+
+#finished {
+  font-size: 16px;
+  font-family: sans-serif;
+  float:right;
+  /*left:75px;*/
+  /*top: 355px;*/
+  /*position:fixed;*/
+}
+
+.numIdeas {
+    position: fixed;
+    top:380px;
+    margin-top: 10px;
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 8px;
+}
+ 
+.ideaArea{
+  z-index: 995;
+  top: 450px;
+  position: absolute;
+  min-height: 2120px;
+  padding-left: 3px;
+}
+
+ .cluster {
+    position: absolute;
+    border: 2px solid #343737;
+    width: 200px;
+    height: 180px;
+    background-color: #def;
+    border-radius: 5px;
+   
+}
+
+@-webkit-keyframes glowone {
+  from { background-color: #0080FF;
+         -moz-box-shadow:     0 0 150px #0CFFFF;
+         -webkit-box-shadow:  0 0 150px #96E7F6;
+          box-shadow:         0 0 150px #66D7FF;  
+    }
+    to {  background-color: #def;}
+}
+
+/*@-webkit-keyframes example {
+    from {background-color: #B54DF2;}
+    to {background-color: #def;}
+}*/
+
+@-webkit-keyframes glowtwo {
+  from { background-color: #0080FF;
+         -moz-box-shadow:     0 0 150px #0CFFFF;
+         -webkit-box-shadow:  0 0 150px #96E7F6;
+          box-shadow:         0 0 150px #66D7FF;  
+    }
+    to {  background-color: #def;}
+}
+
+.cluster-ideas {
+  margin-top:10px;
+  margin-left:-19px;
+}
+
+.clusterListElement {
+    position: relative;
+    list-style-type: none;
+    border:1px solid #444;  
+    border-radius: 5px;
+    width: 200px;
+    height: relative;
+    margin-top: 3px;
+    background-color:#92E37C;
+}
+
+.del-cluster {
+  float:right;
+}
+
+ .tagBox {
+    background-color: white;
+    color: black;
+    font-style: bold;
+    font-size: 18px;
+    height: 100px;
+    width: 192px;
+    max-height: 100px;
+    max-width: 192px;
+    /*padding-left: 10px;*/
+    /*margin:auto;*/
+    /*border:2px solid #444;*/
+}
+
+.box {
+  position: relative;
+  top:  3000px;
+  left: 3250px;
+  border:1px solid #444;
+  width: 50px;
+  max-height: 50px;
+}
+
+.zoomSpaceElement {
+  position: absolute;
+  list-style-type: none;
+  border-radius: 5px;
+  width: 225px;
+  min-height: 85px;
+  margin-top: 5px;
+  background-color: #FFFC9B;
+  /*overflow: hidden;*/
+}
+
+@-webkit-keyframes zoomGlow {
+  from { background-color: #EEEEE8;
+         -moz-box-shadow:     0 0 40px #EEEEE8;
+         -webkit-box-shadow:  0 0 40px #EEEEE8;
+          box-shadow:         0 0 40px #EEEEE8;
+    }
+    to {  background-color: #FFF182;}
+}
+
+/*@-webkit-keyframes example {
+    from {background-color: #B54DF2;}
+    to {background-color: #def;}
+}*/
+
+#mock{
+  z-index: 999;
+  border-bottom: 2px solid #000000;
+  position: fixed;
+  height: 450px;
+  width: 237px;
+  /*background-color: white;*/
+}
+
+.ideaListElement {
+    position: relative;
+    border-radius: 3px;
+    list-style-type: none;
+    border-radius: 5px;
+    width: 225px;
+    min-height: 75px;
+    margin-top: 10px;
+    /*overflow: hidden;*/
+    background-color: #FFFC9B;
+    cursor: move;
+}
+ 
+.ideasList {
+    position: relative;
+    border:1px solid #444;
+    width: 400px;
+    height: relative;
+}
+
+#trashSpace {
+  display: inline-block;
+  position: absolute;
+}
+
+#downArrow {
+  margin-top: 30px;
+  margin-left: 3px;
+  float: left;
+}
+
+.ScalingViewPane {
+  position: absolute;
+  z-index: 999;
+  border:1px solid #444;
+  width: 48px;
+  height: 32px;
+}
+
+.IdeaCapsule {
+    width: 300px;
+    height: 800px; 
+    background-color: #BF3FC7;
+}
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>
+<template name="SubrouteSandbox">
+    <div class="synthesisBox">
+        <div class="row">
+            <div class="col-md-2" id="console">
+                <div class="row" id="mock">
+                    {{> MiniMap}}
+                </div>
+                <div class="row">
+                    {{> IdeaSpace}}
+                </div>
+            </div>
+            <div class="col-md-10">
+                {{> ZoomSpace}}
+            </div>
+        </div>
+    </div>
+</template>
+<template name="MiniMap">
+    <div class="map">
+        {{ > MiniMapViewPane}} {{#each getIdeas}} {{ > MiniMapElement}} {{/each}} {{#each getClusters}} {{ > MiniClusterElement}} {{/each}}
+    </div>
+    <div class="zoomControl">
+        <div id="zOut"><span class="glyphicon glyphicon-zoom-out zoom-control-buttons"></span></div>
+        <div id="zBar">
+            <input type="range" class="zoom-range" step="0.1" min="0.5" max="1">
+        </div>
+        <div id="zIn"><span class="glyphicon glyphicon-zoom-in zoom-control-buttons"></span></div>
+        <div class="createPattern"> {{ > InstantiateCluster}} </div>
+        <div class="numIdeas">
+            {{numIdeasTotal}} ideas to process
+            <br/> {{getRemainingIdeas}} to go {{#if couldBeDone}} {{ > Finished }} {{/if}}
+        </div>
+    </div>
+</template>
+<template name="IdeaSpace">
+    <div class="ideaArea">
+        {{#each displayIdeas}} {{ > IdeaListElement}} {{/each}}
+    </div>
+</template>
+<template name="IdeaListElement">
+    <div class="ideaListElement" id="{{_id}}">
+        {{content}}
+    </div>
+</template>
+<template name="ZoomSpace">
+    <div class="panZoomFrame">
+        {{#each getZoomSpaceIdeas}} {{ > ZoomSpaceElement}} {{/each}}
+        <div class="caliberBox"> </div>
+        {{#each getClusters}} {{> Cluster}} {{/each}}
+    </div>
+</template>
+<template name="ZoomSpaceElement">
+    <div class="zoomSpaceElement" id="{{_id}}">
+        <div class="zoomElementContent">
+            {{content}}
+        </div>
+    </div>
+</template>
+<template name="InstantiateCluster">
+    <div class="clusterButton">
+        <button id="addCluster" class="btn-primary">New Pattern</button>
+        <a><span class="glyphicon glyphicon-question-sign" id="instructions"></span></a>
+    </div>
+</template>
+<template name="Finished">
+    <!-- <div class="finishedButton"> -->
+    <button id="finished" class="btn-success">I'm finished!</button>
+    <!-- </div> -->
+</template>
+<template name="MiniMapViewPane">
+    <div class="ScalingViewPane">
+        <!-- <div class = "caliberBox2"> </div> -->
+        <!-- <span class="glyphicon glyphicon-eye-open" id="leftEye" style="font-size:20px;"></span> <span class="glyphicon glyphicon-eye-open" id="rightEye" style="font-size:20px;"></span>  -->
+    </div>
+</template>
+<template name="MiniClusterElement">
+    <div class="miniCluster" id="miniCluster{{_id}}"></div>
+</template>
+<template name="MiniMapElement">
+    <div class="miniIdeas" id="miniIdeas{{_id}}"></div>
+</template>
+
+<template name="Cluster">
+    <div class="cluster container" id="{{_id}}">
+        <div class="clusterLabel row">
+            <div class="row">
+                <div class="col-xs-12 col-md-12">          
+                    <label class = "clusterName" id = "{{_id}}" > {{getClusterName}}</label>
+                    <input class = "nameCluster" id = "{{_id}}" type = "input" style = "display:none;">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-3 col-md-3">
+                    {{#if getClusterIdeasCount}}
+                        <a data-toggle="collapse" data-parent="#cluster-idea-group-{{_id}}" href="#cluster-idea-list-{{_id}}">
+                        <span class="glyphicon glyphicon-collapse-down" id="downArrow" style="font-size:36px;"></span>
+                    </a>
+                    {{else}}
+                    <span class="glyphicon glyphicon-collapse-down" id="downArrow" style="font-size:36px;"></span> {{/if}}
+                </div>
+                <div class="col-xs-6 col-md-6">
+                    <span class="badge clustNumIdeas"> {{getClusterIdeasCount}}</span> ideas
+                </div>
+                <div class="col-xs-2 col-md-2 del-cluster">
+                    {{> DeleteCluster}}
+                </div>
+            </div>
+            <!-- <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                <span class="glyphicon glyphicon-chevron-down" id = "downArrow" style="font-size:36px;"></span>
+            </a> -->
+            <!-- &nbsp; &nbsp;  <span class="badge clustNumIdeas"> {{getClusterIdeasCount}}</span> ideas -->
+            <!-- <div class="clustNumIdeas"> {{getClusterIdeasCount}} </div> -->
+            <!-- {{ > DeleteCluster }} -->
+            <!-- <div class="dropdown-menu" id ="{{_id}}"> 
+                {{#each getClusterIdeas}} 
+                    {{> ClusterIdeaElement}} 
+                {{/each}} 
+            </div> -->
+        </div>
+        <div class="cluster-ideas row">
+            <div id="cluster-idea-group-{{_id}}">
+                <div id="cluster-idea-list-{{_id}}" class="collapse">
+                    {{#each getClusterIdeas}} {{> ClusterIdeaElement}} {{/each}}
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+<template name="ClusterIdeaElement">
+    <div class="clusterListElement" id="{{_id}}">
+        {{content}}
+    </div>
+</template>
+<template name="DeleteCluster">
+    <span class="glyphicon glyphicon-remove" id="delX" style="font-size:36px;"> </span>
+</template>
+<!-- Load Minimap objects with ID's from the idea _.ids -->
+<!-- <ul id="cluster" class="cluster ul">
+            {{#each getClusters}}
+                
+            {{/each}}
+        </ul> -->
+<!-- <template name="ClusterSpace">
+    {{> InstantiateCluster}} 
+    {{#each getClusters}} 
+        {{ > Cluster}} 
+    {{/each}}
+</template> -->
+
+var logger = new Logger('Client:Hcomp:SubrouteSandbox');
+Logger.setLevel('Client:Hcomp:SubrouteSandbox', 'trace');
+var global = 1; 
+var clusterTop = 0;
+var clusterLeft = 0;
+var sVTop = 84.00;
+var sVLeft = 76.00;
+/****************************************************************
+*
+* MASTER template rendering setup, helpers and events
+*
+****************************************************************/
+
+Template.SubrouteSandbox.onRendered(function () {
+    
+    $('.ScalingViewPane').css('top', sVTop); 
+    $('.ScalingViewPane').css('left', sVLeft); 
+    
+        this.$(".panZoomFrame").panzoom({
+         minScale: .5,
+         increment: 0.1,
+         maxScale: 1,
+         
+         $zoomIn:    $(".glyphicon-zoom-in"),
+         $zoomOut:   $(".glyphicon-zoom-out"),
+         $zoomRange: $("input[type='range']"),
+    })
+    .on("panzoomchange", function(e, panzoom, transform) {
+        global = transform[0];
+        clusterTop  = transform[5];
+        clusterLeft = transform[4];
+        
+        //$('.zoomSpaceElement').css('top', top*transform[0]);
+        //$('.zoomSpaceElement').css('left', transform[0]);
+        
+        var paneWidth = $('.ScalingViewPane').css('width');
+        var paneHeight = $('.ScalingViewPane').css('height');; 
+        
+        ////logger.trace(paneWidth);
+        ////logger.trace(paneHeight);
+        paneWidth = parseFloat(paneWidth.substring(0,paneWidth.length-2)*.5);
+        paneHeight = parseFloat(paneHeight.substring(0,paneHeight.length -2)*.5);        
+        //scaling viewpane Scaled top
+        sVTop = 100.00 - paneHeight;  
+        
+        //scaling viewpane Scaled left
+        sVLeft = 100.00 - paneWidth;
+        
+        finalTopScale = (((transform[5]/25.00) * -1) + sVTop);
+        finalLeftScale = (((transform[4]/25.00) * -1) + sVLeft);
+
+        $('.ScalingViewPane').css('top', finalTopScale); 
+        $('.ScalingViewPane').css('left', finalLeftScale); 
+        
+        $('.ScalingViewPane').css('width', 48 / transform[0]); 
+        $('.ScalingViewPane').css('height', 32 / transform[0]); 
+    });
+});
+
+/****************************************************************
+*
+* MINIMAP template setup, helpers and events
+*
+****************************************************************/
+
+Template.MiniMap.onRendered(function () {
+
+    var instructions = "<h1>Instructions</h1>" +
+                        "<p>Your job is to identify patterns of solutions in the ideas below. " +
+                            "Try to identify patterns that might be useful to others who want to generate ideas for the same/related problem." +
+                        "<p>Here's how you will do this:</p>" +
+                        "<ol>" +
+                            "<li>Drag ideas from the list into the canvas on the right. " +
+                            "You can move them around however you like to make sense of them (e.g., group them with other ideas).</li>" +
+                            "<li>To describe a group's pattern:" +
+                                "<ol>" +
+                                    "<li>Click on the New Pattern button. A new pattern label will appear on the canvas.</li>" +
+                                    "<li>Apply the label to one or more ideas by dragging those ideas onto the label. " +
+                                        "The ideas will change color to green and be attached to the label.</li>" +
+                                "</ol>" +
+                            "</li>" +
+                            "<li>You may rename or delete pattern labels, or move ideas from one label to another or back onto the canvas.</li>" +
+                            "<li>You must label all ideas to finish this HIT. " +
+                                "The number of ideas left (i.e., not labeled) is shown below.</li>" +
+                        "</ol>" +
+                        "<p>Click the question mark icon again to close this message. Good luck!</p>"
+
+    $('#instructions').tooltipster({
+        content: $(instructions),
+        trigger: 'click',
+        // autoClose: false,
+        // hideOnClick: true,
+        position: 'right',
+        speed: 200,
+        maxWidth: 400
+    })
+
+});
+
+Template.MiniMap.helpers({
+    numIdeasTotal: function() {
+       
+        var part = Session.get("currentParticipant");
+        if (part) {
+            var subset = SynthSubsets.findOne({_id: part.misc.subsetID});
+            logger.debug("On synthesis experiment workflow with subset " + subset._id);
+            return subset.ideaIDs.length;
+        } else {
+            var promptID = Session.get("currentPrompt")._id;
+            return Ideas.find({promptID: promptID}).count();
+        }
+    },
+    getRemainingIdeas: function () {
+        var user = Session.get("currentUser");
+        var numDisplay = FilterManager.performQuery("displayIdeas", user, "ideas").count();
+        var numZoom = FilterManager.performQuery("zoomSpaceIdeas", user, "ideas").count();
+        return numDisplay + numZoom;
+        // return Ideas.find({ inCluster: false }, {fields: {inCluster: 0}}).count();
+    },
+    couldBeDone: function() {
+        var user = Session.get("currentUser");
+        var numDisplay = FilterManager.performQuery("displayIdeas", user, "ideas").count();
+        var numZoom = FilterManager.performQuery("zoomSpaceIdeas", user, "ideas").count();
+        var remaining = numDisplay + numZoom;
+        if (remaining < 1) {
+            return true;
+        } else {
+            return false;
+        }
+    },
+     getIdeas: function() {
+        var user = Session.get("currentUser");
+        return FilterManager.performQuery("zoomSpaceIdeas", user, "ideas");
+        // return Ideas.find({inZoomSpace: true}, {fields: {inZoomSpace: 0}});        
+    },
+    getClusters: function() {
+        var user = Session.get("currentUser");
+        return FilterManager.performQuery("clusterFilter", user, "clusters");
+    },
+});
+
+Template.Finished.events({
+    'click #finished': function() {
+        logger.debug("User clicked finish button");
+        // check if all clusters have a name
+        var user = Session.get("currentUser");
+        var clusters = FilterManager.performQuery("clusterFilter", user, "clusters");
+        var allNamed = true;
+        clusters.forEach(function(cluster) {
+            if (cluster.name == "Not named yet") {
+                allNamed = false;
+            }
+        });
+        if (allNamed) {
+            var part = Session.get("currentParticipant");
+            var cond = Conditions.findOne({_id: part.conditionID});
+            var curIndex = getIndex(cond.misc.routeSequence, "SynthesisExp");
+            //logger.trace("Current position in route sequence" + curIndex);
+            var nextPage = cond.misc.routeSequence[curIndex+1]
+            //logger.trace("Next page in sequence: " + nextPage);
+            Session.set("nextPage", nextPage);
+            Router.go(Session.get("nextPage"), {partID: part._id});
+
+            // TODO:
+            // [] Grab snapshot of current zoomspace and put in 
+        } else {
+            alert("All patterns need to be labeled! Please check and name all your patterns before finishing.");
+        }
+    }
+})
+
+/****************************************************************
+*
+* IDEASPACE template rendering setup, helpers and events
+*
+****************************************************************/
+
+Template.IdeaSpace.onRendered(function() {
+    
+    // set default filters
+    var user = Session.get("currentUser");
+    
+    // set cluster filter here because it's the innermost element that uses filters
+    // hopefully this means the filter will be set in the right order
+    FilterManager.reset("clusterFilter", user, "clusters");
+    setBaseClusterFilters("clusterFilter");
+
+    FilterManager.reset("displayIdeas", user, "ideas");
+    FilterManager.create("displayIdeas", user,
+        "ideas", "zoomSpace", user._id, "ne");
+    setBaseIdeasFilters("displayIdeas");
+
+});
+
+Template.IdeaSpace.helpers({ 
+    getNumIdeas: function () {
+        return FilterManager.performQuery("remainingIdeas", Session.get("currentUser"), "ideas").count();
+    }, 
+    displayIdeas: function() {             
+        return FilterManager.performQuery("displayIdeas", Session.get("currentUser"), "ideas");
+        // return Ideas.find({inCluster:false,inZoomSpace: false}, {fields: {inZoomSpace: 0,inCluster:0}});       
+    },
+});
+
+/****************************************************************
+*
+* IDEALIST ELEMENT template rendering setup, helpers and events
+*
+****************************************************************/
+
+Template.IdeaListElement.onRendered(function () {
+    
+    $(this.firstNode).on('mousedown touchstart', function(e) {
+        e.stopPropagation();
+    });
+        
+ $(this.firstNode).draggable({ 
+        zIndex: 50,        
+        create: function(event, ui) {
+        },
+        drag: function(e, ui) {
+        },
+        start: function(e, ui) {
+        }, 
+        stop: function (event, ui) {   
+        },
+    });
+});
+
+Template.InstantiateCluster.events({
+    'click #addCluster' : function(e, ui) {
+        var user   = Session.get('currentUser');
+        var prompt = Session.get('currentPrompt');
+        var newCluster = ClusterFactory.create(user, prompt, null);        
+        var tc = (clusterTop*-1/global) + 2475;
+        var lc = (clusterLeft*-1/global) + 2475;
+        var newPos = {"top": tc, "left": lc};
+        updateClusterFilter(newCluster._id);
+        ZoomManager.updatePosition(newCluster._id, "Clusters", newPos, Session.get("currentUser"));
+        $("#miniCluster"+ newCluster._id).css('top' , (((clusterTop*-1)/global) + 2475)/25);
+        $("#miniCluster"+ newCluster._id).css('left', (((clusterLeft*-1)/global) + 2475)/25);
+    },
+});
+
+/****************************************************************
+*
+* ZOOMSPACE template rendering setup, helpers and events
+*
+****************************************************************/
+
+Template.ZoomSpace.onRendered(function () {
+    
+    var user = Session.get("currentUser");
+
+    FilterManager.reset("zoomSpaceIdeas", user, "ideas");
+    FilterManager.create("zoomSpaceIdeas", user,
+        "ideas", "zoomSpace", user._id);
+    setBaseIdeasFilters("zoomSpaceIdeas");
+
+     $(this.firstNode).on('mousedown touchstart', function(e) {
+               e.stopPropagation();
+     });
+
+     $('.panZoomFrame').droppable({
+        accept: ".ideaListElement ,  .clusterListElement",
+        drop: function(event, ui) {
+            ideaLeftOffset =  $(ui.helper[0]).offset().left; 
+            ideaTopOffset  =  $(ui.helper[0]).offset().top;
+            pZMTopOffset   =  $('.panZoomFrame').offset().top;
+            pZMLeftOffset  =  $('.panZoomFrame').offset().left;   
+            
+            var ideaID = ui.helper[0].id;
+            var user = Session.get("currentUser");
+            // is it coming from the displayIdeas list?
+            if(fromDisplayIdeas(ideaID)) {
+            // if(Ideas.findOne({_id:ui.helper[0].id}, {fields: {'inZoomSpace':false, 'inCluster':false}})) {     
+                   // var ideaID  = ui.helper[0].id;
+                   var ideaObject =  Ideas.find(ideaID).fetch();            
+                   //var cAtDrop = $('.ideaListElement').position({'top':event.pageY, 'left': event.pageX});    
+                   ////logger.trace("TOP " + cAtDrop.top);
+                   // Ideas.update({_id: ideaObject[0]._id}, {$set: {'inZoomSpace': true}});
+                   // IdeaFactory.toggleZoomSpaceFlag(ideaID, user._id);
+                   IdeaFactory.updateZoomSpaceFlag(ideaID, "add");
+                   // var factor = ((1 / global) -1);
+                   var elementID = ui.helper[0].id;
+                   var left = (((ideaLeftOffset/global) - (pZMLeftOffset/global)));
+                   var top = (((ideaTopOffset/global) - (pZMTopOffset/global)));
+                   var position = {"top": top, "left": left};
+                   logger.debug("Updating current position of idea in zoom space");
+                   //logger.trace("New position of idea " + elementID + ": " + JSON.stringify(position));
+                   ZoomManager.updatePosition(elementID, "Ideas", position, Session.get("currentUser"));
+                   //logger.trace(ideaLeftOffset - pZMLeftOffset);
+                   $('#' + ideaID).css('left', left);
+                   $('#' + ideaID).css('top', top); 
+                
+                   $('#miniIdeas' + ideaID).css('left', left/25);
+                   $('#miniIdeas' + ideaID).css('top', top/25);
+             } else if (fromCluster(ideaID)) {
+               // is it coming from a cluster?
+               //if (fromCluster(ideaID)) {
+               // if(Ideas.findOne({_id:ui.helper[0].id}, {fields: {inCluster: true}})) {
+               var ideaID  = ui.helper[0].id;
+               var ideaObject =  Ideas.find(ideaID).fetch();  
+               var cluster  = $(ui.helper[0].parentNode);
+               var clusterID = cluster[0].id.split("-").slice(-1)[0];
+               //logger.trace("Cluster ID of item being dragged out: " + clusterID);
+               // Ideas.update({_id: ideaObject[0]._id}, {$set: {'inZoomSpace': true, 'inCluster':false}});
+               ClusterFactory.removeIdeaFromCluster(ideaObject[0], Clusters.findOne(clusterID));
+               IdeaFactory.updateZoomSpaceFlag(ideaID, "add");
+               // //logger.trace("Shouldnt be here ");
+               var elementID = ui.helper[0].id;
+               var left = (((ideaLeftOffset/global) - (pZMLeftOffset/global)));
+               var top = (((ideaTopOffset/global) - (pZMTopOffset/global)));
+               var position = {"top": top, "left": left};
+              
+               logger.debug("Updating current position of idea in zoom space");
+               //logger.trace("New position of idea " + elementID + ": " + JSON.stringify(position));
+               ZoomManager.updatePosition(elementID, "Ideas", position, Session.get("currentUser"));
+               //logger.trace(ideaLeftOffset - pZMLeftOffset);
+               $('#' + ideaID).css('left',left);
+               $('#' + ideaID).css('top', top);
+               
+               $('#miniIdeas' + ideaID).css('left', left/25);
+               $('#miniIdeas' + ideaID).css('top', top/25);
+
+            } else {
+                logger.warn("Neither from displayIdeas or cluster; rejecting for now!");
+            }
+        }
+    });
+});
+
+Template.ZoomSpace.helpers({
+    getZoomSpaceIdeas: function() {
+        // return Ideas.find({inZoomSpace: true, inCluster:false}, {fields: {inZoomSpace: 0,inCluster: 0}});        
+        return FilterManager.performQuery("zoomSpaceIdeas", Session.get("currentUser"), "ideas");
+    },
+
+    getClusters: function() {
+        var user = Session.get("currentUser");
+        // return Clusters.find({userID: user._id, isTrash: false});
+        return FilterManager.performQuery("clusterFilter", user, "clusters");
+    },
+});
+
+// <div id="zoom-{{_id}}">
+// ui.helper[0].id.split("-")[1]
+
+/****************************************************************
+*
+* ZOOMSPACE ELEMENT template rendering setup, helpers and events
+*
+****************************************************************/
+
+Template.ZoomSpaceElement.onRendered(function () {
+    
+    var zoomElementID = $(this.firstNode)[0].id;
+    //logger.trace("Zoom element ID: " + zoomElementID);
+    var oldPosition = ZoomManager.getElementPosition(zoomElementID, Session.get("currentUser"));
+    //logger.trace("Old position: " + oldPosition);
+    $(this.firstNode).css("top", oldPosition.top);
+    $(this.firstNode).css("left", oldPosition.left);
+    $(this.firstNode).on('mousedown touchstart', function(e) {
+                //$(".zoomSpaceElement").collapse();
+                 e.stopPropagation();
+    });
+    
+    $("#" + zoomElementID).css('-webkit-animation-name', 'zoomGlow'); /* Chrome, Safari, Opera */
+    $("#" + zoomElementID).css('-webkit-animation-duration', '2s'); /* Chrome, Safari, Opera */
+    
+    var canvasHeight = $('.panZoomFrame').height();
+    var canvasWidth = $('.panZoomFrame').width();
+
+    $(this.firstNode).draggable({
+        zIndex: 50,
+        appendTo: '.panZoomFrame',
+        drag: function(e, ui) {
+              
+            ui.position.top =  Math.round(ui.position.top / global);
+            ui.position.left = Math.round(ui.position.left / global);
+
+            $('#miniIdeas' + ui.helper[0].id).css('left', ui.position.left/25);
+            $('#miniIdeas' + ui.helper[0].id).css('top', ui.position.top/25);
+
+            if (ui.position.left < 0) 
+                ui.position.left = 0;
+            if (ui.position.left + $(this).width() > canvasWidth)
+                ui.position.left = canvasWidth - $(this).width();  
+            if (ui.position.top < 0)
+                ui.position.top = 0;
+            if (ui.position.top + $(this).height() > canvasHeight)
+                ui.position.top = canvasHeight - $(this).height();  
+        },
+        stop: function(event, ui) {
+            //logger.trace("UI for stop zoom space drag");
+            //logger.trace(ui.helper[0].id);
+            var elementID = ui.helper[0].id;
+            var position = ui.position;
+            logger.debug("Updating current position of idea in zoom space");
+            //logger.trace("New position of idea " + elementID + ": " + JSON.stringify(position));
+            ZoomManager.updatePosition(elementID, "Ideas", position, Session.get("currentUser"));
+        },
+    });
+});
+
+/****************************************************************
+*
+* CLUSTER template rendering setup, helpers and events
+*
+****************************************************************/
+
+Template.Cluster.onRendered( function() {   
+    
+    var clusterID = $(this.firstNode)[0].id;
+    // //logger.trace("Zoom element: ");
+    // //logger.trace(zoomElement);
+    //logger.trace("Zoom element ID: " + clusterID);
+    var oldPosition = ZoomManager.getElementPosition(clusterID, Session.get("currentUser"));
+    //logger.trace("Old position: " + oldPosition);
+    $(this.firstNode).css("top", oldPosition.top);
+    $(this.firstNode).css("left", oldPosition.left);
+    $(this.firstNode).on('mousedown touchstart', function(e) {
+            e.stopPropagation();
+    });
+     var canvasHeight = $('.panZoomFrame').height();
+     var canvasWidth = $('.panZoomFrame').width();
+     $(this.firstNode).draggable({
+        accept: '.zoomSpaceElement',
+        drag: function(e, ui) {
+            ui.position.top = Math.round(ui.position.top/global);
+            ui.position.left = Math.round(ui.position.left/global);
+            $('#miniCluster' + ui.helper[0].id).css('left', ui.position.left/25);
+            $('#miniCluster' + ui.helper[0].id).css('top', ui.position.top/25);
+        },
+        stop: function(e, ui) {
+            var elementID = ui.helper[0].id;
+            var position = ui.position;
+            logger.debug("Updating current position of cluster in zoom space");
+            //logger.trace("New position of idea " + elementID + ": " + JSON.stringify(position));
+            ZoomManager.updatePosition(elementID, "Clusters", position, Session.get("currentUser"));
+        },
+    });
+    
+    $(this.firstNode).droppable({
+        accept:'.zoomSpaceElement, .clusterListElement, .ideaListElement',
+        drop: function(event, ui) {
+            var currentClusterID = this.id;
+            //logger.trace("current cluster ID: " + currentClusterID);
+            var ideaID = ui.helper[0].id; 
+            var clusterObject = Clusters.find(currentClusterID).fetch();
+            var ideaObject =  Ideas.find(ideaID).fetch();            
+        
+            $("#" + currentClusterID).css('-webkit-animation-name', 'glowone'); /* Chrome, Safari, Opera */
+            $("#" + currentClusterID).css('-webkit-animation-duration', '2s'); /* Chrome, Safari, Opera */
+            
+            // -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+            // animation-name: example;
+            // animation-duration: 4s;
+
+            // make sure it's not already in the cluster
+            if($.inArray(ideaID, clusterObject[0].ideaIDs) == -1) {
+                Ideas.update({_id: ideaObject[0]._id}, {$set: {'inCluster': true, 'inZoomSpace':false}});
+                ClusterFactory.insertIdeaToCluster(ideaObject[0], clusterObject[0]);              
+            } 
+            
+            // if it's already in another cluster belong to the user, remove it
+            if(ideaObject[0].clusterIDs.length > 1) {
+               logger.debug("Array of clusters"  + ideaObject[0].clusterIDs);     
+               var prevClusters = Clusters.find(ideaObject[0].clusterIDs[0]).fetch();
+               prevClusters.forEach(function(cluster){
+                    if (cluster.userID == Session.get("currentUser")._id) {
+                         logger.debug("Removing from user's previous cluster with id: " + cluster._id);
+                         ClusterFactory.removeIdeaFromCluster(ideaObject[0], cluster); 
+                    } else {
+                         logger.debug("Cluster with id " + cluster._id + " not previously in user's clusters");
+                    }
+               });
+            }
+            $("#" + currentClusterID).removeClass('-webkit-animation-name', 'glowone'); 
+            $("#" + currentClusterID).css('-webkit-animation-name', 'glowtwo'); 
+            $("#" + currentClusterID).css('-webkit-animation-duration', '2s'); 
+        }
+    });    
+    $(this.firstNode).on({
+        "shown.bs.dropdown":  function() { this.closable = false; },
+        "click"            :  function() { this.closable = true;  },
+        "hide.bs.dropdown" :  function() { return this.closable;  }
+    });
+});
+
+Template.Cluster.helpers({
+    getIdeas: function() {
+        return Ideas.find();
+    },
+    getClusterIdeas: function() {  
+        var targetCluster = Clusters.findOne(this._id);
+        ////logger.trace("target cluster " + JSON.stringify(targetCluster));
+        IdeaIDs = targetCluster.ideaIDs; 
+        // logger.debug("Idea IDS "  + IdeaIDs)
+        //{ field: { $in: [<value1>, <value2>, ... <valueN> ] } }
+        return Ideas.find({_id:{$in:IdeaIDs}});  // Iterated over IdeaIDs 
+    },
+    getClusterName: function() {
+        return Clusters.findOne({_id:this._id}).name; 
+    },
+    getClusterIdeasCount: function() {  
+        var targetCluster = Clusters.findOne(this._id);
+        ////logger.trace("target cluster " + JSON.stringify(targetCluster));
+        IdeaIDs = targetCluster.ideaIDs; 
+        // logger.debug("Idea IDS "  + IdeaIDs)
+        //{ field: { $in: [<value1>, <value2>, ... <valueN> ] } }
+        return Ideas.find({_id:{$in:IdeaIDs}}).count();  // Iterated over IdeaIDs 
+    },  
+});
+
+Template.Cluster.events({
+    
+    "click .clusterName" : function() {
+            var clusterID = this._id; 
+            var textBoxID = this._id; 
+            var label = $('.clusterName' +  "#" + clusterID);
+            var textBox = $('.nameCluster' + "#" + textBoxID); 
+            label.hide();
+            textBox.show();
+    }, 
+    
+    "keyup .nameCluster": function (event, template) {
+        
+        if(event.keyCode == 13){
+            var clusterID = this._id; 
+            var textBoxID = this._id; 
+            var label = $('.clusterName' +  "#" + clusterID);
+            var textBox = $('.nameCluster' + "#" + textBoxID); 
+            var text  = event.target.value;
+
+            textBox.hide();
+            label.show();
+            Clusters.update({_id: clusterID}, {$set: {'name' : text}});
+        } 
+        return false;
+    },
+});
+
+Template.ClusterIdeaElement.onRendered(function () {
+     
+    $(this.firstNode).on('mousedown touchstart', function(e) {
+        e.stopPropagation();
+    });
+
+   $(this.firstNode).draggable({
+        //containment: '.synth  esisBox',
+        //revert: true,
+        zIndex: 50,
+        drag: function(e, ui) {
+            // var width = $(this).css('width');
+            // $(ui.helper[0]).css('width', width);          
+        },
+    });
+});
+
+Template.DeleteCluster.onRendered( function() {
+    
+    $(this.firstNode).click(function(){
+        
+            if(confirm("Are you sure you want to delete this label? Any attached ideas will go back into the list on the left")){
+                
+                var clusterID =  this.parentNode.parentNode.parentNode.parentNode.id;
+                //logger.trace("cluster ID to delete: " + clusterID)
+                var cluster = Clusters.findOne(clusterID);
+                var ideasInCluster = cluster.ideaIDs; 
+                var user = Session.get("currentUser");
+                ClusterFactory.trash(cluster);
+                $("#miniCluster" + cluster._id).remove();
+                updateClusterFilter(cluster._id, "remove");
+                for (var i = ideasInCluster.length - 1; i >= 0; i--) {   
+                    // Ideas.update({_id: ideasInCluster[i]}, 
+                        // {$set: {'inZoomSpace':false, 'inCluster':false}});
+                    // IdeaFactory.toggleZoomSpaceFlag(ideaID, user._id);
+                    IdeaFactory.updateZoomSpaceFlag(ideasInCluster[i], "remove");
+                    //$("#" +ideasInCluster[i]).remove(); 
+                   // Ideas.update({_id: ideasInCluster[i]}, {$set: {'inCluster': false, 'inZoomSpace':false}});
+                }; 
+            }
+    });
+});
+
+/****************************************************************
+*
+* Convenience functions
+*
+****************************************************************/
+
+var setBaseIdeasFilters = function setBaseIdeasFilters(filterName) {
+
+    var user = Session.get("currentUser");
+
+    FilterManager.create(filterName, user, 
+        "ideas", "promptID", Session.get("currentPrompt")._id);
+    
+    // init cluster filters
+    // var clusters = Clusters.find({userID: user._id}).fetch();
+    var clusters = FilterManager.performQuery("clusterFilter", user, "clusters").fetch();
+    clusters.forEach(function(cluster) {
+        FilterManager.create(filterName, user,
+        "ideas", "clusterIDs", cluster._id, "ne");
+    });
+    
+    // add synth subset filters (if from experiment)
+    var part = Session.get("currentParticipant");
+    if (part) {
+        logger.debug("On synthesis experiment workflow; updating " + filterName + " filter");
+        addSynthExpFilter(filterName, part);
+    }
+}
+
+var setBaseClusterFilters = function setBaseClusterFilters(filterName) {
+
+    var user = Session.get("currentUser");
+
+    // get all clusters that belong to the user AND are not trashed
+    FilterManager.create(filterName, user, 
+        "clusters", "userID", user._id);
+    FilterManager.create(filterName, user, 
+        "clusters", "isTrash", false);
+
+}
+
+var addSynthExpFilter = function addSynthExpFilter(filterName, part) {
+    
+    logger.debug("Calling addSynthExpFilter for " + filterName);
+    
+    var subset = SynthSubsets.findOne({_id: part.misc.subsetID});
+    //logger.trace(JSON.stringify(subset));
+
+    subset.ideaIDs.forEach(function(ideaID){
+        FilterManager.create(filterName, Session.get("currentUser"),
+        "ideas", "_id", ideaID);
+    });
+}
+
+var updateClusterFilter = function updateClusterFilter(clusterID, remove) {
+    if (!remove) {
+        // call this function when a new cluster is created
+        FilterManager.create("zoomSpaceIdeas", Session.get('currentUser'),
+            "ideas", "clusterIDs", clusterID, "ne");
+        FilterManager.create("displayIdeas", Session.get('currentUser'),
+            "ideas", "clusterIDs", clusterID, "ne");
+        FilterManager.create("remainingIdeas", Session.get('currentUser'),
+            "ideas", "clusterIDs", clusterID, "ne");
+    } else {
+        FilterManager.remove("zoomSpaceIdeas", Session.get('currentUser'),
+            "ideas", "clusterIDs", clusterID, "ne");
+        FilterManager.remove("displayIdeas", Session.get('currentUser'),
+            "ideas", "clusterIDs", clusterID, "ne");
+        FilterManager.remove("remainingIdeas", Session.get('currentUser'),
+            "ideas", "clusterIDs", clusterID, "ne");
+    }
+    
+}
+
+fromCluster = function fromCluster(ideaID) {
+    var clusters = Clusters.find({ideaIDs: ideaID}).fetch();
+    if (clusters.length > 0) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+fromDisplayIdeas = function fromDisplayIdeas(ideaID) {
+    
+    var displayIdeas = FilterManager.performQuery("displayIdeas", Session.get("currentUser"), "ideas").fetch()
+    var fromDisplay = false;
+    displayIdeas.forEach(function(idea) {
+        if (idea._id == ideaID) {
+            logger.debug("This is coming from displayIdeas");
+            fromDisplay = true;
+        }
+    });
+    logger.debug("This is not from displayIdeas");
+    return fromDisplay;
+    // var user = Session.get("currentUser");
+    // var idea = Ideas.findOne({_id: ideaID});
+    // // //logger.trace(JSON.stringify(idea));
+    // var clusters = Clusters.find({_id: {$in: idea.clusterIDs}, userID: user._id, isTrash: false}).fetch();
+    // //logger.trace(JSON.stringify(clusters));
+    // if (clusters.length < 1 && !isInList(user._id, idea.zoomSpace)) {
+    //     logger.debug("This is coming from displayIdeas");
+    //     return true;
+    // } else {
+    //     logger.debug("This is not from displayIdeas");
+    //     return false;
+    // }
+}
+

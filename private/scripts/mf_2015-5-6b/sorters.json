@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Ideas Filter", 
+    "val": -1, 
+    "userID": "hS2KnAZ76JT8zsrqt", 
+    "collection": "ideas", 
+    "field": "time", 
+    "position": 1, 
+    "_id": "AJfRxRmRvy6knzL3u", 
+    "type": "sorter"
+  }
+]

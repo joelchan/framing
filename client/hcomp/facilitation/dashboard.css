@@ -1,0 +1,444 @@
+/*.hcomp-dashboard > .row {
+    display: table;
+}
+
+.hcomp-dashboard > [class*="col-"] {
+    float: none;
+    display: table-cell;
+    vertical-align: top;
+}*/
+
+/*html,body {
+    height:100%;
+}*/
+
+/* ########################## */
+/* GENERAL */
+/* ########################## */
+
+.hcomp-dashboard h3{
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+.hcomp-dashboard input[type=checkbox]{
+	margin-top: 29px;
+}
+.hcomp-dashboard a {
+  color: #000;
+}
+.hcomp-dashboard button{
+	margin-top: 0px;
+}
+
+.hcomp-dashboard .fac-actions {
+  /*display:inline;*/
+  text-align: center;
+  padding:15px;
+  vertical-align: center;
+}
+
+.hcomp-dashboard .ideator-control, .hcomp-dashboard .create-task-btn {
+  text-align: center;
+  font-weight:bold;
+  font-size:16px;
+}
+
+.hcomp-dashboard .ideator-control {
+  /*margin: 10px 0;*/
+  /*height: 50px;*/
+  /*width: 50%;*/
+  margin-left:10px;
+}
+
+.hcomp-dashboard .create-task-btn {
+  margin-right:10px;
+}
+
+/* ########################## */
+/* IDEAS VIEW */
+/* ########################## */
+
+.hcomp-dashboard .ideas-view {
+  margin-right: 0;
+  /*border-right: solid 1px #ddd;*/
+  /*max-height: 685px;*/
+  /*height:100%;*/
+  /*height:inherit;*/
+  padding-left:15px;
+  padding-right:15px;
+  position:relative;
+  /*overflow: scroll;*/
+}
+
+.hcomp-dashboard .ideadeck{
+  list-style: none;
+  /*overflow: auto;*/
+  /*height: 720px;*/
+  padding-left:15px;
+  padding-right:15px;
+}
+
+.hcomp-dashboard .ideas {
+  /*overflow:auto;*/
+  /*height:inherit;*/
+}
+
+.hcomp-dashboard #idealist {
+  padding-right:0px;
+}
+
+.hcomp-dashboard li.idea-item{
+  border: solid 2px #ddd;
+  margin: 5px 0;
+  padding: 5px;
+  background-color: #fff;
+  cursor: pointer;
+  list-style-type: none;
+}
+
+.hcomp-dashboard .idea-item{
+  position: relative;
+  cursor: default;
+}
+
+/* ########################## */
+/* NOTES VIEW */
+/* ########################## */
+
+.hcomp-dashboard .notes-view {
+  /*max-height: 685px;*/
+  /*height:100%;*/
+  padding-left:15px;
+  padding-right:15px;
+  /*padding-top:15px;*/
+  /*overflow: scroll;*/
+}
+
+.hcomp-dashboard #big-picture-viz {
+  /*height:60%;*/
+  /*padding:15px;*/
+  /*overflow:auto;*/
+  width:100%;
+}
+
+.hcomp-dashboard .vizes {
+  width:100%;
+}
+
+.hcomp-dashboard #ideawordcloud {
+  overflow:auto;
+  width:100%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.hcomp-dashboard .overall-stats {
+  padding-top: 10px;
+}
+
+.hcomp-dashboard .stat {
+  font-size:30px;
+  font-weight:bold;
+}
+
+.hcomp-dashboard #scratchpad {
+  padding-left:15px;
+  padding-right: 15px;
+  /*height:40%;*/
+}
+
+.hcomp-dashboard .scratchpad-form {
+  /*height:100%;*/
+}
+
+/* ########################## */
+/* TASKS VIEW */
+/* ########################## */
+
+.hcomp-dashboard .tasks-view {
+  /*overflow:auto;*/
+  /*max-height: 685px;*/
+  /*height:100%;*/
+  /*overflow-y: scroll;*/
+  /*overflow-x: hidden;*/
+  padding-left:30px;
+  padding-right:30px;
+  /*background-color: #f5f5f5;*/
+}
+
+.hcomp-dashboard #task-card-list {
+  background-color: #f5f5f5;
+  padding:10px;
+  padding-top:0px;
+  overflow:auto;
+}
+
+.hcomp-dashboard .task-list-header {
+  background-color: #f5f5f5;
+  font-size:20px;
+  font-weight:bold;
+  text-align:center;
+  /*margin-top:10px;*/
+  /*padding-top:5px;*/
+  margin-bottom: 0px;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.hcomp-dashboard .task-card {
+  border: solid 1px #ddd;
+  background-color: white;
+  margin: 5px 0px;
+  padding: 10px;
+}
+
+.hcomp-dashboard #CreateTask {
+  /*border: solid black 1px;*/
+/*  padding: 15px 15px 0px 15px;*/
+}
+
+.hcomp-dashboard .edit-task {
+  border: solid black 1px;
+  padding: 15px 15px 0px 15px;
+  background-color: white;
+}
+
+.hcomp-dashboard .task-priority {
+  /*text-align: center;*/
+  padding: 0px 0px 15px 20px;
+/*  display:inline-block;*/
+    display: none;
+    
+}
+
+.hcomp-dashboard .task-priority .radio-inline input[type=radio] {
+  position:relative;
+}
+
+.hcomp-dashboard .task-main-options {
+  padding-top:5px;
+  font-size:12px;
+  vertical-align: center;
+}
+
+.hcomp-dashboard .task-main-options .btn {
+  font-size:12px;
+}
+
+.hcomp-dashboard #CreateTask .task-options, .hcomp-dashboard .edit-task .task-options {
+  /*display: inline-block;*/
+  /*vertical-align: bottom;*/
+  padding-right:20px;
+}
+
+.hcomp-dashboard .create-task-btn {
+  width:100%;
+}
+
+.hcomp-dashboard .other-fac-actions {
+  text-align: right;
+  font-size:12px;
+}
+
+.hcomp-dashboard #CreateTask .task-options, .edit-task .task-options, {
+  /*display: inline-block;*/
+}
+
+.hcomp-dashboard #task-create-cancel, .hcomp-dashboard .task-update-cancel {
+  /*margin-left:15px;*/
+  /*margin-right:5px;*/
+    /*background-color: #F3F3F3;*/
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.hcomp-dashboard .task-card-main {
+  vertical-align: center;
+    width: 90%;
+    float: left;
+    clear: left;
+}
+.hcomp-dashboard .task-data {
+    width: 10%;
+    float: right;
+    clear: right;
+}
+    
+
+.hcomp-dashboard .card-edit {
+  margin-left:0px;
+  float:right;
+  padding:5px 5px 0px 0px;
+  cursor:pointer;
+  opacity:0.75;
+    display: none;
+}
+
+/*.hcomp-dashboard .card-edit:hover {
+  margin-left:0px;
+  float:right;
+  padding:5px 5px 0px 0px;
+  cursor:pointer;
+  opacity:1;
+}*/
+
+.hcomp-dashboard .card-description {
+    font-size:20px;
+    font-weight: bold;
+    padding-right:0px;
+    padding-left:0px;
+    height: 1.5em;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.hcomp-dashboard .card-description a {
+    width: 100%;
+    text-decoration: none;
+    cursor: pointer;
+}
+    
+.hcomp-dashboard .task-card-main .expandDescription{
+    overflow: visible;
+    height: auto;
+    width: 100%;
+    cursor: pointer;
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+.hcomp-dashboard .card-other-data {
+  float:right;
+  width:50px;
+  vertical-align: center;
+  padding-top:5px;
+  margin-left:15px;
+}
+
+.hcomp-dashboard .task-idealist {
+    background-color: #f5f5f5;
+    /*max-height: 300px; */
+    /*min-height: 500px;*/
+    list-style: none;
+    list-style-type: none;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-top:10px;
+    overflow:auto;
+}
+
+.hcomp-dashboard #CreateTask {
+  /*border: solid 1px #ddd;*/
+  /*background-color: white;*/
+  background-color: #f5f5f5;
+    /*margin-top: 10px;*/
+    padding: 5px;
+/*
+  margin: 10px 0px;
+  padding: 15px;
+*/
+}
+
+.hcomp-dashboard .task-card .row {
+  margin: 0px;
+}
+
+.hcomp-dashboard .task-data .row {
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  margin-bottom:10px;
+}
+
+.hcomp-dashboard .card-ideas {
+  padding:0px;
+}
+
+.hcomp-dashboard #task-idealist {
+  background-color: #f5f5f5;
+  /* height: 300px; */
+  /*min-height: 500px;*/
+  /*max-height:500px;*/
+  list-style: none;
+  list-style-type: none;
+  padding-left: 0px;
+  margin-top:10px;
+}
+
+.hcomp-dashboard #task-idealist li.idea-item{
+  border: solid 1px #ddd;
+  margin: 5px;
+  padding: 5px;
+  background-color: #fff;
+  cursor: pointer;
+  width:100%;
+}
+
+.hcomp-dashboard #task-idealist li.idea-item .gamechangestar{
+  float: left;
+  padding: 2px 5px 2px 0;
+  color: #f0ad4e;
+  text-shadow: 1px 1px #ddd; /*#eea236;*/
+}
+
+.hcomp-dashboard .task-card .card-ideators, .task-card .card-priority {
+  padding: 0px;
+}
+
+.hcomp-dashboard #CreateTask #task-description {
+  
+}
+
+.hcomp-dashboard #CreateTask #task-priority {
+
+}
+
+.hcomp-dashboard #CreateTask #task-ideators {
+
+}
+
+.hcomp-dashboard #CreateTask #task-ideas {
+  
+}
+
+.hcomp-dashboard #CreateTask #task-minutes {
+  
+}
+.hcomp-dashboard #CreateTask #task-create {
+    background-color: rgb(102,164,74);
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.hcomp-dashboard .gamechangestar, .modal .gamechangestar{
+	float: right;
+	color: #f0ad4e;
+	text-shadow: 1px 1px #ddd;
+}
+
+/* ########################## */
+/* OTHER */
+/* ########################## */
+
+/*.fa-minus-circle{
+	cursor: pointer;
+}*/
+
+.selected {
+	border: solid 1px #269abc!important;
+	-moz-box-shadow:    inset 0 0 2px #31b0d5;
+	-webkit-box-shadow: inset 0 0 2px #31b0d5;
+	box-shadow:         inset 0 0 2px #31b0d5;
+}
+
+.hcomp-dashboard .modal .idea{
+	cursor: pointer;
+}
+
+.hcomp-dashboard .modal h3{
+	margin-top: 10px;
+}

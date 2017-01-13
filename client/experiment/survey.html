@@ -1,0 +1,180 @@
+<template name="SurveyPage">
+  <div class="container">
+    
+    {{> SurveyDirections }}
+
+    {{> SurveyDemographics }}
+
+    {{#if isTreatment}}
+      {{> SurveyInspiration }}
+    {{/if}}
+
+    {{> SurveyInterfaceFeedback }}
+
+    {{> SurveySubmit }}
+    
+  </div>
+</template>
+
+<template name="SurveyDirections">
+  <div class="directions">
+    <h2>Directions:</h2>
+    <p>Please complete the following survey questions</p>
+  </div>
+</template>
+
+<template name="SurveyDemographics">
+  <form class="surveyForm">
+    <div class="row formQuestion">
+      <div class="question">Gender:*</div><br/>
+      <input type="radio" class="radioButton" name="gender" value="male">Male<br/>
+      <input type="radio" class="radioButton" name="gender" value="female">Female
+    </div>
+    <div class="row formQuestion">
+      <div class="question">Age: *</div><br/>
+      <input type="number" class="surveyNumBox" 
+      name="age" min="1" max="200" step="1" value="18">
+    </div>
+    <div class="row formQuestion">
+      <div class="question">Is English your first language?: *</div><br/>
+      <input type="radio" class="radioButton" name="lang1" value="true">Yes<br/>
+      <input type="radio" class="radioButton" name="lang1" value="false">No
+    </div>
+    <!-- <div id="lang2Question" class="row formQuestion hidden">
+      <div class="question">Do you speak a second language?: *</div><br/>
+      <input type="radio" class="radioButton" name="lang2" value="true">Yes<br/>
+      <input type="radio" class="radioButton" name="lang2" value="false">No
+    </div>
+    <div id="lang2Text" class="row formQuestion hidden">
+      <div class="question">List another language in which you are fluent(besides English): *</div><br/>
+      <input type="text" class="shortText" name="lang2text">
+    </div>
+    <div class="row formQuestion">
+      <div class="question">What country do you call home?: *</div><br/>
+      <input type="text" class="shortText" name="ethnicity">
+    </div> -->
+    <!-- <div class="row formQuestion">
+      <div class="question">Do you currently or have you ever owned either an ipod or an mp3 player of any sort?: *</div><br/>
+      <input type="radio" class="radioButton" name="ipod" value="true">Yes<br/>
+      <input type="radio" class="radioButton" name="ipod" value="false">No
+    </div>
+    <div class="row formQuestion">
+      <div class="question">Do you currently or have you ever owned a smartphone?: *</div><br/>
+      <input type="radio" class="radioButton" name="smartphone" value="true">Yes<br/>
+      <input type="radio" class="radioButton" name="smartphone" value="false">No
+    </div> -->
+    <!-- <div class="row formQuestion">
+      <div class="question">How often do you do brainstorming-type activities at your work?: *</div><br/>
+      <select id="brainstorming">
+        <option value="5">Very Frequently</option>
+        <option value="4">Frequently</option>
+        <option value="3">Occasionally</option>
+        <option value="2">Rarely</option>
+        <option value="1">Never</option>
+      </select>
+    </div> -->
+  </form>
+</template>
+
+<template name="SurveyInspiration">
+  <form class="surveyForm">
+    <div class="row formQuestion">
+      <div class="question">How often did you use the provided inspirations (i.e., the ideas in the right pane) while working on the two problems? *</div><br/>
+      <select id="inspirationUse">
+        <option value="5" name="anyUse">5 - Very frequently</option>
+        <option value="4" name="anyUse">4 - Frequently</option>
+        <option value="3" name="anyUse">3 - Somewhat frequently</option>
+        <option value="2" name="anyUse">2 - Barely</option>
+        <option value="1" name="noUse">1 - Not at all</option>
+      </select>
+    </div>
+    <div class="row formQuestion inspUseDetails hidden">
+      <div class="question">Overall, did you feel like the inspirations helped you come up with more ideas? *</div><br/>
+      <select id="inspirationHelpfulFluency">
+        <option value="5">5 - Very much so</option>
+        <option value="4">4 - Yes</option>
+        <option value="3">3 - Somewhat</option>
+        <option value="2">2 - Barely</option>
+        <option value="1">1 - Not at all</option>
+      </select>
+    </div>
+    <div class="row formQuestion inspUseDetails hidden">
+      <div class="question">Overall, did you feel like the inspirations helped you come up with better ideas? *</div><br/>
+      <select id="inspirationHelpfulQuality">
+        <option value="5">5 - Very much so</option>
+        <option value="4">4 - Yes</option>
+        <option value="3">3 - Somewhat</option>
+        <option value="2">2 - Barely</option>
+        <option value="1">1 - Not at all</option>
+      </select>
+    </div>
+    <div class="row formQuestion inspUseDetails hidden">
+      <div class="question">(Optional) Please tell us about one or two instances where an inspiration helped you come up with an idea:</div><br/>
+      <textArea id="inspirationExplainSurvey" class="survey-textbox"></textarea>
+    </div>
+    <div class="row formQuestion inspUseDetails hidden">
+      <div class="question">How easy was it to use the inspirations? *</div><br/>
+      <select id="inspirationEasy">
+        <option value="5">5 - Very easy</option>
+        <option value="4">4 - Easy</option>
+        <option value="3">3 - Somewhat easy</option>
+        <option value="2">2 - Difficult</option>
+        <option value="1">1 - Very difficult</option>
+      </select>
+    </div>
+    <div class="row formQuestion inspUseDetails hidden">
+      <div class="question">(Optional) Please briefly explain what made it easy/difficult:</div><br/>
+      <textArea id="inspirationEasySurvey" class="survey-textbox"></textarea>
+    </div>
+    <!-- <div class="row formQuestion">
+      <div class="question">Did you find any of the suggested inspirations helpful?: *</div><br/>
+      <input type="radio" class="radioButton" name="inspirationHelpful" value="true">Yes<br/>
+      <input type="radio" class="radioButton" name="inspirationHelpful" value="false">No
+    </div>
+    <div class="row formQuestion">
+      <div class="question">Please briefly explain why or why not:*</div><br/>
+      <textArea id="inspirationExplainSurvey" class="survey-textbox"></textarea>
+    </div> -->
+  </form>
+</template>
+
+<template name="SurveyInterfaceFeedback">
+  <form class="surveyForm">
+    <div class="row formQuestion">
+      <div class="question">Is there anything about the activity that you found particularly challenging?:</div><br/>
+      <textArea id="activityLikeSurvey" class="survey-textbox"></textarea>
+    </div>
+    <div class="row formQuestion">
+      <div class="question">Is there anything about the interface that you liked?:</div><br/>
+      <textArea id="intLikeSurvey" class="survey-textbox"></textarea>
+    </div>
+    <div class="row formQuestion">
+      <div class="question">We are always looking for ways to improve! Is there anything about the interface that you didn't like (e.g., unclear instructions, confusing buttons)?</div><br/>
+      <textArea id="intDislikeSurvey" class="survey-textbox"></textarea>
+    </div>
+  </form>
+</template>
+
+<template name="SurveySubmit">
+  <button id="submit" class="submitForm btn-xlarge2 btn-default btn-primary">
+   Submit 
+  </button>
+</template>
+
+<template name="IdeationSurvey">
+  <div class="container">
+    <iframe src="https://docs.google.com/forms/d/17oUbtN0acd-QEasNkW2crWyyIq3kEI7AGbNbXD6tfIA/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+  </div>
+</template>
+
+<template name="SynthesisSurvey">
+  <div class="container">
+    <iframe src="https://docs.google.com/forms/d/1bYMyIpACIYFGCRBV05euMnCIkb0sropz116JPT3yMvY/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>>
+  </div>
+</template>
+
+<template name="FacilitatorSurvey">
+  <div class="container">
+    <iframe src="https://docs.google.com/forms/d/1q1fYe8LqF2Fn0V2X3DMvKmj8uKDcIdaxYG_yZ7Ibec0/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+  </div>
+</template>

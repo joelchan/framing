@@ -1,0 +1,655 @@
+[
+  {
+    "userName": "Joel", 
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "ideaIDs": [], 
+    "isCollapsed": false, 
+    "name": "What do you have in common?\n", 
+    "isTrash": false, 
+    "userID": "hS2KnAZ76JT8zsrqt", 
+    "position": {
+      "top": 48, 
+      "left": 23
+    }, 
+    "_id": "JNjEDs2hTKjy9KpKR", 
+    "children": []
+  }, 
+  {
+    "userName": "A2RJHJP19XJZ0E", 
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "ideaIDs": [
+      "YrSN24yiTN4kJRx8m"
+    ], 
+    "isCollapsed": false, 
+    "name": "This is an inspiration!", 
+    "isTrash": false, 
+    "userID": "wsqF5oR2C87iauyrS", 
+    "position": {
+      "top": 59, 
+      "left": 24
+    }, 
+    "_id": "r6GwZDMYhkMoLFwxR", 
+    "children": []
+  }, 
+  {
+    "userName": "Joel", 
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "ideaIDs": [
+      "hLE2mvNdpt54GGxgL"
+    ], 
+    "isCollapsed": false, 
+    "name": "Does going thru alphabet help?\n", 
+    "isTrash": false, 
+    "userID": "hS2KnAZ76JT8zsrqt", 
+    "position": {
+      "top": 31, 
+      "left": 22
+    }, 
+    "_id": "rN8HgTQND9WNnEfDJ", 
+    "children": []
+  }, 
+  {
+    "userName": "AQY4X23DGYXAP", 
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "ideaIDs": [
+      "6QvY4zZtuyc3oncGR"
+    ], 
+    "isCollapsed": false, 
+    "name": "This is an inspiration!", 
+    "isTrash": false, 
+    "userID": "5ckX3mHBpTMR3JkXq", 
+    "position": {
+      "top": 44, 
+      "left": 25
+    }, 
+    "_id": "AALNBZXoz84Zf4xcA", 
+    "children": []
+  }, 
+  {
+    "userName": "Joel", 
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "ideaIDs": [
+      "frFNNfLoYNSQeZeQp", 
+      "rPYsi8ZJ6taXBz8xq"
+    ], 
+    "isCollapsed": false, 
+    "name": "Any clues from the social setting?\n", 
+    "isTrash": false, 
+    "userID": "hS2KnAZ76JT8zsrqt", 
+    "position": {
+      "top": 59, 
+      "left": 29
+    }, 
+    "_id": "D4emCWCnZmjqp6iki", 
+    "children": []
+  }, 
+  {
+    "userName": "A27BUT19WQ6P1O", 
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "ideaIDs": [
+      "25jMXqrDcWkyipcev", 
+      "n7n93R7EjnxDm7Zu5", 
+      "FQpj5Q7WTaKTHkNyo"
+    ], 
+    "isCollapsed": false, 
+    "name": "This is an inspiration!", 
+    "isTrash": false, 
+    "userID": "qhv5eHnGgA48qkaCn", 
+    "position": {
+      "top": 50, 
+      "left": 18
+    }, 
+    "_id": "FNQe8hF8DJfNKZyMD", 
+    "children": []
+  }, 
+  {
+    "userName": "Joel", 
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "ideaIDs": [
+      "Tie7Ws4rdAojgiTKC", 
+      "HzzZhXFfXDK3Qtoco"
+    ], 
+    "isCollapsed": false, 
+    "name": "Why not get them talking?\n", 
+    "isTrash": false, 
+    "userID": "hS2KnAZ76JT8zsrqt", 
+    "position": {
+      "top": 31, 
+      "left": 19
+    }, 
+    "_id": "M2HeWpDa3XgEFHby9", 
+    "children": []
+  }, 
+  {
+    "userName": "AM97GWDYEFN97", 
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "ideaIDs": [
+      "3e9RzqEJWmeLuNLSn"
+    ], 
+    "isCollapsed": false, 
+    "name": "This is an inspiration!", 
+    "isTrash": false, 
+    "userID": "ukuE6oRgtuZw2aGGZ", 
+    "position": {
+      "top": 33, 
+      "left": 18
+    }, 
+    "_id": "bitALqJQ2HJSY5z7u", 
+    "children": []
+  }, 
+  {
+    "userName": "Joel", 
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "ideaIDs": [
+      "PxzDRbsratSJW9XG2", 
+      "6PcYXgCapgZ8yzffm", 
+      "38SsYfghNRPZHA9A7"
+    ], 
+    "isCollapsed": false, 
+    "name": "What other personal questions might lead to their name?\n", 
+    "isTrash": false, 
+    "userID": "hS2KnAZ76JT8zsrqt", 
+    "position": {
+      "top": 30, 
+      "left": 20
+    }, 
+    "_id": "bpfdpYzKYzxzKeunz", 
+    "children": []
+  }, 
+  {
+    "userName": "A39K9RKR1YHQOR", 
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "ideaIDs": [
+      "d9NrLkFbj59S5RWNu"
+    ], 
+    "isCollapsed": false, 
+    "name": "This is an inspiration!", 
+    "isTrash": false, 
+    "userID": "8tppTuQA5xRMgpgqc", 
+    "position": {
+      "top": 49, 
+      "left": 4
+    }, 
+    "_id": "8JsGgjnqNieFALzjL", 
+    "children": []
+  }, 
+  {
+    "userName": "Joel", 
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "ideaIDs": [
+      "z6N2GDywfXrrNq6po", 
+      "4ienHf4sQhLeseZmA", 
+      "m4qqEJTPq2YW3uNJT"
+    ], 
+    "isCollapsed": false, 
+    "name": "Why not excuse yourself for a moment to clear your head?\n", 
+    "isTrash": false, 
+    "userID": "hS2KnAZ76JT8zsrqt", 
+    "position": {
+      "top": 41, 
+      "left": 23
+    }, 
+    "_id": "wpAKNxCCGLhc4YApY", 
+    "children": []
+  }, 
+  {
+    "userName": "Joel", 
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "ideaIDs": [
+      "7RQXkQgeXf2Yq8rBd", 
+      "ReZaXZSSF7JmFy3tu", 
+      "qSnKfNKP9YvzS4poC", 
+      "wShzC5JDMjWvHWRsj"
+    ], 
+    "isCollapsed": false, 
+    "name": "Do you have any other friends in common you could bring up?\n", 
+    "isTrash": false, 
+    "userID": "hS2KnAZ76JT8zsrqt", 
+    "position": {
+      "top": 32, 
+      "left": 19
+    }, 
+    "_id": "EFED8gFdhG8aKxWLp", 
+    "children": []
+  }, 
+  {
+    "userName": "A2A4EX36X0JB4R", 
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "ideaIDs": [
+      "7rS9PTtAAogTAZfct"
+    ], 
+    "isCollapsed": false, 
+    "name": "This is an inspiration!", 
+    "isTrash": false, 
+    "userID": "BKQK7ipdyiQHACHB7", 
+    "position": {
+      "top": 55, 
+      "left": 23
+    }, 
+    "_id": "TxowbfjeQyi5BA4mZ", 
+    "children": []
+  }, 
+  {
+    "userName": "A1B4WL7N3ACF2T", 
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "ideaIDs": [
+      "S4TvSNghTATDo2J29", 
+      "hSzCxzmqhsGiXnh5r"
+    ], 
+    "isCollapsed": false, 
+    "name": "This is an inspiration!", 
+    "isTrash": false, 
+    "userID": "iBSthRRttwcw8tBvK", 
+    "position": {
+      "top": 31, 
+      "left": 14
+    }, 
+    "_id": "PjwKLKNKaq5jokweW", 
+    "children": []
+  }, 
+  {
+    "userName": "Joel", 
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "ideaIDs": [
+      "kbL3Briybij8mZZLG", 
+      "ynSYSKGoub3bab7YC"
+    ], 
+    "isCollapsed": false, 
+    "name": "Do you have a mutual friend there you can ask, while away?\n", 
+    "isTrash": false, 
+    "userID": "hS2KnAZ76JT8zsrqt", 
+    "position": {
+      "top": 59, 
+      "left": 1
+    }, 
+    "_id": "horWB3FiSqksLE9zs", 
+    "children": []
+  }, 
+  {
+    "userName": "A1D01TUSE0H5TW", 
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "ideaIDs": [
+      "frytoYrB7GyLuoXch", 
+      "knKXxixNcq3tskqZg", 
+      "TueK4x9HHS5HwZ4Sq", 
+      "cApkn4nkbSFPcnk58", 
+      "WHLtPTtzRJKq7Mznm", 
+      "6GuTuAdbiXZfrwrrv", 
+      "AEusAjnu7Ya73McYy"
+    ], 
+    "isCollapsed": false, 
+    "name": "This is an inspiration!", 
+    "isTrash": false, 
+    "userID": "C6afYRL2EKDjbov6M", 
+    "position": {
+      "top": 36, 
+      "left": 4
+    }, 
+    "_id": "67n958wpcYyHjCQc4", 
+    "children": []
+  }, 
+  {
+    "userName": "A1QHJGHKDIG3T5", 
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "ideaIDs": [], 
+    "isCollapsed": false, 
+    "name": "This is an inspiration!", 
+    "isTrash": false, 
+    "userID": "6AnbyrehbPfWCc7Pt", 
+    "position": {
+      "top": 51, 
+      "left": 3
+    }, 
+    "_id": "K6xrWJvphymQviMmE", 
+    "children": []
+  }, 
+  {
+    "userName": "A1EY5YPJS97IE4", 
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "ideaIDs": [
+      "zBZuJsLwuBf66AHhA"
+    ], 
+    "isCollapsed": false, 
+    "name": "This is an inspiration!", 
+    "isTrash": false, 
+    "userID": "7EYZGHKjCvJErQc5z", 
+    "position": {
+      "top": 50, 
+      "left": 26
+    }, 
+    "_id": "My3JLi5phKCBHStZx", 
+    "children": []
+  }, 
+  {
+    "userName": "Joel", 
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "ideaIDs": [
+      "ZBBnrvHmeySsDDuFs", 
+      "8G8YKfGHAvkCR2jgT", 
+      "ZJSpu2dMm6pScJwjG", 
+      "eGpkMXY4wCKAWwYpJ", 
+      "JAGqensyCSP5SoQga", 
+      "EFw6ZamdbMgax5ouZ", 
+      "nXj4HhKdWXvaMqAZy"
+    ], 
+    "isCollapsed": false, 
+    "name": "Are they talking with anyone else there?\n", 
+    "isTrash": false, 
+    "userID": "hS2KnAZ76JT8zsrqt", 
+    "position": {
+      "top": 60, 
+      "left": 13
+    }, 
+    "_id": "wuqjatiW3Dk8XqNcA", 
+    "children": []
+  }, 
+  {
+    "userName": "A26KS0O1QWD9A6", 
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "ideaIDs": [
+      "oeWyTtqkuk6rfCAdg"
+    ], 
+    "isCollapsed": false, 
+    "name": "This is an inspiration!", 
+    "isTrash": false, 
+    "userID": "yv9kpgvuySXmig2AK", 
+    "position": {
+      "top": 30, 
+      "left": 18
+    }, 
+    "_id": "h652Wv2mJPpMXu7hr", 
+    "children": []
+  }, 
+  {
+    "userName": "A1KJMZABBJG6HV", 
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "ideaIDs": [
+      "opcYLCxDGdRFGNqM8"
+    ], 
+    "isCollapsed": false, 
+    "name": "This is an inspiration!", 
+    "isTrash": false, 
+    "userID": "qtv4TmkrWpXrbupQm", 
+    "position": {
+      "top": 44, 
+      "left": 23
+    }, 
+    "_id": "KLRhpds2D537nxzPc", 
+    "children": []
+  }, 
+  {
+    "userName": "AVE8IPM6VXRLL", 
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "ideaIDs": [
+      "bQfRyfNesFmmJ32Ju"
+    ], 
+    "isCollapsed": false, 
+    "name": "This is an inspiration!", 
+    "isTrash": false, 
+    "userID": "NH4r4HpzDdg7YGysH", 
+    "position": {
+      "top": 35, 
+      "left": 4
+    }, 
+    "_id": "HmkzWZNN8R2H3isBF", 
+    "children": []
+  }, 
+  {
+    "userName": "Joel", 
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "ideaIDs": [
+      "JJfRakob5CLjPmTbu", 
+      "qigpfKph4zt49LYEZ", 
+      "23dD93SxL5N4kRJac", 
+      "BErsefXi7uzshHn3Q", 
+      "PG5gnwHHvcLRudBcu", 
+      "YYbdcybJD3xzczduj", 
+      "Ye4SEdwQ7dX8yubsr", 
+      "u3TL2gvH2Q84uzwxH"
+    ], 
+    "isCollapsed": false, 
+    "name": "Try talking about the past with them?\n", 
+    "isTrash": false, 
+    "userID": "hS2KnAZ76JT8zsrqt", 
+    "position": {
+      "top": 57, 
+      "left": 8
+    }, 
+    "_id": "8SkQsGy6pCrvWhoC9", 
+    "children": []
+  }, 
+  {
+    "userName": "Joel", 
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "ideaIDs": [
+      "5hkxh89pBKKB77FFL", 
+      "j6wauz5HnerNYiCou", 
+      "gMzs3uSMWzBxEhJRv", 
+      "sgjLA3dgHGFuemCKE", 
+      "ymJQ3YAHcwBuwbwDs", 
+      "K5dpcpEQuNzjWWtCN", 
+      "JGwY9YKPi8JGZER9N", 
+      "ZgrQSy5jnuZzWvaXW"
+    ], 
+    "isCollapsed": false, 
+    "name": "Why not ask the host?\n", 
+    "isTrash": false, 
+    "userID": "hS2KnAZ76JT8zsrqt", 
+    "position": {
+      "top": 42, 
+      "left": 17
+    }, 
+    "_id": "DmfSHaxTwxbuDA5pE", 
+    "children": []
+  }, 
+  {
+    "userName": "A2JEJCOMJOOM2E", 
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "ideaIDs": [
+      "xfRjtiQjF3i3jfsTA"
+    ], 
+    "isCollapsed": false, 
+    "name": "This is an inspiration!", 
+    "isTrash": false, 
+    "userID": "Pf8ZkNbFiCbmzL6Fw", 
+    "position": {
+      "top": 35, 
+      "left": 5
+    }, 
+    "_id": "zDpTCZQJwD5ySZbtH", 
+    "children": []
+  }, 
+  {
+    "userName": "A10Z7NLSO1VS9P", 
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "ideaIDs": [], 
+    "isCollapsed": false, 
+    "name": "This is an inspiration!", 
+    "isTrash": false, 
+    "userID": "BGGb8fkBq24SXyRRy", 
+    "position": {
+      "top": 40, 
+      "left": 14
+    }, 
+    "_id": "PdYPFHWnLfGL793PG", 
+    "children": []
+  }, 
+  {
+    "userName": "A10Z7NLSO1VS9P", 
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "ideaIDs": [
+      "zn5ayWDxBRxfExxxi"
+    ], 
+    "isCollapsed": false, 
+    "name": "This is an inspiration!", 
+    "isTrash": false, 
+    "userID": "BGGb8fkBq24SXyRRy", 
+    "position": {
+      "top": 33, 
+      "left": 9
+    }, 
+    "_id": "koKPA45E8aKeTGTqW", 
+    "children": []
+  }, 
+  {
+    "userName": "A3QNEE70E6ZZD3", 
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "ideaIDs": [
+      "Lpfvsw6r3hsjE8PAb"
+    ], 
+    "isCollapsed": false, 
+    "name": "This is an inspiration!", 
+    "isTrash": false, 
+    "userID": "rtKupbjs6TtAKijAM", 
+    "position": {
+      "top": 44, 
+      "left": 7
+    }, 
+    "_id": "FK8gZ4iaAk3m4g6SC", 
+    "children": []
+  }, 
+  {
+    "userName": "A1RTEBQDAOHDQ1", 
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "ideaIDs": [
+      "YtMPGtjqWSNYxhcPF"
+    ], 
+    "isCollapsed": false, 
+    "name": "This is an inspiration!", 
+    "isTrash": false, 
+    "userID": "HSrvkfRoDDgxXF9SJ", 
+    "position": {
+      "top": 41, 
+      "left": 0
+    }, 
+    "_id": "SkemtEj3nQESxQnBP", 
+    "children": []
+  }, 
+  {
+    "userName": "A3DXL2YZRL2HWD", 
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "ideaIDs": [
+      "Ewn2Z2BoFBaSAgyQn"
+    ], 
+    "isCollapsed": false, 
+    "name": "This is an inspiration!", 
+    "isTrash": false, 
+    "userID": "R8xYb9QmihKTaNNdh", 
+    "position": {
+      "top": 51, 
+      "left": 24
+    }, 
+    "_id": "oKEv9qssdbhW9PBAD", 
+    "children": []
+  }, 
+  {
+    "userName": "Joel", 
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "ideaIDs": [
+      "sY6yW6dwDQ32i2z8D", 
+      "KdkfLyqufezNWuwPS", 
+      "KChdoBjrsNCYGTgwx", 
+      "GzwTLJTQjd3Qjith8", 
+      "3QgYmFXcp2wBYtzSC"
+    ], 
+    "isCollapsed": false, 
+    "name": "Exchange contact info?\n", 
+    "isTrash": false, 
+    "userID": "hS2KnAZ76JT8zsrqt", 
+    "position": {
+      "top": 47, 
+      "left": 15
+    }, 
+    "_id": "dCPFSjuPiDcGpNvpQ", 
+    "children": []
+  }, 
+  {
+    "userName": "A1RTEBQDAOHDQ1", 
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "ideaIDs": [], 
+    "isCollapsed": false, 
+    "name": "This is an inspiration!", 
+    "isTrash": false, 
+    "userID": "HSrvkfRoDDgxXF9SJ", 
+    "position": {
+      "top": 49, 
+      "left": 1
+    }, 
+    "_id": "pnLLXhBixdsdBdrg7", 
+    "children": []
+  }, 
+  {
+    "userName": "Joel", 
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "ideaIDs": [
+      "YMKM6G4A3EWoSQeik", 
+      "HErWqBxyt7teRHjWw", 
+      "rRam4FStNbqrfPQf4", 
+      "4gJB3wMEmNsHzf9Pr", 
+      "72T4Ww9bWaHaFooxj", 
+      "beb6ZjqgPzfu2W5C3"
+    ], 
+    "isCollapsed": false, 
+    "name": "How do you usually remember stuff?\n", 
+    "isTrash": false, 
+    "userID": "hS2KnAZ76JT8zsrqt", 
+    "position": {
+      "top": 52, 
+      "left": 12
+    }, 
+    "_id": "jDrF6u2jGkuSmMrfv", 
+    "children": []
+  }, 
+  {
+    "userName": "A26C4CO2PBSD61", 
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "ideaIDs": [
+      "QvjBv89Fe27g2QTJv"
+    ], 
+    "isCollapsed": false, 
+    "name": "This is an inspiration!", 
+    "isTrash": false, 
+    "userID": "7TpnLoEhA37XBsgkX", 
+    "position": {
+      "top": 33, 
+      "left": 17
+    }, 
+    "_id": "vrEzTZpEk4RfqYM9F", 
+    "children": []
+  }, 
+  {
+    "userName": "ASXACVODSYD7G", 
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "ideaIDs": [], 
+    "isCollapsed": false, 
+    "name": "This is an inspiration!", 
+    "isTrash": false, 
+    "userID": "SburQbodyKZGGJWE4", 
+    "position": {
+      "top": 32, 
+      "left": 29
+    }, 
+    "_id": "GS9zDhqKanDWEBCt5", 
+    "children": []
+  }, 
+  {
+    "userName": "A3FAH5S2RGZ5AK", 
+    "promptID": "Na6r7R8WAHLH97ghE", 
+    "ideaIDs": [
+      "xq6skxqxnM7d2DK7T", 
+      "kcLRgg2x9svC5eqdT", 
+      "TT2JsoznRY4qE2SmD", 
+      "vuL7wPjYerrTi7wYy"
+    ], 
+    "isCollapsed": false, 
+    "name": "This is an inspiration!", 
+    "isTrash": false, 
+    "userID": "4pnzuqoTGTSZ2GJXC", 
+    "position": {
+      "top": 59, 
+      "left": 24
+    }, 
+    "_id": "xTbmHJoSRvEtjrNSo", 
+    "children": []
+  }
+]

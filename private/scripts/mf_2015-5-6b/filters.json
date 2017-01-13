@@ -1,0 +1,462 @@
+[
+  {
+    "name": "Ideas Filter", 
+    "val": "BGGb8fkBq24SXyRRy", 
+    "collection": "ideas", 
+    "field": "userID", 
+    "user": "hS2KnAZ76JT8zsrqt", 
+    "_id": "Pb6Trp4P9XK9AR5Xm", 
+    "type": "filter", 
+    "op": "eq"
+  }, 
+  {
+    "name": "IdeaWordCloud Filter", 
+    "val": "BGGb8fkBq24SXyRRy", 
+    "collection": "ideas", 
+    "field": "userID", 
+    "user": "hS2KnAZ76JT8zsrqt", 
+    "_id": "Bf52p25TgcnqaX3CE", 
+    "type": "filter", 
+    "op": "eq"
+  }, 
+  {
+    "name": "Ideas Filter", 
+    "val": "HSrvkfRoDDgxXF9SJ", 
+    "collection": "ideas", 
+    "field": "userID", 
+    "user": "hS2KnAZ76JT8zsrqt", 
+    "_id": "Q2s8fLpjcg6gALaRm", 
+    "type": "filter", 
+    "op": "eq"
+  }, 
+  {
+    "name": "IdeaWordCloud Filter", 
+    "val": "HSrvkfRoDDgxXF9SJ", 
+    "collection": "ideas", 
+    "field": "userID", 
+    "user": "hS2KnAZ76JT8zsrqt", 
+    "_id": "pxEkew2Yoh9QMnouE", 
+    "type": "filter", 
+    "op": "eq"
+  }, 
+  {
+    "name": "Ideas Filter", 
+    "val": "R8xYb9QmihKTaNNdh", 
+    "collection": "ideas", 
+    "field": "userID", 
+    "user": "hS2KnAZ76JT8zsrqt", 
+    "_id": "Ljhz8tFxYTAHrStzQ", 
+    "type": "filter", 
+    "op": "eq"
+  }, 
+  {
+    "name": "IdeaWordCloud Filter", 
+    "val": "R8xYb9QmihKTaNNdh", 
+    "collection": "ideas", 
+    "field": "userID", 
+    "user": "hS2KnAZ76JT8zsrqt", 
+    "_id": "jKg8mwmmmtfJN5Tcb", 
+    "type": "filter", 
+    "op": "eq"
+  }, 
+  {
+    "name": "Ideas Filter", 
+    "val": "7TpnLoEhA37XBsgkX", 
+    "collection": "ideas", 
+    "field": "userID", 
+    "user": "hS2KnAZ76JT8zsrqt", 
+    "_id": "rQhZu49gZWuX5zc3y", 
+    "type": "filter", 
+    "op": "eq"
+  }, 
+  {
+    "name": "IdeaWordCloud Filter", 
+    "val": "7TpnLoEhA37XBsgkX", 
+    "collection": "ideas", 
+    "field": "userID", 
+    "user": "hS2KnAZ76JT8zsrqt", 
+    "_id": "YYqjYjEXgdMTFdvwx", 
+    "type": "filter", 
+    "op": "eq"
+  }, 
+  {
+    "name": "Ideas Filter", 
+    "val": "4pnzuqoTGTSZ2GJXC", 
+    "collection": "ideas", 
+    "field": "userID", 
+    "user": "hS2KnAZ76JT8zsrqt", 
+    "_id": "v8j2yTCejT3NQBv5R", 
+    "type": "filter", 
+    "op": "eq"
+  }, 
+  {
+    "name": "IdeaWordCloud Filter", 
+    "val": "4pnzuqoTGTSZ2GJXC", 
+    "collection": "ideas", 
+    "field": "userID", 
+    "user": "hS2KnAZ76JT8zsrqt", 
+    "_id": "5kEg4mfDHkxfxrc3j", 
+    "type": "filter", 
+    "op": "eq"
+  }, 
+  {
+    "name": "Ideas Filter", 
+    "val": "Na6r7R8WAHLH97ghE", 
+    "collection": "ideas", 
+    "field": "prompt._id", 
+    "user": "hS2KnAZ76JT8zsrqt", 
+    "_id": "2CdTmrhPNhzgpMh3Y", 
+    "type": "filter", 
+    "op": "eq"
+  }, 
+  {
+    "name": "Ideas Filter", 
+    "val": "dummyStringThatWillNeverMatch", 
+    "collection": "ideas", 
+    "field": "userID", 
+    "user": "hS2KnAZ76JT8zsrqt", 
+    "_id": "ZrFi8dXezBxESA7TY", 
+    "type": "filter", 
+    "op": "eq"
+  }, 
+  {
+    "name": "IdeaWordCloud Filter", 
+    "val": "Na6r7R8WAHLH97ghE", 
+    "collection": "ideas", 
+    "field": "prompt._id", 
+    "user": "hS2KnAZ76JT8zsrqt", 
+    "_id": "BCpE6sN8SxtuooHdW", 
+    "type": "filter", 
+    "op": "eq"
+  }, 
+  {
+    "name": "IdeaWordCloud Filter", 
+    "val": "dummyStringThatWillNeverMatch", 
+    "collection": "ideas", 
+    "field": "userID", 
+    "user": "hS2KnAZ76JT8zsrqt", 
+    "_id": "sw2Rva4gkmvKvortc", 
+    "type": "filter", 
+    "op": "eq"
+  }, 
+  {
+    "name": "Tasks Filter", 
+    "val": "Na6r7R8WAHLH97ghE", 
+    "collection": "tasks", 
+    "field": "promptID", 
+    "user": "hS2KnAZ76JT8zsrqt", 
+    "_id": "tyERC7Rfm6hsY3cX9", 
+    "type": "filter", 
+    "op": "eq"
+  }, 
+  {
+    "name": "Tasks Filter", 
+    "val": "WB7CMNw8ezXphnui5", 
+    "collection": "tasks", 
+    "field": "groupID", 
+    "user": "hS2KnAZ76JT8zsrqt", 
+    "_id": "r4nEvWspkSAYPommG", 
+    "type": "filter", 
+    "op": "eq"
+  }, 
+  {
+    "name": "Ideas Filter", 
+    "val": "wsqF5oR2C87iauyrS", 
+    "collection": "ideas", 
+    "field": "userID", 
+    "user": "hS2KnAZ76JT8zsrqt", 
+    "_id": "B9uzbkw9CS78eusbd", 
+    "type": "filter", 
+    "op": "eq"
+  }, 
+  {
+    "name": "IdeaWordCloud Filter", 
+    "val": "wsqF5oR2C87iauyrS", 
+    "collection": "ideas", 
+    "field": "userID", 
+    "user": "hS2KnAZ76JT8zsrqt", 
+    "_id": "oFvSxhXSborvpWNB5", 
+    "type": "filter", 
+    "op": "eq"
+  }, 
+  {
+    "name": "Ideas Filter", 
+    "val": "5ckX3mHBpTMR3JkXq", 
+    "collection": "ideas", 
+    "field": "userID", 
+    "user": "hS2KnAZ76JT8zsrqt", 
+    "_id": "XDHSYChEYL96s89wW", 
+    "type": "filter", 
+    "op": "eq"
+  }, 
+  {
+    "name": "IdeaWordCloud Filter", 
+    "val": "5ckX3mHBpTMR3JkXq", 
+    "collection": "ideas", 
+    "field": "userID", 
+    "user": "hS2KnAZ76JT8zsrqt", 
+    "_id": "iTn2tZ8qHsKNHDk59", 
+    "type": "filter", 
+    "op": "eq"
+  }, 
+  {
+    "name": "Ideas Filter", 
+    "val": "8tppTuQA5xRMgpgqc", 
+    "collection": "ideas", 
+    "field": "userID", 
+    "user": "hS2KnAZ76JT8zsrqt", 
+    "_id": "KE8QKCmE8LKi8YmzN", 
+    "type": "filter", 
+    "op": "eq"
+  }, 
+  {
+    "name": "IdeaWordCloud Filter", 
+    "val": "8tppTuQA5xRMgpgqc", 
+    "collection": "ideas", 
+    "field": "userID", 
+    "user": "hS2KnAZ76JT8zsrqt", 
+    "_id": "wQtovY9kdR7Wm4SZM", 
+    "type": "filter", 
+    "op": "eq"
+  }, 
+  {
+    "name": "Ideas Filter", 
+    "val": "qhv5eHnGgA48qkaCn", 
+    "collection": "ideas", 
+    "field": "userID", 
+    "user": "hS2KnAZ76JT8zsrqt", 
+    "_id": "EWTT5zmFq5iXS9Xkb", 
+    "type": "filter", 
+    "op": "eq"
+  }, 
+  {
+    "name": "IdeaWordCloud Filter", 
+    "val": "qhv5eHnGgA48qkaCn", 
+    "collection": "ideas", 
+    "field": "userID", 
+    "user": "hS2KnAZ76JT8zsrqt", 
+    "_id": "yioaAt4L5DXZEkiw3", 
+    "type": "filter", 
+    "op": "eq"
+  }, 
+  {
+    "name": "Ideas Filter", 
+    "val": "ukuE6oRgtuZw2aGGZ", 
+    "collection": "ideas", 
+    "field": "userID", 
+    "user": "hS2KnAZ76JT8zsrqt", 
+    "_id": "Rk62KNJ2YTgxZw3XA", 
+    "type": "filter", 
+    "op": "eq"
+  }, 
+  {
+    "name": "IdeaWordCloud Filter", 
+    "val": "ukuE6oRgtuZw2aGGZ", 
+    "collection": "ideas", 
+    "field": "userID", 
+    "user": "hS2KnAZ76JT8zsrqt", 
+    "_id": "zFJbP7cw34oSR4rSH", 
+    "type": "filter", 
+    "op": "eq"
+  }, 
+  {
+    "name": "Ideas Filter", 
+    "val": "iBSthRRttwcw8tBvK", 
+    "collection": "ideas", 
+    "field": "userID", 
+    "user": "hS2KnAZ76JT8zsrqt", 
+    "_id": "Q6QFgc6LN7qGNYqXs", 
+    "type": "filter", 
+    "op": "eq"
+  }, 
+  {
+    "name": "IdeaWordCloud Filter", 
+    "val": "iBSthRRttwcw8tBvK", 
+    "collection": "ideas", 
+    "field": "userID", 
+    "user": "hS2KnAZ76JT8zsrqt", 
+    "_id": "LhEqqjQP2ictQfDRC", 
+    "type": "filter", 
+    "op": "eq"
+  }, 
+  {
+    "name": "Ideas Filter", 
+    "val": "BKQK7ipdyiQHACHB7", 
+    "collection": "ideas", 
+    "field": "userID", 
+    "user": "hS2KnAZ76JT8zsrqt", 
+    "_id": "nhZ2JyduksozSjocY", 
+    "type": "filter", 
+    "op": "eq"
+  }, 
+  {
+    "name": "IdeaWordCloud Filter", 
+    "val": "BKQK7ipdyiQHACHB7", 
+    "collection": "ideas", 
+    "field": "userID", 
+    "user": "hS2KnAZ76JT8zsrqt", 
+    "_id": "H5QSK6TqACTZCqkEe", 
+    "type": "filter", 
+    "op": "eq"
+  }, 
+  {
+    "name": "Ideas Filter", 
+    "val": "6AnbyrehbPfWCc7Pt", 
+    "collection": "ideas", 
+    "field": "userID", 
+    "user": "hS2KnAZ76JT8zsrqt", 
+    "_id": "jYvQtiuRw8bDmRD63", 
+    "type": "filter", 
+    "op": "eq"
+  }, 
+  {
+    "name": "IdeaWordCloud Filter", 
+    "val": "6AnbyrehbPfWCc7Pt", 
+    "collection": "ideas", 
+    "field": "userID", 
+    "user": "hS2KnAZ76JT8zsrqt", 
+    "_id": "8rqq86gFXbJhoFJx5", 
+    "type": "filter", 
+    "op": "eq"
+  }, 
+  {
+    "name": "Ideas Filter", 
+    "val": "7EYZGHKjCvJErQc5z", 
+    "collection": "ideas", 
+    "field": "userID", 
+    "user": "hS2KnAZ76JT8zsrqt", 
+    "_id": "XGugB8bN6fxRiRuSe", 
+    "type": "filter", 
+    "op": "eq"
+  }, 
+  {
+    "name": "IdeaWordCloud Filter", 
+    "val": "7EYZGHKjCvJErQc5z", 
+    "collection": "ideas", 
+    "field": "userID", 
+    "user": "hS2KnAZ76JT8zsrqt", 
+    "_id": "j6RAnCMHq6CojArh8", 
+    "type": "filter", 
+    "op": "eq"
+  }, 
+  {
+    "name": "Ideas Filter", 
+    "val": "C6afYRL2EKDjbov6M", 
+    "collection": "ideas", 
+    "field": "userID", 
+    "user": "hS2KnAZ76JT8zsrqt", 
+    "_id": "q7npqtqSrTuyoAxmp", 
+    "type": "filter", 
+    "op": "eq"
+  }, 
+  {
+    "name": "IdeaWordCloud Filter", 
+    "val": "C6afYRL2EKDjbov6M", 
+    "collection": "ideas", 
+    "field": "userID", 
+    "user": "hS2KnAZ76JT8zsrqt", 
+    "_id": "DATQPeJJbpggPRB9X", 
+    "type": "filter", 
+    "op": "eq"
+  }, 
+  {
+    "name": "Ideas Filter", 
+    "val": "yv9kpgvuySXmig2AK", 
+    "collection": "ideas", 
+    "field": "userID", 
+    "user": "hS2KnAZ76JT8zsrqt", 
+    "_id": "dpw9Ak9EMoPR3H3rn", 
+    "type": "filter", 
+    "op": "eq"
+  }, 
+  {
+    "name": "IdeaWordCloud Filter", 
+    "val": "yv9kpgvuySXmig2AK", 
+    "collection": "ideas", 
+    "field": "userID", 
+    "user": "hS2KnAZ76JT8zsrqt", 
+    "_id": "EPnw9yWurkAbxMXFH", 
+    "type": "filter", 
+    "op": "eq"
+  }, 
+  {
+    "name": "Ideas Filter", 
+    "val": "NH4r4HpzDdg7YGysH", 
+    "collection": "ideas", 
+    "field": "userID", 
+    "user": "hS2KnAZ76JT8zsrqt", 
+    "_id": "ur36kLx3P7aEwFzpT", 
+    "type": "filter", 
+    "op": "eq"
+  }, 
+  {
+    "name": "IdeaWordCloud Filter", 
+    "val": "NH4r4HpzDdg7YGysH", 
+    "collection": "ideas", 
+    "field": "userID", 
+    "user": "hS2KnAZ76JT8zsrqt", 
+    "_id": "GLgCFuj356HupdN4f", 
+    "type": "filter", 
+    "op": "eq"
+  }, 
+  {
+    "name": "Ideas Filter", 
+    "val": "qtv4TmkrWpXrbupQm", 
+    "collection": "ideas", 
+    "field": "userID", 
+    "user": "hS2KnAZ76JT8zsrqt", 
+    "_id": "YDjjsNEq7QBfwCmRw", 
+    "type": "filter", 
+    "op": "eq"
+  }, 
+  {
+    "name": "IdeaWordCloud Filter", 
+    "val": "qtv4TmkrWpXrbupQm", 
+    "collection": "ideas", 
+    "field": "userID", 
+    "user": "hS2KnAZ76JT8zsrqt", 
+    "_id": "435XArDs3jcgjR2wW", 
+    "type": "filter", 
+    "op": "eq"
+  }, 
+  {
+    "name": "Ideas Filter", 
+    "val": "Pf8ZkNbFiCbmzL6Fw", 
+    "collection": "ideas", 
+    "field": "userID", 
+    "user": "hS2KnAZ76JT8zsrqt", 
+    "_id": "27te5woBN58Tu5E49", 
+    "type": "filter", 
+    "op": "eq"
+  }, 
+  {
+    "name": "IdeaWordCloud Filter", 
+    "val": "Pf8ZkNbFiCbmzL6Fw", 
+    "collection": "ideas", 
+    "field": "userID", 
+    "user": "hS2KnAZ76JT8zsrqt", 
+    "_id": "H3u5emgxqya5Ty6ai", 
+    "type": "filter", 
+    "op": "eq"
+  }, 
+  {
+    "name": "Ideas Filter", 
+    "val": "rtKupbjs6TtAKijAM", 
+    "collection": "ideas", 
+    "field": "userID", 
+    "user": "hS2KnAZ76JT8zsrqt", 
+    "_id": "d8gjBqah33ikSpHBh", 
+    "type": "filter", 
+    "op": "eq"
+  }, 
+  {
+    "name": "IdeaWordCloud Filter", 
+    "val": "rtKupbjs6TtAKijAM", 
+    "collection": "ideas", 
+    "field": "userID", 
+    "user": "hS2KnAZ76JT8zsrqt", 
+    "_id": "pRcDNaZbW5QC9FsMG", 
+    "type": "filter", 
+    "op": "eq"
+  }
+]

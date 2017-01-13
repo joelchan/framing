@@ -1,0 +1,23 @@
+# Meteor packages used by this project, one per line.
+#
+# 'meteor add' and 'meteor remove' will edit this file for you,
+# but you can also edit it by hand.
+
+standard-app-packages
+insecure
+accounts-ui
+accounts-password
+jquery
+chrismbeckett:fontawesome4@1.1.0
+d3
+mrt:nvd3js@0.1.0
+mrt:moment@2.6.0
+iron:router
+jag:pince
+mrt:natural
+manuel:viewmodel
+hitchcott:panzoom
+http
+less
+teamon:tinymce
+twbs:bootstrap

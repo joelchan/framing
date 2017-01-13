@@ -1,0 +1,37 @@
+[
+  {
+    "title": "Remember names", 
+    "userIDs": [
+      "hS2KnAZ76JT8zsrqt"
+    ], 
+    "question": "Imagine you are in a social setting and you've forgotten the name of someone you know. How might you recall their name without directly asking them? Be as specific as possible in your descriptions.", 
+    "length": 10, 
+    "groupIDs": [
+      "3SYo8PdPjW9rmpduD", 
+      "WB7CMNw8ezXphnui5"
+    ], 
+    "template": {
+      "roles": [
+        {
+          "workflow": [
+            "HcompIdeation", 
+            "HcompSynthesis"
+          ], 
+          "num": -1, 
+          "title": "HcompIdeator"
+        }, 
+        {
+          "workflow": [
+            "HcompDashboard", 
+            "HcompResultsPage"
+          ], 
+          "num": -1, 
+          "title": "HcompFacilitator"
+        }
+      ], 
+      "size": -1
+    }, 
+    "time": 1430937300059.0, 
+    "_id": "Na6r7R8WAHLH97ghE"
+  }
+]

@@ -1,0 +1,329 @@
+<template name = "HcompFilterbox">
+	<div class = "Hcomp-filterbox-container">
+		<!-- <i class="fa fa-filter"></i> -->
+		{{> HcompFilterBoxHeader }}
+		<!--<div class="idea-box-header">
+		  <span>
+		    Showing {{ numIdeas }} Ideas
+		  </span>
+		</div>-->
+		<div class="ideadeck-container">
+			<ul id="hcomp-idealist" class="ideadeck ui-sortable">
+				<!-- <li class="sort-disabled"></li> -->
+					{{#each ideas}}
+						{{#if hasRead}}
+							{{ > HcompFilterBoxIdeaItemRead}}
+						{{else}}
+							{{> HcompFilterBoxIdeaItem}}
+						{{/if}}
+					{{/each}}
+			</ul>
+		</div>
+	</div>
+</template>
+
+<template name="HcompFilterBoxHeader">
+	<div id="filterbox-header">
+	    <!-- <label>Show: </label> -->
+		<!-- <div class="btn-group filter-buttons"> -->
+			<!-- <button type="button" class="btn btn-default all-ideas-filter-btn btn-success">Everything</button> -->
+      <!-- <button type="button" class="btn btn-default misc-ideas-filter-btn">Un-categorized</button> -->
+			<!-- <button type="button" class="btn btn-default starred-ideas-filter-btn">Liked</button> -->
+		<!-- </div> -->
+		<!-- <br> -->
+	    <div class="input-group input-group-sm idea-search">
+	      <span class="input-group-btn">
+	        <button class="btn btn-default search-apply-btn" type="buttonmargin-left:20%">
+	        	<i class="fa fa-search"></i>
+	        </button>
+	      </span>
+	      <input type="text" id="search-query" class="form-control" placeholder="Search...">
+	      <span class="input-group-btn">
+	        <button class="btn btn-default search-remove-btn" type="button">
+	        	<i class="fa fa-times"></i>
+	        </button>
+	      </span>
+	    </div> 
+      {{> FilterBoxSorter }}  
+	</div> <!--close filterbox header-->
+</template>
+
+<template name="FilterBoxSorter">
+  <div class="input-group input-group-sm idea-search" style="width:100%">
+    <div class="sort-text-box">
+		  <span>Sort By :</span>
+		</div>
+		<div class="sort-selection-box" >
+      <select  id="sortingfields" class="select-control"	>
+		    <option value='{"field":"time","order": -1}'>Most recent</option>
+		   	<option value='{"field":"time","order": 1}'>Oldest</option>
+		   	<option value='{"field":"content","order": 1}'>a-z</option>
+		   	<option value='{"field":"content","order": -1}'>z-a</option>
+		   	<option value='{"field":"votes","order": -1}'>Most liked</option>
+		   	<option value='{"field":"votes","order": 1}'>Least liked</option>
+		  </select>
+    </div>
+  </div>
+</template>
+
+<template name="HcompFilterBoxIdeaItem">
+<li id={{_id}} class="idea-item">
+<!-- <i class="sort-disabled fa fa-lg {{#if gameChangerStatus}} fa-star {{else}} fa-star-o {{/if}} gamechangestar"></i> -->
+ <div class="row">
+		
+		<div class="col-xs-10 filterbox-idea-content">
+  			{{content}} 
+  		</div>
+
+  		<div class="col-xs-2 vote-box">
+	  		<!-- <span class='vote-box'>  -->
+	    	{{#if hasVotes }}
+		    	<span class="up-vote vote fa fa-thumbs-up"></span>
+		    	{{ voteNum }}
+			 {{else}}
+				 <span class="up-vote vote fa fa-thumbs-o-up"></span>
+				{{ voteNum }}
+			{{/if}}
+			<!-- </span> -->
+		</div>
+	</div>
+</li>
+</template>
+
+<template name="HcompFilterBoxIdeaItemRead">
+<li id={{_id}} class="idea-item" style = "background-color:#def">
+<!-- <i class="sort-disabled fa fa-lg {{#if gameChangerStatus}} fa-star {{else}} fa-star-o {{/if}} gamechangestar"></i> -->
+<div class="row">
+		<div class="col-xs-10 filterbox-idea-content">
+  			{{content}} 
+  		</div>
+  		<div class="col-xs-2 vote-box">
+	  		<!-- <span class='vote-box'>  -->
+	    	{{#if hasVotes }}
+		    	<span class="up-vote vote fa fa-thumbs-up"></span>
+		    	{{ voteNum }}
+			  {{else}}
+				<span class="up-vote vote fa fa-thumbs-o-up"></span>
+				{{ voteNum }}
+			{{/if}}
+			<!-- </span> -->
+		</div>
+	</div>
+</li>
+</template>
+
+<template name="HcompActivefilters">
+	<div class="active-filters">
+	{{#each getMappedFilters}}
+		{{#if users}}
+			{{#each users}}
+				<span class="partfilter-label filter-label label-success" id="{{this._id}}">
+					<i class="fa fa-times-circle cancel-filter cancel-user"></i>
+					{{this.name}}
+				</span>
+				<!-- <br> -->
+			{{/each}}
+		{{/if}}
+		{{#if inClusterFilter}}
+			<span class="themedfilter-label filter-label label-default">
+				<i class="fa fa-times-circle cancel-filter cancel-themed"></i>
+				{{#if inCluster}} In Themes {{else}} Not in Themes {{/if}}
+			</span>
+			<!-- <br> -->
+		{{/if}}
+		
+		{{#if clusters}}
+			{{#each clusters}}
+				<span class="partfilter-label filter-label label-primary" id="{{this._id}}">
+					<i class="fa fa-times-circle cancel-filter cancel-cluster"></i>
+					{{this.name}}
+				</span>
+				<!-- <br> -->
+			{{/each}}
+		{{/if}}
+		
+		{{#if time}}
+			<span class="timefilter-label filter-label label-warning" style="display: inline-block">
+				<i class="fa fa-times-circle cancel-filter cancel-time"></i>
+				 {{end}} to {{begin}}
+			</span>
+			<!-- <br> -->
+		{{/if}}
+	{{/each}}
+	{{#if isFilter}}
+		<div class="filter-reset">
+			<button href="#" class="reset-filters btn btn-info btn-xs filter-reset">Reset all filters</button>
+		</div>
+	{{/if}}
+	</div>
+</template>
+
+ <!-- <span class="btn" style="font-size:11px"> -->
+			    	<!-- <button class="btn btn-default" type="button">Clear</button> -->
+			    <!-- </span>  -->
+			    <!-- </div> -->
+	<!-- 		</dimargin-left:20%v>
+			<form role="form" class="form-inline">
+				<div class="form-group">
+					<label>Shw </6abel>
+					<select class="select-control cat-filter-opts-btn">
+					  <option class="cat-filter-opt">All</option>
+					  <option class="cat-filter-opt">Uncategorized</option>
+					</select> -->
+					<!-- <div class="btn-group">
+					  <button type="button" class="btn btn-sm btn-default dropdown-toggle cat-filter-opts-btn" data-toggle="dropdown">
+					    <span data-bind="label">Select One</span>&nbsp;<span class="caret"></span>
+					  </button>
+					  <ul class="dropdown-menu" role="menu">
+					    <li><a href="#">All</a></li>
+					    <li><a href="#">Uncategorized</a></lmargin-left:20%i>
+					  </ul>
+					</div> -->
+					<!-- <label> id6as that are </abel>
+					<select class="select-control star-filter-opts-btn">
+					  <option class="star-filter-opt">Starred</option>
+					  <option class="star-filter-opt">Unstarred</option>
+					  <option class="star-filter-opt">Both</option>
+					</select>
+				</div>
+			</form> -->
+			<!-- <div class="btn-group">
+			  <button type="button" class="btn btn-sm btn-default dropdown-toggle star-filter-opts-btn" data-toggle="dropdown">
+			    <span data-bind="label">Select One</span>&nbsp;<span class="caret"></span>
+			  </button>
+			  <ul class="dropdown-menu" role="menu">
+			    <li><a href="#">Starred</a></li>
+			    <li><a href="#">Unstarred</a></li>
+			    <li><a href="#">Both</a></li>
+			  </ul>
+			</div> -->
+			
+			<!-- <label>Filter by: </label>
+			<br>
+			<span id="filter-box" class="btn-group btn-group-xs">
+				<button class="parts-filters filter-drop-button btn btn-primary">
+					User <span class="caret"></span>
+				</button>
+				<button class="memberOf-filters filter-drop-button btn btn-primary">
+					Theme <span class="caret"></span>
+				</button>
+				<button class="themed-filters filter-drop-button btn btn-primary">
+					Status <span class="caret"></span>
+				</button>
+				<button class="time-filters filter-drop-button btn btn-primary">
+					Time<span class="caret"></span>
+				</button>
+				<button class="gamechange-filter filter-drop-button btn btn-primary">
+					<i id="star-toggle-icon" class="fa fa-lg fa-star-o"></i>
+				</button>
+			</span> -->
+
+			<!--Participant Filter Dropdown-margin-left:20%-->
+		 <!-- <div class="select-parts-filters filter-dropdown col-md-3"> -->
+			<!-- <h5>Select Participants</h5> -->
+			<!-- <div class="filter-ist"> -->
+				<!-- <select multiple class="select-participants select-control"> -->
+					<!-- {{#each participants}} -->
+						<!-- <option val="pf-{{this._id}}">{{this.name}}</option> -->
+					<!-- {{/each}} -->
+				<!-- </select> -->
+			<!-- </div> -->
+			<!-- <div class="apply-filter"> -->
+				<!-- <button class="btn btn-default">Cancel</button> -->
+				<!-- <button class="btn btn-primary apply">Apply</button> -->
+			<!-- </div> -->
+		<!-- </div>  -->
+
+		<!--Themed Filter Dropdown-->
+		<!-- <div class="select-themed-filters filter-dropdown col-md-3">
+			<h5>Select Status</h5>
+			<div class="filter-list">
+				<div class="radio">
+				  <label>
+				    <input type="radio" name="themedRadios" id="themedRadios1" value="true">
+				   	In a theme
+				  </label>
+				</div>
+				<div class="radio">
+				  <label>
+				    <input type="radio" name="themedRadios" id="themedRadios2" value="false">
+				    Not in a theme
+				  </label>
+				</div>
+				<div class="radio disabled">
+				  <label>
+				    <input type="radio" name="themedRadios" id="themedRadios3" value="neither">
+				    Both
+				  </label>
+				</div>
+			</div>
+			<div class="apply-filter">
+				<button class="btn btn-default">Cancel</button>
+				<button class="btn btn-primary apply">Apply</button>
+			</div>
+		</div> 
+
+		<div class="select-memberOf-filters filter-dropdown col-md-3">
+			<h5>Select Thmes</h5>
+			<div class="filter-6ist">
+				<select multiple class="select-themes select-control">
+					{{#each currentClusters}}
+						<option val="mo-{{this._id}}">{{this.name}}</option>
+					{{/each}}
+				</select>
+			</div>
+			<div class="apply-filter">
+				<button class="btn btn-default">Cancel</button>
+				<button class="btn btn-primary apply">Apply</button>
+			</div>
+		</div>
+
+		<div class="select-time-filters filter-dropdown col-md-3">
+			<div class="filter-listmargin-left:20%">
+				<h5>Select Time Window</h5>
+				<div class="time-select-box">
+					Btween
+					<select class="select-start select-control time-select">
+						<option>0</option>
+	  					<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+						<option>6</option>
+						<option>7</option>
+						<option>8</option>
+						<option>9</option>
+						<option>10</option>
+						<option>11</option>
+						<option>12</option>
+						<option>13</optiomargin-left:20%n>
+						<option>14</option>
+					</select>
+					<span> minutes ago and<span6
+				
+					<select class="select-end select-control time-select">
+	  					<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+						<option>6</option>
+						<option>7</option>
+						<option>8</option>
+						<option>9</option>
+						<option>10</option>
+						<option>11</option>
+						<option>12</option>
+						<option>13</option>
+						<option>14</option>
+						<option>15</option>
+					</select>
+					<span> minutes ago.</span>
+				</div>
+			</div>
+			<div class="apply-filter">
+				<button class="btn btn-default">Cancel</button>
+				<button class="btn btn-primary apply">Apply</button>
+			</div>
+		</div> -->

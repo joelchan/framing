@@ -1,0 +1,34 @@
+.directions {
+  padding-bottom: 20px;
+}
+
+.surveyForm .formQuestion {
+  padding: 10px;
+
+} 
+
+.surveyForm .question {
+  font-weight: bold;
+  padding-bottom: 0px;
+  margin-bottom: -15px;
+}
+
+.surveyForm .radioButton {
+  padding-right: 15px;
+}
+
+.surveyForm .surveyNumBox {
+  height: 30px;
+  width: 50px;
+}
+
+.surveyForm .shortText {
+  height: 30px;
+  width: 250px;
+}
+
+.surveyForm .survey-textbox {
+  height: 60px;
+  width: 750px;
+
+}

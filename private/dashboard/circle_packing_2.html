@@ -1,0 +1,23 @@
+<!-- this is the template for zoom circle packing
+using the flare.csv data file. -->
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html lang="en">
+  <head>
+    <!-- file needed to use d3.js -->
+    <script type="text/javascript" src="d3/d3.js"></script>
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" type="text/css" href="../circle_packing.css">
+  </head>
+  
+  <body>
+    <!-- this makes the div that is the tooltip, making it hidden at first. it puts the value of the item it is at inside. -->
+    <div id="tooltip" class="hidden">
+      <p><span id="value"></span></p>
+    </div>
+
+    <!-- imports the script of the viz-->
+    <script type="text/javascript" src="../circle_packing.js"></script>
+  </body>
+</html>

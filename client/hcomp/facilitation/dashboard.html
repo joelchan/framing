@@ -1,0 +1,389 @@
+<!---##############################################-->
+<!---###############OVERALL TEMPLATE###############-->
+<!---##############################################-->
+<template name="HcompDashboard">
+    <div class="row hcomp-dashboard" id="hcomp-dashboard-container">
+        <div class="ideas-view col-sm-3">
+            {{> HcompDashIdeabox }}
+        </div>
+        <div class="notes-view col-sm-6">
+            {{> HcompBigPictureViz }}
+            <!--{{> HcompScratchPad }}-->
+        </div>
+        <!-- close notes-view col -->
+        <div class="tasks-view col-sm-3">
+            <!--
+      <div class="row fac-actions">
+        <div class="col-xs-7">
+          {{> HcompCreateTaskButton }}
+        </div>
+        <div class="col-sm-5 other-fac-actions">
+          <strong><u>Other actions:</u></strong>
+          <div class="goto-prompts-page">
+            <i class="fa fa-chevron-right"></i>
+            <a href="{{pathFor route='CrowdPromptPage'}}">Prompts page</a>
+          </div>
+          <div class="begin-synthesis">
+            <i class="fa fa-chevron-right"></i>
+            <a href="">Begin synthesis</a>
+          </div>
+          <div class="review-brainstorm">
+            <i class="fa fa-chevron-right"></i>
+            <a href="">Review brainstorm</a>
+          </div>
+        </div>
+-->
+            <!-- {{> HcompBeginSynthesis }} -->
+            <!--</div>-->
+            <div class="row" id="create-task-container">
+                {{> CreateTask }}
+            
+            </div>
+           
+            {{> TaskCards }}
+        
+        </div>
+    </div>
+    <!-- close dashboard container -->
+</template>
+<!---##############################################-->
+<!---IDEAS-VIEW SUB-TEMPLATES-->
+<!---##############################################-->
+<template name="HcompDashIdeabox">
+    <h1> {{ prompt }} </h1>
+    <div class="ideas row">
+        <!--List of Ideas-->
+        <!-- <div class="col-md-8"> -->
+        {{> HcompFilterbox}}
+        <!-- </div> -->
+        <!-- <div id="filters" class="col-md-4"> -->
+        <!-- <h3>Applied Filters</h3> -->
+        <!-- {{> HcompActivefilters}} -->
+        <!-- </div> -->
+    </div>
+    <!--End Ideas-->
+</template>
+<!---##############################################-->
+<!---NOTES-VIEW SUB-TEMPLATES-->
+<!---##############################################-->
+<template name="HcompBigPictureViz">
+    <div class="row" id="big-picture-viz">
+        <!-- <div class="col-md-2" width=700> -->
+        <div class="row">
+            {{> HcompOverallStats}}
+        </div>
+        <div class="row ">
+            <div class="col-md-10 vizes">
+                <!--{{> HcompIdeaWordCloud}} doesn't work?-->
+                <!--{{> HcompOtherViz }}-->
+                <!--{{> ForceV }}-->
+                {{>TabBox }}
+                <!--{{> HcompTagCloud }} doesn't exist-->
+            </div>
+        </div>
+    </div>
+</template>
+<template name="TabBox">
+    <!-- 1. Create the tabs themselves  -->
+    <ul class="nav nav-tabs viz-tabs" role="tablist">
+        <li class="active"><a href="#wordcloud" role="tab" data-toggle="tab">WordCloud</a></li>
+        <!-- <li class="active"><a href="#bubble" role="tab" data-toggle="tab">Bubble</a></li> -->
+        <li><a href="#force" role="tab" data-toggle="tab">Force</a></li>
+        <li><a href="#scratchpad" role="tab" data-toggle="tab">Scratchpad</a></li>
+        <!--<li><a href="#bake" role="tab" data-toggle="tab">Other Force</a></li>-->
+    </ul>
+    <!-- 2. Create a matching tab pane for each tab. Content goes within these panes -->
+    <div class="tab-content">
+        <div class="tab-pane active" id="wordcloud">
+            {{> HcompIdeaWordCloud}}
+        </div>
+        <!-- <div class="tab-pane" id="bubble">
+        {{> HcompOtherViz }}
+      </div> -->
+        <div class="tab-pane" id="force">
+            {{> ForceV }}
+        </div>
+        <div class="tab-pane" id="scratchpad">
+            {{ > HcompScratchPad }}
+        </div>
+        <!-- <div class="tab-pane" id="bake"> 
+        {{> Other }}
+     </div>-->
+    </div>
+</template>
+<template name="HcompOverallStats">
+    <!-- <span class="fa fa-lightbulb-o"></span> -->
+    <div class="overall-stats">
+        <span class="stat">{{numIdeasAll}}</span> ideas by <span class="stat">{{numIdeatorsAll}}</span> ideators. <span class="stat">{{numIdeatorsActive}}</span> currently active ideators.
+    </div>
+</template>
+<template name="HcompIdeaWordCloud">
+    <div id="ideawordcloud">
+        {{#if ideas}} {{#each ideas}}
+        <span class="cloudItem" style="font-size: {{getFontSize}}px;">
+              <a href="">{{getWord}}</a>
+              <!-- {{getWord}} -->
+              </span> {{/each}} {{else}} No ideas yet! {{/if}}
+        <!-- {{#each ideas}} -->
+        <!-- <span> -->
+        <!-- <p  style="width: {{getFontSize}}px; background-color: blue;"> {{getWord}} </p> -->
+        <!-- </span> -->
+        <!-- {{drawVis}} -->
+        <!-- {{/each}} -->
+    </div>
+</template>
+<template name="HcompOtherViz">
+    <div id="svgdiv"></div>
+</template>
+<template name="ForceV">
+    <div id="svgdiv2"></div>
+</template>
+<template name="Other">
+    <div id="svgdiv3"></div>
+</template>
+<template name="HcompScratchPad">
+    <div class="row" id="scratchpad">
+        <!-- <h3>Scratchpad</h3> -->
+        <div class="form-group">
+            <textarea class="form-control scratchpad-form" id="fac-notes" placeholder="Take notes here..."></textarea>
+        </div>
+    </div>
+</template>
+<!---##############################################-->
+<!---TASKS-VIEW SUB-TEMPLATES-->
+<!---##############################################-->
+<template name="HcompCreateTaskButton">
+    <!-- <div class="create-task-btn"> -->
+    <a data-toggle="collapse" data-parent="#create-task-container" href="#CreateTask">
+        <button class="create-task-btn btn btn-large btn-success">
+            New Inspiration
+        </button>
+    </a>
+    <!-- </div> -->
+</template>
+<template name="HcompBeginSynthesis">
+    <!-- <div class="ideator-control"> -->
+    <button class="begin-synthesis ideator-control btn btn-large btn-success">
+        Begin Crowd Synthesis
+    </button>
+    <!-- </div> -->
+</template>
+
+<template name="CreateTask">
+    <div id="CreateTask">
+        <!--    <span class="card-description">Create a new inspiration</span>-->
+        <!--    <hr />-->
+        <form role="form" class="form">
+            <!--  display none right now-->
+            <div class="row task-priority">
+                <form id="task-priority" role="form">
+                    <label class="">Choose a Priority: &nbsp;</label>
+                    <label class="radio-inline">
+                    
+                        <input type="radio" name="taskPriorityOptions" value="1"> Lo
+                    
+                    </label>
+                    <label class="radio-inline">
+                    
+                        <input type="radio" name="taskPriorityOptions" value="2" checked=""> Mid
+                    
+                    </label>
+                    <label class="radio-inline">
+                
+                        <input type="radio" name="taskPriorityOptions" value="3"> Hi
+                
+                    </label>
+                </form>
+            </div>
+            
+            <div class="row">
+                <div class="col-xs-12">
+                
+                    <label class="sr-only" for="task-description">Task Instructions</label>
+                    <textarea class="form-control" rows="2" id="task-description" placeholder="Create your new inspiration..."></textarea>
+                
+                </div>
+            </div>
+            
+            <div class="row task-main-options">
+                <!-- <div class="col-xs-7">
+          
+        </div> -->
+                <div class="form-group task-options pull-right">
+                    <button id="task-create-cancel" type="button" class="btn btn-default">
+                        Clear
+                    </button>
+                    <button id="task-create" type="button" class="btn btn-primary">
+                        Create
+                    </button>
+                </div>
+            </div>
+            <!-- <div class="row">
+         
+      </div> -->
+        </form>
+    </div>
+</template>
+<template name="TaskCards">
+    <!-- <h1>Inspirations</h1> -->
+    <div class="task-list-header">
+        <span>
+      {{ numTasks }} Inspirations
+    </span>
+    </div>
+    <div class="row" id="task-card-list">
+        {{#if tasks}}
+            {{#each tasks}} 
+                {{> TaskCard }} 
+            {{/each}} 
+        {{else}} No inspirations yet! 
+        {{/if}}
+    </div>
+</template>
+<template name="TaskCard">
+    {{#if isNotEdit}}
+    <div class="task-card" id="{{getID}}">
+        <div class="row task-card-main">
+            <div class="card-description col-xs-10">
+                <a>{{getDescription}}</a>
+            </div>
+            <div class="card-edit col-xs-2 col-xs-offset-2">
+                <span title="Edit" class="glyphicon glyphicon-edit card-edit"> </span>
+            </div>
+        </div>
+        <div class="task-data row">
+            <div class="card-ideas col-xs-3">
+                {{#if getIdeas}}
+                <!-- <span title="Ideas" class="glyphicon glyphicon-exclamation-sign"> </span> -->
+                <a data-toggle="collapse" data-parent="#task-{{getID}}-ideas-group" href="#task-{{getID}}-ideas"><span class="badge">{{getIdeas}}</span></a> {{else}}
+                <span class="badge">{{getIdeas}}</span> {{/if}}
+            </div>
+            <!--
+        <div class="card-priority card-other-data col-xs-1 col-xs-offset-1">
+          <span title="Priority" class="glyphicon glyphicon-warning-sign"> </span>
+          {{getPriority}}       
+        </div>
+        <div class="card-ideators card-other-data col-xs-1 col-xs-offset-1">
+          <span title="Ideators"  class="glyphicon glyphicon-user"> </span>
+          {{getIdeators}}     
+        </div>
+-->
+            <!-- <div class="card-questions col-xs-3 btn">
+          <span title="Questions" class="glyphicon glyphicon-question-sign"> </span>
+          {{getQuestions}}      
+        </div> -->
+            <!-- <div class="card-edit col-xs-3 btn col-xs-offset-3">
+          <span title="Edit" class="glyphicon glyphicon-edit card-edit"> </span>    
+        </div> -->
+        </div>
+        <!--close task-data row-->
+        <div class="clearfix"></div>
+        <div class="task-ideas row">
+            <div id="task-{{getID}}-ideas-group">
+                <div id="task-{{getID}}-ideas" class="collapse">
+                    <ul id="task-idealist" class="ideadeck ui-sortable">
+                        <li class="sort-disabled"></li>
+                        {{#each ideaContents}} {{> HcompFilterBoxIdeaItem}} {{/each}}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{else}}
+    <div class="edit-task" id="{{getID}}">
+        <span class="card-description">Editing this inspiration</span>
+        <hr />
+        <form role="form" class="form">
+            <div class="row task-priority">
+                <!-- <form id="task-priority" role="form"> -->
+                <form role="form-control">
+                    <label>Priority: &nbsp;</label>
+                    <!-- {{#if getPriority "Lo"}} -->
+                    {{#if isLoPriority}}
+                    <!-- <label>A low inspiration!</label> -->
+                    <label class="radio-inline">
+                        <input type="radio" name="taskPriorityOptions" value="1" checked=""> Lo
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="taskPriorityOptions" value="2"> Mid
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="taskPriorityOptions" value="3"> Hi
+                    </label>
+                    {{else}} {{#if isMidPriority}}
+                    <!-- {{#if getPriority "Mid"}} -->
+                    <!-- <label>A mid inspiration!</label> -->
+                    <label class="radio-inline">
+                        <input type="radio" name="taskPriorityOptions" value="1"> Lo
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="taskPriorityOptions" value="2" checked=""> Mid
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="taskPriorityOptions" value="3"> Hi
+                    </label>
+                    {{else}}
+                    <!-- {{#if getPriority "Hi"}} -->
+                    {{#if isHiPriority}}
+                    <!-- <label>A high inspiration!</label> -->
+                    <label class="radio-inline">
+                        <input type="radio" name="taskPriorityOptions" value="1"> Lo
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="taskPriorityOptions" value="2"> Mid
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="taskPriorityOptions" value="3" checked=""> Hi
+                    </label>
+                    {{/if}} {{/if}} {{/if}}
+                </form>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <label class="sr-only">Task Instructions</label>
+                    <textarea class="form-control task-description" rows="2" id="" placeholder="Create your new inspiration...">{{getDescription}}</textarea>
+                </div>
+            </div>
+            <div class="row task-main-options">
+                <div class="form-group task-options pull-right">
+                    <button type="button" class="btn btn-default task-update-cancel">
+                        Cancel
+                    </button>
+                    <button type="button" class="btn btn-primary task-update">
+                        Save
+                    </button>
+                </div>
+            </div>
+            <!-- <div class="row">
+          
+        </div> -->
+        </form>
+    </div>
+    {{/if}}
+</template>
+<!-- <ul id= "task-data-menu" class="nav nav-tabs nav-justified" role="tablist">
+            <li class="active">
+              <a href="{{this._id}}-ideas" data-toggle="tab">
+                  <span title="Ideas" class="fa fa-lightbulb-o"> </span>
+                    {{getIdeas}}
+              </a>
+            </li>
+            <li>
+              <a href="#" data-toggle="tab">
+                <span title="Questions" class="glyphicon glyphicon-question-sign"> </span>
+                {{getQuestions}}
+              </a>
+            </li>
+          </ul>
+          <div class="tab-content">
+            <div class="task-idealist tab-pane active" id="{{this._id}}-ideas">
+              <ul id="idealist" class="ideadeck ui-sortable">
+                <li class="sort-disabled"></li>
+                    {{#each ideaContents}}
+                      {{> HcompFilterBoxIdeaItem}}
+                    {{/each}}
+              </ul>
+            </div>
+            <div class="task-comments tab-pane" id="{{this._id}}-comments">
+            </div>
+          </div> -->

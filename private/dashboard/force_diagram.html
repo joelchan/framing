@@ -1,0 +1,208 @@
+<!-- this document creates a really simple force diagram -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Force Diagram</title>
+		<script type="text/javascript" src="../d3/d3.js"></script>
+		<style type="text/css">
+
+		</style>
+	</head>
+	<body>
+		<script type="text/javascript">
+
+			//size of the svg
+			var w = 1000;
+			var h = 650;
+
+			//in order to use the force layout for d3, the dataset has to be an object with two elements, nodes and edges, with each element being an array of objects.
+			var dataset = {
+        		nodes: [
+					{name: "Analogy", size:	4},
+					{name: "Creativity", size: 10},
+					{name: "Fixation", size: 4},
+					{name: "Ideation", size: 3},
+					{name: "Incubation", size: 7},
+					{name: "Inspiration", size: 5},
+					{name: "Expertise", size: 45},
+					{name: "Individual differences", size: 35},
+					{name: "Learning", size: 37},
+					{name: "Memory", size: 60},
+					{name: "Collaboration",	size: 25},
+					{name: "Problem solving", size:	15},
+					{name: "Reasoning", size: 50},
+					{name: "Decision making", size: 50}
+				],
+        		edges: [
+
+        			{source: 0, target: 1, strength: 4},
+					{source: 0, target: 1, strength: 4},
+					{source: 0,	target:	2, strength: 3},
+					{source: 0,	target:	3, strength: 3},
+					{source: 0,	target:	4, strength: 2},
+					{source: 0,	target:	5, strength: 5},
+					{source: 0,	target:	6, strength: 3},
+					{source: 0,	target:	7, strength: 1},
+					{source: 0,	target:	8, strength: 2},
+					{source: 0,	target:	9, strength: 3},
+					//{source: 0,	target:	10, strength: 1},
+					// {source: 0,	target:	11, strength: 3},
+					// {source: 0,	target:	12, strength: 4},
+					// {source: 0,	target:	13, strength: 2},
+					// {source: 1,	target:	2, strength: 5},
+					// {source: 1,	target:	3, strength: 5},
+					// {source: 1,	target:	4, strength: 5},
+					// {source: 1,	target:	5, strength: 5},
+					// {source: 1,	target:	6, strength: 3},
+					// {source: 1,	target:	7, strength: 4},
+					// {source: 1,	target:	8, strength: 2},
+					// {source: 1,	target:	9, strength: 3},
+					// {source: 1,	target:	10,	strength: 4},
+					// {source: 1,	target:	11,	strength: 4},
+					{source: 1,	target:	12,	strength: 2},
+					//{source: 1,	target:	13, strength: 1},
+					{source: 2,	target:	3, strength: 4},
+					{source: 2,	target:	4, strength: 4},
+					{source: 2,	target:	5, strength: 5},
+					{source: 2,	target:	6, strength: 3},
+					{source: 2,	target:	7, strength: 2},
+					{source: 2,	target:	8, strength: 2},
+					{source: 2,	target:	9, strength: 5},
+					//{source: 2,	target:	10, strength: 1},
+					{source: 2,	target:	11, strength: 2},
+				//	{source: 2,	target:	12, strength: 1},
+			//		{source: 2,	target:	13, strength: 1},
+					{source: 3,	target:	4, strength: 5},
+					{source: 3,	target:	5, strength: 5},
+					{source: 3,	target:	6, strength: 2},
+					{source: 3,	target:	7, strength: 4},
+					{source: 3,	target:	8, strength: 2},
+					{source: 3,	target:	9, strength: 5},
+					{source: 3,	target:	10, strength: 3},
+					{source: 3,	target:	11, strength: 3},
+					{source: 3,	target:	12, strength: 2},
+					{source: 3,	target:	13, strength: 2},
+					{source: 4,	target:	5, strength: 5},
+					{source: 4,	target:	6, strength: 2},
+					{source: 4,	target:	7, strength: 2},
+					//{source: 4,	target:	8, strength: 1},
+					{source: 4,	target:	9, strength: 5},
+					{source: 4,	target:	10, strength: 2},
+					{source: 4,	target:	11, strength: 4},
+				//	{source: 4,	target:	12, strength: 1},
+					{source: 4,	target:	13, strength: 2},
+					{source: 5,	target:	6, strength: 2},
+					{source: 5,	target:	7, strength: 2},
+					{source: 5,	target:	8, strength: 2},
+					{source: 5,	target:	9, strength: 5},
+					// {source: 5,	target:	10,	strength: 4},
+					// {source: 5,	target:	11,	strength: 4},
+					// {source: 5,	target:	12,	strength: 2},
+					// {source: 5,	target:	13, strength: 2},
+					// {source: 6,	target:	7, strength: 5},
+					// {source: 6,	target:	8, strength: 5},
+					// {source: 6,	target:	9, strength: 4},
+					// {source: 6,	target:	10,	strength: 2},
+					// {source: 6,	target:	11,	strength: 4},
+					{source: 6,	target:	12,	strength: 4},
+					{source: 6,	target:	13, strength: 4},
+					{source: 7,	target:	8, strength: 3},
+					{source: 7,	target:	9, strength: 2},
+					//{source: 7,	target:	10, strength: 1},
+					//{source: 7,	target:	11, strength: 1},
+					//{source: 7,	target:	12, strength: 1},
+					//{source: 7, target:	13, strength: 1},
+					{source: 8,	target:	9, strength: 4},
+					//{source: 8,	target:	10,	strength: 1},
+					{source: 8,	target:	11,	strength: 3},
+					{source: 8,	target:	12,	strength: 4},
+					{source: 8,	target:	13,	strength: 4},
+					{source: 9,	target:	10,	strength: 2},
+					{source: 9,	target:	11,	strength: 4},
+					{source: 9,	target:	12,	strength: 4},
+					{source: 9,	target:	13,	strength: 2},
+					{source: 10, target: 11, strength: 3},
+					{source: 10, target: 12, strength: 3},
+					{source: 10, target: 13, strength: 3},
+					{source: 11, target: 12, strength: 3},
+					{source: 11, target: 13, strength: 3},
+					{source: 12, target: 13, strength: 0}
+				]
+			};
+
+			//ordinal scale in order to color the nodes
+			var colors = d3.scale.category20();
+
+			//makes the svg element
+			var svg = d3.select("body")
+				.append("svg")
+				.attr("width", w)
+				.attr("height", h);
+
+			//this sets up the force layout - it needs where the nodes and links are and the size of the space, as well as optional parameters like how long you want the distance between them to be and how much you want the nodes to repel each other
+			var force = d3.layout.force()
+				.nodes(dataset.nodes)
+				.links(dataset.edges)
+				.size([w, h])
+				.linkDistance(function(d) {
+					console.log(d);
+					return d.strength * 100;
+				})
+				.charge(-300)
+				.start();
+
+			//making the svg lines that connect the nodes
+			var edges = svg.selectAll("line")
+				.data(dataset.edges)
+				.enter()
+				.append("line")
+				.style("stroke", "white")
+      			.style("stroke-width", function(d) { return Math.sqrt(d.strength); });
+
+			//making the svg text that are the nodes
+			//choosing colors from the ordinal scale for the text
+			var nodes = svg.selectAll("text")
+				.data(dataset.nodes)
+				.enter()
+				.append("text")
+				.attr("size", 20)
+				.style("fill", function(d, i) {
+					return colors(i);
+				})
+				.style("font-size", function(d) {
+					return d.size;
+				})
+				.style("font-family", "sans-serif")
+				.text(function(d) {
+					return d.name;
+				})
+				.call(force.drag); //this line is necessary in order for the user to be able to move the nodes (drag them)
+
+			//this tells the visualization what to do when time passes
+			//it updates where the nodes and edges should be
+			force.on("tick", function() {
+				edges.attr("x1", function(d) { 
+						return d.source.x; 
+					})
+     				.attr("y1", function(d) { 
+     					return d.source.y; 
+     				})
+     				.attr("x2", function(d) { 
+     					return d.target.x; 
+     				})
+     				.attr("y2", function(d) { 
+     					return d.target.y; 
+     				});
+
+				nodes.attr("x", function(d) { 
+						return d.x; 
+					})
+     				.attr("y", function(d) { 
+     					return d.y; 
+     				});
+			});
+
+		</script>
+	</body>
+</html>

@@ -1,0 +1,27 @@
+<template name="ExpBaselineFluencyPage">
+  <div class="exp-base-fluency container">
+      <div class="row fluency-instructions">
+        Welcome! Let's begin with a short warm-up exercise to get your creative juices flowing. 
+        <h2>Over the next 2 minutes, try to think of as many uses as you can for a brick.</h2> 
+        Please do not merely list other things that come to mind when you think about the object (e.g., “house, construction hats, etc."); the goal is to come up with as many uses of an object as possible (e.g., “building material, doorstop, anchor, etc.”). Write your ideas in the textbox below, one idea per line. When the time is up, you will automatically be taken to the next page. 
+        <h2>Please do not refresh your browser or hit the back button or you will lose all your answers!</h2>
+      </div>
+      <div class="row fluency-input-area">
+        <textArea id="baseFluencyInput" class="form-control" rows="10" placeholder="Write your ideas here, each on a new line."></textarea>
+      </div>
+      <section>
+          <h2>Countdown</h2>
+          <p>
+              <button id="startCountdown">Start</button> 
+              <button id="stopCountdown">Stop</button> 
+              <button id="pauseCountdown">Pause</button> 
+              <!-- <button id="resetCountdown">Reset</button>  -->
+              <!-- <input id="countdown_clock" placeholder="00:00" value="00:02"> -->
+          </p>
+      </section>
+      <!-- <button class="btn-default grab-fluency-input">
+        Grab
+      </button> -->
+  </div>
+  {{> ExperimentBeginModal }}
+</template>

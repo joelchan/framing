@@ -1,0 +1,361 @@
+[
+  {
+    "name": "AQY4X23DGYXAP", 
+    "route": "MturkIdeationTreatment", 
+    "mturk": "W6u8BcReqKq5vjgf", 
+    "_id": "5ckX3mHBpTMR3JkXq", 
+    "type": "Brainstorm user", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "name": "A2WX9BYW5TI8OA", 
+    "route": "TutorialControl", 
+    "mturk": "9FNONB53hHuKBPk8", 
+    "_id": "NhQzQgrPj9anumMGX", 
+    "type": "Brainstorm user", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "name": "A1ONILGBGJ8Y5K", 
+    "route": "TutorialControl", 
+    "mturk": "74rQ7n4pY4wKLdyG", 
+    "_id": "b5iiW5xBdW3k7SbAY", 
+    "type": "Brainstorm user", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "name": "A3DOBEBPXPC676", 
+    "route": "TutorialControl", 
+    "mturk": "VpAHSKSdftt9Tbb5", 
+    "_id": "k5WJ6npHaBfqp8Y63", 
+    "type": "Brainstorm user", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "name": "A3EJ44J2ZNRMDA", 
+    "route": "TutorialControl", 
+    "mturk": "BknPsk3DdRNGAoZW", 
+    "_id": "nFji6uk7W3RfyaewE", 
+    "type": "Brainstorm user", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "mturk": "ZW4gDUjzsfoi1C5A", 
+    "route": "HcompConsentPage", 
+    "_id": "yWaXvWGnbuZ8qqjBw", 
+    "type": "Brainstorm user", 
+    "name": "A1XOXGWBAN6HEJ"
+  }, 
+  {
+    "name": "A2RJHJP19XJZ0E", 
+    "route": "MturkIdeationTreatment", 
+    "mturk": "sWzems61ORK55PoT", 
+    "_id": "wsqF5oR2C87iauyrS", 
+    "type": "Brainstorm user", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "name": "AVE8IPM6VXRLL", 
+    "route": "MturkIdeationTreatment", 
+    "mturk": "3dM1OGhsHjgntu3I", 
+    "_id": "NH4r4HpzDdg7YGysH", 
+    "type": "Brainstorm user", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "name": "A2A4EX36X0JB4R", 
+    "route": "MturkIdeationTreatment", 
+    "mturk": "4F9H2IvbiWctBBiK", 
+    "_id": "BKQK7ipdyiQHACHB7", 
+    "type": "Brainstorm user", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "name": "AV3CA0IYNRCCJ", 
+    "route": "TutorialControl", 
+    "mturk": "WSBm1skcJo38j9w8", 
+    "_id": "REufcXnyBqqbudnju", 
+    "type": "Brainstorm user", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "name": "A3HJ84R120RBAF", 
+    "route": "TutorialControl", 
+    "mturk": "tRFMppq61FO4tpwE", 
+    "_id": "ykDrqwJrsoposZN49", 
+    "type": "Brainstorm user", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "name": "A1JE3G5ZXGCGTD", 
+    "route": "TutorialControl", 
+    "mturk": "prcJ0YzKeBsJdhkv", 
+    "_id": "oe5pbsF8ecyb64z5i", 
+    "type": "Brainstorm user", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "name": "A3FAH5S2RGZ5AK", 
+    "route": "MturkIdeationTreatment", 
+    "mturk": "7ax9I2tlHTVbpwFG", 
+    "_id": "4pnzuqoTGTSZ2GJXC", 
+    "type": "Brainstorm user", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "name": "AM97GWDYEFN97", 
+    "route": "MturkIdeationTreatment", 
+    "mturk": "tlVJ1DZeUI50apSq", 
+    "_id": "ukuE6oRgtuZw2aGGZ", 
+    "type": "Brainstorm user", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "name": "A3RD30VDG7UNV8", 
+    "route": "TutorialControl", 
+    "mturk": "KkoJVQC46gUd5FFR", 
+    "_id": "a9KhNsQaYZjBbv2W4", 
+    "type": "Brainstorm user", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "name": "A27BUT19WQ6P1O", 
+    "route": "MturkIdeationTreatment", 
+    "mturk": "sWJVHk9W9BNZwWNp", 
+    "_id": "qhv5eHnGgA48qkaCn", 
+    "type": "Brainstorm user", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "name": "A3AR1I80WI2N6R", 
+    "route": "TutorialControl", 
+    "mturk": "cobKcIvwZCWY4Hvz", 
+    "_id": "pAjt3YdwegYYo2QH5", 
+    "type": "Brainstorm user", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "name": "A2S4YDJ9UGAXFQ", 
+    "route": "TutorialControl", 
+    "mturk": "Jeb8KoPu9f6qWGWN", 
+    "_id": "JEDBcEhCgfWiDNy5f", 
+    "type": "Brainstorm user", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "name": "A37Q5V7LD4212Y", 
+    "route": "TutorialControl", 
+    "mturk": "hT3Pys63ryBomLUo", 
+    "_id": "jHxLzpEgCtEqoHHa5", 
+    "type": "Brainstorm user", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "name": "A39K9RKR1YHQOR", 
+    "route": "MturkIdeationTreatment", 
+    "mturk": "bi5Nj3bzfaWN2jWx", 
+    "_id": "8tppTuQA5xRMgpgqc", 
+    "type": "Brainstorm user", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "name": "A1B4WL7N3ACF2T", 
+    "route": "MturkIdeationTreatment", 
+    "mturk": "Le0xWEbOvd6kXZPj", 
+    "_id": "iBSthRRttwcw8tBvK", 
+    "type": "Brainstorm user", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "name": "A1D01TUSE0H5TW", 
+    "route": "MturkIdeationTreatment", 
+    "mturk": "fXCtjISOnKV1JO6e", 
+    "_id": "C6afYRL2EKDjbov6M", 
+    "type": "Brainstorm user", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "name": "A1EY5YPJS97IE4", 
+    "route": "MturkIdeationTreatment", 
+    "mturk": "fmLQzO8auqQdpV3q", 
+    "_id": "7EYZGHKjCvJErQc5z", 
+    "type": "Brainstorm user", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "name": "A1VMHE2T0NH4GS", 
+    "route": "TutorialControl", 
+    "mturk": "4lENAS8o9xDpo5KP", 
+    "_id": "dEqxgb3Gina7NrSMQ", 
+    "type": "Brainstorm user", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "name": "A1QHJGHKDIG3T5", 
+    "route": "MturkIdeationTreatment", 
+    "mturk": "igjEQOshigZ8UPY4", 
+    "_id": "6AnbyrehbPfWCc7Pt", 
+    "type": "Brainstorm user", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "name": "A1JY30TQP78AMO", 
+    "route": "TutorialControl", 
+    "mturk": "1Zwmvr87MpnMVBkF", 
+    "_id": "3vczReqpuvbzyy9nY", 
+    "type": "Brainstorm user", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "name": "A2BVUVKIS50IR8", 
+    "route": "TutorialControl", 
+    "mturk": "o4YgSI2yTpSZYEmk", 
+    "_id": "ysYoRmnxgm5uwsfj4", 
+    "type": "Brainstorm user", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "name": "A26KS0O1QWD9A6", 
+    "route": "MturkIdeationTreatment", 
+    "mturk": "5N7jXGC20eomsU55", 
+    "_id": "yv9kpgvuySXmig2AK", 
+    "type": "Brainstorm user", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "name": "AMKZADNMDUKR2", 
+    "route": "HcompConsentPage", 
+    "mturk": "QhzPbqTBHH2SEc5o", 
+    "_id": "ohtcv59pcuwK6cMkn", 
+    "type": "Brainstorm user", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "name": "A1KJMZABBJG6HV", 
+    "route": "MturkIdeationTreatment", 
+    "mturk": "uqKB6c0k9r1IGNFD", 
+    "_id": "qtv4TmkrWpXrbupQm", 
+    "type": "Brainstorm user", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "name": "A1YWJ3SMYC3W23", 
+    "route": "TutorialControl", 
+    "mturk": "ov7PcevPgkoC3vPe", 
+    "_id": "rDJ7QNR8DiSPs6jnh", 
+    "type": "Brainstorm user", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "name": "A2MY0C5ZKLE8HI", 
+    "route": "TutorialControl", 
+    "mturk": "clxUZL4zgvMQI68k", 
+    "_id": "BsWtcAZSLosLZC3fa", 
+    "type": "Brainstorm user", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "name": "A35GKI38HB1I46", 
+    "route": "TutorialControl", 
+    "mturk": "gG2uhduwvG5v1fsP", 
+    "_id": "SNhCgCbnzau42nvTx", 
+    "type": "Brainstorm user", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "name": "A2JEJCOMJOOM2E", 
+    "route": "MturkIdeationTreatment", 
+    "mturk": "gdun1zn43Q5IrRhx", 
+    "_id": "Pf8ZkNbFiCbmzL6Fw", 
+    "type": "Brainstorm user", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "name": "A10Z7NLSO1VS9P", 
+    "route": "MturkIdeationTreatment", 
+    "mturk": "XI43rf5HwE1QZfSu", 
+    "_id": "BGGb8fkBq24SXyRRy", 
+    "type": "Brainstorm user", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "name": "A1QFL2GS6L26HG", 
+    "route": "TutorialControl", 
+    "mturk": "V9tOMIgEsnRtfOPs", 
+    "_id": "w3RBocLDxGYrA3YNw", 
+    "type": "Brainstorm user", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "name": "A3QNEE70E6ZZD3", 
+    "route": "MturkIdeationTreatment", 
+    "mturk": "QrNatrhDYFwttRvC", 
+    "_id": "rtKupbjs6TtAKijAM", 
+    "type": "Brainstorm user", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "name": "A1RTEBQDAOHDQ1", 
+    "route": "MturkIdeationTreatment", 
+    "mturk": "ioHmz4gQn2q9mqWy", 
+    "_id": "HSrvkfRoDDgxXF9SJ", 
+    "type": "Brainstorm user", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "name": "A3D2LK5LVZWK7I", 
+    "route": "TutorialControl", 
+    "mturk": "4L4vGQoFO3W0CAwe", 
+    "_id": "oBq78FNZ4CSrcThWk", 
+    "type": "Brainstorm user", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "name": "A20R49PAE0EDEU", 
+    "route": "TutorialControl", 
+    "mturk": "SXswwgpiHm5Idtw4", 
+    "_id": "ZQSrFHoA4YK3SBQMb", 
+    "type": "Brainstorm user", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "name": "A3DXL2YZRL2HWD", 
+    "route": "MturkIdeationTreatment", 
+    "mturk": "KGbnd6lUwPmxCNtP", 
+    "_id": "R8xYb9QmihKTaNNdh", 
+    "type": "Brainstorm user", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "name": "A2A1D52ZPSW6L9", 
+    "route": "TutorialControl", 
+    "mturk": "Or5tBuEkObkNL7Jf", 
+    "_id": "vkNDgFWo7HJDkYuJ3", 
+    "type": "Brainstorm user", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "name": "A3PIWOAEB8IRP8", 
+    "route": "TutorialControl", 
+    "mturk": "vuql58mYM4khLK37", 
+    "_id": "59PvupTxQnXqnb4Dd", 
+    "type": "Brainstorm user", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "name": "ASXACVODSYD7G", 
+    "route": "HcompConsentPage", 
+    "mturk": "Ner7pXBD0ddWgWm1", 
+    "_id": "SburQbodyKZGGJWE4", 
+    "type": "Brainstorm user", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }, 
+  {
+    "name": "A26C4CO2PBSD61", 
+    "route": "MturkIdeationTreatment", 
+    "mturk": "h0ZY0LP4797VPZu8", 
+    "_id": "7TpnLoEhA37XBsgkX", 
+    "type": "Brainstorm user", 
+    "groupID": "WB7CMNw8ezXphnui5"
+  }
+]
