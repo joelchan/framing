@@ -7,13 +7,13 @@ Logger.setLevel('Server:Base:Experiment', 'trace');
 //Logger.setLevel('Server:Base:Experiment', 'warn');
 
 Meteor.methods({
-    addParticipant2: function(expID, userID) {
+    addParticipant2: function(expID, userID, frameID) {
         logger.trace("Calling addParticipant on server");
         var exp = Experiments.findOne({_id: expID});
         logger.trace("Found experiment: " + JSON.stringify(exp));
         var user = MyUsers.findOne({_id: userID});
         logger.trace("Found user: " + JSON.stringify(user));
-        return ExperimentManager.addExperimentParticipant(exp._id, user);
+        return ExperimentManager.addExperimentParticipant(exp._id, user, frameID);
     },
 
     canParticipate2: function(expID, userName) {

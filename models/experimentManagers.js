@@ -8,7 +8,7 @@ Logger.setLevel('Managers:Experiment', 'trace');
 
 ExperimentManager = (function () {
   /****************************************************************
-  * Object that allows for most experiment manipulations including 
+  * Object that allows for most experiment manipulations including
   *   assignment, creation, and modification
   ****************************************************************/
   return {
@@ -33,7 +33,7 @@ ExperimentManager = (function () {
     createVariable: function(expID) {
       var variable = new ExpVariable(expID, "", []);
       variable._id = Variables.insert(variable);
-      Experiments.update({_id: expID}, 
+      Experiments.update({_id: expID},
         {$push: {variableIDs: variable._id}}
       );
       return variable;
@@ -68,18 +68,18 @@ ExperimentManager = (function () {
     updateVarName: function(varID, name) {
       /*************************************************************
        * Update the variable name
-       ************************************************************/ 
+       ************************************************************/
       Variables.update({_id: varID}, {$set: {name: name}});
     },
     updateVarValues: function(varID, vals) {
       /*************************************************************
        * Update the variable values
-       ************************************************************/ 
+       ************************************************************/
       Variables.update({_id: varID}, {$set: {values: vals}});
     },
     generateConditions: function(expID) {
       /**************************************************************
-       * Once an experiment has been formed and variables have been set, 
+       * Once an experiment has been formed and variables have been set,
        * this will create all of the conditions an mark the
        * experiment as being ready to accept participants
        * @Params
@@ -95,9 +95,9 @@ ExperimentManager = (function () {
       var conds = this.initConditions(vars, exp.partNum);
       conds.forEach(function(cond) {
         Experiments.update(
-          {_id: expID}, 
+          {_id: expID},
           {$addToSet: {conditionIDs: cond._id}}
-        );    
+        );
       });
 
 
@@ -123,7 +123,7 @@ ExperimentManager = (function () {
     },
     initConditions: function(variables, partNum, pname) {
       /**************************************************************
-       * Once an experiment has been formed and variables have been set, 
+       * Once an experiment has been formed and variables have been set,
        * @Params
        *    variables (list of ExpVariable) - list of variables
        *        on which to permute to generate conditions
@@ -145,14 +145,14 @@ ExperimentManager = (function () {
             var cond = new ExpCondition(v.expID, pname + val, partNum);
             cond['_id'] = Conditions.insert(cond);
             result.push(cond);
-          });  
+          });
         } else {
           v.values.forEach(function(val) {
             logger.debug("Val: %s", val);
             var cond = new ExpCondition(v.expID, val, partNum);
             cond['_id'] = Conditions.insert(cond);
             result.push(cond);
-          });  
+          });
         }
       } else {
         logger.debug("Initializing conditions on variables ", variables);
@@ -196,7 +196,7 @@ ExperimentManager = (function () {
       if (part.misc) {
         if (part.misc.subsetID) {
           logger.debug("Already has a subset assigned. Doing nothing");
-        } 
+        }
       } else {
         logger.debug("Assigning a new subset");
         var cond = Conditions.findOne({_id: condID});
@@ -241,10 +241,10 @@ ExperimentManager = (function () {
 
     getChosenCondition: function(exp, condName) {
       /****************************************************************
-        * Get a chosen condition from the experiment 
+        * Get a chosen condition from the experiment
         * (matching given condName param)
         * should return cond id
-        ****************************************************************/      
+        ****************************************************************/
       logger.debug("Assigning to chosen condition: " + condName);
       var condID = "";
       exp.conditions.forEach(function(cond) {
@@ -271,16 +271,16 @@ ExperimentManager = (function () {
         var wantedRecruits = [];
         var exp = Experiments.findOne({_id: expID});
         for (var i=0; i<exp.conditionIDs.length; i++) {
-          //Determin number of participants expected - number already 
+          //Determin number of participants expected - number already
           //  assigned
           var cond = Conditions.findOne({_id: exp.conditionIDs[i]})
           // desired number of participants
           var numPartWanted = cond.partNum;
           // number of participants currently assigned
-          // var numPartAssigned = cond.assignedParts.length; 
+          // var numPartAssigned = cond.assignedParts.length;
           var numPartCompleted = cond.completedParts.length;
           logger.debug(numPartWanted + " participants wanted for " + cond.description + " condition, " + numPartCompleted + " completed so far");
-              
+
           // Cube the number to heavily bias in favor conditions with fewer assigned participants
           // var numToRecruit = numPartWanted - numPartAssigned;
           var numToRecruit = numPartWanted - numPartCompleted;
@@ -291,13 +291,13 @@ ExperimentManager = (function () {
           // Each element in cutOffs is a condition
           if (cutOffs.length == 0) {
             logger.trace("Cutoff for " + cond.description + ": " + thisCutOff);
-            cutOffs.push(thisCutOff);  
+            cutOffs.push(thisCutOff);
           } else {
             cutOffs.push(thisCutOff + cutOffs[cutOffs.length-1]);
           }
         }
         logger.trace("Number line is :", cutOffs);
-        
+
         // Randomly assign to any condition if experiment is full
         if (cutOffs.length == 0) {
             randCond = getRandomElement(exp.conditions);
@@ -312,16 +312,16 @@ ExperimentManager = (function () {
             logger.debug("Drew condition index: " + condIndex);
             randCondID = exp.conditionIDs[condIndex];
             logger.trace("Randomly drew ID:" + randCondID + " condition");
-            return randCondID;    
+            return randCondID;
           } else {
 
             // Define the sample space to draw from
             logger.trace("Max for sample is " + max);
-            
+
             // Randomly sample a number
             var sample = Math.random() * (max-1) + 1;
             logger.trace("Drew random sample: " + sample);
-            
+
             // Sample a condition
             var condIndex = 0;
             for (var i=0; i<cutOffs.length; i++) {
@@ -330,7 +330,7 @@ ExperimentManager = (function () {
                 logger.trace("Sample of " + sample + " is less than cutoff " + cutOffs[i]);
                 condIndex = i;
                 break;
-              } 
+              }
             }
             randCondID = exp.conditionIDs[condIndex];
             var c = Conditions.findOne({_id: randCondID});
@@ -341,7 +341,7 @@ ExperimentManager = (function () {
     },
 
 
-    addExperimentParticipant: function (expID, user) {
+    addExperimentParticipant: function (expID, user, frameID) {
       //Look for duplicate participant with same userID and expID
       logger.trace("Adding user with id " + user._id + " as a participant");
       var part = Participants.findOne({userID: user._id, expID: expID});
@@ -350,11 +350,12 @@ ExperimentManager = (function () {
         return part;
       } else {
         //Create new participant if no duplicates found
-        
+
         // assign to a condition
         var condID = this.getRandomCondition(expID);
         // var condID = this.getChosenCondition(exp, "Treatment");
         var part = new Participant(expID, user._id, condID);
+        part.misc.frameID = frameID;
         part._id = Participants.insert(part);
 
         // log assignment to the experiment
@@ -364,16 +365,16 @@ ExperimentManager = (function () {
         Conditions.update({_id: condID}, {$addToSet: {assignedParts: part._id}});
 
         logger.trace("Added new participant with id " + part._id);
-        
+
         return part;
       }
     },
 
     logParticipantCompletion: function(participant){
-      Participants.update({_id: participant._id}, 
+      Participants.update({_id: participant._id},
         {$set: {'misc.hasFinished': true}}
       );
-      Conditions.update({_id: participant.conditionID}, 
+      Conditions.update({_id: participant.conditionID},
         {$addToSet: {completedParts: participant._id}}
       );
       logger.trace("Logged experiment completion for participant");
@@ -388,15 +389,15 @@ ExperimentManager = (function () {
        * @Return
        *    boolean - true if successful
        * ***********************************************************/
-      Participants.update({_id: participant._id}, 
+      Participants.update({_id: participant._id},
         {$set: {'misc.isReady': true}}
       );
-      Conditions.update({_id: participant.conditionID}, 
+      Conditions.update({_id: participant.conditionID},
         {$addToSet: {readyParts: participant._id}}
       );
       logger.trace("Logged participant ready for participant: " + participant._id);
     },
-   
+
     canParticipate: function (expID, userName) {
       var exp = Experiments.findOne({_id: expID});
       if (exp.excludeUsers === undefined) {
@@ -417,22 +418,22 @@ ExperimentManager = (function () {
         } else {
           return true;
         }
-      } 
+      }
       return true;
     },
 
     addExcludeUsers: function(expID, userNames) {
       var currentExclusions = Experiments.findOne({_id: expID}).excludeUsers;
       userNames.forEach(function(userName) {
-        Experiments.update({_id: expID}, 
+        Experiments.update({_id: expID},
           {$addToSet: {excludeUsers: userName}}
-        );  
+        );
       });
     },
 
     removeExcludeUsers: function(expID, userNames) {
       userNames.forEach(function(userName) {
-        Experiments.update({_id: expID}, 
+        Experiments.update({_id: expID},
           {$pull: {excludeUsers: userName}});
       });
     },
@@ -441,7 +442,7 @@ ExperimentManager = (function () {
         ids = getIDs(exps);
         //for (var i=0; i<exps.length; i++) {
           //ids.push(exps._id);
-        //} 
+        //}
         if (Meteor.isServer) {
           Experiments.remove({_id: {$in: ids}});
         } else {

@@ -19,7 +19,7 @@ logger = logging.getLogger("importInsp")
 DATA_PATH = path.abspath("data")
 
 RAW_FILES = {
-    'exp_data': 'final_clusters.csv',
+    'exp_data': 'youth_voting_frames.csv',
     }
 
 def make_unicode(input):
@@ -30,7 +30,7 @@ def make_unicode(input):
         return input
 
 
-class CsvCluster: 
+class CsvCluster:
     def __init__(self, data):
       print data['cluster']
       print make_unicode(data['cluster'])
@@ -66,7 +66,7 @@ def setup_support_data():
     # Create clusters and inspirations
     methods = set([c.method for c in data])
     sources = {}
-    all_clusters = [] 
+    all_clusters = []
     inspirations = []
     for p in prompt_titles:
         prompt = prompts[p]
@@ -80,15 +80,25 @@ def setup_support_data():
             sources[m] = set([c.source for c in rows])
             print(sources)
             for s in sources[m]:
+                name = p + '-' + m + '-' + s
+                i = Inspiration(name, [], m)
                 print("source: " + s)
-                clusters = [Cluster(c.content, user, prompts[c.promptName]) for c in rows if c.source == s]
+                clusters = []
+                for c in rows:
+                    if c.source == s:
+                        cluster = Cluster(c.content, user, prompts[c.promptName])
+                        cluster['assignedUsers'] = []
+                        cluster['inspirationID'] = i['_id']
+                        cluster['extID'] = c.extID
+                        clusters.append(cluster)
                 print("number of clusters for this source: ", len(clusters))
                 ids = [c._id for c in clusters]
                 print("number of clusters for this source: ", len(ids))
-                name = p + '-' + m + '-' + s
-                i = Inspiration(name, ids, m)
                 all_clusters.extend(clusters)
+                i['clusterIDs'] = ids
                 inspirations.append(i)
+
+    pd.DataFrame([{'id': c._id, 'name': c.name, 'inspirationID': c.inspirationID} for c in clusters]).to_csv(path.join(DATA_PATH, "cluster_ids.csv"))
 
     inspirationData = pd.DataFrame([{'id': insp['_id'],
                         'name': insp['name'],
@@ -109,7 +119,7 @@ def setup_support_data():
 
 def import_data():
     global DATA_PATH, RAW_FILES
-    
+
     print("Importing all cluster labels into inspirations")
     u, p, c, i = setup_support_data()
     print p

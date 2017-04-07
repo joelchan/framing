@@ -13,13 +13,13 @@ Template.HcompConsentPage.events({
         var exp = Session.get("currentExp");
         var user = Session.get("currentUser");
         logger.trace("Checking if participant has participated before");
-        Meteor.call('canParticipate2', exp._id, user.name, 
+        Meteor.call('canParticipate2', exp._id, user.name,
             function(error, okToParticipate) {
                 logger.trace("OK to participate: ",  okToParticipate);
                 if (okToParticipate) {
                   logger.trace("New participant, randomly assigning to condition in experiment");
                   // part = ExperimentManager.addExperimentParticipant(exp, user);
-                  Meteor.call('addParticipant2', exp._id, user._id, 
+                  Meteor.call('addParticipant2', exp._id, user._id, Session.get("frameID"),
                     function(error, part) {
                         logger.trace("Result of server addParticipant: ", part, error)
                         if (part) {
@@ -44,8 +44,6 @@ Template.HcompConsentPage.events({
           //loginUser(myUser);
 
           //Go to next page
-        
+
     }
 });
-
-

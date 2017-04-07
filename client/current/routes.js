@@ -92,7 +92,7 @@ Router.route("/crowd/experiment/login/:expID", {
       // var prompt = Prompts.findOne({_id: this.params.promptID});
       // logger.debug("setting current prompt");
       // Session.set("currentPrompt", prompt);
-      
+
       var exp = Experiments.findOne({_id: this.params.expID})
       // if (exp) {
       logger.debug("setting current experiment");
@@ -127,12 +127,70 @@ Router.route("/crowd/experiment/login/:expID", {
       var params = {
         expID: this.params.expID,
       }
-      Router.setNextPage("HcompConsentPage", params); 
-  
+      Router.setNextPage("HcompConsentPage", params);
+
     }
   },
-  
 
+
+});
+
+Router.route('HcompConsentPage', {
+    path: 'consent/:expID/:userID/:frameID',
+    template: 'HcompConsentPage',
+  waitOn: function() {
+    return [
+      Meteor.subscribe('workflows'),
+      Meteor.subscribe('progresses'),
+      Meteor.subscribe('experiments', this.params.expID),
+      // Meteor.subscribe('synthSubsets'),
+      // Meteor.subscribe('inspirations'),
+    ];
+  },
+  onBeforeAction: function(pause) {
+      logger.debug("before action");
+      //if (!Session.get("currentUser")) {
+        ////if there is no user currently logged in, then render the login page
+        //this.render('MTurkLoginPage', {'promptID': this.params.promptID});
+        ////Pause rendering the given page until the user is set
+        //pause();
+      //}
+      if (this.ready()) {
+        logger.debug("Data ready");
+        var user = MyUsers.findOne({_id: this.params.userID});
+        logger.trace("user: " + user.name);
+        MyUsers.update({_id: user._id}, {$set: {route: 'HcompConsentPage'}});
+        LoginManager.loginUser(user.name);
+        Session.set("currentUser", user);
+        var exp = Experiments.findOne({_id: this.params.expID});
+        Session.set("currentExp", exp);
+        if (exp) {
+          logger.trace("found experiment with id: " + this.params.expID);
+        } else {
+          logger.warn("no experiment found with id: " + this.params.expID);
+        }
+        Session.set("frameID", this.params.frameID);
+        this.next();
+      } else {
+        logger.debug("Not ready");
+      }
+  },
+  action: function(){
+    if(this.ready()) {
+      Session.set("useTimer", true);
+      this.render();
+    } else
+      this.render('loading');
+  },
+  onAfterAction: function() {
+    if (this.ready()) {
+      var exp = Experiments.findOne({_id: this.params.expID});
+      var params = {
+        expID: exp._id
+      };
+      Router.setNextPage("IdeateInspire", params);
+    }
+  },
 });
 
 Router.route("/crowd/k/:userID/:expID/", {
@@ -161,7 +219,7 @@ Router.route("/crowd/k/:userID/:expID/", {
       // logger.debug("setting current prompt");
       // Session.set("currentPrompt", prompt);
       Session.set("currentUser", MyUsers.findOne({_id: this.params.userID}));
-      
+
       var exp = Experiments.findOne({_id: this.params.expID})
       if (exp) {
         logger.debug("setting current experiment");
@@ -191,15 +249,16 @@ Router.route("/crowd/k/:userID/:expID/", {
       // var params = {
       //   expID: this.params.expID,
       // }
-      // Router.setNextPage("HcompConsentPage", params); 
+      // Router.setNextPage("HcompConsentPage", params);
       insertExitStudy();
     }
   },
-  
+
 
 });
 
-Router.route("/crowd/ideatef/:userID/:expID/:promptID/:alignType/:isFluency/:isFocus/:sequence", {
+// Router.route("/crowd/ideatef/:userID/:expID/:promptID/:alignType/:isFluency/:isFocus/:sequence", {
+Router.route("/crowd/ideatef/:userID/:expID/:promptID/:isFluency/:sequence", {
   name: "FocusIdeate",
   template: "FocusIdeate",
   waitOn: function() {
@@ -216,8 +275,8 @@ Router.route("/crowd/ideatef/:userID/:expID/:promptID/:alignType/:isFluency/:isF
       Meteor.subscribe('knowledgeTestResponses')
     ];
   },
-  onRun: function() { 
-    // set this here because we 
+  onRun: function() {
+    // set this here because we
     Session.set("initPage", true);
     this.next();
   },
@@ -237,21 +296,21 @@ Router.route("/crowd/ideatef/:userID/:expID/:promptID/:alignType/:isFluency/:isF
       Session.set("currentParticipant", part);
       logger.trace("current participant: ", part);
       // Session.set("initPage", true);
-      Session.set("alignType", this.params.alignType); // should be either a (aligned) or m (misaligned)
+      // Session.set("alignType", this.params.alignType); // should be either a (aligned) or m (misaligned)
       if (this.params.isFluency == "t") {
         Session.set("isFluency", true);
       } else {
         Session.set("isFluency", false);
       }
-      if (this.params.isFocus == "t") {
-        Session.set("isFocus", true);
-        Session.set("timesUp", false);
-      } else {
-        Session.set("isFocus", false);
-      }
+      // if (this.params.isFocus == "t") {
+      //   Session.set("isFocus", true);
+      //   Session.set("timesUp", false);
+      // } else {
+      //   Session.set("isFocus", false);
+      // }
       Session.set("problemSequence", parseInt(this.params.sequence));
       // Session.set("focusArea", "education");
-      
+
       // var exp = Experiments.findOne({_id: this.params.expID})
       // if (exp) {
       // logger.debug("setting current experiment");
@@ -281,7 +340,7 @@ Router.route("/crowd/ideatef/:userID/:expID/:promptID/:alignType/:isFluency/:isF
       // var params = {
       //   expID: this.params.expID,
       // }
-      // Router.setNextPage("HcompConsentPage", params); 
+      // Router.setNextPage("HcompConsentPage", params);
       insertExitStudy();
     }
   },

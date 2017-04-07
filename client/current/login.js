@@ -12,17 +12,19 @@ Template.MturkLoginPage.rendered = function() {
 }
 
 /********************************************************************
- * Login Page event listeners 
+ * Login Page event listeners
  * *****************************************************************/
 Template.MturkLoginPage.events({
     'click button.nextPage': function () {
         //console.log("clicked continue");
         //login user
         var prompt = Session.get("currentPrompt");
-        if ($("input#name").val() == "") {
-          alert("Please enter your Mturk ID");
+        // this conditional will break things if we don't have frame ID (e.g., if we're doing a different experiment)
+        if ($("input#name").val() == "" || $("input#frameID").val() == "") {
+          alert("Please enter both your Mturk ID and your task ID");
         } else {
           var userName = $('input#name').val().trim();
+          var frameID = $('input#frameID').val().trim();
           logger.info("Logging in user with name: " + userName);
           var user = LoginManager.loginUser(userName);
           EventLogger.logUserLogin();
@@ -51,10 +53,10 @@ Template.MturkLoginPage.events({
             }
             Session.set("currentRole", role);
             Session.set("currentGroup", group);
-            Router.go(Session.get("nextPage"), 
-                  {promptID: Session.get("currentPrompt")._id, 
+            Router.go(Session.get("nextPage"),
+                  {promptID: Session.get("currentPrompt")._id,
                     userID: Session.get("currentUser")._id
-                  });  
+                  });
           } else {
             var exp = Session.get("currentExp");
             logger.trace("current experiment is: ", exp);
@@ -67,19 +69,19 @@ Template.MturkLoginPage.events({
               //     var condName = Conditions.findOne({_id: part.conditionID}).description;
               //     var routeName = "MturkIdeation" + condName;
               //     logger.debug("Sending to " + routeName);
-              //     Router.go(routeName, {promptID: exp.promptID, partID: part._id});  
+              //     Router.go(routeName, {promptID: exp.promptID, partID: part._id});
               //   } else {
               //     logger.trace("Participant has been assigned but not yet completed tutorial");
               //     var condName = Conditions.findOne({_id: part.conditionID}).description;
               //     var routeName = "Tutorial" + condName;
               //     logger.debug("Sending to " + routeName);
-              //     Router.go(routeName, {promptID: exp.promptID, partID: part._id});  
+              //     Router.go(routeName, {promptID: exp.promptID, partID: part._id});
               //   }
                 var cond = Conditions.findOne({_id: part.conditionID});
                 logger.trace("condition: " + JSON.stringify(cond));
                 var progress = Progresses.findOne({userID: part.userID, workflowID: cond.misc.workflowID});
                 logger.trace("condition: " + JSON.stringify(cond));
-                WorkflowManager.setNextPage(part.userID, 
+                WorkflowManager.setNextPage(part.userID,
                                             cond.misc.workflowID,
                                             progress.index-1);
                 Router.goToNextPage();
@@ -90,6 +92,7 @@ Template.MturkLoginPage.events({
           } else {
             logger.trace("not a participant yet");
             Router.setNextPageParam("userID", user._id);
+            Router.setNextPageParam("frameID", frameID);
             Router.goToNextPage();
           }
         }
@@ -124,7 +127,7 @@ Template.MturkLoginPage.helpers({
 });
 
 /********************************************************************
- * Login Page event listeners 
+ * Login Page event listeners
  * *****************************************************************/
 Template.HcompLoginPage.events({
     'click button.nextPage': function () {

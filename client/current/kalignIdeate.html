@@ -1,7 +1,7 @@
 <template name="FocusIdeate">
     {{> TaskBeginModal }}
     {{> BrainstormTaskBeginModal }}
-    
+
     <!-- {{> TestModal}} -->
     <div id="focus-ideate">
         <div class="">
@@ -24,14 +24,13 @@
         </div>
         <div class="brainstorming-content">
             {{#if notFluency}}
-                {{#if isFocus}}
-                    {{> KAlignPrompt}}
-                    <p>Now we would like you to now develop ONE idea in more detail that uses the fabric display to {{path}}. Your job is to come up with a single, elaborated idea that is as creative (i.e., novel AND useful) as possible.</p>
-                    <p>We would like you spent at least 5 minutes working on your idea. You will <strong>not</strong> be able to submit your idea before 5 minutes is up. After 5 minutes is up, you can choose to either submit your idea as is, or keep working on the idea until you feel it is complete, and then submit it. There is no penalty for taking extra time past the 5-minute mark.</p>
+                {{> KAlignPrompt}}
+                {{#if isFrame}}
+                  <p>In the next 3 minutes, please brainstorm as many ideas as you can to solve the problem of voter turnout among young people, focusing on the question "{{path}}"</p>                  
                 {{else}}
-                    {{> KAlignPrompt}}
-                    <p>In the next 3 minutes, please brainstorm as many product ideas as you can that use the fabric display to {{path}}. Remember, in brainstorming, quantity and wild ideas are encouraged. Feel free to get creative, but don't worry too much about quality. The goal is to get your creative juices flowing.</p>
+                  <p>In the next 3 minutes, please brainstorm as many ideas as you can to solve the problem of voter turnout among young people.</p>
                 {{/if}}
+                <p>Remember, in brainstorming, quantity and wild ideas are encouraged. Feel free to get creative, but don't worry too much about quality. The goal is to get your creative juices flowing.</p>
             {{else}}
                 <p>In the next 1 minute, try to think of as many (alternative) uses as you can for a bowling pin (e.g., juggling props, paperweight). Feel free to get creative, but don't worry too much about quality. The goal is to get your creative juices flowing.</p>
             {{/if}}
@@ -55,30 +54,22 @@
 </template>
 
 <template name="KAlignPrompt">
-    <p>This year, Pomelo Research Lab introduces a groundbreaking technology. Their "fabric display" consists of a penny-sized connector that can attach to fabrics of varying sizes. The connector allows you to display high resolution images and videos on any fabric’s surface.</p>
-    <img src="/images/fabric-display.png" style="width:50%;">
-    <br/>
-    <p>The "fabric display" is waterproof and washable, can sense touch, and can range in size from as a small handkerchief to as large as a big billboard. The researchers believe this technology will transform how people integrate technology into their lives. In particular, they are excited to explore how to <span class="focus-prompt-path">{{path}} with the fabric display technology</span>.</p>
-    {{#if isBrainstorm}}
-        <p>Here are some example ideas to get you started:</p>
-        <ul>
-            <li>{{pathEx1}}</li>
-            <li>{{pathEx2}}</li>
-        </ul>
+    <span class="focus-prompt-path">How might we increase voter turnout among the younger generation?</span>
+    <p>There’s been a worrying trend where millennials aren’t participating in voting. During the recent election, millennials (ages 18-29) could have made the most powerful impact as millennials have surpassed Baby Boomers as United States’s largest living generation. In the 2012 elections, only 46% of millennials decided to go out and vote. As a result, millennials only made up 19% of the total vote while Baby Boomers were 38% of the total vote. Although the percentage of millennial voters increased during the 2016 elections, there’s still a huge portion missing. Now, the opportunity is to find ways to increase millennial voter turnout.</p>
+    {{#if isFrame}}
+    <p>Our research team has identified the following focus question as a useful starting point: </p>
+    <p><span class="focus-prompt-path">{{path}}</span></p>
     {{/if}}
 </template>
 
 <template name="KAlignFocusChooser">
-    <p>This year, Pomelo Research Lab introduces a groundbreaking technology. Their "fabric display" consists of a penny-sized connector that can attach to fabrics of varying sizes. The connector allows you to display high resolution images and videos on any fabric’s surface.</p>
-    <img src="/images/fabric-display.png" style="width:25%;">
-    <br/>
-    <p>The "fabric display" is waterproof and washable, can sense touch, and can range in size from as a small handkerchief to as large as a big billboard. The researchers believe this technology will transform how people integrate technology into their lives.</p>
-    <p>The following are some possible application areas with high potential. To continue with the task, please select one of these application areas. You will be developing ideas for that application area for the rest of the task.</p>
-    <div class="focusSelectList">
-      {{#each focusAreas}}
-        {{> focusSelection}}
-      {{/each}}
-    </div> <!-- close focusSelectList -->
+  <p>In this part of the HIT, your job is to brainstorm ideas for the main problem:</p>
+  <p><span class="focus-prompt-path">How might we increase voter turnout among the younger generation?</span></p>
+  <p>There’s been a worrying trend where millennials aren’t participating in voting. During the recent election, millennials (ages 18-29) could have made the most powerful impact as millennials have surpassed Baby Boomers as United States’s largest living generation. In the 2012 elections, only 46% of millennials decided to go out and vote. As a result, millennials only made up 19% of the total vote while Baby Boomers were 38% of the total vote. Although the percentage of millennial voters increased during the 2016 elections, there’s still a huge portion missing. Now, the opportunity is to find ways to increase millennial voter turnout.</p>
+  {{#if isFrame}}
+  <p>Our research team has identified the following focus question as a useful starting point: </p>
+  <p><span class="focus-prompt-path">{{path}}</span></p>
+  {{/if}}
 </template>
 
 <template name="KAlignIdeaEntryBox">
@@ -97,7 +88,7 @@
 </template>
 
 <template name="TaskBeginModal">
-  <div class="modal fade-protolab" id="task-begin-modal" tabindex="-1" 
+  <div class="modal fade-protolab" id="task-begin-modal" tabindex="-1"
     role="dialog" aria-labelledby="basicModal" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
@@ -105,11 +96,11 @@
               <h4 class="modal-title" id="myModalLabel">Task Instructions</h4>
         </div>
         <div class="modal-body">
-            {{#if isBrainstorm}}
+            {{#if isFluency}}
                 <!-- {{> KAlignPrompt}} -->
-                {{> KAlignFocusChooser}}
+                {{instructions}}
             {{else}}
-                {{instructions}}  
+                {{> KAlignFocusChooser}}
             {{/if}}
         </div>
         <div class="modal-footer">
@@ -121,7 +112,7 @@
 </template>
 
 <template name="BrainstormTaskBeginModal">
-  <div class="modal fade-protolab" id="brainstorm-task-begin-modal" tabindex="-1" 
+  <div class="modal fade-protolab" id="brainstorm-task-begin-modal" tabindex="-1"
     role="dialog" aria-labelledby="basicModal" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
@@ -129,7 +120,12 @@
               <h4 class="modal-title" id="myModalLabel2">Task Instructions</h4>
         </div>
         <div class="modal-body">
-            <p>In the next 3 minutes, please brainstorm as many product ideas as you can that use the fabric display technology to {{path}}.</p>
+            {{#if isFrame}}
+              <p>In the next 3 minutes, please brainstorm as many ideas as you can to solve the problem of voter turnout among young people, focusing on the question: </p>
+              <p><span class="focus-prompt-path">{{path}}</span></p>
+            {{else}}
+              <p>In the next 3 minutes, please brainstorm as many ideas as you can to solve the problem of voter turnout among young people.</p>
+            {{/if}}
             <p>Remember, in brainstorming, quantity and wild ideas are encouraged. Feel free to get creative, but don't worry too much about quality. The goal is to get your creative juices flowing. When you are ready, click "Continue"!</p>
         </div>
         <div class="modal-footer">
@@ -160,12 +156,12 @@
 <template name="KAlignIdeabox">
   <div class="idea-box">
     <span>{{ content }}</span>
-    
-    <span class='vote-box'> 
+
+    <span class='vote-box'>
       <span class="up-vote vote glyphicon glyphicon-thumbs-up"></span>
       {{ voteNum }}
     </span>
-    
+
   </div>
 </template>
 
