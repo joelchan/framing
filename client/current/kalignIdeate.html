@@ -26,11 +26,22 @@
             {{#if notFluency}}
                 {{> KAlignPrompt}}
                 {{#if isFrame}}
-                  <p>In the next 3 minutes, please brainstorm as many ideas as you can to solve the problem of voter turnout among young people, focusing on the question "{{path}}"</p>                  
+                  {{#if isFocus}}
+                    <p>Now we would like you to now develop ONE solution in more detail for the voter turnout problem, focusing on the question "{{path}}". Your job is to come up with a single, elaborated idea that is as creative (i.e., novel AND useful) as possible.</p>
+                    <p>We would like you spent at least 3 minutes working on your idea. You will <strong>not</strong> be able to submit your idea before 3 minutes is up. After 3 minutes is up, you can choose to either submit your idea as is, or keep working on the idea until you feel it is complete, and then submit it. There is no penalty for taking extra time past the 3-minute mark.</p>
+                  {{else}}
+                    <p>In the next 5 minutes, please brainstorm as many ideas as you can to solve the problem of voter turnout among young people, focusing on the question "{{path}}".</p>
+                    <p>Remember, in brainstorming, quantity and wild ideas are encouraged. Feel free to get creative, but don't worry too much about quality. The goal is to get your creative juices flowing.</p>
+                  {{/if}}
                 {{else}}
-                  <p>In the next 3 minutes, please brainstorm as many ideas as you can to solve the problem of voter turnout among young people.</p>
+                  {{#if isFocus}}
+                    <p>Now we would like you to now develop ONE solution in more detail for the voter turnout problem. Your job is to come up with a single, elaborated idea that is as creative (i.e., novel AND useful) as possible.</p>
+                    <p>We would like you spent at least 3 minutes working on your idea. You will <strong>not</strong> be able to submit your idea before 3 minutes is up. After 3 minutes is up, you can choose to either submit your idea as is, or keep working on the idea until you feel it is complete, and then submit it. There is no penalty for taking extra time past the 3-minute mark.</p>
+                  {{else}}
+                    <p>In the next 5 minutes, please brainstorm as many ideas as you can to solve the problem of voter turnout among young people.</p>
+                    <p>Remember, in brainstorming, quantity and wild ideas are encouraged. Feel free to get creative, but don't worry too much about quality. The goal is to get your creative juices flowing.</p>
+                  {{/if}}
                 {{/if}}
-                <p>Remember, in brainstorming, quantity and wild ideas are encouraged. Feel free to get creative, but don't worry too much about quality. The goal is to get your creative juices flowing.</p>
             {{else}}
                 <p>In the next 1 minute, try to think of as many (alternative) uses as you can for a bowling pin (e.g., juggling props, paperweight). Feel free to get creative, but don't worry too much about quality. The goal is to get your creative juices flowing.</p>
             {{/if}}
@@ -96,11 +107,11 @@
               <h4 class="modal-title" id="myModalLabel">Task Instructions</h4>
         </div>
         <div class="modal-body">
-            {{#if isFluency}}
+            {{#if isBrainstorm}}
                 <!-- {{> KAlignPrompt}} -->
-                {{instructions}}
-            {{else}}
                 {{> KAlignFocusChooser}}
+            {{else}}
+                {{instructions}}
             {{/if}}
         </div>
         <div class="modal-footer">
@@ -121,10 +132,10 @@
         </div>
         <div class="modal-body">
             {{#if isFrame}}
-              <p>In the next 3 minutes, please brainstorm as many ideas as you can to solve the problem of voter turnout among young people, focusing on the question: </p>
+              <p>In the next 5 minutes, please brainstorm as many ideas as you can to solve the problem of voter turnout among young people, focusing on the question: </p>
               <p><span class="focus-prompt-path">{{path}}</span></p>
             {{else}}
-              <p>In the next 3 minutes, please brainstorm as many ideas as you can to solve the problem of voter turnout among young people.</p>
+              <p>In the next 5 minutes, please brainstorm as many ideas as you can to solve the problem of voter turnout among young people.</p>
             {{/if}}
             <p>Remember, in brainstorming, quantity and wild ideas are encouraged. Feel free to get creative, but don't worry too much about quality. The goal is to get your creative juices flowing. When you are ready, click "Continue"!</p>
         </div>

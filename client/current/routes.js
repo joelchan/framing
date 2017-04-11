@@ -258,13 +258,13 @@ Router.route("/crowd/k/:userID/:expID/", {
 });
 
 // Router.route("/crowd/ideatef/:userID/:expID/:promptID/:alignType/:isFluency/:isFocus/:sequence", {
-Router.route("/crowd/ideatef/:userID/:expID/:promptID/:isFluency/:sequence", {
+Router.route("/crowd/ideatef/:userID/:expID/:promptID/:isFluency/:isFocus/:sequence", {
   name: "FocusIdeate",
   template: "FocusIdeate",
   waitOn: function() {
     return [
       Meteor.subscribe('ideas'),
-      Meteor.subscribe('clusters'),
+      // Meteor.subscribe('clusters'),
       Meteor.subscribe('participants'),
       Meteor.subscribe('experiments'),
       Meteor.subscribe('exp-conditions'),
@@ -272,7 +272,7 @@ Router.route("/crowd/ideatef/:userID/:expID/:promptID/:isFluency/:sequence", {
       Meteor.subscribe('progresses'),
       Meteor.subscribe('dummyIdeas'),
       Meteor.subscribe('fluencyMeasures'),
-      Meteor.subscribe('knowledgeTestResponses')
+      // Meteor.subscribe('knowledgeTestResponses')
     ];
   },
   onRun: function() {
@@ -302,12 +302,12 @@ Router.route("/crowd/ideatef/:userID/:expID/:promptID/:isFluency/:sequence", {
       } else {
         Session.set("isFluency", false);
       }
-      // if (this.params.isFocus == "t") {
-      //   Session.set("isFocus", true);
-      //   Session.set("timesUp", false);
-      // } else {
-      //   Session.set("isFocus", false);
-      // }
+      if (this.params.isFocus == "t") {
+        Session.set("isFocus", true);
+        Session.set("timesUp", false);
+      } else {
+        Session.set("isFocus", false);
+      }
       Session.set("problemSequence", parseInt(this.params.sequence));
       // Session.set("focusArea", "education");
 

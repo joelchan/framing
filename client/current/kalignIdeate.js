@@ -88,9 +88,9 @@ Template.FocusPrompt.helpers({
   notFluency: function() {
     return !(Session.get("isFluency"));
   },
-  // isFocus: function() {
-  //   return Session.get("isFocus");
-  // },
+  isFocus: function() {
+    return Session.get("isFocus");
+  },
   path: function() {
     return Session.get("focusArea");
   },
@@ -106,9 +106,9 @@ Template.KAlignPrompt.helpers({
 });
 
 Template.FocusInput.helpers({
-  // isFocus: function() {
-  //   return Session.get("isFocus");
-  // },
+  isFocus: function() {
+    return Session.get("isFocus");
+  },
 });
 
 Template.KAlignIdeaEntryBox.helpers({
@@ -134,11 +134,11 @@ Template.KAlignIdeaEntryBox.events({
         Session.get("currentUser"),
         Session.get("currentPrompt")
     );
-    // if (Session.equals("isFocus", true)) {
-    //   logger.debug("Idea is for focus area");
-    //   Ideas.update({_id: idea._id},{$set: {focusArea: Session.get("focusArea")}});
-    //   Ideas.update({_id: idea._id},{$set: {inCluster: true}});
-    // }
+    if (Session.equals("isFocus", true)) {
+      logger.debug("Idea is for focus area");
+      Ideas.update({_id: idea._id},{$set: {focusArea: Session.get("focusArea")}});
+      Ideas.update({_id: idea._id},{$set: {inCluster: true}});
+    }
     EventLogger.logIdeaSubmission(idea, null);
     var part = Session.get("currentParticipant");
     var cond = Conditions.findOne({_id: part.conditionID});
@@ -159,9 +159,9 @@ Template.KAlignIdeaEntryBox.events({
 });
 
 Template.TaskBeginModal.helpers({
-  isFluency: function() {
-    // return (!Session.get("isFluency") && !(Session.get("isFocus")));
-    return Session.get("isFluency");
+  isBrainstorm: function() {
+    return (!Session.get("isFluency") && !(Session.get("isFocus")));
+    // return Session.get("isFluency");
   },
   instructions: function() {
     var instructions = "";
@@ -170,6 +170,15 @@ Template.TaskBeginModal.helpers({
         "In the next 1 minute, try to think of as many (alternative) uses as you can for a bowling pin. " +
         "Feel free to get creative, but don't worry too much about quality. The goal is to get your creative juices flowing. " +
         "When you are ready, click \"Continue\"!";
+    } else {
+      instructions = "Now we would like you to now develop ONE idea in more detail. " +
+            "Your job is to come up with a single, elaborated idea that is as creative (i.e., novel AND useful) as possible. " +
+            "Feel free to iterate on and/or combine any of your previous ideas. " +
+            "We would like you spend at least 3 minutes working on your idea. " +
+            "You will NOT be able to submit your idea before 3 minutes is up. " +
+            "After 3 minutes is up, you can choose to either submit your idea as is, or keep working on the idea until you feel it is complete, and then submit it. " +
+            "There is no penalty for taking extra time past the 3-minute mark." +
+            "When you are ready, click \"Continue\"!";
     }
     return instructions;
   },
@@ -177,7 +186,7 @@ Template.TaskBeginModal.helpers({
 
 Template.TaskBeginModal.events({
   'hidden.bs.modal #task-begin-modal' : function() {
-    if (Session.get("isFluency")) {
+    if (Session.equals("isFluency", true) || Session.equals("isFocus", true)) {
       EventLogger.logBeginIdeation();
       countdown.start(timerLength);
     } else {
@@ -250,7 +259,7 @@ var countdown = Tock({
           var cond = Conditions.findOne({_id: Session.get("currentParticipant").conditionID});
           WorkflowManager.goToNextPage(Session.get("currentUser")._id, cond.misc.workflowID);
         // end of focus final idea development
-        } else if (Session.equals("problemSequence", 3)) {
+      } else if (Session.equals("problemSequence", 2)) {
           logger.debug("Next is survey");
           alert("Time's up! You can now either submit your final idea, " +
             "or continue working on it as long as you'd like to before submitting it." +
@@ -271,7 +280,7 @@ var countdown = Tock({
 });
 
 // var timerLength = 1;
-var multiplier = 6000
+var multiplier = 60000;
 
 initializeTimer = function() {
   // var prompt = Session.get("currentPrompt");
@@ -279,9 +288,9 @@ initializeTimer = function() {
   if (Session.equals("isFluency", true)) {
     timerLength = 1*multiplier;
   } else if (Session.equals("isFocus", false)) {
-    timerLength = 3*multiplier;
-  } else {
     timerLength = 5*multiplier;
+  } else {
+    timerLength = 3*multiplier;
   }
   if ($('.timer').length == 0) {
     Blaze.render(Template.TockTimer, $('#nav-right')[0]);
