@@ -1,6 +1,6 @@
 <template name="SurveyPage">
   <div class="container">
-    
+
     {{> SurveyDirections }}
 
     {{> SurveyDemographics }}
@@ -12,7 +12,7 @@
     {{> SurveyInterfaceFeedback }}
 
     {{> SurveySubmit }}
-    
+
   </div>
 </template>
 
@@ -32,7 +32,7 @@
     </div>
     <div class="row formQuestion">
       <div class="question">Age: *</div><br/>
-      <input type="number" class="surveyNumBox" 
+      <input type="number" class="surveyNumBox"
       name="age" min="1" max="200" step="1" value="18">
     </div>
     <div class="row formQuestion">
@@ -149,7 +149,7 @@
       <textArea id="intLikeSurvey" class="survey-textbox"></textarea>
     </div>
     <div class="row formQuestion">
-      <div class="question">We are always looking for ways to improve! Is there anything about the interface that you didn't like (e.g., unclear instructions, confusing buttons)?</div><br/>
+      <div class="question">(Optional) We are always looking for ways to improve! Is there anything about the interface that you didn't like (e.g., unclear instructions, confusing buttons)?</div><br/>
       <textArea id="intDislikeSurvey" class="survey-textbox"></textarea>
     </div>
   </form>
@@ -157,7 +157,7 @@
 
 <template name="SurveySubmit">
   <button id="submit" class="submitForm btn-xlarge2 btn-default btn-primary">
-   Submit 
+   Submit
   </button>
 </template>
 

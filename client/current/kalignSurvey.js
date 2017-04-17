@@ -18,13 +18,13 @@ Template.KAlignSurvey.onRendered(function() {
     window.scrollTo(0,0);
     var cond = Conditions.findOne({_id: part.conditionID});
     logger.trace("Setting next page: ", Session.get("currentUser")._id, cond.misc.workflowID);
-    WorkflowManager.setNextPage(Session.get("currentUser")._id, 
+    WorkflowManager.setNextPage(Session.get("currentUser")._id,
                                 cond.misc.workflowID);
     EventLogger.logSurveyBegan();
 });
 
 Template.KAlignSurvey.helpers({
-  
+
 });
 
 Template.KAlignSurvey.events({
@@ -57,7 +57,7 @@ getResponses = function() {
   var answer = $("input[name='gender']:checked").val();
   // checkResponse(answer)
   responses.push(new QuestionResponse("Gender", answer));
-        
+
   //Age
   answer = $("input[name='age']").val();
   // checkResponse(answer)
@@ -66,19 +66,19 @@ getResponses = function() {
   answer = $("input[name='lang1']:checked").val();
   // checkResponse(answer)
   responses.push(new QuestionResponse("Is English your first language", answer));
-  
+
   // choice
   answer = $("#choiceDescr").val();
-  responses.push(new QuestionResponse("Choice Reason", answer));
+  responses.push(new QuestionResponse("Path misc comments", answer));
 
   answer = $("select#choicePromising").val();
-  responses.push(new QuestionResponse("Choice Promising", answer));
+  responses.push(new QuestionResponse("Path Promising", answer));
 
   answer = $("select#choiceKnowledge").val();
-  responses.push(new QuestionResponse("Choice Knowledge", answer));
+  responses.push(new QuestionResponse("Path Knowledge", answer));
 
   answer = $("select#choiceNovel").val();
-  responses.push(new QuestionResponse("Choice Novel", answer));
+  responses.push(new QuestionResponse("Path Novel", answer));
 
   // path
   answer = $("select#manipCheckPro").val();
@@ -89,7 +89,7 @@ getResponses = function() {
 
   answer = $("#pathEngage").val();
   responses.push(new QuestionResponse("General reactions to path", answer));
-  
+
   // activity/interface feedback
   answer = $("#activityLikeSurvey").val();
   responses.push(new QuestionResponse("Is there anything about the activity that you found particularly challenging", answer));

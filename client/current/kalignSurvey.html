@@ -1,6 +1,6 @@
 <template name="KAlignSurvey">
   <div class="container">
-    
+
     {{> SurveyDirections }}
 
     {{> SurveyDemographics }}
@@ -10,18 +10,14 @@
     {{> SurveyInterfaceFeedback }}
 
     {{> SurveySubmit }}
-    
+
   </div>
 </template>
 
 <template name="KAlignQuestions">
   <form class="surveyForm">
     <div class="row formQuestion">
-      <div class="question">Why did you choose the focus area that you did?</div><br/>
-      <textArea id="choiceDescr" class="survey-textbox" rows="3"></textarea>
-    </div>
-    <div class="row formQuestion">
-      <div class="question">How much do you agree with the following statement: I chose the focus area that I did because I thought it would be the most promising application of the fabric display technology.</div><br/>
+      <div class="question">How much do you agree with the following statement: I thought the focus question I was assigned was a useful way of thinking about the youth voting problem.</div><br/>
       <select id="choicePromising">
         <option value="7">7 - Strongly agree</option>
         <option value="6">6 - Agree</option>
@@ -33,7 +29,7 @@
       </select>
     </div>
     <div class="row formQuestion">
-      <div class="question">How much do you agree with the following statement: I chose the focus area that I did because ideas readily came to my mind for that focus area.</div><br/>
+      <div class="question">How much do you agree with the following statement: Ideas readily came to my mind for the focus question I was assigned.</div><br/>
       <select id="choiceKnowledge">
         <option value="7">7 - Strongly agree</option>
         <option value="6">6 - Agree</option>
@@ -45,7 +41,7 @@
       </select>
     </div>
     <div class="row formQuestion">
-      <div class="question">How much do you agree with the following statement: I chose the focus area that I did because it seemed the most novel and interesting to me.</div><br/>
+      <div class="question">How much do you agree with the following statement: The focus question I was assigned gave me a novel and interesting way of thinking about the voting problem.</div><br/>
       <select id="choiceNovel">
         <option value="7">7 - Strongly agree</option>
         <option value="6">6 - Agree</option>
@@ -57,7 +53,7 @@
       </select>
     </div>
     <div class="row formQuestion">
-      <div class="question">How much do you agree with the following statement: I had significant prior knowledge of the focus area for which I developed my final idea.</div><br/>
+      <div class="question">How much do you agree with the following statement: I had significant prior knowledge of the focus question I was assigned.</div><br/>
       <select id="manipCheckPro">
         <option value="7">7 - Strongly agree</option>
         <option value="6">6 - Agree</option>
@@ -69,7 +65,7 @@
       </select>
     </div>
     <div class="row formQuestion">
-      <div class="question">How much do you agree with the following statement: I have little to no prior knowledge of the focus area for which I developed my final idea.</div><br/>
+      <div class="question">How much do you agree with the following statement: I have little to no prior knowledge of the focus question I was assignd.</div><br/>
       <select id="manipCheckNeg">
         <option value="7">7 - Strongly agree</option>
         <option value="6">6 - Agree</option>
@@ -81,8 +77,12 @@
       </select>
     </div>
     <div class="row formQuestion">
-      <div class="question">How did you feel generating ideas for the application area? Did you feel engaged/productive/creative? Why or why not?</div><br/>
+      <div class="question">How did you feel generating ideas for the focus question? Did you feel engaged/productive/creative? Why or why not?</div><br/>
       <textArea id="pathEngage" class="survey-textbox" rows="3"></textarea>
+    </div>
+    <div class="row formQuestion">
+      <div class="question">(Optional) Any other general/misc comments about your experience generating ideas for the general problem of youth voting or the specific focus question?</div><br/>
+      <textArea id="choiceDescr" class="survey-textbox" rows="3"></textarea>
     </div>
   </form>
 </template>

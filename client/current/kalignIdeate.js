@@ -280,7 +280,7 @@ var countdown = Tock({
 });
 
 // var timerLength = 1;
-var multiplier = 60000;
+var multiplier = 6000;
 
 initializeTimer = function() {
   // var prompt = Session.get("currentPrompt");
