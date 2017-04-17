@@ -292,6 +292,9 @@ Router.route("/crowd/ideatef/:userID/:expID/:promptID/:isFluency/:isFocus/:seque
       logger.debug("setting current prompt");
       Session.set("currentPrompt", prompt);
       Session.set("currentExpID", this.params.expID);
+      var exp = Experiments.findOne(this.params.expID);
+      logger.debug("Setting current experiment for experiment: " + JSON.stringify(exp));
+      Session.set("currentExp", exp);
       var part = Participants.findOne({expID: this.params.expID, userID: user._id});
       Session.set("currentParticipant", part);
       logger.trace("current participant: ", part);
