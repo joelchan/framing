@@ -20,8 +20,11 @@ Template.MturkLoginPage.events({
         //login user
         var prompt = Session.get("currentPrompt");
         // this conditional will break things if we don't have frame ID (e.g., if we're doing a different experiment)
-        if ($("input#name").val() == "" || $("input#frameID").val() == "") {
-          alert("Please enter both your Mturk ID and your task ID");
+        var userName = $('input#name').val().trim();
+        var frameID = $('input#frameID').val().trim();
+
+        if (userName == "" || isNaN(parseInt(frameID)) || parseInt(frameID) < 0 || (parseInt(frameID) > 0 && parseInt(frameID) < 1001) || parseInt(frameID) > 1040) {
+          alert("Please enter both your Mturk ID and a valid task ID from the HIT");
         } else {
           var userName = $('input#name').val().trim();
           var frameID = $('input#frameID').val().trim();
