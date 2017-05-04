@@ -1,9 +1,9 @@
 // Configure logger for Tools
 var logger = new Logger('Client:Routes');
 // Comment out to use global logging level
-Logger.setLevel('Client:Routes', 'trace');
+// Logger.setLevel('Client:Routes', 'trace');
 // Logger.setLevel('Client:Routes', 'debug');
-// Logger.setLevel('Client:Routes', 'info');
+Logger.setLevel('Client:Routes', 'info');
 // Logger.setLevel('Client:Routes', 'warn');
 
 //Maps routes to templates

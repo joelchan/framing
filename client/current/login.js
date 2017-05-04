@@ -1,9 +1,9 @@
 
 var logger = new Logger('Client:Exp:MturkLogin');
 // Comment out to use global logging level
-Logger.setLevel('Client:Exp:MturkLogin', 'trace');
+// Logger.setLevel('Client:Exp:MturkLogin', 'trace');
 //Logger.setLevel('Client:Exp:MturkLogin', 'debug');
-// Logger.setLevel('Client:Exp:MturkLogin', 'info');
+Logger.setLevel('Client:Exp:MturkLogin', 'info');
 //Logger.setLevel('Client:Exp:MturkLogin', 'warn');
 
 Template.MturkLoginPage.rendered = function() {

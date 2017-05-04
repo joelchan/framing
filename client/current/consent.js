@@ -1,9 +1,9 @@
 // Configure logger for ExperimentManager
 var logger = new Logger('Client:Hcomp:Consent');
 // Comment out to use global logging level
-Logger.setLevel('Client:Hcomp:Consent', 'trace');
+// Logger.setLevel('Client:Hcomp:Consent', 'trace');
 //Logger.setLevel('Managers:Experiment', 'debug');
-// Logger.setLevel('Managers:Experiment', 'info');
+Logger.setLevel('Managers:Experiment', 'info');
 //Logger.setLevel('Managers:Experiment', 'warn');
 //Template.TextPage.helper({
 //});

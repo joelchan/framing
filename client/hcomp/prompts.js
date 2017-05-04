@@ -1,9 +1,9 @@
 // Configure logger for Tools
 var logger = new Logger('Client:Hcomp:Prompts');
 // Comment out to use global logging level
-Logger.setLevel('Client:Hcomp:Prompts', 'trace');
+// Logger.setLevel('Client:Hcomp:Prompts', 'trace');
 //Logger.setLevel('Client:Hcomp:Prompts', 'debug');
-//Logger.setLevel('Client:Hcomp:Prompts', 'info');
+Logger.setLevel('Client:Hcomp:Prompts', 'info');
 //Logger.setLevel('Client:Hcomp:Prompts', 'warn');
 
 /********************************************************************
@@ -15,7 +15,7 @@ Template.CrowdPromptPage.helpers({
 Template.PromptsTab.helpers({
   prompts: function() {
     return Prompts.find(
-        {userIDs: Session.get("currentUser")._id}, 
+        {userIDs: Session.get("currentUser")._id},
         {sort: {time: -1}}
     );
   },
@@ -26,8 +26,8 @@ Template.ExperimentsTab.helpers({
     //TODO: make experiments owned by a user
     if (Session.get("currentUser").name == "Joel") {
       return Experiments.find(
-            {hasBegun: true}, 
-            {sort: {creationTime: -1}}); 
+            {hasBegun: true},
+            {sort: {creationTime: -1}});
     } else {
       return [];
     }
@@ -42,7 +42,7 @@ Template.DataProcessingTab.helpers({
     var results = []
     graphs.forEach(function(graph) {
       var result = graph;
-      var prompt = Prompts.findOne({_id: graph.promptID}); 
+      var prompt = Prompts.findOne({_id: graph.promptID});
       result['title'] = prompt.title;
       result['question'] = prompt.question;
       result['userID'] = Session.get('currentUser')._id;
@@ -103,7 +103,7 @@ Template.CrowdBrainstorm.helpers({
         return true;
       } else {
         return false;
-      } 
+      }
     } else {
       logger.trace("Prompt does not have session length defined");
       return false;
@@ -149,7 +149,7 @@ Template.CrowdBrainstorm.helpers({
     if (typeof this['forestGraphID'] === 'undefined') {
       return true;
     } else {
-      return false;      
+      return false;
     }
   },
 });
@@ -157,13 +157,13 @@ Template.CrowdBrainstorm.helpers({
 Template.CrowdBrainstorm.events({
   //'click .dash-button': function() {
     //console.log("go to dash");
-    //Router.go("HcompDashboard", 
+    //Router.go("HcompDashboard",
       //{promptID: this._id,
         //userID: Session.get('currentUser')});
   //},
   //'click .review-button': function() {
     //console.log("go to reviewpage");
-    //Router.go("HcompResultsPage", 
+    //Router.go("HcompResultsPage",
       //{promptID: this._id, userID: Session.get("currentUser")});
   //},
   'click .prep-forest': function () {
@@ -202,7 +202,7 @@ Template.PromptsTab.events({
       $("input#prompt-text").val("");
       $("input#prompt-title").val("");
       $("input#prompt-length").val(0);
-      
+
     },
     //'click .dash-button': function () {
       //// Set the current prompt
@@ -215,10 +215,10 @@ Template.PromptsTab.events({
         //logger.trace("found current prompt with id: " + prompt._id);
         //Session.set("currentPrompt", prompt);
         //logger.debug("Prompt selected");
-        //Router.go('HcompDashboard', 
+        //Router.go('HcompDashboard',
             //{promptID: prompt._id, userID: user._id});
       //} else {
-        //logger.error("couldn't find current prompt with id: " + 
+        //logger.error("couldn't find current prompt with id: " +
             //prompt._id);
       //}
     //},
@@ -235,7 +235,7 @@ Template.PromptsTab.events({
         //logger.debug("Prompt selected");
         //Router.go('Visualization', {promptID: prompt._id, userID: user._id});
       //} else {
-        //logger.error("couldn't find current prompt with id: " + 
+        //logger.error("couldn't find current prompt with id: " +
             //prompt._id);
       //}
     //},
@@ -270,7 +270,7 @@ Template.CrowdExperiment.helpers({
   getData: function() {
     logger.debug("Data context: " + JSON.stringify(this._id));
     logger.debug("current user: " + JSON.stringify(Session.get("currentUser")));
-    var result = {'promptID': this.promptID, 
+    var result = {'promptID': this.promptID,
         'userID': Session.get("currentUser")._id,
         'expID': this._id};
     logger.debug("Data object2 " + JSON.stringify(result));
@@ -312,11 +312,11 @@ Template.NewExperimentModal.helpers({
   },
   IVs: function() {
     var exp = Experiments.findOne({_id: Session.get("workingExperiment")._id});
-    return Variables.find({_id: {$in: exp.variableIDs}}); 
+    return Variables.find({_id: {$in: exp.variableIDs}});
   },
   conditions: function() {
     var exp = Experiments.findOne({_id: Session.get("workingExperiment")._id});
-    return Conditions.find({_id: {$in: exp.conditionIDs}}); 
+    return Conditions.find({_id: {$in: exp.conditionIDs}});
   },
   prompts: function() {
     logger.trace("Getting prompts...");
@@ -395,7 +395,7 @@ Template.NewExperimentModal.events({
     logger.debug("Generating Conditions using variables specified");
     ExperimentManager.generateConditions(Session.get("workingExperiment")._id);
     logger.trace("Updated Experiment conditions: ", Experiments.findOne({_id: Session.get("workingExperiment")._id}).conditionIDs);
-    
+
   },
   "click #gen-custom-condition": function() {
     logger.debug("Generating Conditions using variables specified");
@@ -596,7 +596,7 @@ Template.CrowdExperimentCondition.helpers({
       progress = 0;
     } else {
       logger.trace("Found " + numAssigned + " assigned participants for " + this.description + " condition");
-      progress = numReady/numAssigned*100  
+      progress = numReady/numAssigned*100
     }
     logger.trace("Progress = " + progress);
     return Math.round(progress);
@@ -720,7 +720,7 @@ Template.CondParticipant.helpers({
 var parseTime = function(userID, msg) {
   var time = new Date(Events.findOne({userID: userID, description: msg}).time);
   return time.toTimeString().substring(0,9);
-} 
+}
 
 
 Template.ExperimentsTab.events({

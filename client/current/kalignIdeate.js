@@ -1,9 +1,9 @@
 // Configure logger for Tools
 var logger = new Logger('Client:Crowd:FocusIdeate');
 // Comment out to use global logging level
-Logger.setLevel('Client:Crowd:FocusIdeate', 'trace');
+// Logger.setLevel('Client:Crowd:FocusIdeate', 'trace');
 //Logger.setLevel('Client:Crowd:FocusIdeate', 'debug');
-//Logger.setLevel('Client:Crowd:FocusIdeate', 'info');
+Logger.setLevel('Client:Crowd:FocusIdeate', 'info');
 //Logger.setLevel('Client:Crowd:FocusIdeate', 'warn');
 
 /********************************************************************
